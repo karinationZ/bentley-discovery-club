@@ -3,6 +3,7 @@
 (overlaid on the dawn establish shot, fades in/out). Brand colors + bold rounded font."""
 from PIL import Image, ImageDraw, ImageFont
 import os
+from bentley.shared.paths import episode_assets
 
 W, H = 1920, 1080
 img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -38,7 +39,7 @@ centered("Explore     Discover     Wonder", f2, H*0.66, TEAL, NAVY, 6)
 for cx in (W*0.5 - 118, W*0.5 + 118):
     d.ellipse([cx-6, H*0.66-6, cx+6, H*0.66+6], fill=GOLD)
 
-out = "/home/user/src/youtube/assets/pilot_shots/hybrid_ep1/v2/work/title_card.png"
+out = str(episode_assets("hybrid_ep1") / "v2/work/title_card.png")
 os.makedirs(os.path.dirname(out), exist_ok=True)
 img.save(out)
 print("title card ->", out, img.size)

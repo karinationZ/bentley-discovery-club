@@ -1,15 +1,22 @@
 [project]
 name = "youtube"
 version = "0.1.0"
-description = ""
+description = "Bentley's Discovery Club — kids' YouTube animation production pipeline"
 authors = [
     {name = "karinationZ",email = "16980639+karinationZ@users.noreply.github.com"}
 ]
 requires-python = ">=3.14"
 dependencies = [
+    "fal-client",
+    "pillow",
 ]
 
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+# package dir (bentley) differs from the project name (youtube); declare it explicitly
+# so `pip install -e .` / `poetry install` expose `import bentley.*`.
+packages = [{ include = "bentley" }]

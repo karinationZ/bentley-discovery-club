@@ -4,16 +4,17 @@
 and is DYNAMICALLY CAPPED (read from timeline2.json) to end >=0.2s before the next talk shot — so no
 two voices ever overlap. Cry answers Bentley. Music re-pinned to shot anchors. loudnorm -14, mux."""
 import os, json, subprocess
-ROOT = "/home/user/src/youtube/assets/pilot_shots/hybrid_ep1"
+from bentley.shared.ffio import dur
+from bentley.shared.paths import episode_assets
+from bentley.episode_builder.timeline import make_next_talk_start, place_sequential
+ROOT = str(episode_assets("hybrid_ep1"))
 V2 = f"{ROOT}/v2"; AUD, SFX, MUS, WORK = f"{V2}/audio", f"{V2}/sfx", f"{V2}/music", f"{V2}/work"
 TLJSON = json.load(open(f"{WORK}/timeline2.json"))
 TL = {s["id"]: s for s in TLJSON}
 def st(i): return TL[i]["start"]
-def dur(p): return float(subprocess.check_output(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",p]).strip())
+# dur() imported from bentley.shared.ffio
 PIC = f"{WORK}/EP1_v2_picture.mp4"; picdur = dur(PIC)
-def next_talk_start(after):
-    cands = [s["start"] for s in TLJSON if s["kind"] == "talk" and s["start"] > after + 0.05]
-    return min(cands) if cands else picdur
+# next_talk_start + sequential voice placement now live in bentley.episode_builder.timeline
 
 # NARRATION / O.S. — (file, anchor_id, offset, gain). Placed over MOTION shots; auto-capped to next talk −0.2s.
 NARR = [
@@ -64,14 +65,12 @@ def add(path, delay, gain, cap=None, fades=None, stream_loop=0):
 events = [(st(anc) + off, path, g, None) for path, anc, off, g in NARR]
 events.append((st(CRY[1]) + CRY[2], CRY[0], CRY[3], CRY[4]))   # cry, with its 1.0s hard cap
 events.sort(key=lambda e: e[0])
-last_end = -10.0
-for desired, path, g, hardcap in events:
-    start = max(desired, last_end + 0.25)
-    avail = next_talk_start(start) - 0.2 - start
-    cap = min(dur(path), avail)
-    if hardcap: cap = min(cap, hardcap)
-    if cap >= 0.8:
-        add(path, start, g, cap=cap); last_end = start + cap
+nts = make_next_talk_start(TLJSON, picdur)
+sched = [(desired, dur(path), hardcap) for desired, path, g, hardcap in events]
+for i, start, cap, avail, placed in place_sequential(sched, nts):
+    path, g = events[i][1], events[i][2]
+    if placed:
+        add(path, start, g, cap=cap)
     else:
         print(f"  SKIP {os.path.basename(path)} (window {avail:.2f}s @ {start:.1f}s)", flush=True)
 for path, anc, off, g in SX:

@@ -3,8 +3,8 @@
 Bentley's face) + EP tag. 1280x720 JPG."""
 from PIL import Image, ImageDraw, ImageFont, ImageEnhance, ImageFilter
 import os, sys
-BASE = sys.argv[1] if len(sys.argv) > 1 else "tests/kie/thumb_v1.png"
-OUT  = "tests/kie/Bentley_Ep1_thumbnail.jpg"
+BASE = sys.argv[1] if len(sys.argv) > 1 else "scratch/kie/thumb_v1.png"
+OUT  = "scratch/kie/Bentley_Ep1_thumbnail.jpg"
 W, H = 1280, 720
 MAXW = 400   # text must stay within the left column, clear of Bentley's face (her head starts ~x470)
 LX   = 46    # left margin

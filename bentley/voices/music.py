@@ -2,7 +2,7 @@
 """Generate the music cue palette via ElevenLabs music API. No fal.
 One evolving family of cues for the 11 scored state-changes; placed/crossfaded in assembly."""
 import os, json, subprocess, urllib.request, urllib.error
-KEY = os.environ["ELEVENLABS_API_KEY"]
+from bentley.shared.eleven import KEY
 OUT = "assets/pilot_shots/hybrid_ep1/v2/music"; os.makedirs(OUT, exist_ok=True)
 
 def music(name, prompt, ms=30000):
@@ -27,6 +27,7 @@ CUES = [
  ("suspense",        "Light playful suspense for a kids' cartoon, building percussion and low strings, a brief scary-but-safe danger moment that resolves, not too frightening", 18000),
  ("triumph",         "Triumphant warm orchestral swell for a children's film, joyful wonder payoff, full bright strings and gentle brass, celebratory and heartwarming", 20000),
 ]
-for n, p, ms in CUES:
-    music(n, p, ms)
-print("MUSIC DONE ->", OUT, flush=True)
+if __name__ == "__main__":
+    for n, p, ms in CUES:
+        music(n, p, ms)
+    print("MUSIC DONE ->", OUT, flush=True)

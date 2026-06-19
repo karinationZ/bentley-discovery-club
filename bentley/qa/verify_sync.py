@@ -2,15 +2,16 @@
 """Verify ZERO voice overlaps before rendering. Computes every dialogue window (embedded, from the
 talk shots) + every narration/cry window (same scheduler as mix_v2_final.py), checks all pairs."""
 import os, json, subprocess
-ROOT = "/home/user/src/youtube/assets/pilot_shots/hybrid_ep1"
+from bentley.shared.ffio import dur
+from bentley.shared.paths import episode_assets
+from bentley.episode_builder.timeline import make_next_talk_start, place_sequential
+ROOT = str(episode_assets("hybrid_ep1"))
 V2 = f"{ROOT}/v2"; AUD, WORK = f"{V2}/audio", f"{V2}/work"
 TLJSON = json.load(open(f"{WORK}/timeline2.json")); TL = {s["id"]: s for s in TLJSON}
 def st(i): return TL[i]["start"]
-def dur(p): return float(subprocess.check_output(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",p]).strip())
+# dur() imported from bentley.shared.ffio
 picdur = dur(f"{WORK}/EP1_v2_picture.mp4")
-def next_talk_start(after):
-    c = [s["start"] for s in TLJSON if s["kind"] == "talk" and s["start"] > after + 0.05]
-    return min(c) if c else picdur
+# next_talk_start now lives in bentley.episode_builder.timeline
 
 # dialogue windows = talk shots (embedded audio physically fills the shot)
 dia = [(s["id"], s["start"], round(s["start"] + s["dur"], 2)) for s in TLJSON if s["kind"] == "talk"]
@@ -24,13 +25,13 @@ NARR = [
 ]
 CRY = (f"{AUD}/PIPOS_help1.mp3", "a1_02_hear", -1.5, 1.0)
 events = sorted([(st(a)+o, p) for p,a,o in NARR] + [(st(CRY[1])+CRY[2], CRY[0])], key=lambda e: e[0])
-narr, last_end = [], -10.0
-for desired, path in events:
-    start = max(desired, last_end + 0.25); avail = next_talk_start(start) - 0.2 - start
-    cap = min(dur(path), avail)
-    if path == CRY[0]: cap = min(cap, CRY[3])
-    if cap >= 0.8:
-        narr.append((os.path.basename(path).replace(".mp3",""), round(start,2), round(start+cap,2))); last_end = start + cap
+nts = make_next_talk_start(TLJSON, picdur)
+sched = [(desired, dur(path), CRY[3] if path == CRY[0] else None) for desired, path in events]
+narr = []
+for i, start, cap, avail, placed in place_sequential(sched, nts):
+    path = events[i][1]
+    if placed:
+        narr.append((os.path.basename(path).replace(".mp3",""), round(start,2), round(start+cap,2)))
     else:
         print(f"  (skip {os.path.basename(path)} — only {avail:.2f}s)")
 

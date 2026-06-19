@@ -4,7 +4,9 @@ cards get a gentle 1.20x). TALK shots use their OWN EMBEDDED Kling audio trimmed
 (mouth==voice by construction; no tpad, no re-pinned VO). 3 real b-roll shots added (intro + climax).
 Outputs EP1_v2_picture.mp4 (with embedded dialogue) + timeline2.json."""
 import os, subprocess, json
-ROOT = "/home/user/src/youtube/assets/pilot_shots/hybrid_ep1"
+from bentley.shared.ffio import dur
+from bentley.shared.paths import episode_assets
+ROOT = str(episode_assets("hybrid_ep1"))
 D = {"v2": f"{ROOT}/v2", "a123": f"{ROOT}/acts123", "a456": f"{ROOT}/acts456", "fix": f"{ROOT}/v2/fixed"}
 WORK = f"{ROOT}/v2/work"; SEG = f"{WORK}/fseg"; os.makedirs(SEG, exist_ok=True)
 TITLE = f"{WORK}/title_card.png"
@@ -50,7 +52,7 @@ EDL = [
  ("a6_01_octopus","octopus_NEW.mp4","fix","motion",0,{}),        # kie re-render: dramatic tentacle wave + SPLASH, ~10s (was ~5s)
  ("END_card","CLEAN_shell.mp4","v2","motion",14.8,{"title":True,"slowok":True,"dim":True,"fo_st":12.8}),
 ]
-def dur(p): return float(subprocess.check_output(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",p]).strip())
+# dur() imported from bentley.shared.ffio
 
 segs, t, tl = [], 0.0, []
 print(f"{'id':16s} {'kind':6s} {'start':>7s} {'dur':>6s} {'native':>7s}")

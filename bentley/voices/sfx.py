@@ -2,7 +2,7 @@
 """Generate the SFX palette via ElevenLabs text-to-sound-effects. No fal.
 Clips are timeline-independent; trimmed/looped/placed during assembly."""
 import os, json, subprocess, urllib.request, urllib.error
-KEY = os.environ["ELEVENLABS_API_KEY"]
+from bentley.shared.eleven import KEY
 OUT = "assets/pilot_shots/hybrid_ep1/v2/sfx"; os.makedirs(OUT, exist_ok=True)
 
 def sfx(name, text, dur=None, influence=0.4):
@@ -32,7 +32,8 @@ SFX = [
  ("sparkle",    "A bright magical sparkle shimmer, a twinkle of wonder and discovery", 2),
  ("octo_curl",  "A soft mysterious underwater water curl with a gentle low whoosh", 3),
 ]
-for item in SFX:
-    name, text = item[0], item[1]; dur = item[2] if len(item) > 2 else None
-    sfx(name, text, dur)
-print("SFX DONE ->", OUT, flush=True)
+if __name__ == "__main__":
+    for item in SFX:
+        name, text = item[0], item[1]; dur = item[2] if len(item) > 2 else None
+        sfx(name, text, dur)
+    print("SFX DONE ->", OUT, flush=True)

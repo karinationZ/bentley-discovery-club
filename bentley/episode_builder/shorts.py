@@ -4,6 +4,7 @@ Reframe each source segment (punch-in CROP or BLUR-FILL), concat, overlay Pillow
 (this ffmpeg lacks subtitles/drawtext), export 1080x1920 + write a clean .srt. Originals untouched."""
 import os, re, json, subprocess
 from PIL import Image, ImageDraw, ImageFont
+from bentley.shared.ffio import dur as dur_of
 
 W, H = 1080, 1920
 FINAL = "assets/pilot_shots/hybrid_ep1/Bentley_Ep1_v2_FINAL_1080p.mp4"
@@ -51,7 +52,7 @@ def make_caption(text, path, size=72, maxw=930):
         y += lh
     img.save(path); return boxh
 
-def dur_of(p): return float(subprocess.check_output(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",p]).strip())
+# dur_of() imported from bentley.shared.ffio (as dur)
 
 def build_segment(start, end, mode, xoff, out):
     d = round(end - start, 3)

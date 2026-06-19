@@ -15,7 +15,8 @@ GRADE = (
  "unsharp=3:3:0.35:3:3:0.0,"                                                 # gentle local contrast / de-haze the milky BGs
  "format=yuv420p"
 )
-subprocess.run(["ffmpeg","-y","-loglevel","error","-stats","-i",PREMIX,
-  "-vf",GRADE,"-c:v","libx264","-preset","medium","-crf","18","-r","24",
-  "-c:a","copy","-movflags","+faststart",FINAL], check=True)
-print("graded FINAL ->", FINAL)
+if __name__ == "__main__":
+    subprocess.run(["ffmpeg","-y","-loglevel","error","-stats","-i",PREMIX,
+      "-vf",GRADE,"-c:v","libx264","-preset","medium","-crf","18","-r","24",
+      "-c:a","copy","-movflags","+faststart",FINAL], check=True)
+    print("graded FINAL ->", FINAL)

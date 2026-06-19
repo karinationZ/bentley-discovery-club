@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Thumbnail base images (no text — text added later via Pillow). 2 compositions to choose from."""
-from kie_client import run, download, credits
+from bentley.shared.kie_client import run, download, credits
 BENT = "https://v3b.fal.media/files/b/0a9eb213/K0YEhgC0hRPAknNVA_bSO_Bentley_MASTER_clean_16x9.png"
 V = {
  "thumb_v1": ("YouTube thumbnail, 16:9, eye-catching poster composition. Bentley the red-fawn Boxer puppy fills the RIGHT "
@@ -18,8 +18,9 @@ V = {
    "blaze, BOTH ears soft floppy folded DOWN, soulful expressive eyes, natural dog mouth slightly open in wonder (NO human "
    "teeth), teal collar. Premium dimensional Pixar/Bluey 3D cartoon, poster-quality, eye-catching, NOT dark."),
 }
-print("bal:", credits())
-for sid, prompt in V.items():
-    r = run("google/nano-banana-edit", {"prompt": prompt, "image_urls":[BENT], "image_size":"16:9", "output_format":"png"})
-    download(r["urls"][0], f"tests/kie/{sid}.png")
-    print(f"{sid}: {r['credits']}cr {r['secs']}s")
+if __name__ == "__main__":
+    print("bal:", credits())
+    for sid, prompt in V.items():
+        r = run("google/nano-banana-edit", {"prompt": prompt, "image_urls":[BENT], "image_size":"16:9", "output_format":"png"})
+        download(r["urls"][0], f"scratch/kie/{sid}.png")
+        print(f"{sid}: {r['credits']}cr {r['secs']}s")

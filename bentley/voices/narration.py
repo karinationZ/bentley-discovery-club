@@ -2,8 +2,7 @@
 """LOCKED narrator = Bill (wise/mature grandpa). Regenerate ALL Theodore narration in Bill's
 voice, overwriting the George versions in v2/audio/THEO_*.mp3."""
 import os, json, subprocess, urllib.request
-KEY = os.environ["ELEVENLABS_API_KEY"]
-NARR_VOICE = "pqHfZKP75CvOlQylNhV4"  # Bill — Wise, Mature, Balanced (Grandpa Theodore, LOCKED)
+from bentley.shared.eleven import KEY, NARRATOR as NARR_VOICE  # Bill — Grandpa Theodore (LOCKED)
 OUT = "assets/pilot_shots/hybrid_ep1/v2/audio"; os.makedirs(OUT, exist_ok=True)
 def tts(name, text):
     body = json.dumps({"text": text, "model_id": "eleven_v3",
@@ -35,5 +34,6 @@ L = {
  "N19": "Today, Bentley learned you don't help by grabbing. You help by listening. Stop... look... listen...",
  "outro": "Next time, on Bentley's Big Adventures... The Octopus Escape Artist. Tap to dive in — and don't forget to follow, so Bentley can find you for the next adventure.",
 }
-for n, t in L.items(): tts(n, t)
-print("BILL NARRATION DONE", flush=True)
+if __name__ == "__main__":
+    for n, t in L.items(): tts(n, t)
+    print("BILL NARRATION DONE", flush=True)

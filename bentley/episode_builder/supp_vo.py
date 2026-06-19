@@ -1,22 +1,8 @@
 #!/usr/bin/env python3
 """Supplemental VO for the v2 fix: Theodore intro (4) + 5 Nat-Geo facts (George),
 Bentley warmth (LauraZ), Pip callbacks (Callum). ElevenLabs only — no fal."""
-import os, sys, json, subprocess, urllib.request
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from pipeline import tts_bentley, tts_pip, ELEVEN_KEY
-
-THEO_VOICE = "JBFqnCBsd6RMkjVDRZzb"  # George — warm storyteller
-def tts_theo(text, outp):
-    body = json.dumps({"text": text, "model_id": "eleven_v3",
-        "voice_settings": {"stability": 0.45, "similarity_boost": 0.75, "style": 0.45, "speed": 0.95}}).encode()
-    req = urllib.request.Request(
-        f"https://api.elevenlabs.io/v1/text-to-speech/{THEO_VOICE}?output_format=mp3_44100_192",
-        data=body, headers={"xi-api-key": ELEVEN_KEY, "Content-Type": "application/json", "Accept": "audio/mpeg"})
-    raw = outp.replace(".mp3", "_raw.mp3")
-    with urllib.request.urlopen(req) as r, open(raw, "wb") as f: f.write(r.read())
-    subprocess.run(["ffmpeg","-y","-loglevel","error","-i",raw,"-af",
-        "highpass=f=80,loudnorm=I=-16:TP=-1.5:LRA=11","-b:a","192k",outp], check=True)
-    print("  theo  ->", os.path.basename(outp), flush=True); return outp
+import os
+from bentley.voices.dialogue import tts_bentley, tts_pip, tts_theo
 
 OUT = "assets/pilot_shots/hybrid_ep1/v2/audio"; os.makedirs(OUT, exist_ok=True)
 
@@ -35,7 +21,8 @@ BENT = {"snack": "[tender] Aww. I'd never let you be a snack, Pip."}
 PIP  = {"n3": "[relieved] Thank you. Thank you. We do NOT do the big water. We've discussed this.",
         "n6allow": "[gruff but pleased] ...It's a shell. ...But I'll allow it."}
 
-for k, v in THEO.items(): tts_theo(v, f"{OUT}/THEO_{k}.mp3")
-for k, v in BENT.items(): print("  bent ", k, flush=True); tts_bentley(v, f"{OUT}/BENTOS_{k}.mp3")
-for k, v in PIP.items():  print("  pip  ", k, flush=True); tts_pip(v, f"{OUT}/PIPOS_{k}.mp3")
-print("SUPP VO DONE ->", OUT, flush=True)
+if __name__ == "__main__":
+    for k, v in THEO.items(): tts_theo(v, f"{OUT}/THEO_{k}.mp3")
+    for k, v in BENT.items(): print("  bent ", k, flush=True); tts_bentley(v, f"{OUT}/BENTOS_{k}.mp3")
+    for k, v in PIP.items():  print("  pip  ", k, flush=True); tts_pip(v, f"{OUT}/PIPOS_{k}.mp3")
+    print("SUPP VO DONE ->", OUT, flush=True)
