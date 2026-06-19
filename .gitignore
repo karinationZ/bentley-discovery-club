@@ -42,3 +42,7 @@ venv/
 *.tiff
 *.psd
 *.mp4.part
+
+# Backups — incl. media backups like *.mp4.bak / *.png.bak (matched by *.mp4 etc. only at end-of-name)
+*.bak
+*.orig
