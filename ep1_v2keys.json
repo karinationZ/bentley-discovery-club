@@ -1,0 +1,71 @@
+{
+  "work": "assets/pilot_shots/hybrid_ep1/v2",
+  "shots": [
+    {
+      "id": "N1_bentley_guess", "type": "talk", "voice": "bentley", "ref": "bentley",
+      "keyframe": "MEDIUM CLOSE-UP of Bentley the red-fawn Boxer puppy — head and upper chest fill the frame, paws and legs OUT of frame. Delighted and playful, head tilted to one side in eager curiosity, eyes bright and sparkling, an excited open expression mid-guess. Natural dog mouth with soft pink tongue and small dog teeth — NO human teeth, NO human grin. On-model: black mask, grey chin, soulful well-proportioned eyes (NOT googly), BOTH ears soft floppy folded DOWN, red-fawn coat, small white blaze on chest, teal collar with glowing spiral seashell charm. Premium 3D dimensional Pixar soft-fur style, NOT painterly.",
+      "line": "[playful] Ooh — are you a snail? A teeny tiny knight in shiny armor? A rock that talks?!"
+    },
+    {
+      "id": "N2_shell_science", "type": "motion", "dur": "5",
+      "keyframe": "A clear simple illustrative insert on wet black tide-pool rock at dawn: on the LEFT a small empty dull cracked brown SPIRAL seashell, and on the RIGHT a noticeably LARGER empty dull brown SPIRAL seashell, with a soft glowing thread of warm light gently linking the small shell to the big shell; shallow seawater and a little white foam around them. Clean, uncluttered, gentle and educational, shallow depth of field. Premium 3D dimensional Pixar style, soft warm dawn light, NOT painterly, NOT flat.",
+      "motion": "Slow gentle push-in from the small shell along the glowing thread to the bigger shell; the warm glow softly pulses; one gentle water lap washes through; thin mist drifts. Locked stable camera, no jitter, no shake."
+    },
+    {
+      "id": "N3_bridge_safe", "type": "motion", "dur": "5", "ref": "bentley",
+      "keyframe": "Bentley the red-fawn Boxer puppy, fur WET and dripping from seawater, standing on a high dry sun-warmed tide-pool rock where she has just gently set down tiny Pip the hermit crab (in his dull cracked brown SPIRAL shell, big soulful eyes set in his face, NO antennae, NO eye-stalks) safely beside her; Bentley starting a happy full-body shake, a few water droplets flying. BOTH ears soft floppy folded DOWN, solid red-fawn paws (NO white socks), short docked tail, black mask, teal collar with glowing spiral seashell charm. Warm golden dawn, safe glassy tide pool in the foreground. Premium 3D dimensional Pixar soft-fur style, NOT painterly.",
+      "motion": "Bentley does a big happy full-body water-shake, droplets spraying off in an arc, her fur going from slicked-wet to fluffy; tiny Pip beside her flinches back comically from the spray; the tide pool ripples and the dawn light catches the droplets. Smooth locked camera, no jitter, no shake."
+    },
+    {
+      "id": "N4_pip_lonely", "type": "talk", "voice": "pip", "ref": "pip",
+      "keyframe": "CLOSE-UP of Pip the small hermit crab — the genuine emotional beat. Frightened and lonely (NOT angry), big soulful eyes welling and shining with feeling, a small vulnerable slightly-downturned mouth, pulling a little into his shell. Canonical Pip: reddish-orange body, big soulful eyes set IN his face (NO eye-stalks, NOT googly), dull cracked brown SPIRAL shell (NOT a smooth white nautilus, NOT a dome), clean face, NO antennae, NO whiskers, natural small crab mouth (NO human teeth). On a wet rock by a glassy tide pool at warm dawn. Premium 3D dimensional Pixar style, NOT painterly.",
+      "line": "[sad] I'm not scared of being stuck, Bentley. [trembling] I'm scared 'cause I'm growing. Every day I get a little bigger... and nothing fits anymore... and there's nobody to help me move."
+    },
+    {
+      "id": "N5_bentley_empathy", "type": "talk", "voice": "bentley", "ref": "bentley",
+      "keyframe": "CLOSE-UP of Bentley the red-fawn Boxer puppy — head and upper chest, paws OUT of frame. Gentle, sincere and tender (the Soft-Eyes Lean), leaning in warmly with soft welling eyes and a kind, gently-open caring mouth — deep empathy. Natural dog mouth, soft pink tongue, small dog teeth — NO human teeth, NO human grin. On-model: black mask, grey chin, soulful well-proportioned eyes (NOT googly), BOTH ears soft floppy folded DOWN, red-fawn coat, small white blaze on chest, teal collar with softly glowing spiral seashell charm. Premium 3D dimensional Pixar soft-fur style, NOT painterly.",
+      "line": "[warmly] Hey. Hey — you're not too small, Pip. You're just between shells. [gently] And you don't have to find your home alone. That's the whole point of a friend."
+    },
+    {
+      "id": "N6_payoff_armor", "type": "talk", "voice": "bentley", "ref": "bentley",
+      "keyframe": "CLOSE-UP of Bentley the red-fawn Boxer puppy — head and upper chest, paws OUT of frame. Playful and fond, a warm teasing affectionate grin, one brow lifted. Natural dog mouth, soft pink tongue, small dog teeth — NO human teeth, NO human grin. On-model: black mask, grey chin, soulful well-proportioned eyes (NOT googly), BOTH ears soft floppy folded DOWN, red-fawn coat, small white blaze on chest, teal collar with glowing spiral seashell charm. Premium 3D dimensional Pixar soft-fur style, NOT painterly.",
+      "line": "[teasing] And hey — turns out I was a little bit right. [fondly] You ARE a tiny knight... in brand-new shiny armor."
+    },
+
+    {
+      "id": "a1_04_reveal", "type": "motion", "dur": "5", "ref": "pip",
+      "keyframe": "Reveal of tiny Pip the hermit crab wedged in his dull cracked brown SPIRAL shell on a drying rock just above a tide pool at dawn, looking small and worried. Canonical Pip: reddish-orange body, big soulful eyes set IN his face (NO eye-stalks, NOT googly), dull cracked brown SPIRAL shell (NOT a dome, NOT a smooth white nautilus), clean face, NO antennae, NO whiskers, natural small crab mouth (NO human teeth). Premium 3D dimensional Pixar style, NOT painterly.",
+      "motion": "Slow smooth push-in revealing Pip wedged in his cracked spiral shell; he shifts nervously, legs and eyes moving; the tide pool below ripples with reflections and gentle foam. Locked camera, no jitter, no shake."
+    },
+    {
+      "id": "a1_05_pip_meet", "type": "talk", "voice": "pip", "ref": "pip",
+      "keyframe": "Close-up of Pip the hermit crab, scared and flustered, pulling back defensively into his shell with little claws raised. Canonical Pip: reddish-orange body, big soulful eyes set IN his face (NO eye-stalks, NOT googly), dull cracked brown SPIRAL shell (NOT a dome, NOT a smooth white nautilus), clean face, NO antennae, NO whiskers, natural small crab mouth (NO human teeth, NO angry jagged mouth). On a wet rock by a tide pool at dawn. Premium 3D dimensional Pixar style, NOT painterly.",
+      "line": "[panicked] Gah! A — a GIANT! Don't squish me, don't eat me, I'm very stringy and I would NOT taste good!"
+    },
+    {
+      "id": "a2_01_pip_correct", "type": "talk", "voice": "pip", "ref": "pip",
+      "keyframe": "Close-up of Pip the hermit crab, flustered and insistent, gesturing with one little claw toward his cracked spiral shell. Canonical Pip: reddish-orange body, big soulful eyes set IN his face (NO eye-stalks, NOT googly), dull cracked brown SPIRAL shell (NOT a dome, NOT a smooth white nautilus), clean face, NO antennae, NO whiskers, natural small crab mouth (NO human teeth). On a wet rock by a tide pool at dawn. Premium 3D dimensional Pixar style, NOT painterly.",
+      "line": "[insistent] It's not me that's the trouble — it's my shell. It's cracked, and it's gotten much too small, and — and ANOTHER thing—"
+    },
+    {
+      "id": "a2_02_softbody", "type": "talk", "voice": "pip", "ref": "pip",
+      "keyframe": "Pip the hermit crab lifting up to clearly reveal his soft, pale, curled spiral hind-body (cute and vulnerable) lifted out of his dull cracked brown SPIRAL shell, explaining earnestly, on a wet rock by a tide pool at dawn. ONE single crab only, no other crab in frame. ABSOLUTELY NO speech bubble, NO text, NO dots, NO graphics, NO UI overlay anywhere in the image. Canonical Pip: reddish-orange body, big soulful eyes set IN his face (NO eye-stalks, NOT googly), dull cracked brown SPIRAL shell (NOT a dome, NOT a smooth white nautilus), clean face, NO antennae, NO whiskers, natural small crab mouth (NO human teeth). Premium 3D dimensional Pixar style, NOT painterly.",
+      "line": "[shy] See? Down here I'm all... soft. No bones, no armor of my own. Without a shell, I'm just a — a snack with feelings."
+    },
+    {
+      "id": "a3_02_pip_flip", "type": "talk", "voice": "pip", "ref": "pip",
+      "keyframe": "Close-up of Pip the hermit crab in alarm, little claws thrown up, recoiling and gesturing toward a big crashing wave of white surf behind him, sea-spray and foam flying. Canonical Pip: reddish-orange body, big soulful eyes set IN his face (NO eye-stalks, NOT googly), dull cracked brown SPIRAL shell (NOT a dome, NOT a smooth white nautilus), clean face, NO antennae, NO whiskers, natural small crab mouth (NO human teeth). Premium 3D dimensional Pixar style, NOT painterly.",
+      "line": "[full panic] NO no no — look at it! That's the OPEN surf! I can't swim — crabs like me walk, we don't swim! Those waves would smash me on the rocks and tumble me right OUT of my shell — and you said it: my shell isn't part of me! It'd float away and I'd be soft, and bare, and gone!"
+    },
+    {
+      "id": "a5_01_piphome", "type": "motion", "dur": "5", "ref": "pip",
+      "keyframe": "Pip the hermit crab snug and happy in his new, slightly bigger dull cracked brown SPIRAL shell on a rock by the glassy tide pool at dawn, content and cozy. Canonical Pip: reddish-orange body, big soulful eyes set IN his face (NO eye-stalks, NOT googly), dull cracked brown SPIRAL shell (NOT a dome, NOT a smooth white nautilus), clean face, NO antennae, NO whiskers, natural small crab mouth, soft closed happy smile, absolutely NO human teeth. Premium 3D dimensional Pixar style, NOT painterly.",
+      "motion": "Pip settles cozily into his new spiral shell, gives a happy little wiggle and a contented sigh, eyes warm; the tide pool ripples gently and reflects the dawn. Locked camera, no jitter, no shake."
+    },
+    {
+      "id": "a5_02_pipthanks", "type": "talk", "voice": "pip", "ref": "pip",
+      "keyframe": "Close-up of Pip the hermit crab, grateful and moved, a warm soft touched expression, settled in his new dull cracked brown SPIRAL shell. Canonical Pip: reddish-orange body, big soulful eyes set IN his face (NO eye-stalks, NOT googly), dull cracked brown SPIRAL shell (NOT a dome, NOT a smooth white nautilus), clean face, NO antennae, NO whiskers, natural small crab mouth (NO human teeth). On a wet rock by a tide pool at warm dawn. Premium 3D dimensional Pixar style, NOT painterly.",
+      "line": "[moved] It fits. It actually... fits. Thank you, Bentley. You were the first one who really listened. [warmly] And ANOTHER thing — you can come back any time. I mean it."
+    }
+  ]
+}

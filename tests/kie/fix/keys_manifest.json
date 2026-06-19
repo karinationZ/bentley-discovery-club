@@ -1,0 +1,21 @@
+{
+ "BR3_explore": {
+  "local": "tests/kie/fix/BR3_explore_key.png",
+  "cat_url": "https://files.catbox.moe/eg0ogy.png",
+  "key_credits": 4.0
+ },
+ "a3_02a_wave": {
+  "local": "tests/kie/fix/a3_02a_wave_key.png",
+  "cat_url": "https://files.catbox.moe/j2oo3z.png",
+  "key_credits": 4.0
+ },
+ "a3_02b_pipcu": {
+  "local": "tests/kie/fix/a3_02b_pipcu_key.png",
+  "cat_url": "https://files.catbox.moe/ffjc41.png",
+  "key_credits": 4.0
+ },
+ "octopus": {
+  "local": "tests/kie/fix/octopus_key.png",
+  "cat_url": "https://files.catbox.moe/gaycsm.png"
+ }
+}

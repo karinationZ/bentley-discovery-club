@@ -1,0 +1,194 @@
+[
+ {
+  "id": "I1_establish",
+  "start": 0.0,
+  "dur": 6.05,
+  "kind": "motion"
+ },
+ {
+  "id": "I2_hero",
+  "start": 6.05,
+  "dur": 5.042,
+  "kind": "motion"
+ },
+ {
+  "id": "BR3_explore",
+  "start": 11.092,
+  "dur": 5.042,
+  "kind": "motion"
+ },
+ {
+  "id": "I3_listen",
+  "start": 16.133,
+  "dur": 5.042,
+  "kind": "motion"
+ },
+ {
+  "id": "a1_02_hear",
+  "start": 21.175,
+  "dur": 4.0,
+  "kind": "talk"
+ },
+ {
+  "id": "a1_04_reveal",
+  "start": 25.175,
+  "dur": 10.042,
+  "kind": "motion"
+ },
+ {
+  "id": "a1_05_pip_meet",
+  "start": 35.217,
+  "dur": 6.9,
+  "kind": "talk"
+ },
+ {
+  "id": "a1_06_twoshot",
+  "start": 42.117,
+  "dur": 5.94,
+  "kind": "talk"
+ },
+ {
+  "id": "N1_guess",
+  "start": 48.057,
+  "dur": 7.2,
+  "kind": "talk"
+ },
+ {
+  "id": "a2_01_correct",
+  "start": 55.257,
+  "dur": 10.13,
+  "kind": "talk"
+ },
+ {
+  "id": "a2_02_softbody",
+  "start": 65.387,
+  "dur": 11.47,
+  "kind": "talk"
+ },
+ {
+  "id": "a3_01_fix",
+  "start": 76.857,
+  "dur": 2.93,
+  "kind": "talk"
+ },
+ {
+  "id": "a3_02a_wave",
+  "start": 79.787,
+  "dur": 10.042,
+  "kind": "motion"
+ },
+ {
+  "id": "a3_02b_pipcu",
+  "start": 89.828,
+  "dur": 15.4,
+  "kind": "talk"
+ },
+ {
+  "id": "a3_03_recoil",
+  "start": 105.228,
+  "dur": 5.042,
+  "kind": "motion"
+ },
+ {
+  "id": "N3_bridge",
+  "start": 110.27,
+  "dur": 5.042,
+  "kind": "motion"
+ },
+ {
+  "id": "a3_04_stunned",
+  "start": 115.312,
+  "dur": 8.53,
+  "kind": "talk"
+ },
+ {
+  "id": "N4_lonely",
+  "start": 123.842,
+  "dur": 13.6,
+  "kind": "talk"
+ },
+ {
+  "id": "N5_empathy",
+  "start": 137.442,
+  "dur": 10.36,
+  "kind": "talk"
+ },
+ {
+  "id": "a4_01_crowd",
+  "start": 147.802,
+  "dur": 5.042,
+  "kind": "motion"
+ },
+ {
+  "id": "BR2_lineshuffle",
+  "start": 152.843,
+  "dur": 10.042,
+  "kind": "motion"
+ },
+ {
+  "id": "a4_02_lineup",
+  "start": 162.885,
+  "dur": 5.042,
+  "kind": "motion"
+ },
+ {
+  "id": "a4_03_cascade",
+  "start": 167.927,
+  "dur": 5.042,
+  "kind": "motion"
+ },
+ {
+  "id": "BR1_crableave",
+  "start": 172.968,
+  "dur": 10.042,
+  "kind": "motion"
+ },
+ {
+  "id": "a4_04_whoaa",
+  "start": 183.01,
+  "dur": 5.7,
+  "kind": "talk"
+ },
+ {
+  "id": "a5_01_piphome",
+  "start": 188.71,
+  "dur": 5.042,
+  "kind": "motion"
+ },
+ {
+  "id": "a5_02_pipthanks",
+  "start": 193.752,
+  "dur": 14.13,
+  "kind": "talk"
+ },
+ {
+  "id": "a5_03_disco",
+  "start": 207.882,
+  "dur": 2.4,
+  "kind": "talk"
+ },
+ {
+  "id": "N6_armor",
+  "start": 210.282,
+  "dur": 9.86,
+  "kind": "talk"
+ },
+ {
+  "id": "a5_04_tag",
+  "start": 220.142,
+  "dur": 9.6,
+  "kind": "talk"
+ },
+ {
+  "id": "a6_01_octopus",
+  "start": 229.742,
+  "dur": 10.042,
+  "kind": "motion"
+ },
+ {
+  "id": "END_card",
+  "start": 239.783,
+  "dur": 14.8,
+  "kind": "motion"
+ }
+]

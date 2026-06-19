@@ -1,0 +1,2 @@
+file '/home/user/src/youtube/assets/pilot_shots/hybrid_ep1/shorts/clips/01_character_seg0.mp4'
+file '/home/user/src/youtube/assets/pilot_shots/hybrid_ep1/shorts/clips/01_character_seg1.mp4'

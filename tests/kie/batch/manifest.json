@@ -1,0 +1,17 @@
+{
+ "a1_02_react": {
+  "local": "tests/kie/batch/a1_02_react_key.png",
+  "cat_url": "https://files.catbox.moe/9gzz09.png",
+  "key_credits": 4.0
+ },
+ "a5_04_tag": {
+  "local": "tests/kie/batch/a5_04_tag_key.png",
+  "cat_url": "https://files.catbox.moe/1uw757.png",
+  "key_credits": 4.0
+ },
+ "N1_guess": {
+  "local": "tests/kie/batch/N1_guess_key.png",
+  "cat_url": "https://files.catbox.moe/0bzpod.png",
+  "key_credits": 4.0
+ }
+}

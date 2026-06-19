@@ -1,0 +1,27 @@
+{
+  "_comment": "READY-TO-FIRE re-render batch — run the instant fal is funded. KEYFRAMES_ONLY=1 first to QA, then render. Tight warm CUs per the Animation Pro + Character Design specs.",
+  "work": "assets/pilot_shots/hybrid_ep1/v2",
+  "shots": [
+    {
+      "id": "N6_payoff_armor", "type": "talk", "voice": "bentley", "ref": "bentley",
+      "keyframe": "TIGHT character CLOSE-UP of Bentley the red-fawn Boxer puppy — head and upper chest fill the frame (head ~60% of frame height, white chest blaze just visible at the bottom), shot like an 85mm portrait with shallow depth of field; the tide-pool beach behind her is soft creamy warm-golden bokeh, gently blurred — NOT foggy, NOT hazy, NOT washed out. Near eye-level, a touch low looking slightly up at her, subtle three-quarter head turn toward camera, soulful dark-brown eyes looking warmly INTO the camera, optional tiny affectionate head-tilt. EXPRESSION: warm, fond, gently amused — a SOFT closed or barely-open friendly dog mouth, lips relaxed (NOT pulled back at the corners), at most a tiny sliver of soft pink tongue and small natural LOWER teeth — absolutely NO upper-teeth row, NO lifted upper lip, NO stretched-corner human grin, NO wide gape. Soft kind eyes with a gentle catchlight and a faint warm brow-lift. On-model: black mask, grey chin, small white chest blaze ONLY, solid red-fawn legs and paws (NO white socks), BOTH ears soft floppy folded DOWN, short docked stubby tail, soulful well-proportioned eyes (NOT googly), teal collar with glowing spiral seashell charm. LIGHTING: warm golden-dawn key raking across her face from camera-left ~30 degrees above eye-line, clean warm highlight on mask/brow/cheek with soft open fill (no muddy black shadows), soft golden rim along the head/ears — Bentley and the bokeh background lit on the SAME warm golden curve. Rich, saturated, VIBRANT red-fawn fur, colorful and alive, high-contrast, NOT washed out. Premium dimensional Pixar/Bluey cartoon, NOT photoreal, NOT flat. Sharp focus on her face.",
+      "line": "[warm, fond] And hey — turns out I was a little bit right. You ARE a tiny knight... in brand-new shiny armor."
+    },
+    {
+      "id": "a1_02_react", "type": "talk", "voice": "bentley", "ref": "bentley",
+      "keyframe": "TIGHT CLOSE-UP of Bentley the red-fawn Boxer puppy — head and upper chest fill the frame, shallow depth of field, soft warm bokeh tide-pool behind. She has just heard a faraway cry: SURPRISE turning to bright CURIOSITY and excitement — eyes WIDE and sparkling, ears perking softly (still folded down), head lifting toward the sound, a little gasp. Natural dog mouth slightly parted, soft pink tongue, small dog teeth — NO human teeth, NO grin. On-model: black mask, grey chin, white chest blaze only, BOTH ears soft floppy folded DOWN, soulful well-proportioned bright eyes (NOT googly), teal collar with glowing spiral shell charm. Warm golden-dawn light on her face, rich saturated red-fawn fur, vibrant and colorful, NOT washed out. Premium dimensional Pixar/Bluey cartoon. The look of a puppy who just discovered an adventure.",
+      "line": "[curious, wide-eyed surprise] A voice? Somebody needs... help?"
+    },
+    {
+      "id": "a5_04_tag", "type": "talk", "voice": "bentley", "ref": "bentley",
+      "keyframe": "TIGHT warm CLOSE-UP of Bentley the red-fawn Boxer puppy — head and upper chest, shallow depth of field, soft golden bokeh behind. Her signature playful, charming moment: a cute gentle HEAD-TILT, soulful eyes looking warmly and directly INTO the camera, a soft friendly closed-or-barely-open mouth with a hint of pink tongue (NO human teeth, NO grin), a kind warm brow — adorable, curious, full of personality. On-model: black mask, grey chin, white chest blaze only, solid red-fawn paws (NO white socks), BOTH ears soft floppy folded DOWN, short docked tail, teal collar with glowing spiral seashell charm. Warm golden key light, rich saturated colorful red-fawn fur, vibrant and alive, high-contrast, NOT washed out, NOT foggy. Premium dimensional Pixar/Bluey cartoon. This is the shot that makes the audience fall in love with Bentley.",
+      "line": "[playful, gentle, with pauses] Stop... Look... Listen... [warmly] and you'll find the wonder, everywhere."
+    },
+    {
+      "id": "a3_02_pip_flip", "type": "talk", "voice": "pip", "ref": "pip",
+      "keyframe": "Close-up of Pip the hermit crab, alarmed and worried-but-soft, little claws raised, recoiling from a big LIVE crashing wave of white surf right behind him, sea-spray and foam flying through the air. Canonical Pip: reddish-orange body, big soulful eyes set IN his face (NO eye-stalks), dull cracked brown SPIRAL shell, clean face, NO antennae, natural small crab mouth (NO human teeth). Rich vibrant warm dawn light, colorful, NOT washed out. Premium 3D Pixar style.",
+      "motion": "The big ocean wave CRASHES and CHURNS dramatically behind Pip — the water is alive and constantly moving, white foam surging and falling, spray flying, the wave never frozen; Pip flinches and gestures in alarm. Strong continuous water motion throughout. Smooth locked camera, no jitter.",
+      "line": "[full panic] NO no no — look at it! That's the OPEN surf! I can't swim — crabs like me walk, we don't swim! Those waves would smash me on the rocks and tumble me right OUT of my shell — and you said it: my shell isn't part of me! It'd float away and I'd be soft, and bare, and gone!"
+    }
+  ]
+}

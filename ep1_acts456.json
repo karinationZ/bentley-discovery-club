@@ -1,0 +1,73 @@
+{
+  "work": "assets/pilot_shots/hybrid_ep1/acts456",
+  "shots": [
+    {
+      "id": "a4_01_crowd",
+      "type": "motion",
+      "dur": "5",
+      "keyframe": "A wide view of a Crystal Cove tide pool at golden dawn where many small hermit crabs (reddish-orange bodies, dull brown spiral shells, big expressive eyes, clean faces) emerge from all across the wet black rocks. Living rippling water and foam, populated with sea stars and anemones. Premium 3D dimensional Pixar soft-fur style, NOT painterly, NOT flat.",
+      "motion": "The little hermit crabs scuttle out from all across the tide-pool rocks; the water ripples and foam shifts; gentle slow push-in. Locked stable camera, no jitter, no shake."
+    },
+    {
+      "id": "a4_02_lineup",
+      "type": "motion",
+      "dur": "5",
+      "keyframe": "Several hermit crabs (reddish-orange bodies, dull brown spiral shells, big eyes) lined up in a neat row from biggest to smallest along a wet tide-pool rock at golden dawn, living water behind. Premium 3D dimensional Pixar soft-fur style, NOT painterly, NOT flat.",
+      "motion": "The hermit crabs shuffle into a tidy line from biggest to smallest, shells gleaming; living rippling water behind; slow push-in. Locked stable camera, no jitter, no shake."
+    },
+    {
+      "id": "a4_03_cascade",
+      "type": "motion",
+      "dur": "5",
+      "keyframe": "A brand-new bigger empty spiral seashell on a wet tide-pool rock with a line of hermit crabs (reddish-orange, brown shells, big eyes) beside it ready to trade up, golden dawn. Premium 3D dimensional Pixar soft-fur style, NOT painterly.",
+      "motion": "The biggest crab climbs into the new shell, then each crab moves up into the next vacated shell one after another in a satisfying chain, click by click; living water. Locked stable camera, no jitter, no shake."
+    },
+    {
+      "id": "a4_04_whoaa",
+      "type": "talk",
+      "voice": "bentley",
+      "ref": "bentley",
+      "keyframe": "CLOSE-UP of Bentley the red-fawn Boxer puppy \u2014 her head and upper chest fill the frame, paws and legs completely OUT of frame. Her face lit with HUGE sparkling wonder, jaw dropped in delight. On-model: black mask, grey chin, soulful well-proportioned eyes (NOT googly), BOTH ears soft floppy folded DOWN (never up/pricked), red-fawn coat, small white blaze on the chest, teal collar with a glowing spiral seashell charm. Premium 3D dimensional Pixar soft-fur style, NOT painterly, NOT flat. Tide-pool rocks softly blurred behind.",
+      "line": "[excited] Whoa! Did you just SEE that?! [happy] The whole pool helped!"
+    },
+    {
+      "id": "a5_01_piphome",
+      "type": "motion",
+      "dur": "5",
+      "ref": "pip",
+      "keyframe": "Pip the small hermit crab (reddish-orange body, big expressive eyes, clean face, no whiskers) now snug in a perfect clean new spiral shell, sitting safely beside a calm cool tide pool at golden dawn, content and happy. Premium 3D dimensional Pixar soft-fur style, NOT painterly.",
+      "motion": "A gentle wave laps in and Pip settles cozily into his new shell by the cool pool; living rippling water; warm and safe. Locked stable camera, no jitter, no shake."
+    },
+    {
+      "id": "a5_02_pipthanks",
+      "type": "talk",
+      "voice": "pip",
+      "ref": "pip",
+      "audio_file": "assets/pilot_shots/hybrid_ep1/audio/new/P_thanks.wav",
+      "keyframe": "Pip the small hermit crab (reddish-orange body, dull cracked brown spiral shell, big expressive grateful eyes, clean face, no whiskers, no long antennae) looking up warmly and gratefully, in his clean new spiral shell beside the tide pool, golden dawn. Premium 3D dimensional Pixar soft-fur style, NOT painterly."
+    },
+    {
+      "id": "a5_03_disco",
+      "type": "talk",
+      "voice": "bentley",
+      "ref": "bentley",
+      "keyframe": "MEDIUM CLOSE-UP of Bentley the red-fawn Boxer puppy \u2014 head and upper chest only, paws and legs completely OUT of frame. Leaning in gently with soft warm caring eyes and a kind little smile. On-model: black mask, grey chin, soulful well-proportioned eyes (NOT googly), BOTH ears soft floppy folded DOWN (never up/pricked), red-fawn coat, small white blaze on the chest, teal collar with a glowing spiral seashell charm. Premium 3D dimensional Pixar soft-fur style, NOT painterly, NOT flat. Tide-pool rocks softly blurred behind.",
+      "line": "[warmly] That's what the Discovery Club is for."
+    },
+    {
+      "id": "a5_04_tag",
+      "type": "talk",
+      "voice": "bentley",
+      "ref": "bentley",
+      "keyframe": "CLOSE-UP of Bentley the red-fawn Boxer puppy facing the camera \u2014 head and collar fill the frame, paws and legs completely OUT of frame. Warm, bright, happy expression. On-model: black mask, grey chin, soulful well-proportioned eyes (NOT googly), BOTH ears soft floppy folded DOWN (never up/pricked), red-fawn coat, small white blaze on the chest, teal collar with a glowing spiral seashell charm. Premium 3D dimensional Pixar soft-fur style, NOT painterly, NOT flat. Tide-pool rocks softly blurred behind.",
+      "line": "[warmly] Stop. Look. Listen... [excited] and you'll find the wonder, everywhere. Let's go find the WONDER!"
+    },
+    {
+      "id": "a6_01_octopus",
+      "type": "motion",
+      "dur": "5",
+      "keyframe": "A mysterious purple octopus tentacle rising slowly from the dark water just past the tide-pool rocks at dawn, curling, a little ominous but kid-friendly and intriguing. Premium 3D dimensional Pixar style, NOT painterly, NOT flat.",
+      "motion": "A single purple octopus tentacle rises and curls slowly out of the water past the rocks, then slips back under the surface; living water ripples; mysterious and suspenseful. Locked stable camera, no jitter, no shake."
+    }
+  ]
+}

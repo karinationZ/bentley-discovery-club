@@ -1,0 +1,6 @@
+file '/home/user/src/youtube/assets/pilot_shots/hybrid_ep1/shorts/exports/Short_1_Meet_Bentley.mp4'
+file '/home/user/src/youtube/assets/pilot_shots/hybrid_ep1/shorts/exports/Short_2_Whats_In_The_Shell.mp4'
+file '/home/user/src/youtube/assets/pilot_shots/hybrid_ep1/shorts/exports/Short_3_Hermit_Crab_Chain.mp4'
+file '/home/user/src/youtube/assets/pilot_shots/hybrid_ep1/shorts/exports/Short_4_A_Talking_Rock.mp4'
+file '/home/user/src/youtube/assets/pilot_shots/hybrid_ep1/shorts/exports/Short_5_Home_Alone.mp4'
+file '/home/user/src/youtube/assets/pilot_shots/hybrid_ep1/shorts/exports/Short_6_New_Friend.mp4'

@@ -1,0 +1,26 @@
+{
+ "a1_02_react": {
+  "sid": "a1_02_react",
+  "credits": 40.0,
+  "secs": 144,
+  "vo_dur": 3.92,
+  "raw": "tests/kie/batch/a1_02_react_talk.mp4",
+  "graded": "tests/kie/batch/a1_02_react_talk_graded.mp4"
+ },
+ "N1_guess": {
+  "sid": "N1_guess",
+  "credits": 40.0,
+  "secs": 185,
+  "vo_dur": 7.2,
+  "raw": "tests/kie/batch/N1_guess_talk.mp4",
+  "graded": "tests/kie/batch/N1_guess_talk_graded.mp4"
+ },
+ "a5_04_tag": {
+  "sid": "a5_04_tag",
+  "credits": 40.0,
+  "secs": 200,
+  "vo_dur": 9.6,
+  "raw": "tests/kie/batch/a5_04_tag_talk.mp4",
+  "graded": "tests/kie/batch/a5_04_tag_talk_graded.mp4"
+ }
+}

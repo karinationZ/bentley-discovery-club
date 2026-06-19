@@ -1,0 +1,65 @@
+{
+  "work": "assets/pilot_shots/hybrid_ep1/acts123",
+  "shots": [
+    {
+      "id": "a1_01_shell", "type": "motion", "dur": "5",
+      "keyframe": "A softly glowing spiral seashell half-buried in wet black volcanic rock at the tide line at dawn, shallow seawater and white foam washing around it, drifting mist, golden-pink light. Premium 3D dimensional Pixar soft-fur style, NOT painterly, NOT flat.",
+      "motion": "Gentle waves and white foam wash in and recede around the glowing shell, mist drifts across frame, water ripples and reflects the dawn light. Slow smooth push-in. Locked stable camera, no jitter, no shake."
+    },
+    {
+      "id": "a1_02_bentley_hear", "type": "talk", "voice": "bentley", "ref": "bentley",
+      "keyframe": "CLOSE-UP of Bentley the red-fawn Boxer puppy — head and upper chest fill the frame, paws and legs OUT of frame. Alert and eagerly curious, head turned toward a sound, bright intelligent eyes wide, eager to investigate. Natural dog mouth with soft pink tongue and small dog teeth — NO human teeth, NO human grin. On-model: black mask, grey chin, soulful well-proportioned eyes (NOT googly), BOTH ears soft floppy folded DOWN, red-fawn coat, small white blaze on chest, teal collar with glowing spiral seashell charm. Premium 3D dimensional Pixar soft-fur style, NOT painterly.",
+      "line": "[curious] A voice? Somebody needs help — come on!"
+    },
+    {
+      "id": "a1_03_tracking", "type": "motion", "dur": "5", "ref": "bentley",
+      "keyframe": "Bentley the red-fawn Boxer puppy tracking a sound, nose lowered, padding forward across wet tide-pool rocks, BOTH ears soft floppy folded DOWN, alert and curious; tide pools reflecting the dawn sky, foam. Solid red-fawn paws (NO white socks), short docked tail, black mask, teal collar with glowing spiral seashell charm. Premium 3D dimensional Pixar soft-fur style, NOT painterly.",
+      "motion": "Bentley pads forward across the wet rocks, nose down, ears swivelling, tracking; the tide-pool water ripples and reflects the dawn, foam shifts. Smooth tracking camera, locked and stable, no jitter, no shake."
+    },
+    {
+      "id": "a1_04_reveal", "type": "motion", "dur": "5", "ref": "pip",
+      "keyframe": "Reveal of tiny Pip the hermit crab wedged in his dull cracked brown spiral shell on a drying rock just above a tide pool at dawn, looking small and worried. Reddish-orange body, big expressive eyes, clean face, no whiskers. Premium 3D dimensional Pixar soft-fur style, NOT painterly.",
+      "motion": "Slow smooth push-in revealing Pip wedged in his cracked shell; he shifts nervously, legs and eye-stalks moving; the tide pool below ripples with reflections and gentle foam. Locked camera, no jitter, no shake."
+    },
+    {
+      "id": "a1_05_pip_meet", "type": "talk", "voice": "pip", "ref": "pip",
+      "audio_file": "assets/pilot_shots/opening_movement/audio/P_meet.wav",
+      "keyframe": "Close-up of Pip the small hermit crab, scared and flustered, eye-stalks up, little claws raised defensively, in his dull cracked brown spiral shell on a wet rock by a tide pool. Reddish-orange body, big eyes, clean face, no whiskers, no long antennae. Premium 3D dimensional Pixar soft-fur style, NOT painterly."
+    },
+    {
+      "id": "a1_06_twoshot", "type": "talk", "voice": "bentley", "ref": "bentley",
+      "keyframe": "MEDIUM CLOSE-UP of Bentley the red-fawn Boxer puppy — head and upper chest, paws and legs OUT of frame. Friendly and confident, leaning in with a kind eager expression. Natural dog mouth with soft pink tongue and small dog teeth — NO human teeth, NO human grin. On-model: black mask, grey chin, soulful well-proportioned eyes (NOT googly), BOTH ears soft floppy folded DOWN, red-fawn coat, small white blaze on chest, teal collar with glowing spiral seashell charm. Premium 3D dimensional Pixar soft-fur style, NOT painterly.",
+      "line": "[excited] Stop, look, listen — yep! You're a little lost sea creature, stuck on land!"
+    },
+    {
+      "id": "a2_01_pip_correct", "type": "talk", "voice": "pip", "ref": "pip",
+      "audio_file": "assets/pilot_shots/opening_movement/audio/P_correct.wav",
+      "keyframe": "Close-up of Pip the small hermit crab, flustered and insistent, gesturing with one little claw toward his dull cracked brown spiral shell, eye-stalks up. Reddish-orange body, big eyes, clean face, no whiskers, no long antennae. Premium 3D dimensional Pixar soft-fur style, NOT painterly."
+    },
+    {
+      "id": "a2_02_softbody", "type": "talk", "voice": "pip", "ref": "pip",
+      "audio_file": "assets/pilot_shots/opening_movement/audio/P_fact.wav",
+      "keyframe": "Pip the small hermit crab lifting up just enough to reveal his soft, pale, curled hind-body (cute and vulnerable) emerging from his dull cracked brown spiral shell, explaining earnestly, on a wet rock by a tide pool at dawn. Reddish-orange body, big eyes, clean face, no whiskers. Premium 3D dimensional Pixar soft-fur style, NOT painterly."
+    },
+    {
+      "id": "a3_01_bentley_fix", "type": "talk", "voice": "bentley", "ref": "bentley",
+      "keyframe": "CLOSE-UP of Bentley the red-fawn Boxer puppy — head and upper chest, paws and legs OUT of frame. Cheerful and trying to help, a bright helpful expression. Natural dog mouth with soft pink tongue and small dog teeth — NO human teeth, NO human grin. On-model: black mask, grey chin, soulful well-proportioned eyes (NOT googly), BOTH ears soft floppy folded DOWN, red-fawn coat, small white blaze on chest, teal collar with glowing spiral seashell charm. Premium 3D dimensional Pixar soft-fur style, NOT painterly.",
+      "line": "[cheerful] Don't worry — I'll pop you back in the water!"
+    },
+    {
+      "id": "a3_02_pip_flip", "type": "talk", "voice": "pip", "ref": "pip",
+      "audio_file": "assets/pilot_shots/opening_movement/audio/P_flip.wav",
+      "keyframe": "Close-up of Pip the small hermit crab in terror, little claws thrown up, eye-stalks wide, recoiling from a big crashing wave of white surf right behind him, sea-spray and foam flying. Reddish-orange body, big eyes, clean face, no whiskers. Premium 3D dimensional Pixar soft-fur style, NOT painterly."
+    },
+    {
+      "id": "a3_03_recoil", "type": "motion", "dur": "5", "ref": "bentley",
+      "keyframe": "Bentley the red-fawn Boxer puppy startled, leaning back and away from a sudden crash of white surf and flying sea-spray, BOTH ears soft floppy folded DOWN, alarmed but kind and protective; crashing living water at the rock's edge, bright dawn. Solid red-fawn paws (NO white socks), short docked tail, black mask, teal collar with glowing spiral seashell charm. Premium 3D dimensional Pixar soft-fur style, NOT painterly.",
+      "motion": "Bentley leaps and recoils backward away from a big crash of white surf and flying sea-spray, ears back, startled and protective; the wave crashes and foams dramatically, living moving water everywhere. Smooth camera following her recoil, locked, no jitter, no shake."
+    },
+    {
+      "id": "a3_04_bentley_stunned", "type": "talk", "voice": "bentley", "ref": "bentley",
+      "keyframe": "CLOSE-UP of Bentley the red-fawn Boxer puppy — head and upper chest, paws and legs OUT of frame. Stunned and thoughtful, eyes wide with dawning realization, a soft surprised expression. Natural dog mouth with soft pink tongue and small dog teeth — NO human teeth, NO human grin. On-model: black mask, grey chin, soulful well-proportioned eyes (NOT googly), BOTH ears soft floppy folded DOWN, red-fawn coat, small white blaze on chest, teal collar with glowing spiral seashell charm. Premium 3D dimensional Pixar soft-fur style, NOT painterly.",
+      "line": "[surprised] Wait... you live by the water, but the waves could sweep you away? And your shell isn't even part of you?"
+    }
+  ]
+}

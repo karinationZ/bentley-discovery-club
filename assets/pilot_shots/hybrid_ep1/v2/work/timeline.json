@@ -1,0 +1,164 @@
+[
+ {
+  "id": "a1_01_shell",
+  "type": "motion",
+  "start": 0.0,
+  "dur": 5.0
+ },
+ {
+  "id": "a1_02_bentley_hear",
+  "type": "talk",
+  "start": 5.0,
+  "dur": 3.733
+ },
+ {
+  "id": "a1_03_tracking",
+  "type": "motion",
+  "start": 8.733,
+  "dur": 3.2
+ },
+ {
+  "id": "a1_04_reveal",
+  "type": "motion",
+  "start": 11.933,
+  "dur": 5.042
+ },
+ {
+  "id": "a1_05_pip_meet",
+  "type": "talk",
+  "start": 16.975,
+  "dur": 7.052
+ },
+ {
+  "id": "a1_06_twoshot",
+  "type": "talk",
+  "start": 24.027,
+  "dur": 6.1
+ },
+ {
+  "id": "N1_bentley_guess",
+  "type": "talk",
+  "start": 30.127,
+  "dur": 8.0
+ },
+ {
+  "id": "a2_01_pip_correct",
+  "type": "talk",
+  "start": 38.127,
+  "dur": 10.088
+ },
+ {
+  "id": "a2_02_softbody",
+  "type": "talk",
+  "start": 48.215,
+  "dur": 11.615
+ },
+ {
+  "id": "N2_shell_science",
+  "type": "motion",
+  "start": 59.829,
+  "dur": 5.042
+ },
+ {
+  "id": "a3_01_bentley_fix",
+  "type": "talk",
+  "start": 64.871,
+  "dur": 2.933
+ },
+ {
+  "id": "a3_02_pip_flip",
+  "type": "talk",
+  "start": 67.804,
+  "dur": 21.683
+ },
+ {
+  "id": "a3_03_recoil",
+  "type": "motion",
+  "start": 89.488,
+  "dur": 5.042
+ },
+ {
+  "id": "N3_bridge_safe",
+  "type": "motion",
+  "start": 94.529,
+  "dur": 5.042
+ },
+ {
+  "id": "a3_04_bentley_stunned",
+  "type": "talk",
+  "start": 99.571,
+  "dur": 8.5
+ },
+ {
+  "id": "N4_pip_lonely",
+  "type": "talk",
+  "start": 108.071,
+  "dur": 13.333
+ },
+ {
+  "id": "N5_bentley_empathy",
+  "type": "talk",
+  "start": 121.404,
+  "dur": 10.5
+ },
+ {
+  "id": "a4_01_crowd",
+  "type": "motion",
+  "start": 131.904,
+  "dur": 5.042
+ },
+ {
+  "id": "a4_02_lineup",
+  "type": "motion",
+  "start": 136.946,
+  "dur": 5.042
+ },
+ {
+  "id": "a4_03_cascade",
+  "type": "motion",
+  "start": 141.987,
+  "dur": 5.042
+ },
+ {
+  "id": "a4_04_whoaa",
+  "type": "talk",
+  "start": 147.029,
+  "dur": 5.7
+ },
+ {
+  "id": "a5_01_piphome",
+  "type": "motion",
+  "start": 152.729,
+  "dur": 5.042
+ },
+ {
+  "id": "a5_02_pipthanks",
+  "type": "talk",
+  "start": 157.771,
+  "dur": 14.087
+ },
+ {
+  "id": "a5_03_disco",
+  "type": "talk",
+  "start": 171.857,
+  "dur": 2.4
+ },
+ {
+  "id": "N6_payoff_armor",
+  "type": "talk",
+  "start": 174.257,
+  "dur": 10.5
+ },
+ {
+  "id": "a5_04_tag",
+  "type": "talk",
+  "start": 184.757,
+  "dur": 8.0
+ },
+ {
+  "id": "a6_01_octopus",
+  "type": "motion",
+  "start": 192.757,
+  "dur": 5.042
+ }
+]

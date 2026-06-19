@@ -1,0 +1,15 @@
+{
+  "work": "assets/pilot_shots/hybrid_ep1/v2",
+  "shots": [
+    {
+      "id": "a1_04_reveal", "type": "motion", "dur": "10", "ref": "pip",
+      "keyframe": "Reveal of tiny Pip the hermit crab wedged in his dull cracked brown SPIRAL shell on a drying rock just above a tide pool at dawn, looking small and worried. Canonical Pip: reddish-orange body, big soulful eyes set IN his face (NO eye-stalks), dull cracked brown SPIRAL shell, clean face, NO antennae, NO whiskers. Premium 3D dimensional Pixar style, NOT painterly.",
+      "motion": "Slow smooth push-in revealing Pip wedged in his cracked spiral shell; he shifts nervously, legs and eyes moving, peeks out and looks around worried; the tide pool below ripples with reflections and gentle foam, mist drifts. Locked stable camera, no jitter, no shake."
+    },
+    {
+      "id": "N2_shell_science", "type": "motion", "dur": "10",
+      "keyframe": "A clear simple illustrative insert on wet black tide-pool rock at dawn: on the LEFT a small empty dull cracked brown SPIRAL seashell, and on the RIGHT a noticeably LARGER empty dull brown SPIRAL seashell, with a soft glowing thread of warm light gently linking the small shell to the big shell; shallow seawater and a little white foam around them. Clean, uncluttered, gentle and educational, shallow depth of field. Premium 3D dimensional Pixar style, soft warm dawn light, NOT painterly, NOT flat.",
+      "motion": "Slow gentle push-in from the small shell along the glowing thread to the bigger shell; the warm glow softly pulses twice; one gentle water lap washes through; thin mist drifts across frame. Locked stable camera, no jitter, no shake."
+    }
+  ]
+}

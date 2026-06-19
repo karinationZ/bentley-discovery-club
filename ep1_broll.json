@@ -1,0 +1,20 @@
+{
+  "work": "assets/pilot_shots/hybrid_ep1/v2",
+  "shots": [
+    {
+      "id": "BR1_crableave", "type": "motion", "dur": "10",
+      "keyframe": "Close-up of a small reddish-orange hermit crab climbing out of its old, too-small dull cracked brown SPIRAL shell and stepping across to a bigger empty dull brown SPIRAL shell, on wet black volcanic tide-pool rock at golden dawn — the vacancy chain in action. The crab has big soulful eyes set in its face (NO eye-stalks), clean face, NO antennae, NO whiskers. The shells are SMOOTH and hard, dull cracked brown spirals — absolutely NO fur, NO hair, NO fuzz on any shell. Shallow seawater, white foam and drifting mist around. Premium 3D dimensional Pixar style, warm dawn light, NOT painterly.",
+      "motion": "The little hermit crab scuttles out of its small shell and climbs into the bigger empty spiral shell, settling in; the tide pool ripples and reflects the dawn, foam shifts. Smooth locked camera, gentle push-in, no jitter, no shake."
+    },
+    {
+      "id": "BR2_lineshuffle", "type": "motion", "dur": "10",
+      "keyframe": "Wide shot of a whole line of hermit crabs of decreasing size on the wet tide-pool rocks at golden dawn, each one shuffling up into the next-larger empty spiral shell — the vacancy chain, like a row of dominoes of shells. Reddish-orange crabs with big soulful eyes set in their faces (NO eye-stalks, NO antennae). All shells are SMOOTH hard dull cracked brown SPIRALS — absolutely NO fur, NO hair, NO fuzz. Living water, white foam, drifting mist, warm dawn light. Premium 3D dimensional Pixar style, NOT painterly.",
+      "motion": "The line of hermit crabs each shuffle up one size into the next bigger shell, a satisfying cascade down the line; tide-pool water ripples and reflects the dawn, foam shifts. Smooth slow lateral camera move down the line, locked, no jitter, no shake."
+    },
+    {
+      "id": "BR3_bentexplore", "type": "motion", "dur": "10", "ref": "bentley",
+      "keyframe": "Bentley the red-fawn Boxer puppy happily exploring and sniffing along the wet tide-pool rocks at golden dawn, nose down to the ground, ears flopping, curious and joyful. SHORT docked stubby tail (NEVER long/curled), BOTH ears soft floppy folded DOWN, solid red-fawn paws (NO white socks), black mask, grey chin, small white chest blaze, teal collar with glowing spiral seashell charm. Living tide-pool water, drifting dawn mist, warm sky. Premium 3D dimensional Pixar soft-fur style, NOT painterly.",
+      "motion": "Bentley pads happily along the wet rocks, nose down sniffing, ears flopping, short stub-tail wagging, pausing to investigate a little tide pool; the water ripples and reflects the dawn, mist drifts. Smooth tracking camera, locked, no jitter, no shake."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+ "BR3_explore": {
+  "sid": "BR3_explore",
+  "credits": 55.0,
+  "secs": 67,
+  "raw": "tests/kie/fix/BR3_explore_clip.mp4",
+  "dur": 5.04
+ },
+ "a3_02a_wave": {
+  "sid": "a3_02a_wave",
+  "credits": 110.0,
+  "secs": 97,
+  "raw": "tests/kie/fix/a3_02a_wave_clip.mp4",
+  "dur": 10.04
+ },
+ "a3_02b_pipcu": {
+  "sid": "a3_02b_pipcu",
+  "credits": 40.0,
+  "secs": 297,
+  "raw": "tests/kie/fix/a3_02b_pipcu_clip.mp4",
+  "dur": 17.33
+ }
+}
