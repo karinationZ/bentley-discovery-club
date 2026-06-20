@@ -22,6 +22,9 @@
 2. **#1 Character and #2 Mystery opened on the identical Bentley shot** → moved Character to open on the fond "tiny knight" CU; Mystery keeps the wonder CU. Now visually distinct. ✅
 3. **#4 Comedy and #5 Emotional opened on slow wides** (violates "first frame = face") → Comedy now opens on Bentley's excited guessing face; Emotional punches into Pip's worried face. ✅
 4. **Science caption accuracy** → verified by the Nature-Science editor: the vacancy chain is **sequential ("one by one"), not "at once"/"synchronized."** Caption corrected; "borrows"/"snail shell" wording enforced. ✅
+5. **Crop framing — faces cut off** (Pip sat hard-right; center punch-in sliced him in #4/#5) → crop position now follows the subject per shot; every punch-in's output frame re-inspected. ✅
+6. **Short 4 CTA cut off + SRT overruns** (external review) → Short 4 extended so "Watch Episode 1" shows; **all `.srt` cue ends capped to video length** (Short 3: 17.5s → 16.7s). ✅
+7. **Voices cut off at start/end** → re-cut every Short on the **silence gaps between spoken lines** (verified via silence-detection, so full lines are captured, never mid-word); added an **audio fade-in (0.12s) + fade-out (0.3s)**; added a **freeze-frame hold** at the end of the mystery/comedy/cliffhanger Shorts so the CTA plays over a silent held frame. Verified by waveform (quiet edges, speech in the body). ✅
 
 ## Distinctness (no two near-identical Shorts)
 First frames: fond Bentley CU · wonder Bentley CU · crab line-up · excited Bentley CU · Pip's face · astonished Bentley CU — six different images. Hooks: intro · mystery · science · comedy · emotion · cliffhanger — six different responses. ✅

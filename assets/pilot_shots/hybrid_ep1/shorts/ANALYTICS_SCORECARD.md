@@ -14,9 +14,11 @@ Fill this in from **YouTube Studio → Analytics** at each checkpoint. The goal 
 | Metric | Soft pass | Good | Strong |
 |---|---|---|---|
 | 3s hold | >60% | >70% | >80% |
-| Avg % viewed | >50% | >65% | >80% |
+| Avg % viewed | >50% | >65% | **>80–90%** |
 | Replays / view | >0.15 | >0.3 | >0.5 |
 | Ep1 daily-views bump after a Short | any lift | +25% | +100% |
+
+> **Aim for 90%+ average % viewed.** These Shorts are only 12–17s — a tight Short that hooks should be watched nearly to the end. Record each Short's numbers at **7 days**, then declare the **winning category** (science / comedy / mystery / character / emotion / cliffhanger) and weight Episode 2's 4 Shorts toward it.
 
 ---
 

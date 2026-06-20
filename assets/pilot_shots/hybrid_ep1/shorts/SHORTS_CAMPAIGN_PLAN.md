@@ -1,5 +1,7 @@
 # Episode 1 — YouTube Shorts Launch Campaign
 
+> **⭐ For posting, use `LAUNCH_SCHEDULE_14DAY.md`** — it carries the FINAL reviewed titles, dated schedule, descriptions, season cadence, and the pre-upload checklist. The SEO titles in *this* doc are superseded by the playbook; everything else here (per-Short source timestamps, captions, framing, QC) is current.
+
 **Channel state:** brand-new, **Made-for-Kids**, **zero subscribers**, no history. Six Shorts launch the channel and funnel cold viewers to the full **Episode 1 — "The Voice in the Shell."**
 
 > **Made-for-Kids conversion logic (shapes everything):** MFK disables comments, end screens, info cards, and notifications. A Short **cannot** click through to Episode 1. Conversion happens two ways only: (1) the viewer taps the channel and finds **Episode 1 pinned**, and (2) **line 1 of each Short's description links Episode 1.** So every Short ends on a curiosity loop + an on-screen `>> Episode 1` cue, and Episode 1 must be live and pinned *before* any Short goes out.

@@ -4,14 +4,14 @@
     "test": "Character appeal",
     "out": "Short_1_Meet_Bentley.mp4",
     "segments": [
-      {"start": 211.0, "end": 217.0, "mode": "crop", "xoff": 656},
-      {"start": 220.7, "end": 228.6, "mode": "crop", "xoff": 656}
+      {"start": 210.3, "end": 220.1, "mode": "crop", "xoff": 656},
+      {"start": 220.2, "end": 229.7, "mode": "crop", "xoff": 656}
     ],
     "captions": [
       {"text": "Meet Bentley - a curious little pup", "t": 0.1, "dur": 3.0, "y": 0.10, "size": 56},
-      {"text": "Brave, kind, and full of heart.", "t": 3.3, "dur": 2.7, "y": 0.82, "size": 56},
-      {"text": "\"...you'll find the wonder, everywhere.\"", "t": 6.6, "dur": 5.2, "y": 0.82, "size": 50},
-      {"text": "Watch her first adventure  >>", "t": 12.0, "dur": 1.8, "y": 0.13, "size": 58}
+      {"text": "Brave, kind, and full of heart.", "t": 3.4, "dur": 3.0, "y": 0.82, "size": 56},
+      {"text": "\"...you'll find the wonder, everywhere.\"", "t": 11.2, "dur": 5.4, "y": 0.82, "size": 50},
+      {"text": "Watch her first adventure  >>", "t": 16.8, "dur": 2.6, "y": 0.13, "size": 58}
     ]
   },
   {
@@ -20,15 +20,15 @@
     "out": "Short_2_Whats_In_The_Shell.mp4",
     "segments": [
       {"start": 21.18, "end": 25.18, "mode": "crop", "xoff": 760},
-      {"start": 25.18, "end": 31.5, "mode": "blurfill"},
-      {"start": 35.22, "end": 38.4, "mode": "blurfill"}
+      {"start": 25.18, "end": 27.0, "mode": "blurfill"}
     ],
+    "freeze_tail": 3.0,
     "captions": [
-      {"text": "Bentley", "t": 0.0, "dur": 2.2, "y": 0.09, "size": 58},
-      {"text": "She hears a tiny voice...", "t": 0.2, "dur": 3.4, "y": 0.13, "size": 62},
-      {"text": "\"Somebody needs... help?\"", "t": 3.8, "dur": 3.2, "y": 0.82, "size": 56},
-      {"text": "...but WHO is calling from the shell?", "t": 7.4, "dur": 3.4, "y": 0.13, "size": 56},
-      {"text": "Find out in Episode 1  >>", "t": 10.9, "dur": 2.5, "y": 0.13, "size": 54}
+      {"text": "Bentley", "t": 0.0, "dur": 2.0, "y": 0.09, "size": 58},
+      {"text": "She hears a tiny voice...", "t": 0.2, "dur": 3.0, "y": 0.13, "size": 62},
+      {"text": "\"Somebody needs... help?\"", "t": 3.3, "dur": 2.3, "y": 0.82, "size": 56},
+      {"text": "...but WHO is calling from the shell?", "t": 5.8, "dur": 1.7, "y": 0.13, "size": 56},
+      {"text": "Find out in Episode 1  >>", "t": 7.3, "dur": 1.4, "y": 0.13, "size": 54}
     ]
   },
   {
@@ -36,17 +36,17 @@
     "test": "Science surprise",
     "out": "Short_3_Hermit_Crab_Chain.mp4",
     "segments": [
-      {"start": 162.89, "end": 167.93, "mode": "blurfill"},
-      {"start": 167.93, "end": 172.97, "mode": "blurfill"},
-      {"start": 183.4, "end": 186.0, "mode": "crop", "xoff": 656},
+      {"start": 163.2, "end": 167.93, "mode": "blurfill"},
+      {"start": 167.93, "end": 173.6, "mode": "blurfill"},
+      {"start": 182.4, "end": 186.0, "mode": "crop", "xoff": 656},
       {"start": 188.9, "end": 192.8, "mode": "blurfill"}
     ],
     "captions": [
       {"text": "Real hermit crabs do something amazing", "t": 0.2, "dur": 3.4, "y": 0.10, "size": 56},
-      {"text": "One empty shell shows up...", "t": 3.8, "dur": 3.2, "y": 0.83, "size": 60},
-      {"text": "...and the WHOLE line trades homes - one by one!", "t": 7.2, "dur": 4.6, "y": 0.83, "size": 48},
-      {"text": "Everybody moves up to a bigger home.", "t": 12.2, "dur": 3.0, "y": 0.13, "size": 56},
-      {"text": "See it in Episode 1  >>", "t": 15.3, "dur": 2.2, "y": 0.13, "size": 56}
+      {"text": "One empty shell shows up...", "t": 4.0, "dur": 3.0, "y": 0.83, "size": 60},
+      {"text": "...and the WHOLE line trades homes - one by one!", "t": 7.5, "dur": 4.6, "y": 0.83, "size": 48},
+      {"text": "Everybody moves up to a bigger home.", "t": 13.6, "dur": 2.6, "y": 0.13, "size": 56},
+      {"text": "See it in Episode 1  >>", "t": 16.4, "dur": 1.3, "y": 0.13, "size": 56}
     ]
   },
   {
@@ -55,15 +55,16 @@
     "out": "Short_4_A_Talking_Rock.mp4",
     "segments": [
       {"start": 48.06, "end": 55.26, "mode": "crop", "xoff": 656},
-      {"start": 55.26, "end": 60.2, "mode": "crop", "xoff": 950}
+      {"start": 55.26, "end": 57.2, "mode": "crop", "xoff": 950}
     ],
+    "freeze_tail": 2.5,
     "captions": [
       {"text": "Bentley found a tiny creature...", "t": 0.1, "dur": 2.2, "y": 0.11, "size": 58},
       {"text": "\"Are you a snail?\"", "t": 2.4, "dur": 1.7, "y": 0.13, "size": 68},
       {"text": "\"A teeny tiny KNIGHT?!\"", "t": 4.3, "dur": 2.1, "y": 0.13, "size": 66},
-      {"text": "\"A rock that TALKS?!\"", "t": 6.6, "dur": 2.3, "y": 0.13, "size": 68},
-      {"text": "Pip: \"I'm a hermit crab.\"", "t": 9.3, "dur": 3.3, "y": 0.82, "size": 58},
-      {"text": "...oh.    Watch Episode 1  >>", "t": 12.7, "dur": 2.1, "y": 0.13, "size": 56}
+      {"text": "\"A rock that TALKS?!\"", "t": 6.6, "dur": 2.0, "y": 0.13, "size": 68},
+      {"text": "Pip: \"I'm a hermit crab.\"", "t": 8.0, "dur": 2.3, "y": 0.82, "size": 58},
+      {"text": "...oh.    Watch Episode 1  >>", "t": 10.4, "dur": 1.6, "y": 0.13, "size": 56}
     ]
   },
   {
@@ -71,16 +72,15 @@
     "test": "Emotional connection",
     "out": "Short_5_Home_Alone.mp4",
     "segments": [
-      {"start": 124.2, "end": 130.4, "mode": "crop", "xoff": 1100},
-      {"start": 138.0, "end": 142.6, "mode": "blurfill"},
-      {"start": 194.2, "end": 200.6, "mode": "crop", "xoff": 980}
+      {"start": 123.9, "end": 132.0, "mode": "crop", "xoff": 1100},
+      {"start": 198.4, "end": 206.4, "mode": "crop", "xoff": 980}
     ],
     "captions": [
       {"text": "Pip feels too big for his little home", "t": 0.1, "dur": 3.4, "y": 0.10, "size": 54},
-      {"text": "He's lonely... and a little scared.", "t": 3.6, "dur": 2.6, "y": 0.83, "size": 56},
-      {"text": "So a new friend helped him.", "t": 6.6, "dur": 4.0, "y": 0.11, "size": 58},
-      {"text": "\"You don't find your home alone.\"", "t": 11.0, "dur": 4.4, "y": 0.83, "size": 54},
-      {"text": "Episode 1  >>", "t": 15.6, "dur": 1.6, "y": 0.13, "size": 58}
+      {"text": "He's lonely... and a little scared.", "t": 3.6, "dur": 3.5, "y": 0.83, "size": 56},
+      {"text": "So a new friend helped him.", "t": 8.4, "dur": 3.0, "y": 0.11, "size": 58},
+      {"text": "\"You don't find your home alone.\"", "t": 11.6, "dur": 3.6, "y": 0.83, "size": 54},
+      {"text": "Episode 1  >>", "t": 15.4, "dur": 0.6, "y": 0.13, "size": 58}
     ]
   },
   {
@@ -88,15 +88,15 @@
     "test": "Adventure / cliffhanger",
     "out": "Short_6_New_Friend.mp4",
     "segments": [
-      {"start": 184.0, "end": 186.2, "mode": "crop", "xoff": 656},
-      {"start": 229.74, "end": 238.6, "mode": "blurfill"},
-      {"start": 224.0, "end": 225.9, "mode": "crop", "xoff": 656}
+      {"start": 182.4, "end": 186.0, "mode": "crop", "xoff": 656},
+      {"start": 229.74, "end": 238.6, "mode": "blurfill"}
     ],
+    "freeze_tail": 1.5,
     "captions": [
       {"text": "Bentley: wait... what's THAT?", "t": 0.1, "dur": 2.0, "y": 0.11, "size": 58},
-      {"text": "Something purple rises from the tide pool...", "t": 2.4, "dur": 3.2, "y": 0.12, "size": 52},
-      {"text": "Did it just... WAVE back?", "t": 6.0, "dur": 3.6, "y": 0.83, "size": 62},
-      {"text": "A new friend?!   Episode 1  >>", "t": 9.8, "dur": 3.2, "y": 0.13, "size": 54}
+      {"text": "Something purple rises from the tide pool...", "t": 4.0, "dur": 3.0, "y": 0.12, "size": 52},
+      {"text": "Did it just... WAVE back?", "t": 7.2, "dur": 2.5, "y": 0.83, "size": 60},
+      {"text": "A new friend?!   Episode 1  >>", "t": 10.2, "dur": 3.0, "y": 0.13, "size": 54}
     ]
   }
 ]

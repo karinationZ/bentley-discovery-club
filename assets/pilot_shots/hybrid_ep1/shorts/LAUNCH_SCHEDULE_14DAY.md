@@ -1,29 +1,58 @@
-# 14-Day Launch Schedule — Episode 1 + 6 Shorts
+# Launch Playbook — Episode 1 + 6 Shorts
 
-**Principle:** Episode 1 goes live and **pinned first** (every Short needs a live destination). Then **one Short every 2–3 days** — active, never flooding, so each hook gets a clean read. Order = breadth → curiosity → replay → affinity → anticipation → loyalty. **You publish manually.**
+**Episode 1 published:** Thursday, June 18, 2026 (pin it to the channel). All times **PT**. You post manually.
 
-| Day | Action | Why / notes |
-|---|---|---|
-| **0** | **Publish Episode 1**, set **Made for Kids**, custom thumbnail, **PIN to channel.** | The destination must exist + be easy to find before any Short. Let it breathe 24–48h. |
-| **1** | **Short #3 — Science** (`Short_3_Hermit_Crab_Chain`) | Widest cold-reach hook (parents/teachers); best chance to break out of zero-subs. Description line 1 = Ep1 link. |
-| **2** | **Short #2 — Mystery** (`Short_2_Whats_In_The_Shell`) | Shortest, highest curiosity/sec; stacks watch-time fast. |
-| **3** | *(rest)* — watch 24h data on #3 & #2 | No post; read retention/replay so far. |
-| **4** | **Short #4 — Comedy** (`Short_4_A_Talking_Rock`) | Drives replays now that a few viewers exist. |
-| **5** | *(rest)* | — |
-| **6** | **Short #1 — Character** (`Short_1_Meet_Bentley`) | Converts curiosity into liking Bentley specifically. |
-| **7** | **📊 Week-1 review** | Score #1–#4 (see `ANALYTICS_SCORECARD.md`). Note the early leader. |
-| **8** | *(rest)* | — |
-| **9** | **Short #6 — Cliffhanger** (`Short_6_New_Friend`) | "What's next?" lands on a warmer audience; seeds Episode 2. |
-| **10–11** | *(rest)* | — |
-| **12** | **Short #5 — Emotional** (`Short_5_Home_Alone`) | Deepest hook; strongest subscribe/parent-trust driver to close the run. |
-| **13** | *(rest)* | — |
-| **14** | **📊 14-day review → pick the winning hook for Episode 2 Shorts** | Declare the best archetype by watch-time + subs + Ep1-traffic. Give Ep2 **2 Shorts of the winner**, one of each other type, retire the weakest. |
+## ✅ Pre-upload fixes (done in the exports)
+1. **Short 4 ending fixed** — extended so "Watch Episode 1" is on screen ~1.9s before the end (was cut off at 12.29s; now 13.7s). ✅
+2. **SRT timing fixed** — every `.srt` cue end is capped to its video length (Short 3's final cue 17.5s → 16.7s; all six re-capped). ✅
 
-## Rules of the run
-- **One Short per posting day** — never multiple the same day (they cannibalize impressions + muddy the per-hook signal).
-- If a hook clearly outperforms by Day 4–6, you may re-cut a 7th variant of *that* format to ride momentum into Episode 2 (the builder + spec make this a 5-minute job).
-- Keep tone consistent: warm, curious, safe. Every description's first line is the Episode 1 link.
-- Do **not** ask kids to comment or leave YouTube (MFK).
+## ⚠️ Two manual steps in YouTube Studio (per Short)
+3. **Add Episode 1 as the Related Video** for every Short (Studio → each Short → *Related video* → Episode 1). MFK blocks end-screens/cards, so this + the pinned episode + the description's first line are the only conversion paths.
+4. **Captions are burned in.** If you also upload the `.srt` as a subtitle track and a viewer turns CC on, you'll see **double captions.** Recommended: **rely on the burned captions — do NOT upload the SRTs as CC** for these Shorts. (The corrected SRTs are kept in `exports/` for archive/accessibility only.)
 
-## Reserve / contingency
-All six are built and inspected. If YouTube flags or you want to swap order, the spec is in `shorts_specs.json` — re-run `python3 shorts_lib.py <id>` to rebuild any single Short.
+## Posting schedule
+| Date | Time PT | Publish | Title to paste |
+|---|---:|---|---|
+| **Fri, Jun 19** | 3 PM | **Short 3 — Hermit Crab Chain** | `How Hermit Crabs Trade Shells 🦀 \| Animal Facts for Kids` |
+| **Sat, Jun 20** | 9 AM | **Short 4 — A Talking Rock** | `Snail, Tiny Knight, or Hermit Crab? 🦀` |
+| **Sun, Jun 21** | 9 AM | **Short 2 — What's in the Shell** | `Who Is Calling From the Shell? 🐚` |
+| **Tue, Jun 23** | 3 PM | **Short 5 — Home Alone** | `This Hermit Crab Outgrew His Home 🦀` |
+| **Thu, Jun 25** | 3 PM | **Short 1 — Meet Bentley** | `Meet Bentley the Boxer \| Nature Adventures for Kids` |
+| **Fri, Jun 26** | 3 PM | **Short 6 — New Friend / Octopus** | `Did This Octopus Just Wave? 🐙` |
+
+> **Order starts with science + comedy** — the two strongest ways to introduce the channel to strangers. **Do not post in filename order.**
+
+## Description (paste, edit the first line per animal)
+```
+Join Bentley the Boxer for animal mysteries, real nature facts, and big adventures.
+
+Watch the full Episode 1 of Bentley's Big Adventures.
+
+#AnimalFacts #KidsScience #BentleysBigAdventures
+```
+Swap the **first sentence** to feature the animal:
+- **Short 3:** "See how real hermit crabs trade shells in a line — one by one."
+- **Short 4:** "Bentley meets a tiny hermit crab and can't guess what it is!"
+- **Short 2:** "A tiny voice is calling from a seashell in the tide pool…"
+- **Short 5:** "A little hermit crab outgrew his home — and found a new friend."
+- **Short 1:** "Meet Bentley the Boxer, your guide to tide-pool nature adventures."
+- **Short 6:** "An octopus rises from the tide pool and waves at Bentley!"
+*(Keep `▶ full episode: [Episode 1 link]` as the first line if you prefer the link up top.)*
+
+## Season cadence (Episode 2 onward)
+| Day | Time PT | Publish |
+|---|---:|---|
+| **Saturday** | 9 AM | Full episode |
+| **Sunday** | 9 AM | Strongest **science** Short |
+| **Tuesday** | 3 PM | **Comedy or character** Short |
+| **Thursday** | 3 PM | **Mystery or emotional** Short |
+| **Friday** | 3 PM | **Cliffhanger** for Saturday's next episode |
+
+- **4 strong Shorts per episode** from Ep2 on (6 was right for the launch test; 6/week would get repetitive).
+- **Don't publish Episode 2 until it's finished AND you have ≥4 Shorts ready.** Then use this same Saturday schedule for all ten episodes.
+
+## What to measure (record at **7 days** per Short)
+- Viewed vs. swiped away · **Avg % viewed (target 90%+** for these 12–17s Shorts) · Replays · Subscribers gained · Traffic sent to Episode 1 · **Which category won** (science / comedy / mystery / character / emotion / cliffhanger).
+- Use the winning format more heavily for Episode 2's 4 Shorts. (Fill-in tables in `ANALYTICS_SCORECARD.md`.)
+
+> Consistency + quality beat raw frequency: titles, descriptions, thumbnails, and the content itself matter most ([YouTube Search](https://support.google.com/youtube/answer/16090438) · [scheduling](https://support.google.com/youtube/answer/13616979) · [Related Videos](https://support.google.com/youtube/answer/14075157)).
