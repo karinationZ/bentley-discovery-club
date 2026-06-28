@@ -3,7 +3,7 @@
 voice, overwriting the George versions in v2/audio/THEO_*.mp3."""
 import os, json, subprocess, urllib.request
 from bentley.shared.eleven import KEY, NARRATOR as NARR_VOICE  # Bill — Grandpa Theodore (LOCKED)
-OUT = "assets/pilot_shots/hybrid_ep1/v2/audio"; os.makedirs(OUT, exist_ok=True)
+OUT = "assets/pilot_shots/ep1/v2/audio"; os.makedirs(OUT, exist_ok=True)
 def tts(name, text):
     body = json.dumps({"text": text, "model_id": "eleven_v3",
         "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.4, "speed": 1.0}}).encode()

@@ -1,4 +1,4 @@
-# Bentley's Discovery Club — Branding Review & Direction
+# Bentley's Big Adventures — Branding Review & Direction
 
 > Premium children's (ages 3–12 + parents) educational **adventure** channel about nature, science, and ocean / tide-pool exploration, led by **Bentley**, a cartoon red-fawn Boxer puppy who is an explorer and scientist at heart.
 > **Target brand feel:** Pixar × National Geographic Kids × a premium YouTube Kids franchise.
@@ -210,7 +210,7 @@ The single biggest "premium vs. amateur" lever in this niche is a **rigid, repea
 4. **Color-blocking / brand frame:** add a consistent brand device — e.g., a **rounded "tide-pool porthole" oval** or a bottom **Tide-Pool-Teal `#1AA7A0` color bar** behind the title — so every thumbnail shares a frame. (This is the "own one container" lesson from Nat Geo's yellow rectangle.)
 5. **The shell glow** (Discovery Gold) is the recurring micro-signature — keep it visible.
 6. **One light direction, one grade:** warm key + teal ambient on every thumbnail so they look like a set.
-7. **Consistency test:** crop the title off and remove the logo — you should *still* know it's Bentley's Discovery Club from face + color + frame alone. If not, the template isn't strong enough.
+7. **Consistency test:** crop the title off and remove the logo — you should *still* know it's Bentley's Big Adventures from face + color + frame alone. If not, the template isn't strong enough.
 
 **Anti-patterns to avoid:** more than 3 words, two competing focal points, busy backgrounds behind the text, a different Bentley face per video, neon/over-saturated full-bleed backgrounds (reads as overstimulating "low-quality kids' content," the opposite of the premium/parent-trust lane).
 
@@ -264,7 +264,7 @@ Eight currently-successful channels across mascot-led preschool, animal-adventur
 
 ## 10. Updated branding direction (the consolidated vision)
 
-**Positioning statement:** *Bentley's Discovery Club is the place where a curious little Boxer takes kids on real ocean and nature adventures — Pixar-warm, Nat-Geo-smart, premium and parent-trusted.*
+**Positioning statement:** *Bentley's Big Adventures is the place where a curious little Boxer takes kids on real ocean and nature adventures — Pixar-warm, Nat-Geo-smart, premium and parent-trusted.*
 
 **The three pillars (Pixar × Nat Geo Kids × premium YouTube Kids):**
 - **Pixar** → the *craft*: dimensional soft-fur character, cinematic warm lighting, genuine emotion, restraint over clutter. Bentley always renders in the locked Pixar/Bluey soft-fur style — never photoreal, never flat.

@@ -1,4 +1,4 @@
-# Executive decision: move Bentley's Discovery Club to an API stack (2026)
+# Executive decision: move Bentley's Big Adventures to an API stack (2026)
 > Research brief, 2026-06-17. Replaces Higgsfield's subscription/credit model with a pay-as-you-go API pipeline. Bottom line: **same/better quality, ~3–5× cheaper per episode, no credit ceiling.**
 
 ## TL;DR — the recommendation

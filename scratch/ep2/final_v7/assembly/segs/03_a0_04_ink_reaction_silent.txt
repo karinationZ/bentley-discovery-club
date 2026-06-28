@@ -1,0 +1,2 @@
+file '/project/scratch/ep2/final_v7/assembly/segs/_a0_04_ink_reaction_0.mp4'
+file '/project/scratch/ep2/final_v7/assembly/segs/_a0_04_ink_reaction_1.mp4'

@@ -39,7 +39,7 @@ centered("Explore     Discover     Wonder", f2, H*0.66, TEAL, NAVY, 6)
 for cx in (W*0.5 - 118, W*0.5 + 118):
     d.ellipse([cx-6, H*0.66-6, cx+6, H*0.66+6], fill=GOLD)
 
-out = str(episode_assets("hybrid_ep1") / "v2/work/title_card.png")
+out = str(episode_assets("ep1") / "v2/work/title_card.png")
 os.makedirs(os.path.dirname(out), exist_ok=True)
 img.save(out)
 print("title card ->", out, img.size)

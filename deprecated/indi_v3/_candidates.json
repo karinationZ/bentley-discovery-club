@@ -1,0 +1,21 @@
+{
+ "ref_url": "https://files.catbox.moe/vk2snn.png",
+ "indi_v3_hero": {
+  "path": "/project/scratch/ep2/indi_v3/indi_v3_hero.png",
+  "method": "edit",
+  "credits": 4.0,
+  "secs": 26
+ },
+ "indi_v3_face": {
+  "path": "/project/scratch/ep2/indi_v3/indi_v3_face.png",
+  "method": "edit",
+  "credits": 4.0,
+  "secs": 36
+ },
+ "indi_v3_peek": {
+  "path": "/project/scratch/ep2/indi_v3/indi_v3_peek.png",
+  "method": "edit",
+  "credits": 4.0,
+  "secs": 21
+ }
+}

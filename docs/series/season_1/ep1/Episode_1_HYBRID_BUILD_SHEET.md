@@ -20,7 +20,7 @@
 - **NEW back-half dialogue to generate (cheap):**
   - BENTLEY (Abby +12%): "Whoa… did you SEE that?! The whole pool helped!" (vacancy WHOAA)
   - PIP (Snik): "It… fits. Thank you, Bentley." (home)
-  - BENTLEY: "That's what the Discovery Club is for." (Soft-Eyes home)
+  - BENTLEY: "That's what the Big Adventures is for." (Soft-Eyes home)
   - BENTLEY (tag): "Stop. Look. Listen… and you'll find the wonder, everywhere. Let's go find the WONDER!"
 - **Mix rule:** narrator carries transitions/science; dialogue carries reaction/heart. Narrator ducks under dialogue. One warm music bed; swell at the vacancy-chain reveal.
 

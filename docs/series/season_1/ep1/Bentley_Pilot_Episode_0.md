@@ -1,4 +1,4 @@
-# Bentley's Discovery Club
+# Bentley's Big Adventures
 # Pilot Episode 0: Bentley's Big Discovery
 
 ## Episode Purpose

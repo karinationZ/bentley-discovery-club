@@ -1,9 +1,9 @@
-# Bentley's Discovery Club — Channel Launch Kit
+# Bentley's Big Adventures — Channel Launch Kit
 
 > Build + brand + configure the channel **now** (in parallel with production). **Publish only when 5–6 episodes + 20–30 Shorts are banked.** Setup is ~30 minutes of clicks in YouTube Studio using the values below.
 
 ## 1. Channel name & @handle
-- **Channel name:** **Bentley's Discovery Club** (keep it identical to the IP — it's your merch/brand name too).
+- **Channel name:** **Bentley's Big Adventures** (keep it identical to the IP — it's your merch/brand name too).
 - **@handle** — pick the first available (≤30 chars): `@BentleysDiscoveryClub` → `@BentleyDiscoveryClub` → `@DiscoverWithBentley` → `@BentleysClub` → `@BentleyExplores`.
 - Set it once and keep it stable (it's your URL: youtube.com/@handle).
 
@@ -25,8 +25,8 @@
 - ⚠️ Note the MFK constraints: comments off, no community posts, no personalized ads, end-screens/cards disabled. Plan growth around Shorts + thumbnails + playlists.
 
 ## 4. Video metadata templates
-**Title formula:** `[BENTLEY + ACTION VERB IN CAPS] + [curiosity gap] + emoji | Bentley's Discovery Club`
-- e.g. "Bentley Hears a VOICE in a Shell?! 🐚 | Bentley's Discovery Club Ep 1"
+**Title formula:** `[BENTLEY + ACTION VERB IN CAPS] + [curiosity gap] + emoji | Bentley's Big Adventures`
+- e.g. "Bentley Hears a VOICE in a Shell?! 🐚 | Bentley's Big Adventures Ep 1"
 
 **Description template:**
 ```
@@ -43,14 +43,14 @@ Join Bentley the curious Boxer as she learns to Stop, Look, and Listen.
 ▶ Next adventure: [link]
 ▶ All episodes: [playlist link]
 
-Bentley's Discovery Club — where every question is an adventure. New episodes weekly!
+Bentley's Big Adventures — where every question is an adventure. New episodes weekly!
 #BentleysDiscoveryClub #KidsEducational #ForKids #Animals #LearningForKids
 ```
 
 **Thumbnail spec:** 1280×720; Bentley's expressive face ≥40% of frame; ONE curiosity object; bold color-coded background (teal=ocean, gold=desert, green=forest); big simple shapes readable at 120px; same logo bug + font every time.
 
 ## 5. Playlist architecture (boosts SEO + autoplay/session time)
-- **Bentley's Discovery Club — Full Episodes** (ordered, pilot first) → set as **featured** for binge/autoplay.
+- **Bentley's Big Adventures — Full Episodes** (ordered, pilot first) → set as **featured** for binge/autoplay.
 - **Bentley Shorts**
 - **Under the Sea 🌊** (tide pool, octopus, shark, whale, ocean rescue)
 - **Tiny Worlds 🔬** (ants, bees, shrink episodes)

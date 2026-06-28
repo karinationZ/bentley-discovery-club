@@ -17,6 +17,8 @@ breaks a MUST-NEVER, it is rejected and regenerated — do not ship it.
 
 ## BENTLEY — female red-fawn Boxer puppy
 
+> **Canonical master (RE-BASELINED Ep2):** `assets/character_design/Bentley_MASTER_pixar.png` — cartoony-Pixar style, **short docked tail**, all features on-model. The photoreal `Bentley_MASTER_hero.jpg` is **retired** to `assets/character_design/reference/` because the AI animation (Kling-Avatar / i2v) only renders cartoony-Pixar and cannot reproduce photorealism — so the master matches the animation + the rest of the world. Derive every Bentley keyframe FROM the Pixar master.
+
 | ✅ MUST HAVE | ❌ MUST NEVER |
 |-------------|--------------|
 | Short **docked** tail | Long or upright tail |

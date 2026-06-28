@@ -35,7 +35,7 @@ Episode 1 expands the existing **2:00 cut into a complete 4:45 episode** that fu
 | 16 | `a4_04_whoaa` | ✅ verify teeth only | Bentley's WHOAA jaw-drop (Bentley-ism #4) |
 | 17 | `a5_01_piphome` | ⚠️ Pip model + human-teeth fix + spiral shell | Pip snug in his new home |
 | 18 | `a5_02_pipthanks` | ⚠️ Pip model | Pip's grateful thanks |
-| 19 | `a5_03_disco` | ✅ | "That's what the Discovery Club is for" |
+| 19 | `a5_03_disco` | ✅ | "That's what the Big Adventures is for" |
 | 20 | `a5_04_tag` | ✅ verify teeth only | Franchise tag + Wiggle-Butt rally (Bentley-ism #5) |
 | 21 | `a6_01_octopus` | ✅ | Octopus button (cliffhanger, turned into a gag) |
 
@@ -127,7 +127,7 @@ New/expanded lines beyond the current 2:00 cut, by scene (speaker · emotion). V
 
 **ACT 6**
 - PIP (*soft, moved + last fussy callback*): "It fits. It actually… *fits.* Thank you, Bentley. You were the first one who really *listened.* …And ANOTHER thing — you can come back any time. I mean it." (running gag #2 pays off warm)
-- BENTLEY (*warm*): "That's what the Discovery Club is for."
+- BENTLEY (*warm*): "That's what the Big Adventures is for."
 - **[NEW N6] BENTLEY** (*teasing, fond*): "And hey — turns out I was a *little* bit right. You ARE a tiny knight… in brand-new shiny armor."
 - **[NEW N6] PIP** (*gruff-but-pleased*): "…It's a *shell.* …But I'll allow it." (gag also pays partially on this line alone if N6 is cut)
 - THEODORE **[NEW N19 revised record]**: "Today, Bentley learned you don't help by *grabbing.* You help by *listening.* Stop… look… listen…"

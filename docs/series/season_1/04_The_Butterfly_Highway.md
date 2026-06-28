@@ -1,5 +1,5 @@
 # The Butterfly Highway
-### Season 1 · Episode 4 · Bentley's Discovery Club
+### Season 1 · Episode 4 · Bentley's Big Adventures
 
 > **Logline:** Bentley joins the great monarch migration alongside Milo, a young butterfly terrified to leave home because he doesn't know the way — and learns that no single butterfly *ever* knows the whole journey.
 
@@ -39,7 +39,7 @@ The monarchs settle into an ancient grove at dusk. The old trees *creak* — in 
 5. ⚡ "You don't have to see the whole way. Just the next flower." (heart clip)
 
 ## Title & Thumbnail
-- **Title:** "Bentley FLEW With a Million Butterflies?! 🦋 | Bentley's Discovery Club Ep 4"
+- **Title:** "Bentley FLEW With a Million Butterflies?! 🦋 | Bentley's Big Adventures Ep 4"
 - **Thumbnail:** Bentley mid-air, joyful, riding an air current inside a swirling river of monarchs; warm gold sky.
 
 ## Season thread touch

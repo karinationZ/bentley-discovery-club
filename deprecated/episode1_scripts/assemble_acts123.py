@@ -6,7 +6,7 @@ and audio never drifts. Motion shots get a silent bed (music/ambient added in fi
 Then copy-concat -> ACTS123_1080_v1.mp4."""
 import os, subprocess
 
-ROOT  = "/home/user/src/youtube"
+ROOT  = "/project"
 WORK  = f"{ROOT}/assets/pilot_shots/hybrid_ep1/acts123"
 SEG   = f"{WORK}/segments"; os.makedirs(SEG, exist_ok=True)
 PIPVO = f"{ROOT}/assets/pilot_shots/opening_movement/audio"

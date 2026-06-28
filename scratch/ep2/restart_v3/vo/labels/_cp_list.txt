@@ -1,0 +1,5 @@
+file '/project/scratch/ep2/restart_v3/vo/labels/_cp_0.mp3'
+file '/project/scratch/ep2/restart_v3/vo/labels/_cp_sil.mp3'
+file '/project/scratch/ep2/restart_v3/vo/labels/_cp_1.mp3'
+file '/project/scratch/ep2/restart_v3/vo/labels/_cp_sil.mp3'
+file '/project/scratch/ep2/restart_v3/vo/labels/_cp_2.mp3'

@@ -15,6 +15,7 @@ BENTLEY = "jkNABRZGatAuwawcS9xX"      # LauraZ — Bentley
 PIP = "N2lVS1w4EtoT3dr4eOWO"          # Callum — Pip (pitched +10% at render time)
 NARRATOR = "pqHfZKP75CvOlQylNhV4"     # Bill   — Grandpa Theodore narrator (LOCKED, current canon)
 THEO_GEORGE = "JBFqnCBsd6RMkjVDRZzb"  # George — legacy narrator, superseded by Bill
+INDI = "FcZStbCG9g9QxDlJioSD"         # Indi — Ep2 guest octopus (LOCKED 2026-06-20), shy / guarded-but-warm
 
 _TTS_URL = "https://api.elevenlabs.io/v1/text-to-speech/{voice}?output_format={fmt}"
 

@@ -46,3 +46,8 @@ venv/
 # Backups — incl. media backups like *.mp4.bak / *.png.bak (matched by *.mp4 etc. only at end-of-name)
 *.bak
 *.orig
+
+# ── Claude Code ───────────────────────────────────────────
+# Per-user local settings (permission allowlists); the shared .claude/settings.json
+# and .claude/skills/ ARE tracked. Local overrides stay on this machine.
+.claude/settings.local.json

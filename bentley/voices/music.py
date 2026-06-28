@@ -3,7 +3,7 @@
 One evolving family of cues for the 11 scored state-changes; placed/crossfaded in assembly."""
 import os, json, subprocess, urllib.request, urllib.error
 from bentley.shared.eleven import KEY
-OUT = "assets/pilot_shots/hybrid_ep1/v2/music"; os.makedirs(OUT, exist_ok=True)
+OUT = "assets/pilot_shots/ep1/v2/music"; os.makedirs(OUT, exist_ok=True)
 
 def music(name, prompt, ms=30000):
     payload = {"prompt": prompt, "music_length_ms": ms}

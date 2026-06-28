@@ -7,7 +7,7 @@ import os, json, subprocess
 from bentley.shared.ffio import dur
 from bentley.shared.paths import episode_assets
 from bentley.episode_builder.timeline import make_next_talk_start, place_sequential
-ROOT = str(episode_assets("hybrid_ep1"))
+ROOT = str(episode_assets("ep1"))
 V2 = f"{ROOT}/v2"; AUD, SFX, MUS, WORK = f"{V2}/audio", f"{V2}/sfx", f"{V2}/music", f"{V2}/work"
 TLJSON = json.load(open(f"{WORK}/timeline2.json"))
 TL = {s["id"]: s for s in TLJSON}

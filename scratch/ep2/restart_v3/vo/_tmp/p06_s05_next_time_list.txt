@@ -1,0 +1,7 @@
+file '/project/scratch/ep2/restart_v3/vo/labels/P6_B08.mp3'
+file '/project/scratch/ep2/restart_v3/vo/_tmp/gap_140ms.mp3'
+file '/project/scratch/ep2/restart_v3/vo/labels/P6_I08.mp3'
+file '/project/scratch/ep2/restart_v3/vo/_tmp/gap_140ms.mp3'
+file '/project/scratch/ep2/restart_v3/vo/labels/P6_B09.mp3'
+file '/project/scratch/ep2/restart_v3/vo/_tmp/gap_140ms.mp3'
+file '/project/scratch/ep2/restart_v3/vo/labels/P6_N02.mp3'

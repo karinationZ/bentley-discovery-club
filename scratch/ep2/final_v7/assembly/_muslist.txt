@@ -1,0 +1,7 @@
+file '/project/scratch/ep2/final_v7/assembly/_mus_a0.wav'
+file '/project/scratch/ep2/final_v7/assembly/_mus_a1.wav'
+file '/project/scratch/ep2/final_v7/assembly/_mus_a2.wav'
+file '/project/scratch/ep2/final_v7/assembly/_mus_a3.wav'
+file '/project/scratch/ep2/final_v7/assembly/_mus_a4.wav'
+file '/project/scratch/ep2/final_v7/assembly/_mus_a5.wav'
+file '/project/scratch/ep2/final_v7/assembly/_mus_a6.wav'

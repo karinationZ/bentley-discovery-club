@@ -4,7 +4,7 @@ Pip cold-open 'Help' O.S. (Callum), Bentley O.S. lines (LauraZ). ElevenLabs only
 import os
 from bentley.voices.dialogue import tts_bentley, tts_pip, tts_theo
 
-OUT = "assets/pilot_shots/hybrid_ep1/v2/audio"; os.makedirs(OUT, exist_ok=True)
+OUT = "assets/pilot_shots/ep1/v2/audio"; os.makedirs(OUT, exist_ok=True)
 
 THEO = {
  "N02b": "Wherever there's a creature in trouble... that's exactly where Bentley wants to be.",

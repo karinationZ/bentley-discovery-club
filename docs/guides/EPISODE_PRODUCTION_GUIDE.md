@@ -1,5 +1,9 @@
 # EPISODE_PRODUCTION_GUIDE — How an episode is made
 
+> ⛔ **MANDATORY:** load the **Episode Production Skill** first — `.claude/skills/episode-production/SKILL.md`
+> (canonical doc: `EPISODE_PRODUCTION_SKILL.md`). It governs the **Kling 3.0 cost gate**, canon, transitions,
+> voice, asset reuse, and QA, and is the single source of truth for Ep3+.
+
 End-to-end pipeline for *Bentley's Big Adventures*, the tools behind each stage,
 and the hard-won lessons. Run everything with the project venv: `.venv/bin/python …`.
 
@@ -9,7 +13,7 @@ and the hard-won lessons. Run everything with the project venv: `.venv/bin/pytho
 
 | Tool | Used for | Notes |
 |------|----------|-------|
-| **kie.ai** | Images (Google **Nano-Banana** + edit), video (**Kling 2.6** image-to-video), talking (**Kling Avatar** lip-sync) | Cheaper than fal.ai; the current primary. Client: `kie_client.py`. |
+| **kie.ai** | Images (Google **Nano-Banana** + edit / KIE image edit), video (**Kling 3.0** image-to-video), talking (**Kling Avatar** only when it passes teeth/smile QA) | Cheaper than fal.ai; the current primary. Client: `kie_client.py`. Kling 2.6 is retired for forward production. |
 | **ElevenLabs** | Voices, SFX, music | `eleven_v3`. Voice IDs live in `pipeline.py` — refer to voices by **name** only. |
 | **ffmpeg** | Assemble, mix, grade, normalize | All cutting/mixing/grading is ffmpeg. |
 | **catbox.moe** | Public audio hosting | **Kling Avatar needs a PUBLIC audio URL** — host the voice line on catbox.moe and pass that URL to the avatar job. |
@@ -27,9 +31,9 @@ Narrator = **"Bill"**. Cleaned samples in `assets/approved/voices/`.
    Full-body Bentley stills get a `paw_fix()` pass (see white-paws note in `MASTER_PROP_RULES.md`).
 
 2. **Motion vs. Talk** — each shot is one of two types:
-   - **motion** (image-to-video, Kling 2.6): living water, waves, camera moves, body motion.
+   - **motion** (image-to-video, Kling 3.0): living water, waves, camera moves, body motion.
      → `pipeline.py` (`video()`), `kie_fix_videos.py`.
-   - **talk** (Kling Avatar lip-sync): a character delivering a line; only the mouth/face animates.
+   - **talk** (Kling Avatar lip-sync): a character delivering a line; only the mouth/face animates. For Bentley/Indi, prefer `vo_over` unless the full clip proves no human teeth or human-style smile.
      → `pipeline.py` (`avatar()`), `kie_batch_avatars.py`, `kie_avatar_run.py`.
 
 3. **Voice** — TTS the line in ElevenLabs, then clean it (ffmpeg chain in `pipeline.py`:

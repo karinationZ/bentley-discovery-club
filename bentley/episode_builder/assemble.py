@@ -6,7 +6,7 @@ Outputs EP1_v2_picture.mp4 (with embedded dialogue) + timeline2.json."""
 import os, subprocess, json
 from bentley.shared.ffio import dur
 from bentley.shared.paths import episode_assets
-ROOT = str(episode_assets("hybrid_ep1"))
+ROOT = str(episode_assets("ep1"))
 D = {"v2": f"{ROOT}/v2", "a123": f"{ROOT}/acts123", "a456": f"{ROOT}/acts456", "fix": f"{ROOT}/v2/fixed"}
 WORK = f"{ROOT}/v2/work"; SEG = f"{WORK}/fseg"; os.makedirs(SEG, exist_ok=True)
 TITLE = f"{WORK}/title_card.png"

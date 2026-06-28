@@ -1,0 +1,24 @@
+{
+ "ref_url": "https://files.catbox.moe/vk2snn.png",
+ "indi_v5_smile": {
+  "path": "/project/scratch/ep2/indi_v5/indi_v5_smile.png",
+  "expr": "Her small soft mouth a gentle closed smile, warm and shy.",
+  "method": "edit",
+  "credits": 4.0,
+  "secs": 31
+ },
+ "indi_v5_talk": {
+  "path": "/project/scratch/ep2/indi_v5/indi_v5_talk.png",
+  "expr": "Her small soft mouth gently open mid-word as if speaking softly \u2014 NO teeth showing, just a soft open mouth.",
+  "method": "edit",
+  "credits": 4.0,
+  "secs": 31
+ },
+ "indi_v5_peek": {
+  "path": "/project/scratch/ep2/indi_v5/indi_v5_peek.png",
+  "expr": "Shy PEEK from behind a wet black rock: only the upper head, the eyes and one ocellus visible, one long arm curled softly over the top of her head, mouth a tiny shy closed line.",
+  "method": "edit",
+  "credits": 4.0,
+  "secs": 31
+ }
+}

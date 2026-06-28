@@ -24,7 +24,7 @@ This single flaw→virtue does **five jobs at once**, which is why it scales:
 - **Design:** Young female Boxer. Fawn coat, white chest blaze, one floppy ear (asymmetry = instant recognizability + easier AI consistency). Expressive brow. Collar with the **Listening Shell** charm.
 - **Core want vs. need (every ep):** WANTS to fix it *now*. NEEDS to slow down and *hear* what's actually wrong.
 - **Catchphrase (the method):** **"Stop. Look. Listen. ...Discover."**
-- **Rally cry (the trigger):** **"Discovery Club — let's GO!"** (said before every adventure — kids will shout it).
+- **Rally cry (the trigger):** **"Big Adventures — let's GO!"** (said before every adventure — kids will shout it).
 - **Signature comedy:** (1) the **emergency snack** in her collar pouch — currency, distraction, plot device; (2) **confidently-wrong hypotheses** that let kids feel smart before correcting *with* her; (3) **Boxer physical comedy** — head-tilt, wiggle-butt, zoomies-when-overexcited (which often *cause* the complication).
 - **The magic system (renewable + legible):** The **Listening Shell glows only when Bentley gets quiet and truly listens.** It then grants whatever the discovery needs — understanding animals (pilot), shrinking (bug episodes), breathing underwater (ocean), keeping up with a migration (butterflies/whales). *The power is the lesson.* One rule, infinite habitats.
 
@@ -44,7 +44,7 @@ Each episode's guest is a **small character with a big feeling**. Pip = grumpy, 
 | Time | Beat | Always contains |
 |------|------|-----------------|
 | 0:00–0:12 | **Cold Hook** | A voice / glow / "Help!" / wonder. **Never** open on scenery. End on a question. |
-| 0:12–0:35 | **Title sting + rally cry** | 2-note motif, logo, "Discovery Club — let's GO!" |
+| 0:12–0:35 | **Title sting + rally cry** | 2-note motif, logo, "Big Adventures — let's GO!" |
 | 0:35–1:45 | **Flaw on display** | Bentley rushes in, guesses wrong, "helps" wrong → comedy. Meet the guest. |
 | 1:45–3:15 | **Discovery 1 & 2 + it gets WORSE** | 2 dramatized facts that *raise* stakes. Her rushing backfires. |
 | 3:15–4:30 | **THE TURN** | "Stop. Look. Listen." Shell glows. She hears the guest's *real* need. |
@@ -62,9 +62,9 @@ Each episode's guest is a **small character with a big feeling**. Pip = grumpy, 
 *The video doesn't exist if nobody clicks. This gates everything upstream.*
 
 ### Title formula
-`[BENTLEY + ACTION VERB IN CAPS] + [CURIOSITY GAP] + [emoji] | Bentley's Discovery Club`
+`[BENTLEY + ACTION VERB IN CAPS] + [CURIOSITY GAP] + [emoji] | Bentley's Big Adventures`
 
-- ✅ "Bentley Hears a VOICE in a Shell! 🐚 | Bentley's Discovery Club Ep 1"
+- ✅ "Bentley Hears a VOICE in a Shell! 🐚 | Bentley's Big Adventures Ep 1"
 - ✅ "What's HIDING in the Tide Pool?! 🌊🦀"
 - ✅ "Bentley Can TALK to Sea Animals?! 🐶"
 - ❌ "Bentley's Big Discovery" (no gap, no keyword — the original title; kill it).
@@ -103,7 +103,7 @@ Same intro sting, same end card, same thumbnail grammar, episode numbers visible
 - **A beat every 30–45s:** gag, glow, reveal, or escalation. No flat stretches.
 - **Escalation, not repetition:** each fact makes the problem *worse* before the turn (rushing backfires). Stakes climb.
 - **The required setback:** the first solution must FAIL once (too-small shell). The dip-then-win is the single biggest retention spike in the episode.
-- **Direct address:** "Discovery Club — what do *you* think Pip needs?" Pause a beat. Parasocial participation = comments + replays + watch-time.
+- **Direct address:** "Big Adventures — what do *you* think Pip needs?" Pause a beat. Parasocial participation = comments + replays + watch-time.
 - **The shell-glow as a dopamine cue:** a recurring audio-visual "ding" the audience learns to anticipate (progress signal).
 - **Snack-gag punctuation:** drop a 3-sec comedy bead to reset attention between heavy beats.
 - **Kill the lecture:** if a fact can't be *dramatized as plot or jeopardy*, cut it or move it to a Short. Facts must *do work* in the story.
@@ -180,9 +180,9 @@ Claude expands beat-sheet → shotlist + VO script → batch image gen (locked r
 3. **Subscribers + channel memberships** → recurring base, members-only Shorts/coloring pages.
 4. **Music** → the theme + a per-episode **"fact song"** earworm. Drives retention AND earns on YouTube Music/Spotify AND is the cheapest marketing you have. ("Stop, Look, Listen" + "The Vacancy Chain (Hermit Crab Song)").
 5. **Merch** → hero product = the **glowing Listening Shell necklace**; then **Bentley plush**, **Stella plush**, **collectible animal-of-the-week figures** (built-in "gotta collect 'em all" — one per episode).
-6. **Books** → nonfiction tie-ins ("Bentley's Discovery Club: Tide Pools"), board books, "Stop Look Listen" activity/sticker books.
+6. **Books** → nonfiction tie-ins ("Bentley's Big Adventures: Tide Pools"), board books, "Stop Look Listen" activity/sticker books.
 7. **Educational products** → preschool curriculum kits, teacher guides, an app of mini "listen and discover" games.
-8. **Licensing & sponsorship** → aquariums/zoos/museums, eco & nature orgs (Nat Geo Kids / WWF co-brand), and **pet brands** (a Boxer hero is a natural fit). Live "Discovery Club" experiences at aquariums.
+8. **Licensing & sponsorship** → aquariums/zoos/museums, eco & nature orgs (Nat Geo Kids / WWF co-brand), and **pet brands** (a Boxer hero is a natural fit). Live "Big Adventures" experiences at aquariums.
 
 ### Why this IP is built to monetize
 - **Collectibility is structural:** one new animal per episode = one new figure/plush/book per episode. The format *is* a product line.

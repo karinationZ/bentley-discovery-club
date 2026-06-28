@@ -1,0 +1,13 @@
+{
+ "s22_pawhold": {
+  "error": "kie fail (422): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+ },
+ "s16_exchange": {
+  "error": "kie fail (422): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+ },
+ "s16a_colorgame": {
+  "path": "/project/scratch/ep2/hero/s16a_colorgame.png",
+  "credits": 4.0,
+  "secs": 36
+ }
+}

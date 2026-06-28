@@ -1,5 +1,5 @@
 # The Ant City Beneath Our Feet
-### Season 1 · Episode 3 · Bentley's Discovery Club
+### Season 1 · Episode 3 · Bentley's Big Adventures
 
 > **Logline:** Bentley shrinks to ant-size for the first time and meets Dot, a worker ant who feels like a nobody — "just one tiny ant who doesn't matter" — right as a rainstorm threatens to flood the entire underground city.
 
@@ -41,7 +41,7 @@ The rain clears. A single brilliant **monarch butterfly** lands beside tiny Bent
 5. ⚡ "Small isn't the same as 'doesn't matter.'" (heart clip)
 
 ## Title & Thumbnail
-- **Title:** "Bentley SHRANK Into an Ant City?! 🐜🏙️ | Bentley's Discovery Club Ep 3"
+- **Title:** "Bentley SHRANK Into an Ant City?! 🐜🏙️ | Bentley's Big Adventures Ep 3"
 - **Thumbnail:** Tiny awe-struck Bentley standing before a towering glowing ant metropolis; one giant ant beside her for scale.
 
 ## Season thread touch

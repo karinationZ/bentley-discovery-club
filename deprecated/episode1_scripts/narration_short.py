@@ -4,7 +4,7 @@ shot cleanly (no overlap, no truncation). Overwrites THEO_FACT1/N06/N10a."""
 import os, json, subprocess, urllib.request
 KEY = os.environ["ELEVENLABS_API_KEY"]
 NARR_VOICE = "pqHfZKP75CvOlQylNhV4"  # Bill (locked narrator)
-OUT = "assets/pilot_shots/hybrid_ep1/v2/audio"
+OUT = "assets/pilot_shots/ep1/v2/audio"
 def tts(name, text):
     body = json.dumps({"text": text, "model_id": "eleven_v3",
         "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.4, "speed": 1.04}}).encode()

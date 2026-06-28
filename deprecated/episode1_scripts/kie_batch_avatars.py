@@ -27,7 +27,7 @@ def host(path):
 
 GRADE = ("curves=master='0/0.045 0.25/0.30 0.5/0.58 0.78/0.85 1/0.965',eq=saturation=1.22:contrast=1.05:brightness=0.02,"
          "colorbalance=rs=.01:gs=0:bs=.01:rm=.04:gm=0:bm=-.03:rh=.02:gh=.01:bh=-.02,unsharp=3:3:0.35:3:3:0.0,format=yuv420p")
-AUD = "assets/pilot_shots/hybrid_ep1/v2/audio"
+AUD = "assets/pilot_shots/ep1/v2/audio"
 manifest = json.load(open("tests/kie/batch/manifest.json"))
 SHOTS = {
  "a1_02_react": {"vo": f"{AUD}/a1_02_NEW.mp3",

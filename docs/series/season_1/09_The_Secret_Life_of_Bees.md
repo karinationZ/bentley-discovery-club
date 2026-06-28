@@ -1,5 +1,5 @@
 # The Secret Life of Bees
-### Season 1 · Episode 9 · Bentley's Discovery Club
+### Season 1 · Episode 9 · Bentley's Big Adventures
 
 > **Logline:** Bentley shrinks into a buzzing golden city and meets Buzz, a young worker bee who thinks her job is boring and dreams of being the "important" one — right as the hive is about to starve and the only thing that can save it is the very dance Buzz keeps ignoring.
 
@@ -39,7 +39,7 @@ The hive is saved — but Buzz reveals *why* the flowers failed: the trouble is 
 5. ⚡ "The world runs on the small jobs." (heart clip)
 
 ## Title & Thumbnail
-- **Title:** "Bentley SHRANK Into a Beehive?! 🐝🍯 | Bentley's Discovery Club Ep 9"
+- **Title:** "Bentley SHRANK Into a Beehive?! 🐝🍯 | Bentley's Big Adventures Ep 9"
 - **Thumbnail:** Tiny Bentley standing in glowing golden honeycomb surrounded by friendly bees mid-dance; warm amber.
 
 ## Season thread touch

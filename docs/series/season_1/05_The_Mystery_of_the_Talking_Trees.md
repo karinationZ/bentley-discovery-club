@@ -1,5 +1,5 @@
 # The Mystery of the Talking Trees
-### Season 1 · Episode 5 · Bentley's Discovery Club
+### Season 1 · Episode 5 · Bentley's Big Adventures
 
 > **Logline:** Spooky whispers haunt the forest at night. Bentley goes ghost-hunting — and discovers the trees really *are* talking, through a secret underground network, and a lonely little sapling who feels invisible has been connected to everyone the whole time.
 
@@ -39,7 +39,7 @@ Through the root-network, a distant tremor — water, a shadow, fear rippling fr
 5. ⚡ "You were never alone. You just had to listen with your roots." (heart clip)
 
 ## Title & Thumbnail
-- **Title:** "Why Are the Trees TALKING at Night?! 🌲👀 | Bentley's Discovery Club Ep 5"
+- **Title:** "Why Are the Trees TALKING at Night?! 🌲👀 | Bentley's Big Adventures Ep 5"
 - **Thumbnail:** Bentley, ear to the forest floor in moonlight, with a glowing web of roots lighting up underground.
 
 ## Season thread touch

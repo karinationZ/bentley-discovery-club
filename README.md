@@ -1,4 +1,4 @@
-# Bentley's Discovery Club — production repo
+# Bentley's Big Adventures — production repo
 
 Kids' YouTube animation franchise (channel: *Bentley's Big Adventures*), built on a
 fal / kie.ai / ElevenLabs / ffmpeg pipeline. This repo holds the **code, configs, and docs**.

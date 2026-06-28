@@ -5,7 +5,7 @@ import os, json, subprocess, urllib.request, concurrent.futures
 from kie_client import run, download
 ELEVEN_KEY = os.environ["ELEVENLABS_API_KEY"]
 PIP_VOICE = "N2lVS1w4EtoT3dr4eOWO"
-AUD = "assets/pilot_shots/hybrid_ep1/v2/audio"
+AUD = "assets/pilot_shots/ep1/v2/audio"
 FIX = "tests/kie/fix"
 
 def tts_pip(text, outp):

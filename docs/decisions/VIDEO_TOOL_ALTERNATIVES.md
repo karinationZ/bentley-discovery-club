@@ -1,5 +1,5 @@
 # Alternatives to Higgsfield.ai for high-quality video (June 2026)
-> Research for Bentley's Discovery Club. Focus on what THIS project needs: **recurring cartoon characters (Bentley + Pip), talking characters with real lip-sync, living motion, and cost that survives a weekly series.** Pairs with `HANDOFF.md`.
+> Research for Bentley's Big Adventures. Focus on what THIS project needs: **recurring cartoon characters (Bentley + Pip), talking characters with real lip-sync, living motion, and cost that survives a weekly series.** Pairs with `HANDOFF.md`.
 
 ## TL;DR — the short answer
 **Higgsfield is itself an *aggregator*** (one $15+/mo sub → ~15 models incl. Veo 3.1, Kling 3.0, Seedance, Wan, Hailuo). So our pipeline isn't "wrong" — it's industry-standard (image-first → animate → edit). The real upgrades to consider:

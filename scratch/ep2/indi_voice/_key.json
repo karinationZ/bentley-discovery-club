@@ -1,0 +1,40 @@
+{
+ "settings": {
+  "stability": 0.4,
+  "similarity_boost": 0.75,
+  "style": 0.45,
+  "speed": 0.95
+ },
+ "lines": [
+  "If nobody sees me, nobody can be disappointed by me.",
+  "I wasn't running from you. I run from everybody. It's safer to disappear... But I kept leaving you shells because somebody finally needs to listen \u2014 the open water's gone wrong.",
+  "You don't have to disappear... to be seen by you."
+ ],
+ "key": {
+  "A": {
+   "name": "Lily",
+   "voice_id": "pFZP5JQG7iQjIQuC4Bku",
+   "reel": "/project/scratch/ep2/indi_voice/indi_AUDITION_A.mp3"
+  },
+  "B": {
+   "name": "Sarah",
+   "voice_id": "EXAVITQu4vr4xnSDxMaL",
+   "reel": "/project/scratch/ep2/indi_voice/indi_AUDITION_B.mp3"
+  },
+  "C": {
+   "name": "Alice",
+   "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+   "reel": "/project/scratch/ep2/indi_voice/indi_AUDITION_C.mp3"
+  },
+  "D": {
+   "name": "River",
+   "voice_id": "SAz9YHcvj6GT2YYXdXww",
+   "reel": "/project/scratch/ep2/indi_voice/indi_AUDITION_D.mp3"
+  },
+  "E": {
+   "name": "Jessica",
+   "voice_id": "cgSgspJ2msm6clMCkdW9",
+   "reel": "/project/scratch/ep2/indi_voice/indi_AUDITION_E.mp3"
+  }
+ }
+}

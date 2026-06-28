@@ -1,0 +1,6 @@
+file '/project/scratch/ep2/indi_voice/indi_E_line1.mp3'
+file '/project/scratch/ep2/indi_voice/_sil.mp3'
+file '/project/scratch/ep2/indi_voice/indi_E_line2.mp3'
+file '/project/scratch/ep2/indi_voice/_sil.mp3'
+file '/project/scratch/ep2/indi_voice/indi_E_line3.mp3'
+file '/project/scratch/ep2/indi_voice/_sil.mp3'

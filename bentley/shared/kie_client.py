@@ -16,6 +16,8 @@ def _get(path):
 
 def run(model, inp, timeout=600, poll=5):
     r = _post("createTask", {"model": model, "input": inp})
+    if r.get("code") != 200 or not r.get("data"):
+        raise RuntimeError(f"kie createTask rejected ({r.get('code')}): {r.get('msg')}")
     tid = r["data"]["taskId"]
     t0 = time.time()
     while time.time() - t0 < timeout:

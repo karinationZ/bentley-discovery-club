@@ -1,0 +1,17 @@
+{
+ "indi_v2_hero": {
+  "path": "/project/scratch/ep2/indi_v2/indi_v2_hero.png",
+  "credits": 4.0,
+  "secs": 10
+ },
+ "indi_v2_peek": {
+  "path": "/project/scratch/ep2/indi_v2/indi_v2_peek.png",
+  "credits": 4.0,
+  "secs": 10
+ },
+ "indi_v2_purpleflush": {
+  "path": "/project/scratch/ep2/indi_v2/indi_v2_purpleflush.png",
+  "credits": 4.0,
+  "secs": 15
+ }
+}

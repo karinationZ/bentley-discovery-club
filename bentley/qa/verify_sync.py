@@ -5,7 +5,7 @@ import os, json, subprocess
 from bentley.shared.ffio import dur
 from bentley.shared.paths import episode_assets
 from bentley.episode_builder.timeline import make_next_talk_start, place_sequential
-ROOT = str(episode_assets("hybrid_ep1"))
+ROOT = str(episode_assets("ep1"))
 V2 = f"{ROOT}/v2"; AUD, WORK = f"{V2}/audio", f"{V2}/work"
 TLJSON = json.load(open(f"{WORK}/timeline2.json")); TL = {s["id"]: s for s in TLJSON}
 def st(i): return TL[i]["start"]
@@ -19,6 +19,7 @@ dia = [(s["id"], s["start"], round(s["start"] + s["dur"], 2)) for s in TLJSON if
 NARR = [
  (f"{AUD}/THEO_INTRO1.mp3","I1_establish",0.4),(f"{AUD}/THEO_INTRO2.mp3","I2_hero",0.3),
  (f"{AUD}/THEO_FACT1.mp3","a1_04_reveal",0.6),
+ (f"{AUD}/PIPOS_wave1.mp3","a3_02a_wave",0.4),   # reconciled with mix.py (was missing -> wave1 overlap went unchecked)
  (f"{AUD}/BENTOS_chain.mp3","a4_01_crowd",0.3),(f"{AUD}/THEO_FACT4.mp3","BR2_lineshuffle",0.3),
  (f"{AUD}/THEO_N16.mp3","a4_03_cascade",0.3),(f"{AUD}/BENTOS_octo.mp3","a6_01_octopus",0.6),
  (f"{AUD}/THEO_outro.mp3","END_card",0.5),

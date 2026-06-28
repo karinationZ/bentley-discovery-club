@@ -17,6 +17,6 @@ requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-# package dir (bentley) differs from the project name (youtube); declare it explicitly
+# package dir (bentley) differs from the project name (bentley-discovery-club); declare it explicitly
 # so `pip install -e .` / `poetry install` expose `import bentley.*`.
 packages = [{ include = "bentley" }]

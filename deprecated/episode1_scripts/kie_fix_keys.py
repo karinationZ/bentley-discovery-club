@@ -4,7 +4,7 @@ Octopus keyframe extracted from the existing clip (keeps design). Host all on ca
 from kie_client import run, credits, download
 import subprocess, json, os
 os.makedirs("tests/kie/fix", exist_ok=True)
-ROOT = "/home/user/src/youtube/assets/pilot_shots/hybrid_ep1"
+ROOT = "/project/assets/pilot_shots/ep1"
 BENT = "https://v3b.fal.media/files/b/0a9eb213/K0YEhgC0hRPAknNVA_bSO_Bentley_MASTER_clean_16x9.png"
 PIP  = "https://d8j0ntlcm91z4.cloudfront.net/user_3F9AzDc10VXM2MT0k5hLwTCbjQr/hf_20260616_223627_2eb7befd-9545-47ad-9d34-d1f13e108bfa.png"
 

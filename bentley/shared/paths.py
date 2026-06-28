@@ -11,6 +11,6 @@ SCRATCH = ROOT / "scratch"
 EPISODES = ROOT / "episodes"
 
 
-def episode_assets(ep="hybrid_ep1"):
-    """Asset working directory for an episode, e.g. assets/pilot_shots/hybrid_ep1."""
+def episode_assets(ep="ep1"):
+    """Asset working directory for an episode, e.g. assets/pilot_shots/ep1."""
     return ASSETS / "pilot_shots" / ep

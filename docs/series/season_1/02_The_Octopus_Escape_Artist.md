@@ -1,5 +1,5 @@
 # The Octopus Escape Artist
-### Season 1 · Episode 2 · Bentley's Discovery Club
+### Season 1 · Episode 2 · Bentley's Big Adventures
 
 > **Logline:** The mysterious tentacle finally has a face — Indi, a shy octopus who keeps vanishing the instant anyone looks at her. Bentley chases her to "help," not realizing Indi isn't running away — she's terrified of being *seen*, and she's been leaving shell-messages because the ocean is in trouble.
 
@@ -8,9 +8,9 @@
 **Bentley's arc:** Chases and grabs to "catch" the octopus (doing) → learns chasing makes Indi vanish → gets still and lets Indi *choose* to come → earns trust.
 
 ## The 3 Dramatized Facts (real)
-1. Octopuses **change color AND texture in milliseconds** to vanish into rock, coral, sand — master camouflage.
+1. Octopuses **change color AND texture in the blink of an eye** to vanish into rock, coral, sand — master camouflage.
 2. They have **three hearts and blue blood** (copper-based, not iron).
-3. They're **boneless** — an octopus can squeeze through any gap bigger than its beak (the real "escape artist"). Bonus: a "brain" in every arm — the arms can taste and act on their own.
+3. They're **boneless** — an octopus can squeeze through any gap bigger than its beak (the real "escape artist"). Bonus: a "brain" in every arm — about two-thirds of its neurons are in its arms, and the suckers taste by touch — so each arm can sense and act a little on its own.
 
 ## Cold Hook (0:00–0:12)
 Bentley reaches to boop a cute speckled rock. The "rock" **opens one giant eye**, flushes deep red, and vanishes in a puff of ink. **BENTLEY:** *(through an ink cloud)* "The ROCK had an EYEBALL!"
@@ -39,7 +39,7 @@ Indi presses an urgent message into Bentley's paw — a warning about "the gathe
 5. ⚡ "You don't have to disappear to be safe with me." (heart clip)
 
 ## Title & Thumbnail
-- **Title:** "Bentley Booped a ROCK… and It Had an EYE 👁️🐙 | Bentley's Discovery Club Ep 2"
+- **Title:** "Bentley Booped a ROCK… and It Had an EYE 👁️🐙 | Bentley's Big Adventures Ep 2"
 - **Thumbnail:** Bentley's paw about to boop a rock that's opening a huge octopus eye; ink swirl; shocked Boxer face.
 
 ## Season thread touch

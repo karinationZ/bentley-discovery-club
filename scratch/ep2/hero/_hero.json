@@ -1,0 +1,43 @@
+{
+ "indi_url": "https://files.catbox.moe/afdwlt.png",
+ "bent_url": "https://files.catbox.moe/xqf188.png",
+ "s03_rock_eye": {
+  "path": "/project/scratch/ep2/hero/s03_rock_eye.png",
+  "refs": 1,
+  "credits": 4.0,
+  "secs": 36
+ },
+ "s14_emergence": {
+  "path": "/project/scratch/ep2/hero/s14_emergence.png",
+  "refs": 1,
+  "credits": 4.0,
+  "secs": 31
+ },
+ "s20_squeeze": {
+  "path": "/project/scratch/ep2/hero/s20_squeeze.png",
+  "refs": 1,
+  "credits": 4.0,
+  "secs": 31
+ },
+ "bentley_cu_awe": {
+  "path": "/project/scratch/ep2/hero/bentley_cu_awe.png",
+  "refs": 1,
+  "credits": 4.0,
+  "secs": 15
+ },
+ "s22_pawhold": {
+  "path": "/project/scratch/ep2/hero/s22_pawhold.png",
+  "refs": 2,
+  "credits": 4.0,
+  "secs": 20
+ },
+ "s16_exchange": {
+  "path": "/project/scratch/ep2/hero/s16_exchange.png",
+  "refs": 2,
+  "credits": 4.0,
+  "secs": 41
+ },
+ "s16a_colorgame": {
+  "error": "kie fail (422): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+ }
+}

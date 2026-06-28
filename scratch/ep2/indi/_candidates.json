@@ -1,0 +1,17 @@
+{
+ "indi_A_peek": {
+  "path": "/project/scratch/ep2/indi/indi_A_peek.png",
+  "credits": 4.0,
+  "secs": 10
+ },
+ "indi_B_hero": {
+  "path": "/project/scratch/ep2/indi/indi_B_hero.png",
+  "credits": 4.0,
+  "secs": 10
+ },
+ "indi_C_camo": {
+  "path": "/project/scratch/ep2/indi/indi_C_camo.png",
+  "credits": 4.0,
+  "secs": 10
+ }
+}

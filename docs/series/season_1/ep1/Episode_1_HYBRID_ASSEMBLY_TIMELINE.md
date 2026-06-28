@@ -29,7 +29,7 @@
 | 17 | ⭐**H5 VACANCY WHOAA** | N16 "Scientists call it a vacancy chain — a whole neighborhood, trading homes all at once. The very last shell… fit Pip perfectly." | 🟡**B_vacwhoaa**(NEW) "Whoa… did you SEE that?! The whole pool helped!" |
 
 ## ACT 5 — HOME + DISCOVERY TAG (~28s)
-| 18 | ♻ new_piphome | N17 "Safe at last — in a home of his very own." | 🔵**P_thanks**(NEW) "It… fits. Thank you, Bentley." · 🟡**B_disco**(NEW) "That's what the Discovery Club is for." |
+| 18 | ♻ new_piphome | N17 "Safe at last — in a home of his very own." | 🔵**P_thanks**(NEW) "It… fits. Thank you, Bentley." · 🟡**B_disco**(NEW) "That's what the Big Adventures is for." |
 | 19 | ♻ new_rescue (recap visuals) | N18 "Today we discovered: a hermit crab borrows its home… it trades up as it grows… and when the time comes, the whole tide pool helps — in an amazing vacancy chain." | — |
 | 20 | ⭐**H6 TAG to camera** (♻ upscaled pilot grin) | N19 "Stop. Look. Listen… and you'll find the wonder, everywhere." | 🟡**B_tag**(NEW) "…Let's go find the WONDER!" |
 

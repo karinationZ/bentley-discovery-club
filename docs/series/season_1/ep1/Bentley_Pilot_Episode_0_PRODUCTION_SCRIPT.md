@@ -120,7 +120,7 @@
 
 **[S010]** · 2.6s · WS→MS, quick push
 🎬 GEN: [BENTLEY] pops up into frame on the rocks, does a full-body Boxer **wiggle-butt** dance and throws one paw forward, joyful, sunrise behind. [POOL]
-🔊 BENTLEY: "Discovery Club — *let's GO!*"
+🔊 BENTLEY: "Big Adventures — *let's GO!*"
 🎵 theme button + cymbal
 
 **[S011]** · 1.4s · whip transition
@@ -406,7 +406,7 @@
 
 **[S069]** · 2.2s · WS
 🎬 GEN: [BENTLEY] turning to the wider tide pool, addressing its hidden residents.
-🔊 BENTLEY: "Discovery Club — *let's GO!*"
+🔊 BENTLEY: "Big Adventures — *let's GO!*"
 🎵 rally motif
 
 **[S070]** · 2.0s · reaction
@@ -576,7 +576,7 @@
 
 **[S106]** · 3.2s · CU, Stella
 🎬 GEN: [STELLA] warm and twinkling.
-🔊 STELLA: "—and it only works when you get *quiet* enough to hear them. Welcome to the Discovery Club, Bentley."
+🔊 STELLA: "—and it only works when you get *quiet* enough to hear them. Welcome to the Big Adventures, Bentley."
 🎵 ★ theme swells
 
 **[S107]** · 2.6s · CU, Bentley glowing
@@ -635,7 +635,7 @@
 
 **[S119]** · 2.0s · CU, Bentley grin
 🎬 GEN: [BENTLEY] grinning with excitement at the sea.
-🔊 BENTLEY: "Discovery Club — where to *next?!*"
+🔊 BENTLEY: "Big Adventures — where to *next?!*"
 🎵 ★ theme hit
 
 **[S120]** · 1.5s · CUT TO BLACK
@@ -673,7 +673,7 @@
 
 **BENTLEY**
 - [S004] "Did... did the beach just talk to me?"
-- [S010] "Discovery Club — let's GO!"
+- [S010] "Big Adventures — let's GO!"
 - [S013] "Emergency snack. For later."
 - [S017] "A talking crab! Don't worry, tiny guy — I am an expert helper."
 - [S018] "Obviously you fell out of the ocean!"
@@ -689,7 +689,7 @@
 - [S062] "...I know that feeling."
 - [S065] "A bigger house. The right size. Not the ocean — a home."
 - [S068] "And I bet somebody here is moving up, too."
-- [S069] "Discovery Club — let's GO!"
+- [S069] "Big Adventures — let's GO!"
 - [S079] "It's like musical chairs — but for HOUSES!"
 - [S086] "...Okay. Stop. Look. Listen."
 - [S088] "...It was on me the whole time."
@@ -697,7 +697,7 @@
 - [S102] "You needed it more. Besides — turns out I don't help by grabbing. I help by listening."
 - [S110] "Stop. Look. Listen. ...Discover."
 - [S117] "...Do octopuses usually say hello?"
-- [S119] "Discovery Club — where to next?!"
+- [S119] "Big Adventures — where to next?!"
 - [S122] "Subscribe so I can find you for the next adventure!"
 
 **PIP**
@@ -733,7 +733,7 @@
 - [S073] "When one crab finds a bigger shell, the next-biggest moves into its old one. And the next. We line up by size."
 - [S074] "We call it the vacancy chain."
 - [S105] "Every good listener gets one. It glows when somebody nearby needs help—"
-- [S106] "—and it only works when you get quiet enough to hear them. Welcome to the Discovery Club, Bentley."
+- [S106] "—and it only works when you get quiet enough to hear them. Welcome to the Big Adventures, Bentley."
 
 ---
 

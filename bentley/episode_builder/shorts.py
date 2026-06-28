@@ -10,10 +10,9 @@ W, H = 1080, 1920
 # the master may live in several spots (a repo reorg relocated it) — find it wherever it is
 FINAL = next((p for p in (
     "episodes/ep1/Bentley_Ep1_v2_FINAL_1080p.mp4",
-    "assets/approved/episodes/Bentley_Ep1_v2_FINAL_1080p.mp4",
-    "assets/pilot_shots/hybrid_ep1/Bentley_Ep1_v2_FINAL_1080p.mp4",
+    "assets/pilot_shots/ep1/Bentley_Ep1_v2_FINAL_1080p.mp4",
 ) if os.path.exists(p)), "episodes/ep1/Bentley_Ep1_v2_FINAL_1080p.mp4")
-OUT = "assets/pilot_shots/hybrid_ep1/shorts"
+OUT = "assets/pilot_shots/ep1/shorts"
 CAP, CLIP, EXP = f"{OUT}/captions", f"{OUT}/clips", f"{OUT}/exports"
 for d in (CAP, CLIP, EXP): os.makedirs(d, exist_ok=True)
 VENC = ["-c:v","libx264","-preset","medium","-crf","19","-pix_fmt","yuv420p","-r","24","-video_track_timescale","12288"]

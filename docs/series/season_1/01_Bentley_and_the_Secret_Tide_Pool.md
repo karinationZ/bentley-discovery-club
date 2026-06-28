@@ -1,5 +1,5 @@
 # Bentley and the Secret Tide Pool
-### Season 1 · Episode 1 · Bentley's Discovery Club
+### Season 1 · Episode 1 · Bentley's Big Adventures
 
 > **Logline:** Bentley returns to the tide pool and discovers a dark hidden crevice — and a glowing neon sea slug everyone avoids, who's lonely because the whole pool thinks her dazzling colors make her "too weird to be near."
 
@@ -39,7 +39,7 @@ As the tide settles, a **purple tentacle** slips a single spiral shell onto the 
 5. ⚡ "You weren't weird. You were a lighthouse." (the heart clip)
 
 ## Title & Thumbnail
-- **Title:** "What's GLOWING in the Secret Tide Pool?! 🌈🐌 | Bentley's Discovery Club Ep 1"
+- **Title:** "What's GLOWING in the Secret Tide Pool?! 🌈🐌 | Bentley's Big Adventures Ep 1"
 - **Thumbnail:** Bentley's wide-eyed face nose-to-nose with a glowing neon-purple sea slug in a dark crevice; high-contrast blue/purple.
 
 ## Season thread touch

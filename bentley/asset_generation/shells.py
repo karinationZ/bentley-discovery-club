@@ -6,7 +6,7 @@ Usage: shell_gen.py            -> keyframe only (QA first)
 import os, sys, urllib.request, fal_client
 M_T2I = "fal-ai/nano-banana"
 M_VIDEO = "fal-ai/kling-video/v2.5-turbo/pro/image-to-video"
-WORK = "assets/pilot_shots/hybrid_ep1/v2"
+WORK = "assets/pilot_shots/ep1/v2"
 KEY = f"{WORK}/CLEAN_shell_key.png"; OUT = f"{WORK}/CLEAN_shell.mp4"
 
 PROMPT = ("A beautiful SMOOTH, GLOSSY, POLISHED pearlescent spiral seashell — a hard porcelain-like "

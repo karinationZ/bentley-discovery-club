@@ -27,7 +27,7 @@ def tts_bentley(text, outp):
 
 # 1) VO
 LINE = "[warm, fond] And hey — turns out I was a little bit right. You ARE a tiny knight... in brand-new shiny armor."
-VO = "assets/pilot_shots/hybrid_ep1/v2/audio/BENTOS_n6armor.mp3"
+VO = "assets/pilot_shots/ep1/v2/audio/BENTOS_n6armor.mp3"
 tts_bentley(LINE, VO)
 dur = float(subprocess.check_output(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",VO]).strip())
 print(f"VO -> {VO}  ({dur:.2f}s)")

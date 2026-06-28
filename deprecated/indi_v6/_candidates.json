@@ -1,0 +1,24 @@
+{
+ "ref_url": "https://files.catbox.moe/vk2snn.png",
+ "indi_v6_hero": {
+  "path": "/project/scratch/ep2/indi_v6/indi_v6_hero.png",
+  "expr": "Calm, a shy soulful gaze toward camera, small soft closed smile.",
+  "method": "edit",
+  "credits": 4.0,
+  "secs": 15
+ },
+ "indi_v6_peek": {
+  "path": "/project/scratch/ep2/indi_v6/indi_v6_peek.png",
+  "expr": "Shy PEEK from behind a wet black rock: upper head and eyes visible, one long arm curled softly over the top of her head, mouth a tiny shy line.",
+  "method": "edit",
+  "credits": 4.0,
+  "secs": 36
+ },
+ "indi_v6_curious": {
+  "path": "/project/scratch/ep2/indi_v6/indi_v6_curious.png",
+  "expr": "Curious and gentle, head tilting slightly, one arm reaching forward, mouth a small soft open 'oh'. NO teeth.",
+  "method": "edit",
+  "credits": 4.0,
+  "secs": 25
+ }
+}

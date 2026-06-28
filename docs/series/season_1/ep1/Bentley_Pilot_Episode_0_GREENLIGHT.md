@@ -1,4 +1,4 @@
-# Bentley's Discovery Club
+# Bentley's Big Adventures
 # PILOT — Episode 0: "The Voice in the Shell" (GREENLIGHT DRAFT)
 
 > **Logline:** When a tiny voice cries for help from a glowing shell, Bentley the Boxer charges in to save the day the way she does everything — fast, loud, and wrong — until a one-armed sea star teaches her that the world only tells you what it needs when you *stop, look, and listen.*
@@ -14,7 +14,7 @@
 | Time | Beat | Retention job |
 |------|------|----------------|
 | 0:00–0:12 | **COLD HOOK** — the shell whispers "Help!" | Survive the swipe. Open on mystery, never scenery. |
-| 0:12–0:35 | **Title sting + rally cry** | Brand Pavlov. 2-note motif + "Discovery Club, let's GO!" |
+| 0:12–0:35 | **Title sting + rally cry** | Brand Pavlov. 2-note motif + "Big Adventures, let's GO!" |
 | 0:35–1:45 | **Flaw on display** — Bentley "rescues" wrong | Comedy + character. Plant the arc. |
 | 1:45–3:15 | **Discovery 1 & 2 + it gets worse** | Dramatized facts raise stakes, not lower them. |
 | 3:15–4:30 | **THE TURN** — "Stop. Look. Listen." | Emotional pivot. Shell glows for real. |
@@ -54,7 +54,7 @@
 
 Bentley pops up into frame, ears perked, does a full-body **wiggle-butt**, and throws a paw.
 
-> **BENTLEY:** "Discovery Club — *let's GO!*"
+> **BENTLEY:** "Big Adventures — *let's GO!*"
 
 ---
 
@@ -156,7 +156,7 @@ This is the Bluey beat. *Outgrowing things and feeling unheard* — every kid an
 
 Now Bentley *helps the right way* — by understanding the real need. She doesn't carry Pip. She organizes the neighborhood.
 
-> **BENTLEY:** "You need a bigger house. And I bet somebody here is moving up too. Discovery Club — *let's GO!*"
+> **BENTLEY:** "You need a bigger house. And I bet somebody here is moving up too. Big Adventures — *let's GO!*"
 
 She rallies the tide pool. Turns out hermit crabs do something amazing and *real*:
 
@@ -191,7 +191,7 @@ Pip, safe in the water, in his glowing new home, looks up at Bentley.
 
 Stella floats over, presses the now-empty *first* shell — no wait — she produces a *new* tiny shell and clips it to Bentley's collar. It glows.
 
-> **STELLA:** "Every good listener gets one. It glows when somebody nearby needs help — and it only works when you get *quiet* enough to hear them. Welcome to the Discovery Club, Bentley."
+> **STELLA:** "Every good listener gets one. It glows when somebody nearby needs help — and it only works when you get *quiet* enough to hear them. Welcome to the Big Adventures, Bentley."
 
 > **NARRATOR:** "Bentley came to the beach to *help.* She left knowing the secret: the whole world is talking, all the time. You just have to get quiet enough to hear it."
 
@@ -209,7 +209,7 @@ Far offshore, a **purple tentacle** rises from the water. It curls. It... *waves
 
 The shell pulses *toward* the deep water — the next mystery, already calling.
 
-> **BENTLEY:** "Discovery Club — where to *next?!*"
+> **BENTLEY:** "Big Adventures — where to *next?!*"
 
 **CUT TO BLACK. The 2-note motif.**
 

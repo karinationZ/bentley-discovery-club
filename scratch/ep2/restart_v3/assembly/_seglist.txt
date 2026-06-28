@@ -1,0 +1,6 @@
+file '/project/scratch/ep2/restart_v3/assembly/segs/01_p01_s01_boop.mp4'
+file '/project/scratch/ep2/restart_v3/assembly/segs/02_p01_s02_eye.mp4'
+file '/project/scratch/ep2/restart_v3/assembly/segs/03_p01_s03_winkers.mp4'
+file '/project/scratch/ep2/restart_v3/assembly/segs/04_p01_s04_names.mp4'
+file '/project/scratch/ep2/restart_v3/assembly/segs/05_p01_s05_found_rules.mp4'
+file '/project/scratch/ep2/restart_v3/assembly/segs/06_p01_s06_no_boop.mp4'

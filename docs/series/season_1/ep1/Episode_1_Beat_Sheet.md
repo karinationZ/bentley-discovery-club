@@ -56,7 +56,7 @@ Legend: 🔬 science · ❤️ emotion · 📈 retention · ⚡ Shorts · 🎬 e
 - 🎬 `Bentley-MASTER` + `Pip` + glowing shell.
 
 ## SCENE 7 — ⭐ THE WOW: THE VACANCY CHAIN · 🔬 SCIENCE 2 (4:50–6:20)
-- **Action:** Bentley understands — she can't find *one* shell; she needs the **whole neighborhood to trade up together.** *"Discovery Club — let's go find the WONDER!"* She rallies the tide pool. The crabs **gather and line up by size**; a big new shell appears; the biggest moves in → each crab **cascades into the next-vacated shell** — *click, click, click* — a breathtaking chain of homes.
+- **Action:** Bentley understands — she can't find *one* shell; she needs the **whole neighborhood to trade up together.** *"Big Adventures — let's go find the WONDER!"* She rallies the tide pool. The crabs **gather and line up by size**; a big new shell appears; the biggest moves in → each crab **cascades into the next-vacated shell** — *click, click, click* — a breathtaking chain of homes.
 - 🔬 **Science 2 (the WOW reveal = the climax = the rescue):** the real **hermit-crab vacancy chain.** Bentley's jaw drops; NARRATOR: *"They line up by size and trade homes all at once. It's called a *vacancy chain* — and it's real."* Music swells — **the science is the spectacle.**
 - ❤️📈 **SETBACK (the required dip):** the chain reaches Pip — the last shell is **one size too small.** Everyone freezes. Sun brutal. → Bentley *stops, listens,* and realizes: **her own glowing collar shell is exactly Pip's size.** *"It was on me the whole time."* She gives it to him — **perfect fit.**
 - ⚡ **Short E:** "REAL hermit crabs trade houses in a CHAIN 🦀" (the showstopper fact)
@@ -65,7 +65,7 @@ Legend: 🔬 science · ❤️ emotion · 📈 retention · ⚡ Shorts · 🎬 e
 ## SCENE 8 — RESCUE + EMOTIONAL BUTTON (6:20–7:05)
 - **Action:** A fresh wave rolls in and **carries Pip — in his glowing new shell — to the cool pool, safe, beating the sun.**
 - **Key lines:** PIP: *"You gave me your shell."* → BENTLEY: *"You needed it more. Turns out I don't help by *grabbing.* I help by *listening.*"* → PIP (quiet): *"…You're the first one who actually did."*
-- **Action:** Stella clips a **new glowing spiral shell** onto Bentley's collar — Discovery Club induction.
+- **Action:** Stella clips a **new glowing spiral shell** onto Bentley's collar — Big Adventures induction.
 - ❤️ Arc complete; the lesson *lands because she changed.*
 - 🎬 all elements.
 

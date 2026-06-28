@@ -1,0 +1,1281 @@
+{
+  "source_cue_sheet": "/project/docs/series/season_1/ep2/EP2_v3_PRODUCTION_CUE_SHEET.md",
+  "source_shotlist": "/project/episodes/ep2/shotlists/ep2_v3_character_driven.json",
+  "line_count": 88,
+  "label_audio": [
+    {
+      "label": "P1_B01",
+      "speaker": "Bentley",
+      "text": "Helloooo, little rock. You look like you need a boop.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P1_B01.mp3",
+      "duration": 4.56
+    },
+    {
+      "label": "P1_B02",
+      "speaker": "Bentley",
+      "text": "You winked.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P1_B02.mp3",
+      "duration": 1.12
+    },
+    {
+      "label": "P1_I01",
+      "speaker": "Indi",
+      "text": "Rocks are very good winkers.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P1_I01.mp3",
+      "duration": 1.76
+    },
+    {
+      "label": "P1_B03",
+      "speaker": "Bentley",
+      "text": "You are not a rock.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P1_B03.mp3",
+      "duration": 1.6
+    },
+    {
+      "label": "P1_I02",
+      "speaker": "Indi",
+      "text": "I am when I want to be.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P1_I02.mp3",
+      "duration": 2.24
+    },
+    {
+      "label": "P1_B04",
+      "speaker": "Bentley",
+      "text": "I'm Bentley.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P1_B04.mp3",
+      "duration": 1.04
+    },
+    {
+      "label": "P1_I03",
+      "speaker": "Indi",
+      "text": "I'm Indi, and I am impossible to find.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P1_I03.mp3",
+      "duration": 2.746
+    },
+    {
+      "label": "P1_B05",
+      "speaker": "Bentley",
+      "text": "I found you.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P1_B05.mp3",
+      "duration": 1.12
+    },
+    {
+      "label": "P1_I04",
+      "speaker": "Indi",
+      "text": "You found one eyeball. That barely counts.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P1_I04.mp3",
+      "duration": 3.2
+    },
+    {
+      "label": "P1_B06",
+      "speaker": "Bentley",
+      "text": "There are rules?",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P1_B06.mp3",
+      "duration": 1.36
+    },
+    {
+      "label": "P1_I05",
+      "speaker": "Indi",
+      "text": "Rule one: no booping the champion.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P1_I05.mp3",
+      "duration": 3.2
+    },
+    {
+      "label": "P1_B07",
+      "speaker": "Bentley",
+      "text": "Champion of what?",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P1_B07.mp3",
+      "duration": 1.44
+    },
+    {
+      "label": "P1_I06",
+      "speaker": "Indi",
+      "text": "Hide-and-seek.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P1_I06.mp3",
+      "duration": 0.96
+    },
+    {
+      "label": "P2_I01",
+      "speaker": "Indi",
+      "text": "Watch closely, puppy detective.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P2_I01.mp3",
+      "duration": 1.92
+    },
+    {
+      "label": "P2_B01",
+      "speaker": "Bentley",
+      "text": "I'm watching with my whole face.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P2_B01.mp3",
+      "duration": 2.32
+    },
+    {
+      "label": "P2_B02",
+      "speaker": "Bentley",
+      "text": "Your skin did a costume change!",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P2_B02.mp3",
+      "duration": 2.56
+    },
+    {
+      "label": "P2_I02",
+      "speaker": "Indi",
+      "text": "Color and texture. Very fancy. Very useful.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P2_I02.mp3",
+      "duration": 3.76
+    },
+    {
+      "label": "P2_I03",
+      "speaker": "Indi",
+      "text": "No Indi here. Only extremely normal rock.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P2_I03.mp3",
+      "duration": 3.2
+    },
+    {
+      "label": "P2_B03",
+      "speaker": "Bentley",
+      "text": "This rock sounds smug.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P2_B03.mp3",
+      "duration": 1.76
+    },
+    {
+      "label": "P2_I04",
+      "speaker": "Indi",
+      "text": "That is because this rock is winning.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P2_I04.mp3",
+      "duration": 2.56
+    },
+    {
+      "label": "P2_N01",
+      "speaker": "Narrator",
+      "text": "An octopus can change color and texture in a blink.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P2_N01.mp3",
+      "duration": 4.56
+    },
+    {
+      "label": "P2_B04",
+      "speaker": "Bentley",
+      "text": "I was looking at you, and then you became geology.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P2_B04.mp3",
+      "duration": 3.36
+    },
+    {
+      "label": "P2_B05",
+      "speaker": "Bentley",
+      "text": "But how do I find you?",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P2_B05.mp3",
+      "duration": 1.92
+    },
+    {
+      "label": "P2_I05",
+      "speaker": "Indi",
+      "text": "A trail, if you listen.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P2_I05.mp3",
+      "duration": 1.44
+    },
+    {
+      "label": "P2_B06",
+      "speaker": "Bentley",
+      "text": "You are tiny trouble.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P2_B06.mp3",
+      "duration": 1.76
+    },
+    {
+      "label": "P2_I06",
+      "speaker": "Indi",
+      "text": "Thank you.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P2_I06.mp3",
+      "duration": 0.88
+    },
+    {
+      "label": "P3_B01",
+      "speaker": "Bentley",
+      "text": "So you hide because it is fun?",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P3_B01.mp3",
+      "duration": 2.32
+    },
+    {
+      "label": "P3_I01",
+      "speaker": "Indi",
+      "text": "Fun. Clever. Dramatic. Also because some neighbors have very big mouths.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P3_I01.mp3",
+      "duration": 7.04
+    },
+    {
+      "label": "P3_B02",
+      "speaker": "Bentley",
+      "text": "Your spots just went flashlight.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P3_B02.mp3",
+      "duration": 2.32
+    },
+    {
+      "label": "P3_I02",
+      "speaker": "Indi",
+      "text": "That means: do not be crunchy.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P3_I02.mp3",
+      "duration": 2.32
+    },
+    {
+      "label": "P3_B03",
+      "speaker": "Bentley",
+      "text": "I'll chase it away!",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P3_B03.mp3",
+      "duration": 1.36
+    },
+    {
+      "label": "P3_I03",
+      "speaker": "Indi",
+      "text": "Please do not chase anything with that many teeth.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P3_I03.mp3",
+      "duration": 3.28
+    },
+    {
+      "label": "P3_B04",
+      "speaker": "Bentley",
+      "text": "Right. No chasing teeth.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P3_B04.mp3",
+      "duration": 2.0
+    },
+    {
+      "label": "P3_N01",
+      "speaker": "Narrator",
+      "text": "That is a moray eel. Not a villain, just a hungry neighbor. For a small octopus, hiding is smart.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P3_N01.mp3",
+      "duration": 8.88
+    },
+    {
+      "label": "P3_B05",
+      "speaker": "Bentley",
+      "text": "So hide-and-seek is survival.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P3_B05.mp3",
+      "duration": 2.64
+    },
+    {
+      "label": "P3_I04",
+      "speaker": "Indi",
+      "text": "And style.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P3_I04.mp3",
+      "duration": 1.04
+    },
+    {
+      "label": "P4_I01",
+      "speaker": "Indi",
+      "text": "What is that shiny paw?",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P4_I01.mp3",
+      "duration": 1.52
+    },
+    {
+      "label": "P4_B01",
+      "speaker": "Bentley",
+      "text": "My Listening Tag. It glows when I stay still.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P4_B01.mp3",
+      "duration": 4.48
+    },
+    {
+      "label": "P4_I02",
+      "speaker": "Indi",
+      "text": "Impressive.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P4_I02.mp3",
+      "duration": 0.96
+    },
+    {
+      "label": "P4_B02",
+      "speaker": "Bentley",
+      "text": "Thank you.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P4_B02.mp3",
+      "duration": 0.96
+    },
+    {
+      "label": "P4_I03",
+      "speaker": "Indi",
+      "text": "It tastes like sunshine and wet dog.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P4_I03.mp3",
+      "duration": 2.64
+    },
+    {
+      "label": "P4_B03",
+      "speaker": "Bentley",
+      "text": "That is my personal brand.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P4_B03.mp3",
+      "duration": 2.56
+    },
+    {
+      "label": "P4_N01",
+      "speaker": "Narrator",
+      "text": "Octopus arms taste and feel. Indi was reading Bentley.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P4_N01.mp3",
+      "duration": 5.36
+    },
+    {
+      "label": "P4_B04",
+      "speaker": "Bentley",
+      "text": "See? I can really stop and look.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P4_B04.mp3",
+      "duration": 2.56
+    },
+    {
+      "label": "P4_I04",
+      "speaker": "Indi",
+      "text": "You really can stop.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P4_I04.mp3",
+      "duration": 1.52
+    },
+    {
+      "label": "P4_B05",
+      "speaker": "Bentley",
+      "text": "Only for important things.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P4_B05.mp3",
+      "duration": 2.08
+    },
+    {
+      "label": "P4_I05",
+      "speaker": "Indi",
+      "text": "Am I important?",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P4_I05.mp3",
+      "duration": 1.36
+    },
+    {
+      "label": "P4_B06",
+      "speaker": "Bentley",
+      "text": "Extremely.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P4_B06.mp3",
+      "duration": 1.52
+    },
+    {
+      "label": "P4_I06",
+      "speaker": "Indi",
+      "text": "Then I shall become extremely Bentley.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P4_I06.mp3",
+      "duration": 2.88
+    },
+    {
+      "label": "P4_B07",
+      "speaker": "Bentley",
+      "text": "You did me! You're a teeny-tiny tidepool Bentley!",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P4_B07.mp3",
+      "duration": 4.0
+    },
+    {
+      "label": "P4_I07",
+      "speaker": "Indi",
+      "text": "Do I look brave?",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P4_I07.mp3",
+      "duration": 1.04
+    },
+    {
+      "label": "P4_B08",
+      "speaker": "Bentley",
+      "text": "You look like trouble wearing my outfit.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P4_B08.mp3",
+      "duration": 2.88
+    },
+    {
+      "label": "P5_I01",
+      "speaker": "Indi",
+      "text": "Big mouth. Back again.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P5_I01.mp3",
+      "duration": 2.16
+    },
+    {
+      "label": "P5_B01",
+      "speaker": "Bentley",
+      "text": "No chasing teeth.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P5_B01.mp3",
+      "duration": 1.44
+    },
+    {
+      "label": "P5_I02",
+      "speaker": "Indi",
+      "text": "Too tight!",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P5_I02.mp3",
+      "duration": 1.84
+    },
+    {
+      "label": "P5_I03",
+      "speaker": "Indi",
+      "text": "No yanking. I am soft parts!",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P5_I03.mp3",
+      "duration": 2.64
+    },
+    {
+      "label": "P5_B02",
+      "speaker": "Bentley",
+      "text": "Right. Soft parts. No yanking.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P5_B02.mp3",
+      "duration": 2.96
+    },
+    {
+      "label": "P5_B03",
+      "speaker": "Bentley",
+      "text": "Champion, what does a champion do?",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P5_B03.mp3",
+      "duration": 2.16
+    },
+    {
+      "label": "P5_I04",
+      "speaker": "Indi",
+      "text": "Hide?",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P5_I04.mp3",
+      "duration": 1.52
+    },
+    {
+      "label": "P5_B04",
+      "speaker": "Bentley",
+      "text": "And?",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P5_B04.mp3",
+      "duration": 0.88
+    },
+    {
+      "label": "P5_I05",
+      "speaker": "Indi",
+      "text": "Squeeze.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P5_I05.mp3",
+      "duration": 0.88
+    },
+    {
+      "label": "P5_B05",
+      "speaker": "Bentley",
+      "text": "Squeeze like fancy soup.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P5_B05.mp3",
+      "duration": 2.0
+    },
+    {
+      "label": "P5_I06",
+      "speaker": "Indi",
+      "text": "That is not science wording.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P5_I06.mp3",
+      "duration": 2.0
+    },
+    {
+      "label": "P5_B06",
+      "speaker": "Bentley",
+      "text": "No bones. Slow breath. Soft body.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P5_B06.mp3",
+      "duration": 4.88
+    },
+    {
+      "label": "P5_B07",
+      "speaker": "Bentley",
+      "text": "You did it! You fancy-souped!",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P5_B07.mp3",
+      "duration": 2.4
+    },
+    {
+      "label": "P5_I07",
+      "speaker": "Indi",
+      "text": "Escape artist.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P5_I07.mp3",
+      "duration": 1.12
+    },
+    {
+      "label": "P5_N01",
+      "speaker": "Narrator",
+      "text": "If a gap is bigger than her tiny beak, an octopus can pour through.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P5_N01.mp3",
+      "duration": 5.36
+    },
+    {
+      "label": "P5_B08",
+      "speaker": "Bentley",
+      "text": "I wanted to help by pulling.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P5_B08.mp3",
+      "duration": 2.08
+    },
+    {
+      "label": "P5_I08",
+      "speaker": "Indi",
+      "text": "You helped by listening.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P5_I08.mp3",
+      "duration": 2.0
+    },
+    {
+      "label": "P6_B01",
+      "speaker": "Bentley",
+      "text": "You changed color, tasted my tag, and turned into soup.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P6_B01.mp3",
+      "duration": 4.0
+    },
+    {
+      "label": "P6_I01",
+      "speaker": "Indi",
+      "text": "I also have three hearts.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P6_I01.mp3",
+      "duration": 1.92
+    },
+    {
+      "label": "P6_B02",
+      "speaker": "Bentley",
+      "text": "Three? My one heart already gets busy.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P6_B02.mp3",
+      "duration": 2.96
+    },
+    {
+      "label": "P6_I02",
+      "speaker": "Indi",
+      "text": "Two help my gills. One sends blue blood everywhere.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P6_I02.mp3",
+      "duration": 3.68
+    },
+    {
+      "label": "P6_B03",
+      "speaker": "Bentley",
+      "text": "Blue blood?",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P6_B03.mp3",
+      "duration": 1.12
+    },
+    {
+      "label": "P6_I03",
+      "speaker": "Indi",
+      "text": "Very fashionable.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P6_I03.mp3",
+      "duration": 1.36
+    },
+    {
+      "label": "P6_N01",
+      "speaker": "Narrator",
+      "text": "Three hearts. Blue blood. Built for hiding, squeezing, and surprising puppies.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P6_N01.mp3",
+      "duration": 6.72
+    },
+    {
+      "label": "P6_B04",
+      "speaker": "Bentley",
+      "text": "I'm glad I found your eyeball.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P6_B04.mp3",
+      "duration": 2.0
+    },
+    {
+      "label": "P6_I04",
+      "speaker": "Indi",
+      "text": "I am glad you stopped chasing it.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P6_I04.mp3",
+      "duration": 1.84
+    },
+    {
+      "label": "P6_B05",
+      "speaker": "Bentley",
+      "text": "Another clue?",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P6_B05.mp3",
+      "duration": 1.36
+    },
+    {
+      "label": "P6_I05",
+      "speaker": "Indi",
+      "text": "The next mystery is not in the water.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P6_I05.mp3",
+      "duration": 2.64
+    },
+    {
+      "label": "P6_B06",
+      "speaker": "Bentley",
+      "text": "That crumb has legs.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P6_B06.mp3",
+      "duration": 1.76
+    },
+    {
+      "label": "P6_I06",
+      "speaker": "Indi",
+      "text": "Lots of them.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P6_I06.mp3",
+      "duration": 1.52
+    },
+    {
+      "label": "P6_B07",
+      "speaker": "Bentley",
+      "text": "Where are they going?",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P6_B07.mp3",
+      "duration": 1.36
+    },
+    {
+      "label": "P6_I07",
+      "speaker": "Indi",
+      "text": "Underground.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P6_I07.mp3",
+      "duration": 0.96
+    },
+    {
+      "label": "P6_B08",
+      "speaker": "Bentley",
+      "text": "Do underground crumbs need boops?",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P6_B08.mp3",
+      "duration": 2.8
+    },
+    {
+      "label": "P6_I08",
+      "speaker": "Indi",
+      "text": "Only after we listen.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P6_I08.mp3",
+      "duration": 1.76
+    },
+    {
+      "label": "P6_B09",
+      "speaker": "Bentley",
+      "text": "Stop. Look. Listen.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P6_B09.mp3",
+      "duration": 2.641
+    },
+    {
+      "label": "P6_N02",
+      "speaker": "Narrator",
+      "text": "And just like that, the tidepool handed Bentley one more secret.",
+      "path": "/project/scratch/ep2/restart_v3/vo/labels/P6_N02.mp3",
+      "duration": 4.48
+    }
+  ],
+  "readthrough": {
+    "path": "/project/scratch/ep2/restart_v3/vo/EP2_v3_VO_READTHROUGH.mp3",
+    "duration": 246.978
+  },
+  "shot_audio": [
+    {
+      "shot_id": "p01_s01_boop",
+      "labels": [
+        "P1_B01"
+      ],
+      "speakers": [
+        "Bentley"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p01_s01_boop.mp3",
+      "audio_duration": 4.56,
+      "planned_visual_duration": 5.0,
+      "timing_delta": -0.44,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p01_s02_eye",
+      "labels": [
+        "P1_B02"
+      ],
+      "speakers": [
+        "Bentley"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p01_s02_eye.mp3",
+      "audio_duration": 1.12,
+      "planned_visual_duration": 4.0,
+      "timing_delta": -2.88,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p01_s03_winkers",
+      "labels": [
+        "P1_I01",
+        "P1_B03",
+        "P1_I02"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p01_s03_winkers.mp3",
+      "audio_duration": 5.879,
+      "planned_visual_duration": 6.3,
+      "timing_delta": -0.421,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p01_s04_names",
+      "labels": [
+        "P1_B04",
+        "P1_I03"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p01_s04_names.mp3",
+      "audio_duration": 4.78,
+      "planned_visual_duration": 5.2,
+      "timing_delta": -0.42,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p01_s05_found_rules",
+      "labels": [
+        "P1_B05",
+        "P1_I04",
+        "P1_B06"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p01_s05_found_rules.mp3",
+      "audio_duration": 5.959,
+      "planned_visual_duration": 6.3,
+      "timing_delta": -0.341,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p01_s06_no_boop",
+      "labels": [
+        "P1_I05",
+        "P1_B07",
+        "P1_I06"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p01_s06_no_boop.mp3",
+      "audio_duration": 5.879,
+      "planned_visual_duration": 6.3,
+      "timing_delta": -0.421,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p02_s01_watch",
+      "labels": [
+        "P2_I01",
+        "P2_B01"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p02_s01_watch.mp3",
+      "audio_duration": 4.38,
+      "planned_visual_duration": 5.0,
+      "timing_delta": -0.62,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p02_s02_costume",
+      "labels": [
+        "P2_B02",
+        "P2_I02"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p02_s02_costume.mp3",
+      "audio_duration": 6.46,
+      "planned_visual_duration": 6.8,
+      "timing_delta": -0.34,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p02_s03_camo_fact",
+      "labels": [
+        "P2_N01"
+      ],
+      "speakers": [
+        "Narrator"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p02_s03_camo_fact.mp3",
+      "audio_duration": 4.56,
+      "planned_visual_duration": 5.0,
+      "timing_delta": -0.44,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p02_s04_hidden",
+      "labels": [
+        "P2_I03"
+      ],
+      "speakers": [
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p02_s04_hidden.mp3",
+      "audio_duration": 3.2,
+      "planned_visual_duration": 3.8,
+      "timing_delta": -0.6,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p02_s05_smug",
+      "labels": [
+        "P2_B03",
+        "P2_I04"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p02_s05_smug.mp3",
+      "audio_duration": 4.46,
+      "planned_visual_duration": 4.9,
+      "timing_delta": -0.44,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p02_s06_geology",
+      "labels": [
+        "P2_B04"
+      ],
+      "speakers": [
+        "Bentley"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p02_s06_geology.mp3",
+      "audio_duration": 3.36,
+      "planned_visual_duration": 3.9,
+      "timing_delta": -0.54,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p02_s07_shell_trail",
+      "labels": [
+        "P2_B05",
+        "P2_I05",
+        "P2_B06",
+        "P2_I06"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p02_s07_shell_trail.mp3",
+      "audio_duration": 5.859,
+      "planned_visual_duration": 7.0,
+      "timing_delta": -1.141,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p03_s01_fun_mouths",
+      "labels": [
+        "P3_B01",
+        "P3_I01"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p03_s01_fun_mouths.mp3",
+      "audio_duration": 9.5,
+      "planned_visual_duration": 9.5,
+      "timing_delta": -0.0,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p03_s02_flashlight",
+      "labels": [
+        "P3_B02",
+        "P3_I02"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p03_s02_flashlight.mp3",
+      "audio_duration": 4.78,
+      "planned_visual_duration": 5.0,
+      "timing_delta": -0.22,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p03_s03_no_chasing",
+      "labels": [
+        "P3_B03",
+        "P3_I03",
+        "P3_B04"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p03_s03_no_chasing.mp3",
+      "audio_duration": 6.919,
+      "planned_visual_duration": 7.3,
+      "timing_delta": -0.381,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p03_s04_moray_fact",
+      "labels": [
+        "P3_N01"
+      ],
+      "speakers": [
+        "Narrator"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p03_s04_moray_fact.mp3",
+      "audio_duration": 8.88,
+      "planned_visual_duration": 9.0,
+      "timing_delta": -0.12,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p03_s05_relief",
+      "labels": [
+        "P3_B05",
+        "P3_I04"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p03_s05_relief.mp3",
+      "audio_duration": 3.82,
+      "planned_visual_duration": 4.3,
+      "timing_delta": -0.48,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p04_s01_shiny_paw",
+      "labels": [
+        "P4_I01",
+        "P4_B01"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p04_s01_shiny_paw.mp3",
+      "audio_duration": 6.14,
+      "planned_visual_duration": 6.0,
+      "timing_delta": 0.14,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p04_s02_tag_taste",
+      "labels": [
+        "P4_I02",
+        "P4_B02",
+        "P4_I03",
+        "P4_B03"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p04_s02_tag_taste.mp3",
+      "audio_duration": 7.539,
+      "planned_visual_duration": 7.8,
+      "timing_delta": -0.261,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p04_s03_touch_fact",
+      "labels": [
+        "P4_N01"
+      ],
+      "speakers": [
+        "Narrator"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p04_s03_touch_fact.mp3",
+      "audio_duration": 5.36,
+      "planned_visual_duration": 5.8,
+      "timing_delta": -0.44,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p04_s04_stop",
+      "labels": [
+        "P4_B04"
+      ],
+      "speakers": [
+        "Bentley"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p04_s04_stop.mp3",
+      "audio_duration": 3.407,
+      "planned_visual_duration": 4.0,
+      "timing_delta": -0.593,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p04_s05_important",
+      "labels": [
+        "P4_I04",
+        "P4_B05",
+        "P4_I05",
+        "P4_B06"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p04_s05_important.mp3",
+      "audio_duration": 6.899,
+      "planned_visual_duration": 7.3,
+      "timing_delta": -0.401,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p04_s06_extremely_bentley",
+      "labels": [
+        "P4_I06",
+        "P4_B07"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p04_s06_extremely_bentley.mp3",
+      "audio_duration": 7.02,
+      "planned_visual_duration": 7.4,
+      "timing_delta": -0.38,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p04_s07_brave_outfit",
+      "labels": [
+        "P4_I07",
+        "P4_B08"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p04_s07_brave_outfit.mp3",
+      "audio_duration": 4.06,
+      "planned_visual_duration": 4.5,
+      "timing_delta": -0.44,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p05_s01_shadow_return",
+      "labels": [
+        "P5_I01",
+        "P5_B01"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p05_s01_shadow_return.mp3",
+      "audio_duration": 3.74,
+      "planned_visual_duration": 5.0,
+      "timing_delta": -1.26,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p05_s02_wedged",
+      "labels": [
+        "P5_I02",
+        "P5_I03",
+        "P5_B02"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p05_s02_wedged.mp3",
+      "audio_duration": 7.719,
+      "planned_visual_duration": 7.8,
+      "timing_delta": -0.081,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p05_s03_champion",
+      "labels": [
+        "P5_B03",
+        "P5_I04",
+        "P5_B04",
+        "P5_I05"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p05_s03_champion.mp3",
+      "audio_duration": 5.859,
+      "planned_visual_duration": 6.2,
+      "timing_delta": -0.341,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p05_s04_fancy_soup",
+      "labels": [
+        "P5_B05",
+        "P5_I06",
+        "P5_B06"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p05_s04_fancy_soup.mp3",
+      "audio_duration": 9.159,
+      "planned_visual_duration": 9.7,
+      "timing_delta": -0.541,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p05_s05_escape",
+      "labels": [
+        "P5_B07",
+        "P5_I07"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p05_s05_escape.mp3",
+      "audio_duration": 3.66,
+      "planned_visual_duration": 4.0,
+      "timing_delta": -0.34,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p05_s06_beak_fact",
+      "labels": [
+        "P5_N01"
+      ],
+      "speakers": [
+        "Narrator"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p05_s06_beak_fact.mp3",
+      "audio_duration": 5.36,
+      "planned_visual_duration": 5.8,
+      "timing_delta": -0.44,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p05_s07_safe_twoshot",
+      "labels": [
+        "P5_B08",
+        "P5_I08"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p05_s07_safe_twoshot.mp3",
+      "audio_duration": 4.22,
+      "planned_visual_duration": 4.7,
+      "timing_delta": -0.48,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p06_s01_recap",
+      "labels": [
+        "P6_B01",
+        "P6_I01"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p06_s01_recap.mp3",
+      "audio_duration": 6.06,
+      "planned_visual_duration": 7.4,
+      "timing_delta": -1.34,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p06_s02_hearts",
+      "labels": [
+        "P6_B02",
+        "P6_I02"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p06_s02_hearts.mp3",
+      "audio_duration": 6.78,
+      "planned_visual_duration": 7.2,
+      "timing_delta": -0.42,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p06_s03_blueblood",
+      "labels": [
+        "P6_B03",
+        "P6_I03",
+        "P6_N01"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi",
+        "Narrator"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p06_s03_blueblood.mp3",
+      "audio_duration": 9.479,
+      "planned_visual_duration": 10.0,
+      "timing_delta": -0.521,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p06_s04_friendship",
+      "labels": [
+        "P6_B04",
+        "P6_I04"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p06_s04_friendship.mp3",
+      "audio_duration": 3.98,
+      "planned_visual_duration": 4.4,
+      "timing_delta": -0.42,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p06_s05_shell_handoff",
+      "labels": [
+        "P6_B05",
+        "P6_I05"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p06_s05_shell_handoff.mp3",
+      "audio_duration": 4.14,
+      "planned_visual_duration": 4.5,
+      "timing_delta": -0.36,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p06_s06_ants",
+      "labels": [
+        "P6_B06",
+        "P6_I06",
+        "P6_B07",
+        "P6_I07"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p06_s06_ants.mp3",
+      "audio_duration": 6.019,
+      "planned_visual_duration": 6.0,
+      "timing_delta": 0.019,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p06_s07_boops",
+      "labels": [
+        "P6_B08",
+        "P6_I08"
+      ],
+      "speakers": [
+        "Bentley",
+        "Indi"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p06_s07_boops.mp3",
+      "audio_duration": 4.7,
+      "planned_visual_duration": 5.1,
+      "timing_delta": -0.4,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p06_s08_catchphrase",
+      "labels": [
+        "P6_B09"
+      ],
+      "speakers": [
+        "Bentley"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p06_s08_catchphrase.mp3",
+      "audio_duration": 2.641,
+      "planned_visual_duration": 3.2,
+      "timing_delta": -0.559,
+      "needs_visual_extension": false
+    },
+    {
+      "shot_id": "p06_s09_next_card",
+      "labels": [
+        "P6_N02"
+      ],
+      "speakers": [
+        "Narrator"
+      ],
+      "audio_path": "/project/scratch/ep2/restart_v3/vo/shots/p06_s09_next_card.mp3",
+      "audio_duration": 4.48,
+      "planned_visual_duration": 5.0,
+      "timing_delta": -0.52,
+      "needs_visual_extension": false
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 Clips are timeline-independent; trimmed/looped/placed during assembly."""
 import os, json, subprocess, urllib.request, urllib.error
 from bentley.shared.eleven import KEY
-OUT = "assets/pilot_shots/hybrid_ep1/v2/sfx"; os.makedirs(OUT, exist_ok=True)
+OUT = "assets/pilot_shots/ep1/v2/sfx"; os.makedirs(OUT, exist_ok=True)
 
 def sfx(name, text, dur=None, influence=0.4):
     payload = {"text": text, "prompt_influence": influence}

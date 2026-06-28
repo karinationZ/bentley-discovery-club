@@ -1,5 +1,5 @@
 # The Shark Who Was Afraid
-### Season 1 · Episode 6 · Bentley's Discovery Club
+### Season 1 · Episode 6 · Bentley's Big Adventures
 
 > **Logline:** Everyone flees the giant shadow in the shallows — but the "monster" is Finn, a young shark so gentle and lonely that he's more scared of *them* than they'll ever be of him. Then Finn gets tangled in a net, and the only one brave enough to listen is Bentley.
 
@@ -37,7 +37,7 @@ Freed and grateful, Finn warns them: out past the kelp, the water's getting stra
 5. ⚡ "You're not a monster. You were just lonely." (heart clip — top share)
 
 ## Title & Thumbnail
-- **Title:** "The 'Scary' Shark Was Actually CRYING?! 🦈💙 | Bentley's Discovery Club Ep 6"
+- **Title:** "The 'Scary' Shark Was Actually CRYING?! 🦈💙 | Bentley's Big Adventures Ep 6"
 - **Thumbnail:** Bentley gently nose-to-nose with a big shark giving soft, sad puppy-eyes; "not scary!" framing; deep teal.
 
 ## Parent-trust note

@@ -1,5 +1,5 @@
 # The Desert That Blooms Overnight
-### Season 1 · Episode 7 · Bentley's Discovery Club
+### Season 1 · Episode 7 · Bentley's Big Adventures
 
 > **Logline:** Bentley thinks the desert is dead and empty — until she meets Tilly, a tiny seed who's been waiting *years* to bloom and is sure her turn will never come. Then the rarest rain in a decade is on its way, and timing is everything.
 
@@ -39,7 +39,7 @@ The rainwater gathers, races down a wash to the sea — and on the wind comes a 
 5. ⚡ "You're not too slow. You're just waiting for your rain." (heart clip)
 
 ## Title & Thumbnail
-- **Title:** "The 'Dead' Desert BLOOMED Overnight?! 🌵🌸 | Bentley's Discovery Club Ep 7"
+- **Title:** "The 'Dead' Desert BLOOMED Overnight?! 🌵🌸 | Bentley's Big Adventures Ep 7"
 - **Thumbnail:** Split-frame — cracked empty desert vs. an explosion of wildflowers; Bentley joyfully mid-leap in the bloom; warm gold.
 
 ## Season thread touch

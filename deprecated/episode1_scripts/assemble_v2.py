@@ -4,7 +4,7 @@ Builds normalized 1920x1080/24fps segments (talk = clean VO muxed at frame 0, tr
 min(clip, VO+0.18); motion = silent, optional trim), concats -> EP1_v2_base_av.mp4.
 Prints the shot timeline (start/dur) for Stage 2 (narration/music/SFX placement)."""
 import os, subprocess, json
-ROOT = "/home/user/src/youtube/assets/pilot_shots/hybrid_ep1"
+ROOT = "/project/assets/pilot_shots/ep1"
 DIRS = {"v2": f"{ROOT}/v2", "acts123": f"{ROOT}/acts123", "acts456": f"{ROOT}/acts456"}
 WORK = f"{ROOT}/v2/work"; SEG = f"{WORK}/seg"; os.makedirs(SEG, exist_ok=True)
 TAIL = 0.18

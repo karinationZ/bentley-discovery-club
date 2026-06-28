@@ -1,4 +1,4 @@
-# Bentley's Discovery Club — 90-Day Production & Credit Budget Plan
+# Bentley's Big Adventures — 90-Day Production & Credit Budget Plan
 
 > Goal: launch a Made-for-Kids educational animation channel sustainably on **Higgsfield Ultra**, banking a buffer before going public, then settling into a weekly rhythm that the credits can actually support.
 

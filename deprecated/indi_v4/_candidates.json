@@ -1,0 +1,24 @@
+{
+ "ref_url": "https://files.catbox.moe/vk2snn.png",
+ "indi_v4_teal": {
+  "path": "/project/scratch/ep2/indi_v4/indi_v4_teal.png",
+  "iris": "luminous bioluminescent TEAL and aqua-cyan",
+  "method": "edit",
+  "credits": 4.0,
+  "secs": 10
+ },
+ "indi_v4_goldgreen": {
+  "path": "/project/scratch/ep2/indi_v4/indi_v4_goldgreen.png",
+  "iris": "luminous electric GOLD-GREEN chartreuse",
+  "method": "edit",
+  "credits": 4.0,
+  "secs": 10
+ },
+ "indi_v4_opal": {
+  "path": "/project/scratch/ep2/indi_v4/indi_v4_opal.png",
+  "iris": "luminous opalescent AQUA shifting to violet (iridescent opal)",
+  "method": "edit",
+  "credits": 4.0,
+  "secs": 26
+ }
+}

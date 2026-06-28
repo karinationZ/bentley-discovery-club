@@ -6,8 +6,8 @@ saturation + warm golden balance + gentle local-contrast de-haze. Premix -> deli
 NOTE: a grade lifts front-lit shots fully; it cannot key BACKLIT Bentley faces (those need the
 Tier-1 re-renders) — it only greys their shadow. That split is by design (see EPISODE1_FIX_PLAN.md)."""
 import subprocess
-PREMIX = "assets/pilot_shots/hybrid_ep1/v2/work/EP1_v2_premix.mp4"
-FINAL  = "assets/pilot_shots/hybrid_ep1/Bentley_Ep1_v2_FINAL_1080p.mp4"
+PREMIX = "assets/pilot_shots/ep1/v2/work/EP1_v2_premix.mp4"
+FINAL  = "assets/pilot_shots/ep1/Bentley_Ep1_v2_FINAL_1080p.mp4"
 GRADE = (
  "curves=master='0/0.045 0.25/0.30 0.5/0.58 0.78/0.85 1/0.965',"            # lift shadows+mids, hold highlights -> bright, NOT washed
  "eq=saturation=1.22:contrast=1.05:brightness=0.0,"                          # vibrant, colorful

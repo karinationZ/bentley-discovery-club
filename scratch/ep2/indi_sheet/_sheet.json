@@ -1,0 +1,38 @@
+{
+ "locked_url": "https://files.catbox.moe/afdwlt.png",
+ "side": {
+  "path": "/project/scratch/ep2/indi_sheet/indi_side.png",
+  "credits": 4.0,
+  "secs": 31
+ },
+ "shy": {
+  "path": "/project/scratch/ep2/indi_sheet/indi_shy.png",
+  "credits": 4.0,
+  "secs": 15
+ },
+ "curious": {
+  "path": "/project/scratch/ep2/indi_sheet/indi_curious.png",
+  "credits": 4.0,
+  "secs": 26
+ },
+ "trusting": {
+  "path": "/project/scratch/ep2/indi_sheet/indi_trusting.png",
+  "credits": 4.0,
+  "secs": 10
+ },
+ "scared": {
+  "path": "/project/scratch/ep2/indi_sheet/indi_scared.png",
+  "credits": 4.0,
+  "secs": 31
+ },
+ "flush_red": {
+  "path": "/project/scratch/ep2/indi_sheet/indi_flush_red.png",
+  "credits": 4.0,
+  "secs": 31
+ },
+ "camouflage": {
+  "path": "/project/scratch/ep2/indi_sheet/indi_camouflage.png",
+  "credits": 4.0,
+  "secs": 31
+ }
+}

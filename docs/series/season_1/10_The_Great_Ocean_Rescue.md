@@ -1,7 +1,7 @@
 # The Great Ocean Rescue
-### Season 1 · Episode 10 · SEASON FINALE · Bentley's Discovery Club
+### Season 1 · Episode 10 · SEASON FINALE · Bentley's Big Adventures
 
-> **Logline:** Every shell on the coast glows at once. A storm has choked the cove's kelp forest with tangle and washed-in debris, and the whole food web is unraveling. Bentley charges in to save the ocean single-pawedly — and learns the biggest lesson of all: nobody fixes a big thing alone. It takes the whole Discovery Club, listening together.
+> **Logline:** Every shell on the coast glows at once. A storm has choked the cove's kelp forest with tangle and washed-in debris, and the whole food web is unraveling. Bentley charges in to save the ocean single-pawedly — and learns the biggest lesson of all: nobody fixes a big thing alone. It takes the whole Big Adventures, listening together.
 
 **Habitat:** The cove's kelp forest + the whole coast · **Power used:** ALL of them (listen, shrink, underwater, travel) · **Guests:** **The entire season cast returns** — Stella, Pip, Nudi, Indi, Dot, Milo, Sprout, Finn, Mara, Buzz.
 **The kid-feeling we're really telling (SEL):** *That a problem can feel too big for one person — and that "we, together" can do what "I, alone" never could.* (The payoff of Bentley's entire arc.)
@@ -20,15 +20,15 @@ Every shell on the beach blazes blue at once. A chorus of every voice Bentley ha
 - **It gets worse:** The cast all arrive and immediately *all start "doing"* — everyone working alone, crashing into each other, making the tangle worse. It's the pilot's mistake, multiplied by ten. The clock (a returning storm tide) is closing in.
 - **THE TURN:** Stop. Look. Listen — *together.* Bentley climbs up and, for the first time, leads not by doing but by getting everyone *quiet* enough to hear what the ocean — and each other — actually need. The whole cast stills. The shells glow as one.
 - **Climax — clock + setback:** They build a plan where **every friend's gift fits a job**: Indi's tentacles untie knots; Pip & the hermit crabs run a vacancy-chain bucket line; Dot's ants and Buzz's bees coordinate the logistics; Mara's song calls in the heavy help; Finn clears the big debris; Nudi's glow marks the danger zones; Sprout's roots and Stella's patience hold it steady. First sync **fails** (a missed signal) — the setback — then Bentley re-centers them ("Stop. Look. *Listen.*") and they move as one. The cove clears just as the tide turns; kelp lifts and unfurls toward the light.
-- **Emotional button (the season thesis):** "One of us could never fix this. But *all* of us — listening, together? We just did. *That's* the Discovery Club."
+- **Emotional button (the season thesis):** "One of us could never fix this. But *all* of us — listening, together? We just did. *That's* the Big Adventures."
 
 ## Signature Scene (dialogue)
 > **PIP:** "It's too big, Bentley. There's too much. Even for you."
-> **BENTLEY:** "You're right, Pip. It IS too big for me." *(turns to the whole gathered cast)* "But look who showed up. A shark. A whale. A million ants. A hive of bees. An octopus. ...And one little crab who taught me the very first lesson: I don't help by grabbing. *We* help by listening. So — Discovery Club..."
+> **BENTLEY:** "You're right, Pip. It IS too big for me." *(turns to the whole gathered cast)* "But look who showed up. A shark. A whale. A million ants. A hive of bees. An octopus. ...And one little crab who taught me the very first lesson: I don't help by grabbing. *We* help by listening. So — Big Adventures..."
 > **EVERYONE:** "...let's GO!"
 
 ## Cliffhanger → Season 2
-The healed cove sparkles. Bentley's shell glows again — but this time it points *up and out*, past the coast, toward a snow-capped mountain, a far jungle, a night sky full of stars. **BENTLEY:** *(grinning at camera)* "The whole world's still talking. Guess we'd better keep listening. Discovery Club — where to *next?!*" → *Season 2.*
+The healed cove sparkles. Bentley's shell glows again — but this time it points *up and out*, past the coast, toward a snow-capped mountain, a far jungle, a night sky full of stars. **BENTLEY:** *(grinning at camera)* "The whole world's still talking. Guess we'd better keep listening. Big Adventures — where to *next?!*" → *Season 2.*
 
 ## 5 Shorts (pre-designed)
 1. ⚡ "Every animal from Season 1 RETURNS 🌊" (reunion — fan payoff)
@@ -38,7 +38,7 @@ The healed cove sparkles. Bentley's shell glows again — but this time it point
 5. ⚡ "One of us couldn't. All of us could." (the season-thesis heart clip)
 
 ## Title & Thumbnail
-- **Title:** "Can Bentley Save the WHOLE Ocean?! 🌊🐶 SEASON FINALE | Bentley's Discovery Club Ep 10"
+- **Title:** "Can Bentley Save the WHOLE Ocean?! 🌊🐶 SEASON FINALE | Bentley's Big Adventures Ep 10"
 - **Thumbnail:** Epic team shot — Bentley front and center, the entire glowing animal cast behind her, kelp forest backdrop; "FINALE" badge; bold blue.
 
 ## Season thread payoff

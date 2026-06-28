@@ -1,0 +1,3 @@
+file '/project/scratch/ep2/final_v7/assembly/segs/_a1_07_chase_0.mp4'
+file '/project/scratch/ep2/final_v7/assembly/segs/_a1_07_chase_1.mp4'
+file '/project/scratch/ep2/final_v7/assembly/segs/_a1_07_chase_2.mp4'

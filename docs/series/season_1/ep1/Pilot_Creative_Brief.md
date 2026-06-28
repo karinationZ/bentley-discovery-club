@@ -1,4 +1,4 @@
-# Bentley's Discovery Club — Pilot Creative Brief
+# Bentley's Big Adventures — Pilot Creative Brief
 ## "The Voice in the Shell" (Episode 0)
 
 ### 🎙️ Narration approach — LIGHT narrator + character-driven heart
@@ -20,7 +20,7 @@ A **warm "favorite-aunt" narrator** frames the episode, used *sparingly* (~6–8
 4. **It gets worse:** Bentley keeps *doing* — mistakes a sea anemone for a flower, her panicked zoomies knock Pip into a worse spot. The sun climbs.
 5. **The turn:** Stella — *"Stop. Look. Listen."* The shell glows; Bentley finally **hears Pip's real fear**: *"I'm not stuck — I'm growing, and nothing fits, and nobody's listening."*
 6. **Climax = the rescue = the science:** Bentley organizes the hermit-crab **vacancy chain**. Setback: the last empty shell is one size too small. She stops, listens, and realizes **her own collar shell is exactly Pip's size** — she gives it to him. Perfect fit. A returning wave carries him to safety, beating the sun.
-7. **Emotional button:** Pip — *"You're the first one who actually listened."* Stella clips a new glowing shell to Bentley's collar — Discovery Club induction.
+7. **Emotional button:** Pip — *"You're the first one who actually listened."* Stella clips a new glowing shell to Bentley's collar — Big Adventures induction.
 8. **Season hook:** a purple tentacle waves offshore → Episode 1.
 
 ### ❤️ What Bentley emotionally learns

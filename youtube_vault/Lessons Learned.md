@@ -22,14 +22,22 @@ tags:
 - **Title cards need `-loop 1`**, or the PNG only exists at frame 0.
 
 ## 🐶 Character consistency
+> [!tip] Describe the correct non-human anatomy — don't just forbid the human one
+> Audio-driven avatar models (Kling Avatar, etc.) are trained on **human** faces, so they leak human anatomy into non-human characters — not only **human teeth** in the octopus's mouth, but a **five-fingered hand** on her reaching arm. Negation alone ("no teeth", "no hands") is **weak**: the model needs something correct to draw *instead*. **Fix in the prompt, in this order:** (1) **positively describe** the real anatomy — *"smooth, boneless, suckered octopus **tentacles** ending in curling tips"*, *"a soft, rounded, **toothless cephalopod mouth**"*; **then** (2) ban the human version — *"no human hands, fingers, palms, thumbs; no human teeth, no human smile"*. Add *"no text, no watermark"* to kill hallucinated squiggles. **Cropping the artifact out is a band-aid — fix the prompt** so the *next* shot is clean too. (Ep2: Indi's arm became a proper curling tentacle the moment the prompt described tentacles — no crop needed.)
+
 - **Long tail** is the #1 recurring Bentley error — hammer "short docked tail" in every prompt.
 - **Human teeth / grins** kept appearing in close-ups — bake in "natural dog mouth, small lower teeth only, no human teeth" and give the Avatar a near-closed-mouth keyframe.
+- **Dogs don't smile (talking shots).** The Avatar curls Bentley's mouth into a human grin (upturned corners) mid-sentence. Fix per the anatomy callout: *describe the motion* — "the lower JAW drops open and closes, mouth corners NEUTRAL/slightly DOWN like a boxer's jowls" — **and** ban it — "no human smile, no grin, no upturned corners." Ep2 `B_why` went from a grin to a natural jaw-drop with exactly that change.
+- **A talking keyframe MUST be derived from the approved MASTER** (`Bentley_MASTER_hero.jpg`), never an AI-generated CU. A drifted close-up (`bentley_cu_ears`) gave an off-model, human-teeth Bentley that "isn't original Bentley." Edit the master (swap charm, set scene, near-closed mouth); QA on-model before rendering 8 clips off it.
 - **Furry shell.** A "Pixar soft-fur style" prompt suffix bled **fur onto the shell**. Keep style suffixes off props; QA props for fur.
 - **Pip drifted into "3–4 different crabs"** (eye-stalks, white nautilus, antennae). Always edit from the **master**.
 
 ## 🔌 Process
 > [!warning] "Built but never wired in" — the worst bug
 > We once generated all the fixes but **never integrated them** into the build — the assemble still pointed at the old clips, the new VO sat unused, and a dark master shipped. The lesson: **a fix isn't done until it's wired into the build *and re-verified on screen*.** QA the FINAL, not the parts.
+
+> [!danger] Follow the pipeline — every stage, in order
+> **Ep2 regressed badly by skipping it**: it generated good clips loose in `scratch/` but never built a **shotlist** (stage 1) or ran **assemble → mix → grade** (stages 5–9), then reviewed a **talking-head reel** as if it were the episode (a 5-specialist RCA confirmed it's an editorial failure, not a generation one — the setup shot for "You did ME!" existed but was never cut in). The strict flow with hard gates is now **`docs/guides/PRODUCTION_PIPELINE.md`**. Never generate shots before an approved shotlist; never mistake a clip folder/reel for the episode.
 
 - **Re-rolls are the real cost driver**, not the per-image price → **keyframe-QA-first** ([[Token Efficiency Rules]]).
 - **Keyframe before clip** — approve the cheap still before the expensive motion/talking render.

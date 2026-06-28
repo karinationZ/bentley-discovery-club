@@ -4,7 +4,7 @@ Bentley warmth (LauraZ), Pip callbacks (Callum). ElevenLabs only — no fal."""
 import os
 from bentley.voices.dialogue import tts_bentley, tts_pip, tts_theo
 
-OUT = "assets/pilot_shots/hybrid_ep1/v2/audio"; os.makedirs(OUT, exist_ok=True)
+OUT = "assets/pilot_shots/ep1/v2/audio"; os.makedirs(OUT, exist_ok=True)
 
 THEO = {
  "INTRO1": "Every morning, before the world wakes up... the ocean leaves Crystal Cove full of secrets.",

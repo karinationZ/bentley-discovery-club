@@ -1,5 +1,5 @@
 # Journey Inside a Whale
-### Season 1 · Episode 8 · Bentley's Discovery Club
+### Season 1 · Episode 8 · Bentley's Big Adventures
 
 > **Logline:** Chasing a song she thinks is a cry for help, Bentley gets accidentally scooped up in a whale's giant gulp — and discovers she's perfectly safe, the song was never sad, and the biggest animal on Earth feels achingly alone.
 
@@ -39,7 +39,7 @@ Mara's reunited song ripples for miles — and lands on a meadow near the coast,
 5. ⚡ "Your song reached across the whole ocean. Someone heard you." (heart clip)
 
 ## Title & Thumbnail
-- **Title:** "Bentley Got SWALLOWED by a Whale?! 🐋 (and was totally okay) | Bentley's Discovery Club Ep 8"
+- **Title:** "Bentley Got SWALLOWED by a Whale?! 🐋 (and was totally okay) | Bentley's Big Adventures Ep 8"
 - **Thumbnail:** Tiny Bentley dwarfed by an enormous whale eye, awe (not fear) on her face; deep blue + a shaft of light.
 
 ## Parent-trust note
