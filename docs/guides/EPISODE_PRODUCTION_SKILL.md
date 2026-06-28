@@ -84,7 +84,8 @@ credits spent. Get owner sign-off on the Kling shot list **before** spending.
     via the productionized `bentley/episode_builder/` animatic — never `pipeline.py` / `produce()` or
     the generation modules; **no Kling until the owner signs**; its EDL is the STARTING assembly EDL,
     re-timed at QA) → generate only approved Kling shots (hand-pick) → assemble → sync-verify → mix →
-    grade → QA → deliver. *(Build the animatic tool BEFORE Ep3 renders, or the gate is unsatisfiable.)*
+    grade → QA → deliver. *(Tool built 2026-06-27: `bentley/episode_builder/animatic.py` —
+    `PYTHONPATH=. python -m bentley.episode_builder.animatic <shotlist>`; proven zero-credit on EP2.)*
 
 ---
 *Pairs with `cinematic-episode-writer` (script phase). Full operational rules + the QA checklist:

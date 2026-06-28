@@ -37,8 +37,10 @@ prove it restores Ep1 quality; once proven, **every episode follows it in order,
 > from reuse clips / stills / labeled cards + the recorded VO, at **zero** Kling/KIE/ElevenLabs credits
 > — must pass owner sign-off. So for episodes under the gate the order is **VO → Animatic → Kling** (VO
 > is no longer parallel to Stage 3). Sync-verify (6) and Grade (8) are unchanged. Full rule + checklist:
-> `.claude/skills/episode-production/SKILL.md` §10 step 4 and §9 "Animatic Lock". *(Requires the
-> JSON-driven animatic tool in `bentley/episode_builder/`; build it before Ep3 renders.)*
+> `.claude/skills/episode-production/SKILL.md` §10 step 4 and §9 "Animatic Lock". *(Tool — built
+> 2026-06-27: `bentley/episode_builder/animatic.py`; run
+> `PYTHONPATH=. python -m bentley.episode_builder.animatic episodes/<ep>/shotlists/<list>.json`;
+> proven zero-credit on EP2.)*
 
 ## Shotlist schema (`episodes/<ep>/shotlists/*.json`)
 ```jsonc

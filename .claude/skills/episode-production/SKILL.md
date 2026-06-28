@@ -257,15 +257,17 @@ Full canon: `.claude/skills/cinematic-episode-writer/references/bentley-canon.md
    the real shots land (this is "start from the locked story EDL," NOT "zero rework"). Overlaps §5a
    (wrong-speaker, same-clip-back-to-back, cause-before-reaction): the animatic is the *pre-render*
    pass; **§5a stays authoritative on the FINAL cut.**
-   > **PRECONDITION (build before Ep3 renders):** this gate needs a productionized JSON-shotlist
-   > animatic in `bentley/episode_builder/` — extract `ken_burns()` into the package; add a
-   > missing-asset → labeled-card fallback; JSON-drive `assemble.py`; add a zero-cost VO concat from
-   > existing mp3s (a TTS re-synthesis path spends ElevenLabs — do **not** use it here); reuse the
-   > `shorts.py` caption track for card labels. Build the scratch through that path ONLY — **never**
-   > `pipeline.py <shotlist>` / `produce()`, and never the `bentley.animation.*` or
-   > `bentley.asset_generation.*` generation modules (they spend KIE/fal). The artifact is one
-   > zero-credit `*_ANIMATIC.mp4` checked into the episode dir; until the tool exists the gate is
-   > "planned," not satisfiable.
+   > **TOOL (built 2026-06-27 — gate now SATISFIABLE):** the productionized JSON-shotlist animatic is
+   > `bentley/episode_builder/animatic.py` (+ `placeholders.py`: the extracted `ken_burns()` and the
+   > `shorts.py`-caption labeled card). Run:
+   > `PYTHONPATH=. python -m bentley.episode_builder.animatic episodes/<ep>/shotlists/<list>.json`
+   > → one `episodes/<ep>/<EP>_ANIMATIC.mp4` + `_timeline.json` (the STARTING EDL). It reads the
+   > `{id,type,dur,src,vo,over,status}` schema; picture = reuse clip → Ken-Burns still → labeled card
+   > (un-shot beats auto-card, **never** silently skipped); audio = the existing per-line mp3s
+   > concatenated in script order (**no TTS** — that spends ElevenLabs). A hard credit guard allows only
+   > `ffmpeg`/`ffprobe`; it imports nothing from `bentley.animation.*` / `bentley.asset_generation.*`
+   > and never calls `pipeline.py <shotlist>` / `produce()`. Proven on EP2 (36 beats, 0 credits);
+   > regression-tested in `tests/test_animatic.py`.
 5. **Generate the approved Kling bridge shots** — 4–8 candidates each, **owner/hand pick**, QC every
    frame vs canon; never auto-batch. *(A green animatic certifies STORY + CUT, **not** on-model render —
    character drift is caught ONLY here and at §9. For new-character episodes — e.g. EP3: Mari, no locked

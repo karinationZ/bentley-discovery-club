@@ -48,9 +48,9 @@
     {
       "label": "P1_I03",
       "speaker": "Indi",
-      "text": "I'm Indi, and I am impossible to find.",
+      "text": "And I am Indi, impossible to find.",
       "path": "/project/scratch/ep2/restart_v3/vo/labels/P1_I03.mp3",
-      "duration": 2.746
+      "duration": 3.44
     },
     {
       "label": "P1_B05",
