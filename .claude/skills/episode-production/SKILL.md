@@ -192,6 +192,10 @@ regression (the v8 camo dissolve / black-hearts) — cheap tools **and** the che
 `kling-2.6`). Confirm the exact KIE slug for the **Kling Turbo cheap tier** before the first
 cheaper-tier render (no Seedance slug is needed — that tier is AVOID, and "Seedance 1.5 Pro" doesn't
 exist on our backends), and keep the locked element-refs / hand-pick flow for any model.
+**Mechanical spend guard (2026-07-04):** `kie_client` refuses any VIDEO-model createTask unless
+`BENTLEY_EPISODE=ep<N>` is set AND that episode's `GATES.md` records the Animatic Lock as PASSED
+(`bentley/shared/gates.py`; `BENTLEY_GATE_OVERRIDE` is for owner-approved non-episode video only).
+Image models (nano-banana) stay ungated — masters/keyframes are the cheap pre-animatic tier.
 
 **Budget discipline:** aim for a small set of Kling hero shots per episode (target ~12–18), and cover
 everything else by reuse/stills/cards. Log credits spent per episode. If the Kling count climbs,

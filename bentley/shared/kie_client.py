@@ -1,9 +1,17 @@
 #!/usr/bin/env python3
 """Minimal kie.ai jobs client — createTask + poll recordInfo. Returns result URLs + credits + secs.
-Auth: KIE_KEY env. Models: google/nano-banana, google/nano-banana-edit, kling-2.6/image-to-video."""
+Auth: KIE_KEY env. Models: google/nano-banana, google/nano-banana-edit, kling-2.6/image-to-video.
+Video models are gated by bentley/shared/gates.py (Animatic Lock spend guard) — see its docstring."""
 import os, json, time, urllib.request
 KEY = os.environ["KIE_KEY"]
 BASE = "https://api.kie.ai/api/v1/jobs"
+
+try:
+    from bentley.shared import gates as _gates
+except ImportError:  # loaded standalone (importlib spec pattern used by scratch scripts)
+    import importlib.util as _ilu
+    _s = _ilu.spec_from_file_location("_gates", os.path.join(os.path.dirname(__file__), "gates.py"))
+    _gates = _ilu.module_from_spec(_s); _s.loader.exec_module(_gates)
 
 def _post(path, body):
     req = urllib.request.Request(f"{BASE}/{path}", data=json.dumps(body).encode(),
@@ -15,6 +23,7 @@ def _get(path):
     return json.load(urllib.request.urlopen(req))
 
 def run(model, inp, timeout=600, poll=5):
+    _gates.assert_spend_allowed(model)  # video renders require a PASSED Animatic Lock (gates.py)
     r = _post("createTask", {"model": model, "input": inp})
     if r.get("code") != 200 or not r.get("data"):
         raise RuntimeError(f"kie createTask rejected ({r.get('code')}): {r.get('msg')}")
