@@ -5,7 +5,7 @@ Everything here is a **copy** — the live originals still sit in their original
 build locations (mostly under `assets/pilot_shots/hybrid_ep1/`), so the production
 scripts continue to work untouched. Treat this folder as the clean reference set
 you reach for FIRST before generating anything new (see the token-reuse rule in
-`/EPISODE_PRODUCTION_GUIDE.md`).
+the episode-production skill §1–2).
 
 For the full repo asset map and naming conventions see `/ASSET_GUIDE.md`.
 For the locked character rules every render must pass see `/MASTER_PROP_RULES.md`.
@@ -42,7 +42,7 @@ final v2 cut. These are the `*_NEW.mp4` shots wired into `assemble_v2_final.py`.
 - `N1_guess_NEW.mp4` — Bentley "guess" talking beat.
 - `N6_payoff_armor_NEW.mp4` — payoff/armor talking beat.
 - `a1_02_react_NEW.mp4` — early reaction beat.
-- `a3_02a_wave_NEW.mp4` — the **live wave** motion shot (i2v) — replaces the old frozen-wave talking shot. See the avatar-freezes-background lesson in `/EPISODE_PRODUCTION_GUIDE.md`.
+- `a3_02a_wave_NEW.mp4` — the **live wave** motion shot (i2v) — replaces the old frozen-wave talking shot. See the avatar-freezes-background gotcha in the episode-production skill's references/PRODUCTION_PLAYBOOK.md (Part 6).
 - `a3_02b_pipcu_NEW.mp4` — the split-out Pip close-up that paired with the wave shot.
 - `a5_04_tag_NEW.mp4` — end-tag beat.
 - `octopus_NEW.mp4` — octopus reveal.

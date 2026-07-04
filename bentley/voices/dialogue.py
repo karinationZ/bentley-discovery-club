@@ -10,9 +10,13 @@ from bentley.shared.audio import clean_master
 
 
 def tts_bentley(text, outp):
+    """Bentley — EXPRESSIVE config (owner note 2026-07-04: 'genuinely excited/curious/amused, never
+    flat'): style 0.85 / stability 0.25 (the energy config the owner picked for Marco) + v3 emotive
+    tags in the line text. NOTE: eleven_v3 varies take-to-take — production recording uses BEST-OF-3
+    with a measured pick (see scratch/ep4/record_best_of.py pattern), not a single roll."""
     raw = outp.replace(".mp3", "_raw.mp3")
     eleven.speak(eleven.BENTLEY, text, raw,
-                 settings={"stability": 0.3, "similarity_boost": 0.75, "style": 0.6, "speed": 1.12})
+                 settings={"stability": 0.25, "similarity_boost": 0.75, "style": 0.85, "speed": 1.15})
     clean_master(raw, outp)
     return outp
 
@@ -48,34 +52,45 @@ def tts_indi(text, outp):
     return outp
 
 
+def tts_marco(text, outp):
+    """Marco — Ep3 guest harvester ant (boy). Small, bright, quick, brave — a tiny voice with a big
+    spark; faster cadence than Indi, lighter than Bentley. Voice owner-picked 2026-06-28; LOCKED
+    delivery = +6% pitch, peppier ('marco_younger_excited' take the owner chose)."""
+    raw = outp.replace(".mp3", "_raw.mp3")
+    cln = outp.replace(".mp3", "_clean.mp3")
+    eleven.speak(eleven.MARCO, text, raw,
+                 settings={"stability": 0.25, "similarity_boost": 0.7, "style": 0.85, "speed": 1.14})  # energy "A" (owner-picked)
+    clean_master(raw, cln)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", cln, "-af",
+                    "asetrate=44100*1.06,aresample=44100,atempo=0.99,highpass=f=120,"
+                    "loudnorm=I=-16:TP=-1.5:LRA=11", "-b:a", "192k", outp], check=True)
+    return outp
+
+
+def tts_mira(text, outp):
+    """Mira — Ep4 guest monarch butterfly (girl). Playful, fearless, giggly — the joy of the journey.
+    Voice owner-picked 2026-07-03 (library voice; take 'I_mlv2_clean'): model **eleven_multilingual_v2**
+    (preserves the voice's native character/accent; v3 flattened it), NATURAL pitch (no shift), the
+    committed clean_master ('D bright') chain. NOTE: mlv2 does NOT support v3 audio tags like
+    [giggling] — bracketed tags are stripped here; shape emotion with punctuation and word choice."""
+    import re
+    text = re.sub(r"\[[^\]]*\]\s*", "", text)  # strip v3-style emotive tags (mlv2 would read them)
+    raw = outp.replace(".mp3", "_raw.mp3")
+    eleven.speak(eleven.MIRA, text, raw, model="eleven_multilingual_v2",
+                 settings={"stability": 0.45, "similarity_boost": 0.9, "style": 0.3})
+    clean_master(raw, outp)
+    return outp
+
+
 def tts_catchphrase(outp, gap=0.45):
-    """Bentley's signature 'Stop. Look. Listen.' — ALWAYS Bentley's voice, ALWAYS with a deliberate
-    pause between each word (like Ep1). HARD RULE for every episode. Each word is generated, trimmed of
-    lead/tail silence, then stitched with a fixed `gap` of silence so the pacing is identical every time.
-    See memory: bentley-catchphrase.
+    """Bentley's signature 'Stop. Look. Listen.' — ALWAYS Bentley's voice, with deliberate pauses between
+    each word. Recorded as ONE natural utterance ("Stop. Look. Listen." — the periods give the deliberate
+    beats). NOTE: word-by-word generation + silence-stitching (the old method) produced the recurring
+    "broken/stuttery" catchphrase across EP1/EP2/EP3; the single utterance is the durable fix.
+    Owner-locked take A, 2026-06-28. `gap` kept for signature compatibility (unused). See bentley-catchphrase.
     """
-    import os
-    d = os.path.dirname(os.path.abspath(outp)) or "."
-    words = ["Stop.", "Look.", "Listen."]
-    segs = []
-    for i, w in enumerate(words):
-        seg = os.path.join(d, f"_cp_{i}.mp3"); raw = seg.replace(".mp3", "_raw.mp3")
-        eleven.speak(eleven.BENTLEY, w, raw,
-                     settings={"stability": 0.35, "similarity_boost": 0.8, "style": 0.5, "speed": 1.0})
-        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", raw, "-af",
-                        "silenceremove=start_periods=1:start_silence=0.03:start_threshold=-40dB,areverse,"
-                        "silenceremove=start_periods=1:start_silence=0.03:start_threshold=-40dB,areverse,"
-                        "highpass=f=80,loudnorm=I=-16:TP=-1.5:LRA=11",
-                        "-ac", "1", "-ar", "44100", "-b:a", "192k", seg], check=True)
-        segs.append(seg)
-    sil = os.path.join(d, "_cp_sil.mp3")
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=mono",
-                    "-t", str(gap), "-ac", "1", "-ar", "44100", "-b:a", "192k", sil], check=True)
-    listf = os.path.join(d, "_cp_list.txt")
-    with open(listf, "w") as f:
-        f.write(f"file '{segs[0]}'\n")
-        for s in segs[1:]:
-            f.write(f"file '{sil}'\nfile '{s}'\n")
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", listf,
-                    "-c:a", "libmp3lame", "-b:a", "192k", outp], check=True)
+    raw = outp.replace(".mp3", "_raw.mp3")
+    eleven.speak(eleven.BENTLEY, "Stop. Look. Listen.", raw,
+                 settings={"stability": 0.4, "similarity_boost": 0.8, "style": 0.45, "speed": 1.0})
+    clean_master(raw, outp)
     return outp

@@ -59,6 +59,7 @@ What gets expensive: rerolling before the direction is locked, using audio, goin
 - **Kling 3.0 Turbo** — Kling-3.0-series quality with better speed/cost for repeated production.
 - **Kling 3.0 full / Motion Control** — only locked, high-value shots (continuity, audio, brand, 4K, reference motion).
 - *(Project caveat, from prior tests: cheap models DRIFT recognizable characters — fine for SCOUTING a prompt/motion direction, but the FINAL character shot still renders on Kling 3.0. Scout cheap, finalize on Kling 3.0.)*
+- *(⚠️ Project status 2026-07-04 — this file is a market survey; the `episode-production` skill §1 tier table is the PROJECT law where they differ: on our KIE backend "Seedance 1.5 Pro" does NOT exist (only 2.0 / 2.0 Mini — tested, AVOID for characters/creatures) and **Kling 2.6 is BANNED**. Our usable scout tier = Runway / Hailuo / Grok / Kling 2.5–3.0 Turbo.)*
 
 ## Quality gate (all must pass before ANY premium spend)
 - [ ] Prompt has passed on a cheap model.

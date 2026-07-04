@@ -35,7 +35,7 @@ BENTLEY = Character(
     master_keyframe="assets/character_design/Bentley_MASTER_pixar.png",
     collar="teal collar with the glowing gold paw-print 'Bentley' tag",
     must_have=("short docked tail", "black face mask", "grey chin", "white chest blaze",
-               "solid red-fawn paws (NO white socks)", "floppy ears folded down",
+               "paws the same color as her coat (NO white socks)", "floppy ears folded down",
                "soulful well-proportioned eyes", "natural boxer proportions"),
     must_never=("long or upright tail", "different muzzle/face", "white socks", "upright/pricked ears",
                 "human teeth or a human grin", "bug-eyes", "fur on the collar/charm"),

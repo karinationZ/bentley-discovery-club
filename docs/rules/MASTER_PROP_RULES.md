@@ -11,7 +11,7 @@ breaks a MUST-NEVER, it is rejected and regenerated — do not ship it.
 > 2. Edit **from** that master (`nano-banana/edit`) so face / muzzle / markings stay consistent shot to shot.
 > 3. QA the result against the tables below. Reject on any MUST-NEVER hit.
 > 4. Only when a needed asset truly doesn't exist do you generate new — and get
->    owner sign-off before significant credit spend (see `EPISODE_PRODUCTION_GUIDE.md`).
+>    owner sign-off before significant credit spend (see the episode-production skill §1 cost gate).
 
 ---
 

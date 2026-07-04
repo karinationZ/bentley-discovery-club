@@ -1,5 +1,10 @@
 # Cinematography + AI-Pipeline Rules + Output Formats
 
+> **Governed by the single normative chain** — the 10 Mandatory Rules (`episode-production` §0.0) →
+> `episode-production/SKILL.md` → its `references/PRODUCTION_PLAYBOOK.md` (+ the `lipsync-pro` skill for
+> sync methods). This file is the WRITER's cinematography guide; where it and the chain differ, **the
+> chain wins** — update this file the same day the chain changes.
+
 Two jobs here: design shots that *read* (cinematography), and design shots the AI pipeline can
 actually **make and cut together** (constraints + output formats).
 
@@ -35,12 +40,19 @@ These come from real failures; honor them or the edit breaks.
   *static-with-life*, not frozen.
 - **No human teeth, no human smile, ever** (canon). Dog joy = tongue out + soft eyes + tail wiggle.
   Octopus mouth stays tiny and toothless. This applies to talking shots especially.
-- **Dialogue is VO-over-alive, not AI lip-sync.** A line plays over a shot of the **speaking**
-  character who is visibly moving/breathing the whole line — so the viewer knows who's talking — but
-  do **not** rely on mouth-accurate lip-sync (it introduces teeth/identity risk). Never lay a long
-  speech over a montage that cuts away from the speaker.
-- **One clip per beat.** Don't reuse a clip; a callback (e.g. the predator returning) uses a *different
-  angle/sub-shot*. Byte-identical reuse and loops are immediately visible.
+- **Dialogue defaults to VO-over-alive, with every mouth managed (the Sync-or-Hide law).** A line plays
+  over a shot of the **speaking** character whose *body* visibly acts the line — the viewer knows who's
+  talking — while every readable talking mouth must either trace to a sanctioned sync tool or be staged
+  so the mouth isn't readable. As the writer: give every line the correct speaker, stage non-speakers
+  mouth-closed/reacting-only (Rule 9: only the speaker's mouth ever moves), and **tag the signature
+  lines** — Bentley's catchphrase = a Kling-Avatar CU on the locked Talking prop; a small guest speaking
+  in a two-shot may use the OmniHuman mask. (Methods live in `lipsync-pro` + playbook Part 6 — don't
+  invent new ones on the page.) Never lay a long speech over a montage that cuts away from the speaker.
+- **One SCENE per story beat; no clip ever repeats.** Design at the section level (§0 Continuous-Section
+  Law): group the script into ~8–12 logical sections and write ONE continuous evolving scene per beat —
+  never a new unrelated clip per sentence. A long section = 2–3 continuous shots of the SAME evolving
+  scene. "One clip" means *no reuse*: a callback (e.g. the predator returning) uses a *different
+  angle/sub-shot* — byte-identical reuse and loops are immediately visible.
 - **Consistency.** Characters are generated from the locked masters and **hand-picked** (4–8 candidates
   per keyframe, never auto-batched-and-shipped); the model drifts. Keep the tag, paws (no white
   socks), docked tail, eyespots, etc. on-model. Flag any shot where two characters must share a frame
@@ -77,6 +89,10 @@ One row per beat, in final order:
 - "Picture" is either an existing clip to reuse (give the path/name) or `BRIDGE` (must generate).
 - "Transition in" uses C (cut) / M (match) / X (crossfade) / FI / FO — never a mid-film black dip.
 - Keep each character's line over a shot of that character.
+- **This table has a machine-runnable JSON twin** (`episodes/ep<N>/shotlists/ep<N>_master.json`) the
+  Animatic Lock + final assemble actually run — see SKILL.md "Hand off an animatic-ready EDL". In the
+  JSON, the "Picture" path becomes `src`/`over`/`still` and the "VO" **label becomes an mp3 path**
+  (`N_camo` → `scratch/ep<N>/vo/N_camo.mp3`). Labels/IDs alone are not runnable.
 
 ### 4. Bridge-shot list
 For each shot that must be generated: a one-paragraph **intent** (what it shows and why the story

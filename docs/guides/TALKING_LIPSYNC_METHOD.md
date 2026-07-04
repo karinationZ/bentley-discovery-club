@@ -1,15 +1,24 @@
 ---
 title: Talking / Lip-Sync Method — PRODUCTION STANDARD
-status: MANDATORY DEFAULT for every episode — do not re-explore
+status: PRODUCTION STANDARD for tight front-facing talking-CU shots (permanent for the owner-locked "Stop. Look. Listen." moment); PROPOSED supersession for continuous/two-shot dialogue by HIGH_QUALITY_LIPSYNC_SYSTEM_PLAN.md — effective only after that plan's Phase-3 POC passes + owner sign-off
 proven: Ep1 (original), re-proven Ep2 v13 (2026-06-26, owner-approved "looks amazing")
-applies_to: every Bentley (and guest) on-screen dialogue shot, all episodes
+applies_to: tight front-facing talking-CU shots, all episodes; the rig plan (HIGH_QUALITY_LIPSYNC_SYSTEM_PLAN.md) is the PROPOSED replacement for continuous/two-shot dialogue once proven
 ---
 
 # Talking / Lip-Sync Method (PRODUCTION STANDARD)
 
-> **THE RULE:** every talking shot = **Kling-Avatar driven from a TIGHT, BRIGHT, FRONT-FACING FACE
-> close-up keyframe.** This is the default for all episodes. It is solved. Do **not** run model
-> bake-offs or "is lip-sync possible" reviews again — follow this.
+> **2026-07-01 update (amended after review):** this method remains the PROVEN, owner-approved
+> standard for tight front-facing talking-CUs — and **permanently** for the owner-locked
+> **"Stop. Look. Listen."** catchphrase moment (SKILL §0.3/§7). For continuous/two-shot dialogue,
+> `docs/guides/HIGH_QUALITY_LIPSYNC_SYSTEM_PLAN.md` is the **proposed** replacement: it supersedes
+> this method for that shot class **only after its Phase-3 rig POC passes its Definition of Done and
+> the owner signs off.** Until then, production default for continuous scenes stays SKILL §0.3
+> (VO-over-alive + catchphrase-Avatar-only).
+
+> **THE CU RULE:** when a shot is intentionally designed as a tight, bright, front-facing talking
+> face close-up, use **Kling-Avatar driven from a TIGHT, BRIGHT, FRONT-FACING FACE close-up
+> keyframe.** Do not re-run broad model bake-offs for that shot class. For continuous two-shot
+> dialogue and plate-preserving mouth repair, see `HIGH_QUALITY_LIPSYNC_SYSTEM_PLAN.md` (proposed).
 
 ## Why this is the method (and why the alternatives fail — already tested, don't retest)
 - **Kling-Avatar** (`kling/ai-avatar-standard`) is **audio-driven** → real, word-synced lip-sync, and it
@@ -19,7 +28,7 @@ applies_to: every Bentley (and guest) on-screen dialogue shot, all episodes
 - **Kling 3.0 / Seedance i2v** (no audio) → on-model but the mouth **flaps out of sync** ("coughing");
   i2v can't read the audio. Rejected.
 - **Seedance-2 audio-lipsync** → same human-face caricature as Avatar, and costlier. Rejected.
-- Net: **Avatar + tight face-CU keyframe is the only combination that is both on-model and synced.**
+- Net for tight talking-CU inserts: **Avatar + tight face-CU keyframe is the tested combination that is both on-model and synced.**
 
 ## Implementation
 

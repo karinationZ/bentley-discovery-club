@@ -49,3 +49,14 @@ Can we replace per-shot AI video (Kling i2v) — which is **expensive**, **drift
 - Which viseme-set design most reliably enforces a no-human-teeth dog mouth (shape-key vs sprite-swap)?
 - Real per-episode effort-hours: Blender+Rhubarb vs Cartoon Animator AccuLips on the same dialogue (no head-to-head benchmark survived verification).
 - Best migration of the existing AI Bentley/Indi look into an on-model rig: Tripo3D one-shot vs hand-modeling vs 2D-trace.
+
+---
+
+## Addendum (2026-07-01) — teeth policy superseded by the lip-sync system plan
+
+This report's "toothless dog-viseme set" recommendation was an *enforcement mechanism* (a rig that
+physically can't grin), not an anatomy claim. Owner canon (`assets/character_design/LOCKED_ELEMENTS.md`)
+allows natural dog/puppy teeth and bans only HUMAN teeth/smiles. The adopted policy now lives in
+`docs/guides/HIGH_QUALITY_LIPSYNC_SYSTEM_PLAN.md`: **v1 rig ships toothless** (same enforcement
+guarantee); puppy-tooth hints are a v2 owner-opt-in for `AI`/`OPEN_JAW` after a still-sheet approval.
+The report body above is preserved as originally verified on 2026-06-24.

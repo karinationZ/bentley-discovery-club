@@ -42,6 +42,7 @@ aliases:
 
 ### Production
 - [[Production Workflow]] — tools, pipeline, scripts, folder structure
+- [[Lip-Sync Rig System]] — zero-credit reusable lip-sync for any character/episode (2026-07-01)
 - [[Episode QA Checklist]] — the gate before publish
 
 ### Episodes
@@ -56,4 +57,4 @@ aliases:
 > **Episode 2 — "The Octopus Escape Artist"** (teased in Ep 1's ending button).
 
 ---
-*Companion repo guides (for agents working in the codebase, outside this vault): `ASSET_GUIDE.md`, `MASTER_PROP_RULES.md`, `EPISODE_PRODUCTION_GUIDE.md`, `QA_CHECKLIST.md` at the repo root.*
+*Companion repo guides (for agents working in the codebase, outside this vault): `docs/guides/ASSET_GUIDE.md`, `docs/rules/MASTER_PROP_RULES.md`, `docs/rules/QA_CHECKLIST.md`; production rules live in the `episode-production` skill (+ its `references/PRODUCTION_PLAYBOOK.md`).*

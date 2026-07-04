@@ -14,6 +14,29 @@ description: >-
 
 # Cinematic Episode Writer — Bentley's Big Adventures
 
+> **Write FOR the 10 mandatory production rules** (owner law, 2026-07-03; full text in
+> `episode-production` §0.0). Five are decided here, on the page, before any render:
+> **#1 action over dialogue** — design beats where characters *do* things and the world moves under the
+> VO, never a talking head carrying a beat; **#4 few close-ups** — stage medium/wide two-shots, reserve a
+> CU for one real emotional beat; **#5 one cohesive scene per story beat** — group the script into
+> logical beats and hand off ONE continuous animated section per beat (the animatic-ready JSON below),
+> never sentence-by-sentence; **#8 story before animation** — finalize story + dialogue + causal flow and
+> pass the zero-credit Animatic Lock before a single frame; **#10 think like an animator** — write each
+> beat as "the best animated SCENE for this story," not "which shot next." A script that violates these
+> forces the producer to violate them too.
+
+> **Three dialogue laws (owner, 2026-07-04):** (1) **BALANCE** — the episode is a conversation and a
+> shared adventure, never a Bentley monologue with occasional replies. The guest is an ACTIVE
+> participant: they explain their own biology, ask questions, tease, react, invite — target rough
+> parity of substantive lines (EP4 rev2: Mira 12 / Bentley 18-mostly-short is the floor, not the
+> ceiling). If Bentley speaks 3+ lines in a row, rewrite. (2) **PERFORMANCE on the page** — write
+> eleven_v3 emotion tags (`[gasps]`, `[thrilled]`…) and energetic punctuation INTO the VO list;
+> periods cue a deadpan TTS read ("Best. Morning. EVER!" rendered flat — "Best! Morning! EVER!" with
+> a tag doesn't). (3) **CATCHPHRASE IN CONTEXT** — "Stop. Look. Listen." must be *answered into*
+> (a setup line motivates it — e.g. narrator: "…you know what Bentley does with a brand-new
+> mystery…"), never bolted onto an ending; an out-of-context catchphrase is a recurring owner
+> rejection (EP3, EP4 rev1).
+
 A complete episode reads as **one story a grandpa is telling**, with characters who happen to talk —
 not a string of pretty shots. A child watching should never wonder *"why are we suddenly here? who's
 talking? how do these connect?"* This skill exists because that question is the #1 failure mode, and
@@ -88,11 +111,39 @@ Output the four artifacts in the exact formats in `shot-and-pipeline.md`:
    consistency notes (matches `docs/series/season_1/ep2/EP2_STORY_REPAIR_EDL.md`).
 4. **Bridge-shot list** — only the shots that must be generated, with intent + reference assets.
 
-**Hand off an animatic-ready EDL.** Emit the EDL/cue sheet (artifact 3) as a *machine-runnable* JSON
-shotlist — each beat `{type: card|vo_over|ffx|motion|talk, src, dur, over, vo, status: todo|reuse}` —
-so the production **Animatic Lock** gate (`episode-production` §10 step 4) renders the timed story
-scratch with **no re-authoring**, and the *same* JSON later feeds final assemble. This is not new
-authoring: the EDL you already write just needs to be in this runnable schema.
+**Hand off an animatic-ready EDL.** ALSO emit the EDL/cue sheet (artifact 3) as a *machine-runnable*
+JSON shotlist at `episodes/ep<N>/shotlists/ep<N>_master.json`, so the production **Animatic Lock** gate
+(`episode-production` §10 step 4) renders the timed story scratch with **no re-authoring**, and the
+*same* JSON later feeds final assemble. This is not new authoring — it's the EDL you already wrote, as
+JSON. Each beat:
+`{"id", "type": card|vo_over|ffx|motion|talk, "dur", "src", "over", "vo", "status": todo|reuse}`.
+
+**The animatic reads FILES, not labels.** `src`/`over`/`vo`/`still` must be real repo paths — if they
+don't resolve, the beat falls back to a gray card (and is *silent* when `vo` is missing). So convert
+the artifact-2/3 labels to paths in the JSON:
+- `vo` — the recorded line(s) as **mp3 path(s)**: label `N_camo` → `scratch/ep<N>/vo/N_camo.mp3` (where
+  `make_vo.py` writes them). Several lines on one beat = comma-separated paths, **in order**.
+- `src` — the clip for a `motion`/`talk`/reuse beat (`scratch/ep<N>/motion|talking/*.mp4`). A `talk`
+  clip carries its line as **embedded** audio, so it needs no `vo`. `over` — the motion clip/still a
+  `vo_over` line plays over. `still` — a keyframe/plate image to Ken-Burns (else `keyframes/<id>.png`
+  is auto-found by id).
+- `status` — `reuse` when the asset exists, `todo` for an un-shot BRIDGE (auto-renders a labeled card,
+  never skipped).
+
+```json
+{ "shots": [
+  {"id":"a0_01_establish","type":"ffx","dur":"4","status":"todo",
+   "still":"assets/pilot_shots/ep<N>/keyframes/a0_01_establish.png","keyframe":"Wide dawn cove, settle in."},
+  {"id":"a1_06_reintro","type":"vo_over","dur":"7","status":"todo",
+   "vo":"scratch/ep<N>/vo/N_intro.mp3","over":"scratch/ep<N>/motion/bentley_still_glow.mp4"},
+  {"id":"a3_18_why","type":"talk","voice":"bentley","dur":"2","line":"Why do you keep hiding?",
+   "src":"scratch/ep<N>/talking/talk_B_why.mp4","status":"reuse"}
+] }
+```
+Canonical, animatic-proven example: `episodes/ep2/shotlists/ep2_master.json`. **Do NOT** hand off the
+old pod style (`episodes/ep2/shotlists/ep2_v3_character_driven.json` — `"vo":["P1_B01"]`): abstract VO
+*IDs* are not file paths, so the animatic can't resolve a single line and you get a silent all-cards
+scratch. (The animatic prints a loud warning if it sees label-style `vo`, but fix it at the source.)
 
 ## Self-review before you hand it over
 Look at the draft twice with fresh eyes:

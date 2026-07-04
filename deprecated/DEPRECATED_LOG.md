@@ -40,3 +40,17 @@ The reusable *patterns* from these scripts already live in the active package: t
 (`bentley/shared/kie_client.py`), catbox hosting / TTS / clean-master helpers, and the batch
 structure. The frozen copies retain their own inlined helpers — that duplication is harmless
 because the files are frozen.
+
+## `docs_guides/` — superseded production docs (moved 2026-07-03)
+
+Superseded by the single normative chain established after the EP3 post-mortem:
+**10 Mandatory Rules** (vault) → **`.claude/skills/episode-production/SKILL.md`** →
+**`references/PRODUCTION_PLAYBOOK.md`** (inside the skill). Unique content was absorbed into the
+playbook before the move (avatar freezes-background/darkens/text-hallucination gotchas; the
+full-duration worst-frame-fails QA principle).
+
+| File | Why frozen |
+|------|-----------|
+| `EPISODE_PRODUCTION_GUIDE.md` | EP1-era how-to; references pre-reorg flat scripts (`assemble_v2_final.py`, `grade_v2_final.py`, …) that no longer exist at those paths |
+| `EPISODE_PRODUCTION_SKILL.md` | was a "must-stay-identical" human mirror of the skill; drifted stale (frozen 2026-06-27, missing §0/§0.0/playbook) — a stale mirror misleads |
+| `PRODUCTION_PIPELINE.md` | the 9-stage gated flow — superseded by playbook Parts 2–3 + the skill §10; its unique gotchas absorbed into the playbook |

@@ -16,7 +16,7 @@ tags:
 |---|---|---|
 | **Images** | kie.ai **Google Nano-Banana** (`google/nano-banana`, `…-edit`) | keyframes, edit-from-master |
 | **Motion video** | kie.ai **Kling 2.6** (`kling-2.6/image-to-video`) | living motion shots (water, action) |
-| **Talking video** | kie.ai **Kling Avatar** (`kling/ai-avatar-standard`) | lip-synced dialogue shots |
+| **Talking video** | **[[Lip-Sync Rig System]]** (local, 0 cr) — Kling Avatar only for the catchphrase CU | lip-synced dialogue shots |
 | **Voice / SFX / music** | **ElevenLabs** `eleven_v3` + text-to-SFX + music | VO, sound design |
 | **Edit / mix / grade** | **ffmpeg** | assemble, mix, grade, finish |
 | **Audio hosting** | **catbox.moe** | public URLs for the Kling Avatar's audio input |
@@ -33,7 +33,7 @@ assets/
 └── deprecated/         # REJECTED — kept, never deleted (see DEPRECATED_LOG.md)
     ├── bentley/ crab/ shells/ voices/ scenes/
 ```
-Repo-root guides for in-codebase agents: `ASSET_GUIDE.md`, `MASTER_PROP_RULES.md`, `EPISODE_PRODUCTION_GUIDE.md`, `QA_CHECKLIST.md`.
+Repo guides for in-codebase agents: `docs/guides/ASSET_GUIDE.md`, `docs/rules/MASTER_PROP_RULES.md`, `docs/rules/QA_CHECKLIST.md`; production rules = the `episode-production` skill (+ its `references/PRODUCTION_PLAYBOOK.md`).
 
 ## Asset pipeline (per shot)
 1. **Keyframe** — `nano-banana-edit` from the approved master → still.

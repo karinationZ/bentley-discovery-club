@@ -16,6 +16,8 @@ PIP = "N2lVS1w4EtoT3dr4eOWO"          # Callum — Pip (pitched +10% at render t
 NARRATOR = "pqHfZKP75CvOlQylNhV4"     # Bill   — Grandpa Theodore narrator (LOCKED, current canon)
 THEO_GEORGE = "JBFqnCBsd6RMkjVDRZzb"  # George — legacy narrator, superseded by Bill
 INDI = "FcZStbCG9g9QxDlJioSD"         # Indi — Ep2 guest octopus (LOCKED 2026-06-20), shy / guarded-but-warm
+MARCO = "U7vsLCpbWl9Lt8M1Gjtk"        # Marco — Ep3 guest harvester ant (boy), small/bright/quick/brave (owner-picked 2026-06-28)
+MIRA = "n3yMmKmTfVCEM13Kk2lp"         # Mira — Ep4 guest monarch butterfly (girl), playful/fearless (owner-picked 2026-07-03; MUST use model eleven_multilingual_v2 — see tts_mira)
 
 _TTS_URL = "https://api.elevenlabs.io/v1/text-to-speech/{voice}?output_format={fmt}"
 

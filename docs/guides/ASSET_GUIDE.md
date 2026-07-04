@@ -4,7 +4,7 @@ This is the map of the `assets/` folder for *Bentley's Big Adventures*. Read thi
 first when you need to find a prop, a voice, a scene, or the finished episode.
 
 > **Golden rule:** reach for an **approved** asset before you generate anything new.
-> See the reuse-first token rule in `EPISODE_PRODUCTION_GUIDE.md`.
+> See the reuse-first token rule in the episode-production skill §2 (Asset Reuse).
 
 ---
 

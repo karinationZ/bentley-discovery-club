@@ -3,6 +3,8 @@
     "episode": "Episode 2 - The Octopus Escape Artist",
     "version": "v3_character_driven_restart_retimed",
     "created": "2026-06-24",
+    "animatic_runnable": false,
+    "animatic_note": "NOT runnable by the Animatic Lock tool — this is the abstract pod schema (vo holds VO IDs like ['P1_B01'], not mp3 paths; shots are grouped under 'pods'). bentley.episode_builder.animatic needs the file-path schema: use episodes/ep2/shotlists/ep2_master.json. Feeding this file produces a silent all-cards scratch (the tool will print a SCHEMA WARNING).",
     "script": "docs/series/season_1/ep2/EPISODE2_SCRIPT_v3_CHARACTER_DRIVEN.md",
     "cue_sheet": "docs/series/season_1/ep2/EP2_v3_PRODUCTION_CUE_SHEET.md",
     "baseline_review": "scratch/ep2/restart_review/",

@@ -13,7 +13,7 @@ the story. Warm, funny, a little wondrous — think a kind grandpa reading a bed
   she understands. Her growth each episode is learning to be still and *listen* first.
 - **Voice:** LauraZ (`tts_bentley`). Bright, eager, warm, fast. ~age-6 energy.
 - **Appearance canon (HARD):** black face mask, grey chin, brown eyes, floppy folded-down ears, white
-  chest blaze, **solid red-fawn paws — NO white socks/toes**, **short docked tail stub only** (never a
+  chest blaze, **paws the SAME COLOR as her coat — NO white socks/toes** (⚖️ never write a paw color in a prompt: "red-fawn paws" renders literal RED paws), **short docked tail stub only** (never a
   long/curled/upright tail). Teal collar with a gold paw-print **Listening Tag**.
 - **Never:** human smile, human teeth, or standing/acting like a person. Dog joy = tongue out, soft
   eyes, tail-stub wiggle. Style is cartoony-Pixar (not photoreal).
