@@ -1,0 +1,7 @@
+file '/project/assets/pilot_shots/ep1/shorts/clips/e1_seg0_cap.mp4'
+file '/project/assets/pilot_shots/ep1/shorts/clips/e1_seg1_cap.mp4'
+file '/project/assets/pilot_shots/ep1/shorts/clips/e1_seg2_cap.mp4'
+file '/project/assets/pilot_shots/ep1/shorts/clips/e1_seg3_cap.mp4'
+file '/project/assets/pilot_shots/ep1/shorts/clips/e1_seg4_cap.mp4'
+file '/project/assets/pilot_shots/ep1/shorts/clips/e1_seg5_cap.mp4'
+file '/project/assets/pilot_shots/ep1/shorts/clips/e1_endcard.mp4'

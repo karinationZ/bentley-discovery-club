@@ -1,0 +1,2 @@
+file '/project/episodes/ep3/_segs/_10_waitno_p0.mp4'
+file '/project/episodes/ep3/_segs/_10_waitno_p1.mp4'

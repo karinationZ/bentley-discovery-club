@@ -1,0 +1,539 @@
+{
+  "_meta": {
+    "episode": "EP3 v8 \u2014 continuous sections",
+    "counts": {
+      "total": 31,
+      "ready": 31
+    }
+  },
+  "shots": [
+    {
+      "id": "00_title",
+      "voice": "narrator",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "TITLE",
+          "dur": 3.5,
+          "lipsync": false
+        }
+      ],
+      "vo": ""
+    },
+    {
+      "id": "s1_open",
+      "voice": "bentley",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/v14fix/opening_v3.mp4",
+          "dur": 5,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/bridges/bentley_intro/shot.mp4",
+          "dur": 5,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/bridges/marco_intro/shot_gold2.mp4",
+          "dur": 5,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/v14fix/goldants_col.mp4",
+          "dur": 5,
+          "lipsync": false
+        }
+      ],
+      "vo": "episodes/ep3/vo/B_hook1.mp3, episodes/ep3/vo/N_intro.mp3, episodes/ep3/vo/B_findline.mp3"
+    },
+    {
+      "id": "s2_meet",
+      "voice": "bentley",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/talk_graded/B_tooheavy.mp4",
+          "dur": 6.88,
+          "lipsync": true
+        }
+      ],
+      "vo": "episodes/ep3/vo/B_tooheavy.mp3"
+    },
+    {
+      "id": "s2a_igotit",
+      "voice": "marco",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/v12fix/igotit_fix_trim.mp4",
+          "dur": 3,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/bridges/marco_intro/shot_gold.mp4",
+          "dur": 4,
+          "lipsync": false
+        }
+      ],
+      "vo": "episodes/ep3/vo/M_igotit.mp3"
+    },
+    {
+      "id": "s2b_whatline",
+      "voice": "bentley",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/talk_graded/B_whatline.mp4",
+          "dur": 2.3,
+          "lipsync": true
+        }
+      ],
+      "vo": "episodes/ep3/vo/B_whatline.mp3"
+    },
+    {
+      "id": "s2c_smell",
+      "voice": "marco",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/omni_ep3/masktest/SMELLPATH_masked.mp4",
+          "dur": 5.48,
+          "lipsync": true
+        },
+        {
+          "src": "scratch/ep3/bridges/scent_move/shot.mp4",
+          "dur": 5,
+          "lipsync": false
+        }
+      ],
+      "vo": "episodes/ep3/vo/M_smellpath.mp3"
+    },
+    {
+      "id": "s3_trail",
+      "voice": "narrator",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/bridges/ant_relay/shot.mp4",
+          "dur": 5,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/bridges/scent_move/shot.mp4",
+          "dur": 4,
+          "lipsync": false
+        }
+      ],
+      "vo": "episodes/ep3/vo/N_trail.mp3"
+    },
+    {
+      "id": "s4_pickup",
+      "voice": "bentley",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/bridges/scoop_pickup/shot.mp4",
+          "dur": 5,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/bridges/scoop/shot.mp4",
+          "dur": 5,
+          "lipsync": false
+        }
+      ],
+      "vo": "episodes/ep3/vo/B_zoomit.mp3"
+    },
+    {
+      "id": "s5_waitno",
+      "voice": "marco",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/talk_graded/M_waitno.mp4",
+          "dur": 2.23,
+          "lipsync": true
+        }
+      ],
+      "vo": "episodes/ep3/vo/M_waitno.mp3"
+    },
+    {
+      "id": "s5_oops",
+      "voice": "bentley",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/bridges/pawscuff/shot.mp4",
+          "dur": 4,
+          "lipsync": false
+        }
+      ],
+      "vo": "episodes/ep3/vo/B_oops.mp3"
+    },
+    {
+      "id": "s5b_lost",
+      "voice": "marco",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/talk_graded/M_lost.mp4",
+          "dur": 8.53,
+          "lipsync": true
+        }
+      ],
+      "vo": "episodes/ep3/vo/M_lost.mp3"
+    },
+    {
+      "id": "s6_shadow",
+      "voice": "narrator",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/v12fix/birdshadow_fix2.mp4",
+          "dur": 5,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/bridges/shadow_move/shot.mp4",
+          "dur": 3,
+          "lipsync": false
+        }
+      ],
+      "vo": "episodes/ep3/vo/N_shadow.mp3"
+    },
+    {
+      "id": "s7a_realize",
+      "voice": "bentley",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/talk_graded/B_realize.mp4",
+          "dur": 13.87,
+          "lipsync": true
+        }
+      ],
+      "vo": "episodes/ep3/vo/B_realize.mp3"
+    },
+    {
+      "id": "s7_listen",
+      "voice": "bentley",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/bridges/sniff/shot.mp4",
+          "dur": 5,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/bridges/scentf_move/shot.mp4",
+          "dur": 5,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/bridges/scent_move/shot.mp4",
+          "dur": 5,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/bridges/sniff2/shot.mp4",
+          "dur": 5,
+          "lipsync": false
+        }
+      ],
+      "vo": "episodes/ep3/vo/M_youstopped.mp3, episodes/ep3/vo/B_smellit.mp3"
+    },
+    {
+      "id": "s8a_checkyou",
+      "voice": "marco",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/omni_ep3/masktest/antenna_checkyou.mp4",
+          "dur": 1.96,
+          "lipsync": true
+        }
+      ],
+      "vo": "episodes/ep3/vo/M_checkyou.mp3"
+    },
+    {
+      "id": "s8_antenna",
+      "voice": "narrator",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/bridges/ant_relay/shot.mp4",
+          "dur": 4,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/bridges/tickle/shot.mp4",
+          "dur": 5,
+          "lipsync": false
+        }
+      ],
+      "vo": "episodes/ep3/vo/N_antennae.mp3, episodes/ep3/vo/B_crosseyed_tickle.mp3"
+    },
+    {
+      "id": "s8b_brave",
+      "voice": "marco",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/omni_ep3/masktest/brave_masked.mp4",
+          "dur": 7.24,
+          "lipsync": true
+        }
+      ],
+      "vo": "episodes/ep3/vo/M_brave.mp3"
+    },
+    {
+      "id": "s9_bridge",
+      "voice": "bentley",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/bridges/bridge/shot.mp4",
+          "dur": 7,
+          "lipsync": false
+        }
+      ],
+      "vo": "episodes/ep3/vo/B_dontgrab_v2.mp3"
+    },
+    {
+      "id": "s10_rebuild",
+      "voice": "narrator",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/bridges/ant_relay/shot.mp4",
+          "dur": 5,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/v14fix/goldants_col.mp4",
+          "dur": 5,
+          "lipsync": false
+        }
+      ],
+      "vo": "episodes/ep3/vo/N_rebuild.mp3"
+    },
+    {
+      "id": "s10b_together",
+      "voice": "marco",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/omni_ep3/out/M_together.mp4",
+          "dur": 8.36,
+          "lipsync": true
+        }
+      ],
+      "vo": "episodes/ep3/vo/M_together.mp3"
+    },
+    {
+      "id": "s10c_strong",
+      "voice": "bentley",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/talk_graded/B_strong.mp4",
+          "dur": 5.28,
+          "lipsync": true
+        }
+      ],
+      "vo": "episodes/ep3/vo/B_strong.mp3"
+    },
+    {
+      "id": "s11_city",
+      "voice": "narrator",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/bridges/city1_move/shot.mp4",
+          "dur": 5,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/bridges/city3_move/shot.mp4",
+          "dur": 5,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/bridges/city2_move/shot.mp4",
+          "dur": 5,
+          "lipsync": false
+        }
+      ],
+      "vo": "episodes/ep3/vo/N_city.mp3"
+    },
+    {
+      "id": "s12a_nowonder",
+      "voice": "bentley",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/talk_graded/B_nowonder.mp4",
+          "dur": 7.1,
+          "lipsync": true
+        }
+      ],
+      "vo": "episodes/ep3/vo/B_nowonder.mp3"
+    },
+    {
+      "id": "s12ab_explain",
+      "voice": "marco",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/talk_graded/M_explain.mp4",
+          "dur": 6.0,
+          "lipsync": true
+        },
+        {
+          "src": "scratch/ep3/bridges/city2_move/shot.mp4",
+          "dur": 1,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/talk_graded/M_explain.mp4",
+          "dur": 8.4,
+          "lipsync": true
+        }
+      ],
+      "vo": "episodes/ep3/vo/M_explain.mp3"
+    },
+    {
+      "id": "s12b_city",
+      "voice": "bentley",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/talk_graded/B_youarecity_v2.mp4",
+          "dur": 6.0,
+          "lipsync": true
+        },
+        {
+          "src": "scratch/ep3/bridges/city1_move/shot.mp4",
+          "dur": 5,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/bridges/city3_move/shot.mp4",
+          "dur": 5,
+          "lipsync": false
+        }
+      ],
+      "vo": "episodes/ep3/vo/B_youarecity_v2.mp3"
+    },
+    {
+      "id": "s12c_lesson",
+      "voice": "bentley",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/talk_graded/B_lesson.mp4",
+          "dur": 6.0,
+          "lipsync": true
+        },
+        {
+          "src": "scratch/ep3/bridges/pawscuff/shot.mp4",
+          "dur": 1,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/talk_graded/B_lesson.mp4",
+          "dur": 6.43,
+          "lipsync": true
+        }
+      ],
+      "vo": "episodes/ep3/vo/B_lesson.mp3"
+    },
+    {
+      "id": "s12b_promise",
+      "voice": "bentley",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/talk_graded/B_promise.mp4",
+          "dur": 4.5,
+          "lipsync": true
+        }
+      ],
+      "vo": "episodes/ep3/vo/B_promise.mp3"
+    },
+    {
+      "id": "s13_button",
+      "voice": "narrator",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/bridges/ant_relay/shot.mp4",
+          "dur": 3,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/v14fix/ants_tunnel.mp4",
+          "dur": 5,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/bridges/burrow_twoshot/shot_fix.mp4",
+          "dur": 3,
+          "lipsync": false
+        }
+      ],
+      "vo": "episodes/ep3/vo/N_button.mp3, episodes/ep3/vo/M_comesee_v2.mp3"
+    },
+    {
+      "id": "s13b_fly",
+      "voice": "narrator",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/v14fix/butterfly_land_v2st.mp4",
+          "dur": 5,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/v14fix/butterfly_mid_v2s.mp4",
+          "dur": 5,
+          "lipsync": false
+        },
+        {
+          "src": "scratch/ep3/v14fix/butterfly_fly_v2s.mp4",
+          "dur": 5,
+          "lipsync": false
+        }
+      ],
+      "vo": "episodes/ep3/vo/N_outro_v2.mp3"
+    },
+    {
+      "id": "s13c_night",
+      "voice": "bentley",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "scratch/ep3/v14fix/butterfly_fly_v2s.mp4",
+          "dur": 3,
+          "lipsync": false
+        }
+      ],
+      "vo": "episodes/ep3/vo/B_goodnight.mp3"
+    },
+    {
+      "id": "s15_card",
+      "voice": "narrator",
+      "status": "ready",
+      "seq": [
+        {
+          "src": "CARD",
+          "dur": 3.5,
+          "lipsync": false
+        }
+      ],
+      "vo": ""
+    }
+  ]
+}

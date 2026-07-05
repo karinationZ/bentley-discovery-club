@@ -1,0 +1,2 @@
+file '/project/episodes/ep3/_segs/_06_whatline_p0.mp4'
+file '/project/episodes/ep3/_segs/_06_whatline_p1.mp4'

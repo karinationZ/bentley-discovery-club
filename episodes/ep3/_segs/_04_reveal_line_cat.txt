@@ -1,0 +1,2 @@
+file '/project/episodes/ep3/_segs/_04_reveal_line_a.mp4'
+file '/project/episodes/ep3/_segs/_04_reveal_line_push.mp4'

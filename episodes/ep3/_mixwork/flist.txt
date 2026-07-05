@@ -1,0 +1,4 @@
+file '/project/episodes/ep3/_mixwork/f_1.wav'
+file '/project/episodes/ep3/_mixwork/f_2.wav'
+file '/project/episodes/ep3/_mixwork/f_3.wav'
+file '/project/episodes/ep3/_mixwork/f_4.wav'

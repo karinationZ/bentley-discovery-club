@@ -1,0 +1,3 @@
+file '/project/episodes/ep3/vo/N_rebuild.mp3'
+file '/project/episodes/ep3/vo/M_together.mp3'
+file '/project/episodes/ep3/vo/B_strong.mp3'

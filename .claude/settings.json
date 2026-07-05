@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'BENTLEY PRODUCTION REPO — MANDATORY: any episode work (shots, keyframes, renders, VO, EDL/shotlists, assembly, QA, or ANY KIE/ElevenLabs credit spend) requires the episode-production skill loaded FIRST, even for small file edits under episodes/ or assets/. Owner gates live in episodes/<ep>/GATES.md — an unrecorded gate is an UNPASSED gate. No video render before that episode Animatic Lock is recorded PASSED. On KIE 402 (credits out): STOP and tell the owner. Full rules: .claude/skills/episode-production/SKILL.md + its PRODUCTION_PLAYBOOK.md'"
+          }
+        ]
+      }
+    ]
+  }
+}

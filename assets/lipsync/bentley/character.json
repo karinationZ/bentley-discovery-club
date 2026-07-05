@@ -1,0 +1,12 @@
+{
+  "character": "bentley",
+  "sheets": {
+    "three_quarter": "mouth_shapes/v2_tq/manifest.json",
+    "side": "mouth_shapes/v2_side/manifest.json",
+    "front": "mouth_shapes/v1b/manifest.json"
+  },
+  "default_sheet": "three_quarter",
+  "plate_provides": ["REST_CLOSED", "MBP", "CONS", "FV"],
+  "rhubarb_map_overrides": {},
+  "min_mouth_px": 24
+}

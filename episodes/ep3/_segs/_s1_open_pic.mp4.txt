@@ -1,0 +1,4 @@
+file '/project/episodes/ep3/_segs/_s1_open_p0.mp4'
+file '/project/episodes/ep3/_segs/_s1_open_p1.mp4'
+file '/project/episodes/ep3/_segs/_s1_open_p2.mp4'
+file '/project/episodes/ep3/_segs/_s1_open_p3.mp4'

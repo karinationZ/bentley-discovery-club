@@ -1,0 +1,5 @@
+file '/project/assets/pilot_shots/ep2/shorts/vo/_cp_0.mp3'
+file '/project/assets/pilot_shots/ep2/shorts/vo/_cp_sil.mp3'
+file '/project/assets/pilot_shots/ep2/shorts/vo/_cp_1.mp3'
+file '/project/assets/pilot_shots/ep2/shorts/vo/_cp_sil.mp3'
+file '/project/assets/pilot_shots/ep2/shorts/vo/_cp_2.mp3'

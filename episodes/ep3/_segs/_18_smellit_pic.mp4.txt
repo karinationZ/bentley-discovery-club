@@ -1,0 +1,4 @@
+file '/project/episodes/ep3/_segs/_18_smellit_p0.mp4'
+file '/project/episodes/ep3/_segs/_18_smellit_p1.mp4'
+file '/project/episodes/ep3/_segs/_18_smellit_p2.mp4'
+file '/project/episodes/ep3/_segs/_18_smellit_p3.mp4'

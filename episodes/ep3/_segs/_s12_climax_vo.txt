@@ -1,0 +1,3 @@
+file '/project/episodes/ep3/vo/M_nobody.mp3'
+file '/project/episodes/ep3/vo/B_youarecity.mp3'
+file '/project/episodes/ep3/vo/B_lesson.mp3'

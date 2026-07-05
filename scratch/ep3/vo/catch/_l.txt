@@ -1,0 +1,4 @@
+file '/project/scratch/ep3/vo/catch/catchA_periods.mp3'
+file '/project/scratch/ep3/vo/catch/catchB_ellipsis.mp3'
+file '/project/scratch/ep3/vo/catch/catchC_warm.mp3'
+file '/project/scratch/ep3/vo/catch/catchD_BROKEN_current.mp3'

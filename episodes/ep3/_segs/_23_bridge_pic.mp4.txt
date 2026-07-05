@@ -1,0 +1,4 @@
+file '/project/episodes/ep3/_segs/_23_bridge_p0.mp4'
+file '/project/episodes/ep3/_segs/_23_bridge_p1.mp4'
+file '/project/episodes/ep3/_segs/_23_bridge_p2.mp4'
+file '/project/episodes/ep3/_segs/_23_bridge_p3.mp4'

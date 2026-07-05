@@ -1,0 +1,2 @@
+file '/project/episodes/ep3/_segs/_25_rebuild_a.mp4'
+file '/project/episodes/ep3/_segs/_25_rebuild_push.mp4'

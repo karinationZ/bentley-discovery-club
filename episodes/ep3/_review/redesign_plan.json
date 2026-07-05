@@ -1,0 +1,1149 @@
+{
+  "beats": [
+    {
+      "id": "00_title",
+      "current_problem": "Title card is fine as a card, but the underlying plate is the static warm-scrub establishing photo and is dead-still; owner also flags the whole episode opens too yellow/hot. Not a giant head, but it should establish the two-hero world, not just sit as a flat still.",
+      "new_staging": "Keep the title-card text overlay, but lay it over a slow, live push-in on the warm-scrub cove (gentle Ken-Burns drift on the establishing plate) with the color balance pulled back from the heavy yellow. It reads as a real place we are about to drop into, not a frozen postcard.",
+      "shot_sequence": [
+        {
+          "scale": "wide",
+          "source": "TITLE over coldopen/shot_stab.mp4 (first ~1s, pre-boop, slight slow push-in) with yellow cast reduced",
+          "seconds": 3.5,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "0:21 reduce yellow cast (color balance the opening scrub environment)"
+      ]
+    },
+    {
+      "id": "01_open",
+      "current_problem": "Contact sheet is HALF fine / HALF broken: frames 1-2 are a good action-wide (Bentley crouched, booping the little crumb, ant world visible), but frames 3-5 are the exact giant single face-CU the owner hates (B_hook1 talking head fills the frame). Owner also flags 0:02 camera shake.",
+      "new_staging": "Play the cold open entirely on the stabilized ACTION-WIDE: Bentley in full body, low to the ground, curiously nudging/booping the crumb that appears to walk. Her hook line rides as clean VO over this wide. Only a single ~1.2s tight face cut-in (B_hook1) punctuates the middle of the line on the funny beat, then we cut straight back to the wide for her reaction. The giant head is never the whole beat.",
+      "shot_sequence": [
+        {
+          "scale": "action",
+          "source": "coldopen/shot_stab.mp4 (stabilized action-wide, Bentley booping the walking crumb)",
+          "seconds": 2.6,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "talk/B_hook1.mp4 (tight talking CU, use ~1.2s only, on the punch of the line)",
+          "seconds": 1.2,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "action",
+          "source": "coldopen/shot_stab.mp4 (cut back to the wide for her head-tilt reaction to the crumb)",
+          "seconds": 1.5,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "0:02 opening shot shaking -> use the already-stabilized coldopen/shot_stab.mp4",
+        "#1 giant heads -> cold-open hook is now an action-wide, talking CU demoted to a 1.2s cut-in"
+      ]
+    },
+    {
+      "id": "02_intro",
+      "current_problem": "Contact sheet frames 1-2 are a good medium/wide of Bentley sitting in the scrub with the glowing tag; but frames 3-5 push into a big low-angle near-CU of Bentley lying down, and the whole thing is bathed in the heavy yellow cast the owner hates. Owner also flags 0:29 the camera pan going frozen at the end.",
+      "new_staging": "Narrator is voice-only over picture. Open on the clean MEDIUM-WIDE of Bentley sitting in the cove, tag glowing, then a live camera move that finishes on a slow turn/look. Reduce the yellow so it is warm-daylight, not orange. Cross-cut is scale-varied: medium sit -> wide turn. Because narrator carries it, no talking mouth is needed and there is no giant head at all.",
+      "shot_sequence": [
+        {
+          "scale": "medium",
+          "source": "bentley_intro/shot.mp4 (Bentley sits in scrub, Listening Tag glow) with yellow cast reduced",
+          "seconds": 6,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "wide",
+          "source": "turn/shot.mp4 (Bentley turns/looks off toward where the crumb was; hold motion through to the end so the pan doesn't freeze)",
+          "seconds": 5.58,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "0:21 scene overly yellow -> color-balanced Bentley intro",
+        "0:29 camera pan freezes toward the end -> pick a continuously-moving segment of turn/shot.mp4 so motion carries to the cut (no frozen tail)",
+        "#1 giant heads -> intro is medium+wide, no face-CU (narrator VO carries it)"
+      ]
+    },
+    {
+      "id": "03_reveal",
+      "current_problem": "Same half-and-half failure: frames 1-2 are a lovely WIDE of Marco leading the parade of ants carrying the crumb; frames 3-5 dump into the giant single Bentley talking head (B_findline) for the rest of the beat. The reveal (that the crumb is a whole parade of ants) should be the star, not Bentley's face.",
+      "new_staging": "The reveal is carried by the WIDE parade shot -- Marco at the head of a line of ants hauling the crumb -- so the AUDIENCE sees what Bentley sees. Bentley's delighted 'a whole parade of YOU!' line rides as VO over the wide. Cut in ONE ~1.3s tight Bentley reaction CU (B_findline) on 'Hellooo down there!', then back to the wide. Scale goes wide -> brief CU -> wide, never two heads in a row.",
+      "shot_sequence": [
+        {
+          "scale": "wide",
+          "source": "marco_intro/shot_gold2.mp4 (Marco leading the parade of ants carrying the crumb -- the reveal)",
+          "seconds": 4.5,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "talk/B_findline.mp4 (tight Bentley delight CU, ~1.3s only, on 'Hellooo down there!')",
+          "seconds": 1.3,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "wide",
+          "source": "marco_intro/shot_gold2.mp4 (back to the parade -- ants react to being noticed)",
+          "seconds": 3.38,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "#1 giant heads -> the reveal is a wide, Bentley talking CU demoted to a 1.3s cut-in",
+        "shot-scale variety -> wide/CU/wide, and this wide follows the medium+wide of 02 without repeating a face-CU"
+      ]
+    },
+    {
+      "id": "04_lean",
+      "current_problem": "Frames 1-2 are the giant single Bentley talking head (B_tooheavy) filling the whole frame; frames 3-5 finally show the good over-the-nose two-shot (Bentley huge nose leaning to tiny Marco). The beat currently LEADS with the hated giant head instead of the two-shot. Owner also flags 0:33 Bentley out of sync on 'You're so tiny.'",
+      "new_staging": "This is the first real BENTLEY+MARCO TWO-SHOT and it should be the backbone of the beat: Bentley leaning down over teeny Marco, both clearly in frame, in the warm scrub. Her whole 'you're so teeny... let me carry it' line plays as clean VO over the two-shot. Drop in ONE ~1.3s tight Bentley CU (B_tooheavy) mid-line so we get real sync on a key phrase, then cut back to the two-shot for 'let me carry it for you, little one.' Fixing the sync = use the clean VO on the wider two-shot and only expose the mouth in the short, well-synced CU window.",
+      "shot_sequence": [
+        {
+          "scale": "two-shot",
+          "source": "lean_help/shot.mp4 (Bentley leans down over tiny Marco, both in frame -- the two-shot backbone)",
+          "seconds": 2.8,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "talk/B_tooheavy.mp4 (tight Bentley CU, ~1.3s only, synced on 'you're so teeny')",
+          "seconds": 1.3,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "two-shot",
+          "source": "lean_help/shot.mp4 (back to two-shot: Bentley nudges toward the crumb, 'let me carry it for you')",
+          "seconds": 3.08,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "0:33 Bentley out of sync on 'You're so tiny' -> VO carries over the two-shot; sync is only shown in the short well-matched CU window",
+        "#1 giant heads -> beat now LEADS with the two-shot; talking CU is a 1.3s cut-in",
+        "two-shots as backbone -> first Bentley+Marco-together dialogue beat"
+      ]
+    },
+    {
+      "id": "05_igotit",
+      "current_problem": "This is the WORST kind of beat right now: the contact sheet is nothing but the giant single Marco head (M_igotit) filling the screen for the entire ~7s line -- exactly the parade-of-humongous-heads the owner hates. Owner also flags 0:40 Marco out of sync and 0:43 Marco speaking with NO lip sync.",
+      "new_staging": "Marco's 'I've got it! Six legs, see? ...don't break the line' plays over a MARCO-SIDE OVER-THE-SHOULDER two-shot: we are down at ant-level looking past Marco (bracing under the crumb with his six legs) UP toward Bentley's big friendly face in the background. This keeps both characters together, shows the six-legs action he is talking about, and is a NEW scale (OTS) so it doesn't repeat the lean_help framing from 04. A single ~1.2s tight Marco CU (M_igotit) cuts in on 'Six legs, see?' for real sync, then back to the OTS. His mouth is only on screen during the short synced window, killing the 0:43 no-sync problem.",
+      "shot_sequence": [
+        {
+          "scale": "over-shoulder",
+          "source": "RENDER: NEW over-the-shoulder two-shot from Marco's side -- low ant-level angle looking past Marco (golden-amber boy ant, antennae, toothless) as he braces his six legs under the giant crumb, with Bentley's warm face and glowing tag soft in the background; warm scrub, both characters clearly together",
+          "seconds": 2.6,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "talk/M_igotit.mp4 (tight Marco CU, ~1.2s only, synced on 'Six legs, see?')",
+          "seconds": 1.2,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "over-shoulder",
+          "source": "RENDER: same Marco-side OTS two-shot, continue -- Marco settles under the crumb, glances up at Bentley on 'don't break the line'",
+          "seconds": 3.21,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "0:40 Marco out of sync -> VO carries over the OTS two-shot; sync only shown in the 1.2s CU window",
+        "0:43 Marco speaking with NO lip sync -> his mouth is only on screen during the synced CU cut-in; the rest is a listening/action two-shot so there is no unsynced flapping mouth",
+        "#1 giant heads -> the entire beat is no longer a single giant Marco head; it is an OTS two-shot with one brief CU"
+      ]
+    },
+    {
+      "id": "06_whatline",
+      "current_problem": "Another pure giant single head: the contact sheet is only the big Bentley talking head (B_whatline) for the whole 'What line? I don't see a line' beat. Owner flags 0:45 Bentley out of sync on exactly this line. Coming right after 05, it would be head -> head.",
+      "new_staging": "Play the confusion as a scale-varied TWO-SHOT + INSERT combo, not a head. Start on the wider Bentley+Marco two-shot (Bentley tilts her head, puzzled, looking down at Marco) as she says 'What line?' -- clean VO. Then cut to an INSERT of the sandy ground where the invisible scent-trail should be (empty sand, Bentley's POV) on 'I don't see a line,' which literally shows her confusion. Optionally a ~1s Bentley CU (B_whatline) may punctuate 'What line?' but the beat must not be a full head. Scale: two-shot -> insert (never two heads, and different scale from 05's OTS).",
+      "shot_sequence": [
+        {
+          "scale": "two-shot",
+          "source": "lean_help/shot.mp4 (Bentley head-tilt puzzled, looking down at tiny Marco -- 'What line?')",
+          "seconds": 1.6,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "talk/B_whatline.mp4 (tight Bentley CU, ~1.0s only, synced on 'What line?')",
+          "seconds": 1,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "insert",
+          "source": "support/scent_1.png (INSERT of the bare sand where the invisible trail is -- Bentley's POV, slow push -- 'I don't see a line')",
+          "seconds": 0.7,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "0:45 Bentley out of sync on 'What line? I don't see a line' -> VO carries over the two-shot + insert; sync only in the ~1s CU",
+        "#1 giant heads -> beat is a two-shot + POV insert, not a giant head",
+        "shot-scale variety -> two-shot/insert here, distinct from 05's over-the-shoulder, so no two same-scale beats back-to-back"
+      ]
+    },
+    {
+      "id": "07_smellpath",
+      "current_problem": "The ENTIRE 12.3s beat is a humongous Marco face-CU (extreme head fills frame) \u2014 the single worst offender in this act. It is also where the owner's 0:40 'Marco out of sync', 0:43 'Marco no lip sync' and 0:51 'Marco stops moving his mouth while dialogue continues' complaints land, because a lip-sync CU was stretched to carry a 12s line.",
+      "new_staging": "Marco teaches the path from DOWN ON THE SAND beside Bentley: open the beat on the warm-scrub SIDE TWO-SHOT (lean_help) with tiny Marco gesturing up at Bentley's big lowered head, cut to a macro INSERT of the glowing scent-road on the sand as he says 'you smell it / follow the path', drop in ONE brief Marco lip-sync CU on the punch phrase 'Stay on the path and you always find home', then cut back to the two-shot to land. Clean M_smellpath VO carries continuously over all pieces so the sync complaint disappears (mouth only moves during the 1.4s CU).",
+      "shot_sequence": [
+        {
+          "scale": "two-shot",
+          "source": "scratch/ep3/bridges/lean_help/shot.mp4",
+          "seconds": 4,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "insert",
+          "source": "scratch/ep3/bridges/support/scent_1.png",
+          "seconds": 3.5,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "scratch/ep3/talk/M_smellpath.mp4",
+          "seconds": 1.4,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "two-shot",
+          "source": "RENDER: new open-scrub SIDE TWO-SHOT \u2014 Marco standing on the sand pointing a front leg along an invisible trail line, Bentley's big head lowered into frame at left nodding/watching him; both fully in frame, warm-scrub daylight, gentle living motion (Marco gestures, Bentley's ear flicks). ~3.5s",
+          "seconds": 3.4,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "0:40 Marco out of sync \u2014 sync only visible during 1.4s CU; wider pieces carry clean VO",
+        "0:43 Marco speaking with no lip sync \u2014 dialogue now plays over two-shot/insert (not-talking) footage, so absent sync reads as intended",
+        "0:51 Marco stops moving mouth mid-line \u2014 no longer a 12s held talking head; mouth movement confined to the brief CU",
+        "#1 giant-head issue \u2014 beat is now backbone two-shot + insert, giant Marco head eliminated"
+      ]
+    },
+    {
+      "id": "08_trail",
+      "current_problem": "Mostly acceptable (marching-ants parade wide + scent-fade still), but it repeats the marco_intro parade wide that beat 03 and beat 24 also use, and the still can sit static during a long 12.9s narrator line, risking the owner's 0:54-0:58 'static + camera shake' note.",
+      "new_staging": "Keep this as a NARRATOR-over-action montage (narrator is voice-only, no talking head). Open on a fresh scent-road macro that shows the trail being LAID (each ant leaving glow), push into a slow living move across the trail, then transition the SAME road to the FADED/broken version as the VO says 'wipe it away and the road is gone'. Use a subtle Ken-Burns/parallax on the stills plus the ants-on-trail macro so nothing freezes; do NOT reuse the parade wide here.",
+      "shot_sequence": [
+        {
+          "scale": "insert",
+          "source": "scratch/ep3/bridges/support/scent_1.png",
+          "seconds": 4,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "action",
+          "source": "RENDER: macro TRAIL-BUILDING shot \u2014 a short line of ants walking a glowing scent-road toward camera, each leaving a fresh sparkle of trail behind (living motion, slow dolly along the road). No giant single head. ~4.5s",
+          "seconds": 4.5,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "insert",
+          "source": "scratch/ep3/bridges/support/scent_faded_1.png",
+          "seconds": 4.4,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "0:54-0:58 static + camera shake \u2014 replace the held still with a moving trail-building shot plus gentle Ken-Burns on the two stills; no shake",
+        "Avoids re-using the marco_intro parade wide a third time (repeated-animation risk flagged at 3:11)"
+      ]
+    },
+    {
+      "id": "09_zoom",
+      "current_problem": "Middle of the beat is a humongous Bentley face-CU (B_zoomit stretched to fill). Owner explicitly wants (1:13) Bentley to TRY TO PICK UP the crumb first \u2014 nudge it with nose/paw \u2014 before any zoom, and the giant head must go.",
+      "new_staging": "Lead with the curious-puppy ACTION the owner asked for: full-body Bentley noses/mouths the crumb on the sand (scoop_pickup), THEN a quick two-shot beat where tiny Marco reacts on the ground as she decides to help, ONE brief Bentley lip-sync CU on 'I'll just zoom it to the front!', then cut to the full-body ACTION of her trotting off with the crumb in her mouth (scoop). VO adjusted feel: the 'try to pick it up' motion now precedes 'I am SO good at fast'. No giant head \u2014 the CU is a 1.3s punctuation between two wide action shots.",
+      "shot_sequence": [
+        {
+          "scale": "action",
+          "source": "scratch/ep3/bridges/scoop_pickup/shot.mp4",
+          "seconds": 4,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "two-shot",
+          "source": "scratch/ep3/bridges/lean_help/shot.mp4",
+          "seconds": 3,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "scratch/ep3/talk/B_zoomit.mp4",
+          "seconds": 1.3,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "action",
+          "source": "scratch/ep3/bridges/scoop/shot.mp4",
+          "seconds": 3.5,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "1:13 show Bentley TRY TO PICK IT UP (nudge with nose/paw) BEFORE zooming \u2014 scoop_pickup now opens the beat; VO reordered to match",
+        "#1 giant-head issue \u2014 the big Bentley face-CU is demoted to a 1.3s cut-in between two full-body action shots",
+        "Adds a genuine Bentley+Marco two-shot beat (more together-on-screen time the owner wants)"
+      ]
+    },
+    {
+      "id": "10_waitno",
+      "current_problem": "The entire 2.8s beat is a giant worried Marco face-CU (extreme head). Even a short line should not be a full-frame head, and it sits back-to-back with the scoop action, giving no scale change.",
+      "new_staging": "Play Marco's alarm as a LOW ACTION shot, not a head: from ground level, tiny Marco throws a front leg up in alarm as Bentley's giant paw/shadow sweeps toward the trail behind him \u2014 we feel the collision coming. His clean 'Wait \u2014 no \u2014 not over the PATH!' VO plays over the action; a single-frame flash of the CU (well under a second) may punctuate 'PATH' but the beat is the action, not the head.",
+      "shot_sequence": [
+        {
+          "scale": "action",
+          "source": "RENDER: LOW GROUND-LEVEL alarm shot \u2014 tiny Marco in the foreground on the sand spins and throws a front leg up in alarm, Bentley's huge paw and shadow sweeping in from frame edge toward the glowing trail behind him. Reads the danger without a face-CU. ~2.8s",
+          "seconds": 2.4,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "scratch/ep3/talk/M_waitno.mp4",
+          "seconds": 0.6,
+          "lipsync_cutin": true
+        }
+      ],
+      "owner_issues_fixed": [
+        "#1 giant-head issue \u2014 the giant Marco head is replaced by a ground-level action shot; the talking CU is a sub-second flash only",
+        "Scale variety \u2014 an action shot between the scoop (action) and paw-scuff (insert) is fixed by keeping this dynamic and low, and the following scuff insert changes scale"
+      ]
+    },
+    {
+      "id": "11_scuff",
+      "current_problem": "Already good \u2014 a tight INSERT of Bentley's paws scuffing/erasing the glowing trail (the load-bearing causal shot). No head. Only risk: it is a short 3s insert that can feel static and could sit adjacent to another insert.",
+      "new_staging": "Keep as the causal INSERT, but ensure it reads as a MOTION beat: the paws actively drag across the glowing line and the glow smears/dies under them (cause we SEE before Marco's reaction). Hold ~2.5s so the erasure lands. This is intentionally a different scale from the action shot before it and the reaction after it.",
+      "shot_sequence": [
+        {
+          "scale": "insert",
+          "source": "scratch/ep3/bridges/pawscuff/shot.mp4",
+          "seconds": 2.6,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "Keeps the load-bearing cause-before-reaction shot (Shot-Flow Law: show cause before reaction) intact",
+        "No giant head; provides scale variety (insert) between surrounding action/reaction beats"
+      ]
+    },
+    {
+      "id": "12_oops",
+      "current_problem": "The entire 4.3s beat is a humongous Bentley face-CU (extreme head fills frame). Pure hated-head beat with zero staging.",
+      "new_staging": "Play the 'oops' as a TWO-SHOT reaction, not a head: wide-ish over-the-scene shot of Bentley freezing mid-step, ears drooping, looking DOWN at tiny Marco and the smeared trail \u2014 guilt read through body language. Drop ONE brief Bentley lip-sync CU on 'Did I do a oops?' (~1.2s), then cut back to the two-shot as she shrinks. Bentley's remorse is legible from posture, not a giant face.",
+      "shot_sequence": [
+        {
+          "scale": "two-shot",
+          "source": "RENDER: warm-scrub TWO-SHOT \u2014 Bentley frozen mid-step with ears drooped and body low/sheepish, looking down at tiny Marco standing by the smeared/broken glowing trail on the sand; both fully in frame, gentle guilty micro-motion (Bentley shrinks, tail tucks). ~2.5s",
+          "seconds": 2.4,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "scratch/ep3/talk/B_oops.mp4",
+          "seconds": 1.2,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "two-shot",
+          "source": "RENDER: same warm-scrub two-shot, tighter \u2014 Bentley's guilty face lowered near Marco, ears flat, as Marco looks up at the broken trail (holds the together-in-frame relationship). ~0.7s",
+          "seconds": 0.7,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "#1 giant-head issue \u2014 the full-frame Bentley head becomes a two-shot reaction; the talking CU is a 1.2s cut-in",
+        "Adds Bentley+Marco together-on-screen time (owner wants far more of this)",
+        "Scale change from the preceding scuff insert (insert -> two-shot), no repeated scale"
+      ]
+    },
+    {
+      "id": "13_lost",
+      "current_problem": "Opens and closes on a giant worried Marco face-CU; the middle wide shows an ant that reads as a DIFFERENT ant than Marco. Directly hits owner 3:26 ('Marco out of sync; ALSO the ant shown is different from Marco') and the sync complaints. Currently the emotional 'I can't find home' plays as a static giant head.",
+      "new_staging": "Sell Marco's panic through SCALE and ISOLATION, not a head. Open on the correct-design Marco alone in the open (marco_lost wide) casting about where the trail used to be \u2014 small ant in a big empty world. Cut to a macro INSERT of the now-blank sand where the glow is gone (his POV of the missing road). Drop ONE brief Marco lip-sync CU on 'I can't find home!' (~1.4s) using the on-model M_lost CU, then pull back to the lone-ant wide as he spins, tiny and lost. The wide carries the clean VO; sync only shows in the 1.4s CU and uses the correct Marco.",
+      "shot_sequence": [
+        {
+          "scale": "wide",
+          "source": "scratch/ep3/bridges/marco_lost/shot.mp4",
+          "seconds": 3.2,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "insert",
+          "source": "scratch/ep3/bridges/support/scent_faded_2.png",
+          "seconds": 2.6,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "scratch/ep3/talk/M_lost.mp4",
+          "seconds": 1.4,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "wide",
+          "source": "scratch/ep3/bridges/marco_lost/shot.mp4",
+          "seconds": 1.4,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "3:26 the ant shown is different from Marco \u2014 use only the on-model marco_lost wide and the on-model M_lost CU (both correct golden-amber Marco); drop the mismatched giant head",
+        "3:26 Marco out of sync \u2014 sync confined to the 1.4s on-model CU; the wides carry clean VO",
+        "#1 giant-head issue \u2014 panic is told via a lone-ant WIDE + missing-trail insert, not a full-frame head; strong emotional isolation without a talking head"
+      ]
+    },
+    {
+      "id": "14_shadow",
+      "current_problem": "Not a giant-head beat (it's a wide danger shot of a lone ant under a hawk-shadow), but it is ONE frozen still (shadow_solo_1.png) held for the full 10s with zero movement \u2014 violating the 'every scene must have meaningful movement' rule and reading as dead air right before the emotional turn. It is also a SOLO ant (Marco alone), so it does not add to the Bentley+Marco two-shot backbone; it should stay a brief atmospheric wide, not a long held frame.",
+      "new_staging": "Keep the WIDE, cinematic danger framing (lone tiny Marco, off the path, dwarfed by a big sweeping bird-shadow crossing the warm sand) \u2014 this is deliberately the one moment Marco is small and alone, so NO two-shot here, but give it real life: a slow push-in plus the hawk-shadow sweeping across and Marco flinching/shrinking as it passes. Trim the narrator beat so it is a punchy ~5-6s danger sting rather than a 10s hold, and cross-dissolve between the two shadow angles so it is never one frozen frame.",
+      "shot_sequence": [
+        {
+          "scale": "wide",
+          "source": "RENDER: slow-push WIDE of lone tiny Marco far-left on open warm sand, a large hawk/bird-shadow sweeping across the sand toward him; gentle dolly-in, heat-shimmer, clouds drift \u2014 animate the still shadow_solo_1.png into ~4s of live motion",
+          "seconds": 4,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "wide",
+          "source": "support/shadow_solo_2.png",
+          "seconds": 2.5,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "Static/Frozen rule: converts a 10s frozen still into a moving, pushing wide with a sweeping shadow and a reacting ant",
+        "3:11 repeated yellow marching-ant animation: this beat is NOT reused marching-ant footage \u2014 it is the distinct shadow/danger wide, keeping shot content varied and non-repetitive going into the turn"
+      ]
+    },
+    {
+      "id": "15_realize",
+      "current_problem": "WORST offender in this act: a 14s beat led by talk/B_realize.mp4 \u2014 a HUMONGOUS Bentley face-CU (eyes squeezing shut) held almost the whole line, then a paw insert. Exactly the giant-single-head parade the owner hates. Also lands on owner 3:26 (Bentley out of sync AND an off-model ant shown) and the 3:30-3:38 static-shake region. The pivotal realize/flip needs to be shown as cause->reaction across scales, not narrated by one giant head.",
+      "new_staging": "Rebuild as a CAUSE->REACTION two-shot sequence in the warm scrub. Open on the OVER-THE-SHOULDER burrow two-shot (Bentley's face low, Marco tiny in frame) so both are together as she connects the dots; cut to the pawscuff ACTION INSERT as the causal proof ('my big paws wiped the smell-road off the sand'); drop in ONE brief ~1.3s tight B_realize lip-sync cut-in on the key words ('Big oops!'); then cut BACK to a wider lean-in two-shot for the resolve ('time to stop, and look, and listen') with the clean VO carrying. No giant head is ever the full line; every adjacent piece changes scale.",
+      "shot_sequence": [
+        {
+          "scale": "two-shot",
+          "source": "burrow_twoshot/shot.mp4",
+          "seconds": 4,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "insert",
+          "source": "pawscuff/shot.mp4",
+          "seconds": 3.5,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "talk/B_realize.mp4",
+          "seconds": 1.3,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "over-shoulder",
+          "source": "lean_help/shot.mp4",
+          "seconds": 5.2,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "#1 giant-talking-head: demotes the giant B_realize face-CU to a single ~1.3s cut-in inside a two-shot/insert sequence",
+        "3:26 Bentley out of sync + off-model ant: lip-sync confined to the on-model tight B_realize CU; the two-shots use on-model burrow_twoshot/lean_help Marco (correct golden-amber design), so no wrong-ant is shown under the line",
+        "3:30-3:38 static/shaking: replaces the held giant head with a moving pawscuff action insert plus two live two-shots"
+      ]
+    },
+    {
+      "id": "17_youstopped",
+      "current_problem": "PURE giant single head: the entire 9.17s beat is talk/M_youstopped.mp4 \u2014 one enormous Marco face for the whole line (contact sheet is a giant ant head across all 5 frames), and it lands on owner 3:49 'Marco out of sync.' No two-shot, no scale variety, exactly the parade the owner hates.",
+      "new_staging": "Make it a hopeful two-shot exchange: Marco has crept back toward Bentley. Open on the LEAN-HELP two-shot (Bentley's big face leaning down, tiny Marco in frame) as Marco realizes 'you STOPPED \u2014 you're not grabbing.' Cut to a MEDIUM of Marco alone brightening/creeping forward (marco_hopeful) for 'listening with that big nose!'; drop ONE brief ~1.4s tight M_youstopped lip-sync cut-in on 'find my road!'; the clean VO carries the wider shots. Marco and Bentley are together for the majority of the beat, and no single head fills the line.",
+      "shot_sequence": [
+        {
+          "scale": "two-shot",
+          "source": "lean_help/shot.mp4",
+          "seconds": 3.6,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "medium",
+          "source": "marco_hopeful/shot.mp4",
+          "seconds": 2.6,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "talk/M_youstopped.mp4",
+          "seconds": 1.4,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "two-shot",
+          "source": "burrow_twoshot/shot.mp4",
+          "seconds": 1.6,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "#1 giant-talking-head: converts a 9s solo Marco giant head into a two-shot-backboned exchange with only a ~1.4s lip-sync cut-in",
+        "3:49 Marco out of sync: lip-sync confined to the short on-model M_youstopped CU on 'find my road!'; the rest is clean VO over two-shots so any sync imperfection is not exposed on a held giant face",
+        "Two-shots-as-backbone: Bentley+Marco are together for the majority of this dialogue beat"
+      ]
+    },
+    {
+      "id": "18_smellit",
+      "current_problem": "Giant Bentley head (talk/B_smellit.mp4) + a paw insert, and it directly triggers owner 2:16: 'Bentley says I'm smelling... but is lying still with no lip sync; animation != dialogue.' The picture (giant face / static paws) does not show her actively sniffing the faint thread, and it is another single-head-led beat.",
+      "new_staging": "Show the ACTION the line describes: Bentley nose-DOWN, actively snuffling the sand where a faint scent-thread still glows, with Marco present. Open on the OVER-THE-SHOULDER burrow two-shot (Bentley's nose low to the ground, Marco tiny beside the hole) as she says 'No \u2014 I'm SMELLING!'; cut to an INSERT of the faint glowing scent-thread in the sand right where paws never touched (scent_faded still, animated with a soft shimmer + a slow drift toward Bentley's snout) for 'a thread of it left... smells like HOME!'; drop ONE brief ~1.3s tight B_smellit lip-sync cut-in on 'Show me where it goes!'; end back on the lean-help two-shot. Her animation now matches the dialogue (nose working, not lying still), and no giant head carries the line.",
+      "shot_sequence": [
+        {
+          "scale": "over-shoulder",
+          "source": "burrow_twoshot/shot.mp4",
+          "seconds": 4.5,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "insert",
+          "source": "support/scent_faded_2.png",
+          "seconds": 3.2,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "talk/B_smellit.mp4",
+          "seconds": 1.3,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "two-shot",
+          "source": "lean_help/shot.mp4",
+          "seconds": 3.5,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "2:16 'I'm smelling' but lying still with no lip sync / animation != dialogue: picture now shows Bentley nose-down actively sniffing (two-shot) + the faint scent-thread insert, matching the line; lip-sync limited to a short on-model B_smellit cut-in",
+        "#1 giant-talking-head: demotes the giant B_smellit face to a single ~1.3s cut-in inside a two-shot/insert sequence",
+        "Static rule: the scent-thread still is animated (shimmer/drift) and the paw-static giant-head is removed"
+      ]
+    },
+    {
+      "id": "19_checkyou",
+      "current_problem": "Opens on the antenna two-shot (good: tiny Marco on Bentley's nose) but then CUTS to a HUMONGOUS single Marco face filling the whole frame for the line 'Hold still. Let me read you first.' The giant head is the exact #1 hated defect. Also the antenna two-shot's backdrop reads as near-white studio gray (owner 2:30 'remove the white background') and Marco is a standalone talking head not on her nose (owner 2:28 'show him STANDING ON BENTLEY'S NOSE while speaking').",
+      "new_staging": "Full beat lives inside the antenna/shot.mp4 TWO-SHOT: Bentley's whole head + teal collar/gold tag in frame with tiny Marco perched on the bridge of her nose, planting his front legs to steady her ('hold still'). The clean M_checkyou VO plays over the two-shot; Marco's antennae dip toward her as he 'reads' her. NO giant head. Regrade/replace the gray studio backdrop with the warm-scrub burrow environment so it is NOT white.",
+      "shot_sequence": [
+        {
+          "scale": "two-shot",
+          "source": "RENDER: warm-scrub regrade of the antenna two-shot \u2014 Bentley's full head + collar/tag in frame, tiny Marco standing ON the bridge of her nose planting his legs to steady her as he leans in to 'read' her scent; environment = warm burrow scrub (NOT the white/gray studio backdrop). Hold on the two-shot for the whole line.",
+          "seconds": 2.5,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "scratch/ep3/talk/M_checkyou.mp4",
+          "seconds": 1.3,
+          "lipsync_cutin": true
+        }
+      ],
+      "owner_issues_fixed": [
+        "2:28 \u2014 Marco now STANDS ON BENTLEY'S NOSE while speaking instead of looking up",
+        "2:30 \u2014 white/gray studio background replaced with warm-scrub burrow environment",
+        "#1 giant-head \u2014 giant Marco face demoted to a single ~1.3s lip-sync cut-in inside a two-shot"
+      ]
+    },
+    {
+      "id": "20_antennae",
+      "current_problem": "Narrator line ('ants say hello by touching antennae') plays but the beat cuts to a HUMONGOUS single Marco face staring/smiling for most of the duration \u2014 a giant talking head under a NARRATOR line (narrator must never be a talking head). Also uses the M_brave lip-sync clip as filler under narrator VO, so Marco's mouth moves under the narrator (same class as owner 4:28).",
+      "new_staging": "Narrator VO plays entirely over the antenna TWO-SHOT and an insert: we SEE the science instead of a face reciting it. Open on the two-shot (Marco on her nose), push to a tight INSERT of the two antennae actually touching \u2014 one little tap \u2014 then pull back to the two-shot. Marco's mouth does NOT move (narrator line). Warm-scrub environment.",
+      "shot_sequence": [
+        {
+          "scale": "two-shot",
+          "source": "RENDER: warm-scrub antenna two-shot \u2014 Bentley's head + tiny Marco on her nose, his antennae reaching toward her muzzle whiskers; no mouth movement (narrator VO).",
+          "seconds": 4.5,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "insert",
+          "source": "RENDER: tight macro INSERT of Marco's two antennae tapping/brushing Bentley's nose-fur \u2014 the 'hello in a touch' \u2014 slow gentle motion, warm-scrub bokeh behind.",
+          "seconds": 4,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "two-shot",
+          "source": "RENDER: warm-scrub antenna two-shot, Bentley's eyes crossing softly to watch Marco as he finishes reading her; no mouth movement.",
+          "seconds": 4,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "#1 giant-head \u2014 no giant Marco face; narrator plays over a two-shot + antenna insert",
+        "2:37 \u2014 standalone Marco talking shot removed; interaction extended instead",
+        "4:28-class \u2014 Marco's mouth no longer moves under the narrator line",
+        "2:30 \u2014 warm-scrub environment (no white background)"
+      ]
+    },
+    {
+      "id": "21_crosseyed",
+      "current_problem": "Opens on the antenna two-shot but CUTS to a HUMONGOUS single Bentley head (giant muzzle/eyes filling frame) for 'Hee-- that tickles! What do I smell like?'. Giant head defect; also loses Marco from frame entirely for a beat that is literally about him tickling her nose.",
+      "new_staging": "Stay in the antenna TWO-SHOT so we see WHY she giggles: tiny Marco's antennae/legs tickle the bridge of her nose, her eyes cross down toward him, ears flick, tongue-loll dog-happy (NO human teeth). This directly continues the tickle interaction the owner wants extended (2:37/2:46). Clean B_crosseyed VO over the two-shot; a brief cross-eyed CU cut-in only as punctuation. Warm-scrub environment.",
+      "shot_sequence": [
+        {
+          "scale": "two-shot",
+          "source": "RENDER: warm-scrub antenna two-shot \u2014 Marco on Bentley's nose tickling her with his antennae, Bentley's eyes crossing down to look at him, ears flicking, dog-happy tongue-loll (no human teeth), tiny wiggle of delight.",
+          "seconds": 3,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "scratch/ep3/talk/B_crosseyed.mp4",
+          "seconds": 1.3,
+          "lipsync_cutin": true
+        }
+      ],
+      "owner_issues_fixed": [
+        "#1 giant-head \u2014 giant Bentley head demoted to a single ~1.3s cross-eyed cut-in inside the two-shot",
+        "2:37 / 2:46 \u2014 extends the Marco-tickling-Bentley interaction rather than a standalone head",
+        "2:30 \u2014 warm-scrub environment (no white background)"
+      ]
+    },
+    {
+      "id": "22_brave",
+      "current_problem": "Opens on the antenna two-shot but CUTS to a HUMONGOUS single Marco face for 'Seaweed... and dog... and brave. You smell brave.' Giant head. The M_brave clip is 7.2s so the giant face dominates the whole beat \u2014 worst kind of single-head parade.",
+      "new_staging": "The emotional button of the antenna bond, so keep BOTH in frame: antenna TWO-SHOT, Marco on her nose finishing his 'read', antennae lowering as he says she smells brave; Bentley's eyes soften, tail-wiggle. Clean M_brave VO carries the whole line over the two-shot (and can extend onto an over-the-shoulder past Marco to Bentley's warm face). One brief Marco CU cut-in on 'brave' only. Warm-scrub environment.",
+      "shot_sequence": [
+        {
+          "scale": "two-shot",
+          "source": "RENDER: warm-scrub antenna two-shot \u2014 Marco on Bentley's nose, antennae lowered as he finishes reading her; Bentley's eyes soften, gentle tail-wiggle; warm late-day light.",
+          "seconds": 3.5,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "scratch/ep3/talk/M_brave.mp4",
+          "seconds": 1.5,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "over-shoulder",
+          "source": "RENDER: over-Marco's-shoulder (from the nose) looking up at Bentley's warm soft-eyed face reacting to 'you smell brave'; keeps both characters in frame, ends the antenna bond on connection not a solo head.",
+          "seconds": 2.4,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "#1 giant-head \u2014 7.2s giant Marco face demoted to a single ~1.5s cut-in; rest is two-shot + OTS",
+        "2:37 / 2:46 \u2014 continues the on-the-nose interaction instead of a standalone Marco-looks-up head",
+        "2:30 \u2014 warm-scrub environment (no white background)"
+      ]
+    },
+    {
+      "id": "23_bridge",
+      "current_problem": "Opens on a HUMONGOUS single Bentley head (B_dontgrab, a 12.4s giant-head clip) for the whole 'That bird-shadow's back-- new me is a BRIDGE! Climb on, Marco!' line before finally cutting to the bridge action shot. A 12s giant head is the single longest offender in the range.",
+      "new_staging": "Lead with STAKES and ACTION, not a face. Beat opens on a wide: the hungry bird-SHADOW sweeping over the warm sand (reuse shadow stills as a moving pass), Bentley's head snapping up. Then the TWO-SHOT/action of Bentley lowering her nose to the sand as a ramp and Marco at the base \u2014 she becomes the bridge. Clean B_dontgrab VO carries across the wide + action; a brief Bentley CU cut-in only on 'new me is a BRIDGE!'. Ends on Marco starting up the nose-ramp.",
+      "shot_sequence": [
+        {
+          "scale": "wide",
+          "source": "RENDER: warm-scrub WIDE \u2014 a hawk/bird shadow sweeps across the sand over Bentley and tiny Marco; Bentley's head snaps up, alert, protective. Establishes the threat before her line.",
+          "seconds": 3,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "scratch/ep3/talk/B_dontgrab.mp4",
+          "seconds": 1.5,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "action",
+          "source": "scratch/ep3/bridges/bridge/shot.mp4",
+          "seconds": 4,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "insert",
+          "source": "RENDER: tight INSERT \u2014 tiny Marco steps onto the bridge of Bentley's lowered nose and starts laying his scent-road up the ramp; her nostril/whiskers in soft focus.",
+          "seconds": 3,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "#1 giant-head \u2014 12.4s giant Bentley head demoted to a single ~1.5s cut-in; beat now wide -> CU -> action -> insert",
+        "show cause before reaction \u2014 the bird-shadow threat is shown BEFORE Bentley reacts to it"
+      ]
+    },
+    {
+      "id": "24_rebuild",
+      "current_problem": "Narrator beat ('the road comes back to life, feeler to feeler') \u2014 the ant action wide is fine, but the second source is marco_intro/shot_gold2 which is a near-CU of a single ant face; risks a static/large single-ant head under a narrator line and repeats the same gold marching-ant look (owner flagged repeated yellow marching-ant animation at 3:11).",
+      "new_staging": "Pure action storytelling under the narrator. Open on the ant-line ACTION WIDE (a6_34_ants hauling the loaf), then push to a MACRO INSERT of one ant touching the next antenna-to-antenna, the trail visibly re-lighting/re-forming down the line. No single talking head; motion throughout. Distinct framing/lighting from the earlier marching-ant shot so it does not read as a repeat.",
+      "shot_sequence": [
+        {
+          "scale": "action",
+          "source": "assets/pilot_shots/ep2/motion/a6_34_ants.mp4",
+          "seconds": 5,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "insert",
+          "source": "RENDER: macro INSERT \u2014 one ant reaches back and taps the next antenna-to-antenna, and the scent-road glows back to life passing down the line (feeler to feeler); warm sand, shallow focus. New angle/light so it's not the marching-ant repeat.",
+          "seconds": 6.3,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "#1 giant-head \u2014 narrator plays over action wide + macro insert, no single head",
+        "3:11-class repeated marching-ant \u2014 new angle/lighting + antenna-relay insert so it reads as a fresh shot"
+      ]
+    },
+    {
+      "id": "25_lift",
+      "current_problem": "Opens on a HUMONGOUS single Marco head for 'Lift-- together-- HEAVE!' then cuts to the ant action. The line is literally about the TEAM lifting together, so a giant solo face is exactly wrong \u2014 it should show the many ants.",
+      "new_staging": "Show the teamwork the line describes. Open on the ACTION WIDE of the whole ant line straining under the loaf, then a low-angle ACTION on several ants heaving in unison on 'HEAVE!', the load lifting. Clean M_together VO carries over the action; a brief Marco CU cut-in only on 'HEAVE!' as the punctuation peak. Never a solo head for a teamwork line.",
+      "shot_sequence": [
+        {
+          "scale": "action",
+          "source": "assets/pilot_shots/ep2/motion/a6_34_ants.mp4",
+          "seconds": 3.5,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "scratch/ep3/talk/M_together.mp4",
+          "seconds": 1.5,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "action",
+          "source": "RENDER: low-angle ACTION \u2014 a cluster of ants (Marco among them) heave the loaf UP in unison on 'HEAVE!', the load rising; dust, effort, teamwork; warm sand. Shows 'all of us can'.",
+          "seconds": 3.5,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "#1 giant-head \u2014 giant Marco face demoted to a single ~1.5s 'HEAVE!' cut-in; teamwork shown in wide/action",
+        "2:06-class 'more Bentley+Marco/team together' \u2014 beat now shows the group lifting, not one face"
+      ]
+    },
+    {
+      "id": "26_strong",
+      "current_problem": "WORST offender in the range: FIVE consecutive HUMONGOUS single Bentley heads back-to-back for 'You're a hundred strong, all pulling the same way.' A pure giant-head parade with zero Marco, zero scale variety, and it names Marco/the team while showing only Bentley's face.",
+      "new_staging": "This warm button line should be a connection two-shot, not five solo heads. Bentley says it TO Marco: open on a TWO-SHOT (Marco small in frame with Bentley behind/around him, or Marco on her nose) as she tells him he was never the little one; cut to the ant-line action wide on 'a hundred strong, all pulling the same way' so we SEE the hundred; end back on the two-shot / her soft-eyed reaction. One brief Bentley CU cut-in only. No giant-head parade.",
+      "shot_sequence": [
+        {
+          "scale": "two-shot",
+          "source": "RENDER: warm-scrub TWO-SHOT \u2014 Bentley lowers her head to Marco (Marco small, on the sand or on her nose), soft eyes, telling him 'you were never the little one'; both in frame, warm connection.",
+          "seconds": 2,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "scratch/ep3/talk/B_strong.mp4",
+          "seconds": 1.3,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "action",
+          "source": "assets/pilot_shots/ep2/motion/a6_34_ants.mp4",
+          "seconds": 2.3,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "#1 giant-head \u2014 five back-to-back giant Bentley heads replaced with two-shot -> brief CU -> action wide",
+        "2:06-class 'more together' \u2014 line is now delivered as a Bentley+Marco two-shot, and 'a hundred strong' is shown as the ant-line wide"
+      ]
+    },
+    {
+      "id": "27_city",
+      "current_problem": "Not a giant-head beat itself (three city interior stills over narrator VO), but it is where the owner's 3:49 note lands: the pivot into the city + Marco's 'no boss / nobody in charge' idea arrives from nowhere with no bridge, and the surrounding Marco beats are disconnected giant-ant CUs. It also plays as three flat static stills with no life or motion.",
+      "new_staging": "Keep it a narrator-over-environment reveal but give it a spine: slow Ken-Burns push across city_1 -> city_3_1 -> city_2 with parallax/dust motes so it breathes, then hard-cut OUT of the diagram world to a live surface two-shot of Bentley + Marco AT THE BURROW ENTRANCE (burrow_twoshot) as the narrator lands 'no boss at all -- just thousands of tiny minds thinking together.' That surface two-shot is the bridge into 28: we see Marco standing at the hole with Bentley leaning in, so his next line reads as him reacting to what the narrator just described, not a bolt from nowhere. NARRATOR stays voice-only over all of it; no talking mouth on screen.",
+      "shot_sequence": [
+        {
+          "scale": "wide",
+          "source": "RENDER: slow Ken-Burns push-in on still support/city_1.png (cutaway of the ant city \u2014 tunnels, nursery, food rooms) with drifting dust-mote/parallax motion so it is not a frozen still",
+          "seconds": 4.5,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "insert",
+          "source": "support/city_3_1.png (nursery/egg room detail, gentle drift)",
+          "seconds": 3.5,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "wide",
+          "source": "support/city_2.png (food-store rooms, slow pan)",
+          "seconds": 5,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "two-shot",
+          "source": "burrow_twoshot/shot.mp4 (Bentley lying at the burrow rim + Marco standing at the hole edge \u2014 surface, warm scrub; the bridge back to the live scene as narrator says 'no boss... thinking together')",
+          "seconds": 6.8,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "3:49 \u2014 'no boss / nobody in charge' no longer comes from nowhere: the narrator plants it over the city and we cut to the real Bentley+Marco two-shot at the burrow entrance so Marco's next line is a reaction, not a non-sequitur",
+        "3:11-style repeated flat/static feel \u2014 the three city stills now have Ken-Burns/parallax motion instead of sitting frozen"
+      ]
+    },
+    {
+      "id": "28_noboss",
+      "current_problem": "Contact sheet shows M_noboss rendered as a HUMONGOUS single ant face (frames 3-5 are an extreme ant-head CU) \u2014 exactly the parade-of-giant-heads the owner hates. burrow_twoshot is only tacked on as a secondary src, so the beat reads as a giant talking ant head.",
+      "new_staging": "Flip it: the burrow_twoshot two-shot (Bentley + Marco together at the entrance) is the whole spine of the beat. Marco asks his question standing at the hole edge with Bentley leaning over him, so we see him talking TO her. Drop in the M_noboss lip-sync CU as ONE brief ~1.3s middle cut-in on his key phrase, then cut straight back to the two-shot for the rest of the line. This continues the single unbroken burrow conversation the owner asked for at 3:49.",
+      "shot_sequence": [
+        {
+          "scale": "two-shot",
+          "source": "burrow_twoshot/shot.mp4 (Bentley leaning down over Marco at the burrow rim; Marco starts the question, clean VO carries)",
+          "seconds": 3.2,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "talk/M_noboss.mp4 (tight lip-synced Marco on his key phrase 'no boss... we're all the same?')",
+          "seconds": 1.3,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "over-shoulder",
+          "source": "RENDER: over-Bentley's-shoulder onto Marco at the hole edge (Bentley's blurred muzzle/collar foreground camera-left, Marco small and sharp at the burrow rim looking up at her, warm scrub) \u2014 cut back to finish the line",
+          "seconds": 3.3,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "#1 giant-head \u2014 M_noboss is demoted from the whole beat to a single ~1.3s cut-in; the two-shot carries it",
+        "3:49 \u2014 part of the continuous entrance conversation (replaces the disconnected short scenes)"
+      ]
+    },
+    {
+      "id": "28b_nobody",
+      "current_problem": "Contact sheet: M_nobody again rendered as a giant single ant face for the first half, then burrow_twoshot. Another giant head. Marco's emotional low ('I'm... nobody') plays as a floating head with no relationship to Bentley in frame.",
+      "new_staging": "Make it a reaction two-shot so the sadness reads against Bentley. Open on the burrow_twoshot with Marco physically shrinking/turning away at the hole while Bentley watches \u2014 his despair is visible in a two-shot. Use the M_nobody CU as a brief ~1.5s cut-in on 'I'm... nobody,' then cut to a Marco-solo listener beat (marco_q \u2014 he is worried/downcast on the sand) to hold the emotional low WITHOUT a talking mouth, since the line has ended. Ends on Bentley in frame ready to answer.",
+      "shot_sequence": [
+        {
+          "scale": "two-shot",
+          "source": "burrow_twoshot/shot.mp4 (Marco at the rim starting to sink/turn small, Bentley's big worried eyes on him \u2014 the line begins, VO carries)",
+          "seconds": 3,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "talk/M_nobody.mp4 (tight lip-sync on 'I'm just one... I'm... nobody')",
+          "seconds": 1.5,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "medium",
+          "source": "marco_q/shot.mp4 (Marco SOLO, downcast/worried on the sand \u2014 held as a silent post-line reaction, no talking mouth)",
+          "seconds": 3.3,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "#1 giant-head \u2014 M_nobody reduced to one ~1.5s cut-in; the emotion now plays in a two-shot + a silent reaction, not a floating head",
+        "2:06-style 'be more creative, more scenes where they are together' \u2014 the despair is staged against Bentley in-frame"
+      ]
+    },
+    {
+      "id": "29_youarecity",
+      "current_problem": "Contact sheet: first two frames are a giant Bentley face-CU (open-mouth smile, tongue) from B_youarecity \u2014 a HUMONGOUS single head; burrow_twoshot only appended after. Bentley's big turnaround line ('you ARE the city') plays as a giant head instead of her saying it TO Marco.",
+      "new_staging": "This is the emotional turn, so it must be their tightest togetherness. Lead on city_button (Bentley nose-to-nose with Marco at the burrow \u2014 intimate two-shot) as she rallies him. Drop the B_youarecity lip-sync CU as ONE ~1.4s middle cut-in on the punch words 'you ARE the city,' then cut back to the two-shot so we see Marco reacting to being told this while in frame with her. Keep her a dog (soft eyes/tongue, no human teeth). End wider on burrow_twoshot as Marco straightens up, re-inflated.",
+      "shot_sequence": [
+        {
+          "scale": "two-shot",
+          "source": "city_button/shot.mp4 (Bentley nose-to-nose with Marco at the burrow, leaning in warmly \u2014 she starts 'Nobody?! Take YOU away and a whole job goes undone', VO carries)",
+          "seconds": 6,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "talk/B_youarecity.mp4 (tight lip-sync on the punch 'you ARE the city, Marco')",
+          "seconds": 1.4,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "two-shot",
+          "source": "burrow_twoshot/shot.mp4 (cut back wider \u2014 Marco straightening up at the rim, Bentley beaming down; he is visibly re-inflated as the line finishes)",
+          "seconds": 7.1,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "#1 giant-head \u2014 B_youarecity demoted to a single ~1.4s cut-in inside an intimate two-shot",
+        "1:51-style 'replace strange smiling Bentley' \u2014 the open-mouth grin CU is no longer the beat; she is a dog talking to Marco, not a floating grin",
+        "2:06 \u2014 a real together beat where they talk to each other"
+      ]
+    },
+    {
+      "id": "30_lesson",
+      "current_problem": "Contact sheet: giant Bentley face-CU (B_lesson) fills the first two frames \u2014 another humongous head; burrow_twoshot appended. Her earned-lesson recap plays as a talking head, and the owner explicitly wants Marco climbing onto her nose here rather than another static giant face.",
+      "new_staging": "Stage it as a bond-building action two-shot: Bentley lowers her head, Marco climbs onto her nose (bridge/antenna shot), and she delivers the lesson with him riding her muzzle \u2014 both in frame, physical, warm. Use the B_lesson lip-sync CU as ONE ~1.3s cut-in mid-line (her nose+Marco can still be seen at the edge of frame in the tight shot), then cut back to the two-shot. This gives shot-scale variety (action two-shot -> brief CU -> two-shot) and delivers the owner's 'Marco on Bentley's nose' request.",
+      "shot_sequence": [
+        {
+          "scale": "action",
+          "source": "bridge/shot.mp4 (Bentley lowers her muzzle to the sand, Marco climbs up onto her nose \u2014 she begins 'Here's what I figured out, Marco', VO carries)",
+          "seconds": 5.5,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "talk/B_lesson.mp4 (tight lip-sync on 'the second I got still and listened -- BAM, I actually helped')",
+          "seconds": 1.3,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "insert",
+          "source": "antenna/shot.mp4 (nose-insert: Marco perched on Bentley's nose as she finishes 'so from now on...' \u2014 both in frame, intimate, leads into the promise)",
+          "seconds": 6.2,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "#1 giant-head \u2014 B_lesson demoted to a ~1.3s cut-in; the beat is an action two-shot with Marco on her nose",
+        "2:28 / 2:46-style 'show Marco ON Bentley's nose instead of looking up' \u2014 delivered here",
+        "2:06 \u2014 creative together-staging instead of a solo head"
+      ]
+    },
+    {
+      "id": "31_promise",
+      "current_problem": "Contact sheet: giant Bentley face-CU (B_promise) for the catchphrase, burrow_twoshot appended. The catchphrase 'Stop. Look. Listen.' is Bentley's signature moment and currently a lone giant head with the tag glow lost.",
+      "new_staging": "Keep the catchphrase as a deliberate, earned button but stage it as a two-shot with the tag glow READABLE: hold on the antenna/nose two-shot (Marco on/near her nose) as she says it, and let the Listening Tag glow. Because the line is short (3 words), use ONE very brief ~1.2s B_promise CU on 'Listen.' as the punctuation \u2014 the single acceptable place for a near-CU \u2014 bracketed by the two-shot before and a warm two-shot after. Marco stays in frame reacting; the tag glows on the close.",
+      "shot_sequence": [
+        {
+          "scale": "insert",
+          "source": "antenna/shot.mp4 (Marco on her nose, Bentley's tag beginning to glow \u2014 she draws breath into the catchphrase)",
+          "seconds": 1,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "talk/B_promise.mp4 (tight lip-sync, the ONE allowed brief near-CU, on 'Stop. Look. Listen.' \u2014 punctuation only)",
+          "seconds": 1.2,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "two-shot",
+          "source": "burrow_twoshot/shot.mp4 (cut back \u2014 Bentley + Marco together at the burrow, tag glow holding, warm beat)",
+          "seconds": 1.1,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "#1 giant-head \u2014 the catchphrase is bracketed by two-shots; only a 1.2s punctuation CU, which is the allowed rare use",
+        "2:03-style catchphrase handling \u2014 it is Bentley's line, earned, with the tag glow visible instead of a bare giant head"
+      ]
+    },
+    {
+      "id": "32_button",
+      "current_problem": "Contact sheet: a nice wide of the ant line carrying the giant bread crumb across the dunes for the first frames (good), but then it cuts to a giant Bentley face-CU for the back half \u2014 the narrator 'smallest helper' line ends on a humongous head with a mouth that could appear to move under the narrator.",
+      "new_staging": "Keep this a narrator-over-action beat with NO talking mouth. Open on the wide of the ant column carrying the crumb (reuse a6_34_ants marching), then cut to the surface two-shot burrow_twoshot as a warm 'both of them watching the work' beat while the narrator finishes 'he matters more than he will ever know.' Because Marco is not the one speaking here, ensure his mouth is CLOSED in the two-shot (still/observing), so he never appears to talk under the narrator.",
+      "shot_sequence": [
+        {
+          "scale": "wide",
+          "source": "motion/a6_34_ants.mp4 (the ant column hauling the giant crumb across the sand \u2014 reused marching wide, full motion)",
+          "seconds": 5,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "two-shot",
+          "source": "burrow_twoshot/shot.mp4 (Bentley + Marco at the burrow watching the workers, Marco's mouth CLOSED \u2014 narrator lands 'he matters more than he will ever know')",
+          "seconds": 5.06,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "#1 giant-head \u2014 the Bentley face-CU is removed; beat is a wide + a two-shot",
+        "4:28 \u2014 Marco's mouth does not move under the narrator (he is a closed-mouth observer here)"
+      ]
+    },
+    {
+      "id": "33_comesee",
+      "current_problem": "Contact sheet: the first two frames are a HUMONGOUS smiling ant face (M_comesee) \u2014 this is the owner's 4:38 complaint (giant ant staring/smiling, dull, and mouth-moving concerns). The strong cliffhanger environment shot only comes after. Marco's 'come see, hurry' plays as a giant grinning head, not an interaction.",
+      "new_staging": "Make it an urgent interaction, not a staring head. Open on a surface two-shot: Marco at the burrow rim tugging/beckoning Bentley toward the hole (burrow_twoshot or lean_help), so 'come see -- hurry' reads as him pulling her in. Use the M_comesee lip-sync CU as ONE brief ~1.3s cut-in on 'the deep one. Hurry.' Then cut DOWN into the cliffhanger chamber shot as they descend, so the line motivates the reveal. No lingering giant grin.",
+      "shot_sequence": [
+        {
+          "scale": "two-shot",
+          "source": "lean_help/shot.mp4 (Marco at the hole beckoning, Bentley's head leaning down toward the burrow \u2014 'Bentley, come see, one more room', VO carries)",
+          "seconds": 2.5,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "talk/M_comesee.mp4 (tight lip-sync on 'the deep one. Hurry.')",
+          "seconds": 1.3,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "wide",
+          "source": "cliffhanger/shot.mp4 (push down into the deep glowing chamber, water drop hanging \u2014 they descend into the reveal)",
+          "seconds": 2.79,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "#1 giant-head \u2014 M_comesee reduced to a ~1.3s cut-in",
+        "4:38 \u2014 the dull giant smiling/staring ant is replaced with an urgent Marco-beckons-Bentley interaction that motivates the reveal"
+      ]
+    },
+    {
+      "id": "34_deepdrop",
+      "current_problem": "Contact sheet: giant Bentley face-CU (B_deepdrop) for the first two frames, then the strong cliffhanger2 environment (ants carrying eggs UP a slope, water below). Bentley's wonder/worry line plays as a giant head disconnected from what she is reacting to.",
+      "new_staging": "Reaction-in-environment: lead on the cliffhanger2 chamber (ants hauling eggs UP the slope, dark water glinting below) so we SEE what she is reacting to, with Bentley's line as clean VO over it. Drop the B_deepdrop CU as ONE brief ~1.3s cut-in on 'Is that... water?' with Marco ideally still in frame edge, then cut back to the environment as she asks 'why is everyone carrying the eggs UP?' \u2014 the picture answers the question and hands off to the Next-Time card.",
+      "shot_sequence": [
+        {
+          "scale": "wide",
+          "source": "cliffhanger2/shot.mp4 (deep chamber: ants carrying eggs UP the slope, dark water below \u2014 Bentley's VO 'Is that... water? Down HERE?')",
+          "seconds": 3,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "cu-brief",
+          "source": "talk/B_deepdrop.mp4 (tight lip-sync on 'Is that... water?')",
+          "seconds": 1.3,
+          "lipsync_cutin": true
+        },
+        {
+          "scale": "action",
+          "source": "cliffhanger2/shot.mp4 (back to the slope, ants hurrying the eggs upward as she asks 'why is everyone carrying the eggs UP?' \u2014 the picture carries the cliffhanger)",
+          "seconds": 3.12,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "#1 giant-head \u2014 B_deepdrop demoted to a ~1.3s cut-in; her reaction now plays over the thing she is reacting to",
+        "cliffhanger clarity \u2014 we see the eggs going UP and the water, motivating the 'Flood Beneath the Sand' hook"
+      ]
+    },
+    {
+      "id": "35_nexttime",
+      "current_problem": "Owner 4:52: the NEXT TIME card sits on essentially the plain/dim environment with the title text; owner says it needs a real environment background, not a plain/flat backdrop.",
+      "new_staging": "Rebuild the card over a live, moving environment plate: use a slow-drifting frame of the cliffhanger2 deep-water chamber (the eggs-up slope with the dark water glinting) as the background, darkened ~30% for text legibility, with 'NEXT TIME \u2014 The Flood Beneath the Sand' typeset on top. Real, on-theme, and it visually teases the flood.",
+      "shot_sequence": [
+        {
+          "scale": "insert",
+          "source": "RENDER: NEXT-TIME title card composited over a slow-drifting cliffhanger2 deep-chamber plate (ants + rising water, darkened ~30% for legibility), 'NEXT TIME / The Flood Beneath the Sand' typeset on top",
+          "seconds": 3,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "4:52 \u2014 Next-Time screen now has a real, moving, on-theme environment background (the flood chamber) instead of a plain/flat backdrop"
+      ]
+    },
+    {
+      "id": "36_outro",
+      "current_problem": "Not a giant-head beat (narrator over two city stills), but it plays as two flat static stills and the two frames are near-duplicates of the city reveal already used, so it reads as a repeated frozen image rather than a settling, cozy end.",
+      "new_staging": "Keep the narrator-over-environment outro but give it life and distinguish it from 27: slow warm Ken-Burns settle across support/city_2.png into support/city_1.png with the lantern-glow and gentle drift, so the cove 'settles in for the night' as the narrator says 'sleep snug, little friends.' No characters talking; purely atmospheric close.",
+      "shot_sequence": [
+        {
+          "scale": "wide",
+          "source": "RENDER: slow warm Ken-Burns settle on support/city_2.png (cozy lantern-lit food rooms) with gentle dust/glow drift",
+          "seconds": 6.3,
+          "lipsync_cutin": false
+        },
+        {
+          "scale": "wide",
+          "source": "support/city_1.png (final slow drift out on the whole sleeping city, warm dim \u2014 narrator 'sleep snug, little friends')",
+          "seconds": 6.32,
+          "lipsync_cutin": false
+        }
+      ],
+      "owner_issues_fixed": [
+        "repeated flat/static feel \u2014 the outro stills now have Ken-Burns/glow motion and read distinctly from the 27 reveal"
+      ]
+    }
+  ],
+  "new_renders_needed": [
+    {
+      "name": "marco_side_ots_twoshot",
+      "type": "over-the-shoulder two-shot (Kling 3.0 hero shot)",
+      "description": "Low, ant-level OVER-THE-SHOULDER two-shot from MARCO'S side for beat 05_igotit. Camera sits down on the sand behind/beside Marco (golden-amber BOY harvester ant -- antennae, toothless, cheeky grin, NOT yellow, per Marco_LOCKED design) as he braces his six legs under the giant bread crumb; past him, soft in the background, is BENTLEY (red-fawn Boxer puppy, black mask, floppy ears, teal collar + glowing gold paw tag, docked tail, NO human teeth) looking down warmly. Warm-scrub cove, color-balanced (not over-yellow). Both characters clearly TOGETHER in frame. Needs two beats of coverage (~2.6s + ~3.2s) or one ~6s continuous take: (a) Marco settling/bracing under the crumb showing his six legs, (b) Marco glancing up at Bentley on 'don't break the line.' This is the one genuinely-new shot the act needs -- it gives Marco real screen presence and a fresh OTS scale so 05 and 06 don't repeat the lean_help two-shot back-to-back. Everything else in A1a reuses existing library footage."
+    },
+    {
+      "name": "twoshot_pathteach",
+      "type": "two-shot (Kling 3.0 hero \u2014 2 characters)",
+      "description": "Open-warm-scrub SIDE TWO-SHOT for 07_smellpath tail: tiny golden-amber BOY ant MARCO standing on the sand, pointing a front leg along an invisible trail line, while BENTLEY (red-fawn Boxer PUPPY, black mask, floppy ears, teal collar + gold paw tag, docked tail, NO human teeth) lowers her big head into frame at left, watching/nodding. Both fully in frame, warm daylight scrub, gentle living motion (Marco gestures, Bentley's ear flicks, tail sway). ~3.5s. Canon: Marco is golden-amber (NOT yellow), toothless, antennae, cheeky; Bentley never shows human teeth."
+    },
+    {
+      "name": "trail_building_macro",
+      "type": "action/insert (b-roll, cheap model OK \u2014 no hero character)",
+      "description": "For 08_trail: macro TRAIL-BUILDING shot \u2014 a short line of ants walking a glowing golden scent-road toward camera on warm sand, each ant leaving a fresh sparkle of trail behind it. Slow dolly-in along the road, clear living motion, matches scent_1.png look. No single giant head, no talking. ~4.5s. Purpose: replace the static held still under the narrator line and avoid re-using the parade wide."
+    },
+    {
+      "name": "marco_alarm_lowangle",
+      "type": "action (Kling 3.0 hero \u2014 Marco + Bentley paw)",
+      "description": "For 10_waitno: LOW GROUND-LEVEL alarm ACTION shot \u2014 tiny golden-amber Marco in the foreground on the sand spins and throws a front leg up in alarm as BENTLEY's huge paw and cast shadow sweep in from the frame edge toward the glowing trail behind him. We feel the imminent collision. Reads danger with NO face-CU. ~2.8s. Canon: correct Marco design; Bentley paw shows teal collar tag hint if visible."
+    },
+    {
+      "name": "oops_twoshot",
+      "type": "two-shot (Kling 3.0 hero \u2014 2 characters)",
+      "description": "For 12_oops: warm-scrub TWO-SHOT \u2014 BENTLEY frozen mid-step, ears drooped, body low and sheepish/guilty, tail tucking, looking DOWN at tiny golden-amber MARCO who stands by the smeared/broken glowing trail on the sand. Both fully in frame. Guilty micro-motion (Bentley shrinks, Marco looks up at the broken road). Need ~3s so a tighter 0.7s push-in can be cropped from the same clip. Canon: Bentley red-fawn Boxer puppy, black mask, teal collar + gold tag, NO human teeth; Marco golden-amber boy ant, toothless."
+    },
+    {
+      "name": "shadow_danger_push_14",
+      "type": "animated wide (still->motion)",
+      "description": "Animate support/shadow_solo_1.png into ~4s of live motion for 14_shadow: WIDE of lone tiny Marco (on-model golden-amber BOY ant, antennae, toothless, NOT yellow) far-left on open warm sand, a large hawk/bird-shadow sweeping across the sand toward him as a slow dolly push-in; Marco flinches/shrinks as the shadow passes; heat-shimmer, drifting clouds. Warm-scrub environment. Deliberately SOLO (the one moment Marco is small and alone). No talking mouth (narrator beat)."
+    },
+    {
+      "name": "scent_thread_faint_insert_18",
+      "type": "animated insert (still->motion)",
+      "description": "Animate support/scent_faded_2.png into ~3s for 18_smellit: tight INSERT of the sand where a single FAINT glowing scent-thread still remains right where paws never touched; add a soft shimmer/pulse along the thread and a slow drift/pull toward the edge of frame (Bentley's snout direction) to sell 'smells like HOME.' No characters, no mouths."
+    },
+    {
+      "name": "antenna_twoshot_warmscrub",
+      "type": "two-shot (hero, reusable across 19/20/21/22)",
+      "description": "Re-render / regrade of the existing antenna/shot.mp4 staging into the WARM-SCRUB BURROW ENVIRONMENT (kill the white/gray studio backdrop, owner 2:30). Framing: Bentley's full head + teal collar + gold paw tag in frame, tiny golden-amber BOY Marco (antennae, toothless, NOT yellow) standing ON THE BRIDGE OF HER NOSE. Bentley = red-fawn Boxer puppy, black mask, floppy ears, docked tail, NO human teeth. This single hero two-shot (with slight action variants: Marco planting legs to steady her / antennae reaching / her eyes crossing / tail-wiggle) is the backbone for beats 19,20,21,22 and directly fixes owner 2:28 + 2:30. Needs a few seconds of gentle continuous motion (not a stitched loop)."
+    },
+    {
+      "name": "antenna_touch_insert",
+      "type": "insert / macro",
+      "description": "Tight macro INSERT of Marco's two antennae actually tapping/brushing Bentley's nose-fur \u2014 the literal 'hello in a touch' for the narrator line in beat 20. Slow gentle motion, warm-scrub bokeh, no mouths. ~4s."
+    },
+    {
+      "name": "brave_OTS_reaction",
+      "type": "over-the-shoulder",
+      "description": "Over-Marco's-shoulder (from atop Bentley's nose) looking up at Bentley's warm, soft-eyed reacting face for the 'you smell brave' button (beat 22). Keeps both characters in frame; ends the antenna bond on connection, not a solo head. ~2.5s."
+    },
+    {
+      "name": "birdshadow_threat_wide",
+      "type": "wide / action",
+      "description": "Warm-scrub WIDE for beat 23 open: a hawk/bird SHADOW sweeps across the sand over Bentley and tiny Marco; Bentley's head snaps up, alert and protective. Establishes the threat BEFORE her bridge line (show cause before reaction). Can reuse shadow_1/shadow_2 stills as the moving shadow pass. ~3s."
+    },
+    {
+      "name": "bridge_nose_ramp_insert",
+      "type": "insert",
+      "description": "Tight INSERT for beat 23 end: tiny Marco steps onto the bridge of Bentley's lowered nose and begins laying his scent-road up the 'ramp'; her nostril/whiskers soft-focus. Continues the bridge/shot.mp4 action at closer scale. ~3s."
+    },
+    {
+      "name": "antenna_relay_insert",
+      "type": "insert / macro",
+      "description": "Macro INSERT for beat 24: one ant reaches back and taps the next antenna-to-antenna and the scent-road glows back to life passing down the line (feeler to feeler). NEW angle/lighting distinct from the earlier marching-ant shot so it does not read as a 3:11-style repeat. ~6s."
+    },
+    {
+      "name": "ants_heave_lowangle",
+      "type": "action",
+      "description": "Low-angle ACTION for beat 25: a cluster of ants (Marco among them) heave the loaf UP in unison on 'HEAVE!', the load rising \u2014 dust, effort, visible teamwork, warm sand. Shows 'all of us can'. ~3.5s."
+    },
+    {
+      "name": "bentley_marco_button_twoshot",
+      "type": "two-shot",
+      "description": "Warm-scrub TWO-SHOT for beat 26: Bentley lowers her head to tiny Marco (on the sand or on her nose), soft eyes, telling him 'you were never the little one' \u2014 replaces the five back-to-back giant Bentley heads. Both in frame, warm connection, dog-happy soft expression (no human teeth). ~2-3s."
+    },
+    {
+      "name": "noboss_ots_marco",
+      "type": "over-shoulder two-shot",
+      "description": "Over Bentley's shoulder onto Marco at the burrow rim: Bentley's blurred red-fawn muzzle + teal collar/gold tag foreground camera-left (out of focus), Marco (golden-amber BOY ant, antennae, toothless, NOT yellow) small and sharp at the hole edge looking UP at her, talking. Warm-scrub/burrow environment, golden hour. ~4s, gentle handheld life. Used to cut back to after the M_noboss CU in 28_noboss so the beat stays a two-shot instead of a giant ant head."
+    },
+    {
+      "name": "city_1_kenburns_motion",
+      "type": "still-with-motion (Ken-Burns)",
+      "description": "Animate the existing support/city_1.png ant-city cutaway with a slow push-in + subtle dust-mote/parallax drift so the 27_city reveal and 36_outro do not read as frozen stills. No new art \u2014 motion pass on the approved still. Provide a warm/night-settle variant of city_2.png + city_1.png for the 36_outro close as well."
+    },
+    {
+      "name": "nexttime_flood_bg_card",
+      "type": "title card over live plate",
+      "description": "Rebuild the NEXT-TIME end card (4:52) over a real, slowly-drifting environment plate taken from cliffhanger2 (deep chamber, ants carrying eggs up the slope, dark rising water glinting below), darkened ~30% for text legibility, with 'NEXT TIME \u2014 The Flood Beneath the Sand' typeset on top. Replaces the plain/flat backdrop the owner flagged."
+    }
+  ]
+}

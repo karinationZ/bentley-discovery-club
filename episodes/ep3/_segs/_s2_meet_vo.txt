@@ -1,0 +1,2 @@
+file '/project/episodes/ep3/vo/B_tooheavy.mp3'
+file '/project/episodes/ep3/vo/M_igotit.mp3'

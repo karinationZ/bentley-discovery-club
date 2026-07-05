@@ -1,0 +1,17 @@
+{
+  "episode_no": 3,
+  "thumbnail": "episodes/ep3/EP3_thumbnail.jpg",
+  "out": "episodes/ep3/EP3_Short_AntCity.mp4",
+  "clips": {
+    "carry": "~/Downloads/ants_3.mp4",
+    "mass": "~/Downloads/ants_1.mp4",
+    "close": "~/Downloads/ants_2.mp4"
+  },
+  "beats": [
+    {"clip": "carry", "ss": 0.5, "vertical": false, "line": "This twig is moving all by itself. So... who's carrying it?", "cap": "Who's carrying it?", "cy": 0.12, "size": 56},
+    {"clip": "mass", "ss": 1.0, "vertical": false, "line": "A whole team of tiny ants — and they don't use their eyes to find the way.", "cap": "they don't use their eyes", "cy": 0.82, "size": 52},
+    {"clip": "close", "ss": 1.0, "vertical": false, "line": "They follow an invisible trail of smell — a scent road left by the ant before.", "cap": "pheromone = a scent trail", "cy": 0.82, "size": 52},
+    {"clip": "carry", "ss": 4.0, "vertical": false, "line": "And they're strong — a team can carry a crumb the size of a car!", "cap": "many times their own weight", "cy": 0.12, "size": 52},
+    {"clip": "close", "ss": 18.0, "vertical": false, "line": "No one's the boss — yet every single ant matters. Meet Marco the ant in Episode 3.", "cap": "every single ant matters", "cy": 0.82, "size": 54}
+  ]
+}

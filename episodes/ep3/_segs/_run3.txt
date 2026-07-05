@@ -1,0 +1,6 @@
+file '/project/episodes/ep3/_segs/s12a_nowonder.mp4'
+file '/project/episodes/ep3/_segs/s12ab_explain.mp4'
+file '/project/episodes/ep3/_segs/s12b_city.mp4'
+file '/project/episodes/ep3/_segs/s12c_lesson.mp4'
+file '/project/episodes/ep3/_segs/s12b_promise.mp4'
+file '/project/episodes/ep3/_segs/s13_button.mp4'

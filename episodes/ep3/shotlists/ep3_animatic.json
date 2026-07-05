@@ -1,0 +1,354 @@
+{
+  "_meta": {
+    "episode": "Episode 3 \u2014 The Ant City Beneath Our Feet",
+    "script": "episodes/ep3/EP3_SCRIPT.md",
+    "guest": "Marco (golden-amber boy harvester ant, LOCKED)",
+    "note": "Animatic shotlist (zero-credit). todo beats auto-card; ANTS=EP2 reuse; PLATE=inland still. This is the STARTING EDL \u2014 bridges graduate in place once rendered.",
+    "counts": {
+      "total": 37,
+      "reuse": 6,
+      "todo": 31
+    }
+  },
+  "shots": [
+    {
+      "id": "01_title",
+      "type": "motion",
+      "dur": 4.0,
+      "status": "ready",
+      "voice": "narrator",
+      "note": "TITLE over inland sand \u2014 a crumb glides past, alone (no animal yet)",
+      "vo": "",
+      "still": "scratch/ep3/design/inland_plate_1.png"
+    },
+    {
+      "id": "02_boop",
+      "type": "motion",
+      "dur": 4.5,
+      "status": "ready",
+      "voice": "bentley",
+      "note": "Bentley boops the crumb; it keeps moving",
+      "vo": "episodes/ep3/vo/B_hook1.mp3",
+      "still": "scratch/ep3/design/inland_plate_1.png"
+    },
+    {
+      "id": "03_intro",
+      "type": "motion",
+      "dur": 13.5,
+      "status": "todo",
+      "voice": "narrator",
+      "note": "Narrator frames Bentley + the Tag; she pads after the crumb",
+      "vo": "episodes/ep3/vo/N_intro.mp3"
+    },
+    {
+      "id": "04_reveal_line",
+      "type": "motion",
+      "dur": 5.0,
+      "status": "ready",
+      "voice": "bentley",
+      "note": "Reveal: the crumb rides a line of ants, Marco at the front",
+      "vo": "episodes/ep3/vo/B_findline.mp3",
+      "src": "assets/pilot_shots/ep2/motion/a6_34_ants.mp4"
+    },
+    {
+      "id": "05_lean_help",
+      "type": "motion",
+      "dur": 5.0,
+      "status": "todo",
+      "voice": "bentley",
+      "note": "Bentley leans to help the tiny one (two-shot scale)",
+      "vo": "episodes/ep3/vo/B_tooheavy.mp3"
+    },
+    {
+      "id": "06_igotit",
+      "type": "motion",
+      "dur": 5.0,
+      "status": "todo",
+      "voice": "marco",
+      "note": "Marco plants six legs: I've got it... don't break the line",
+      "vo": "episodes/ep3/vo/M_igotit.mp3"
+    },
+    {
+      "id": "07_whatline",
+      "type": "motion",
+      "dur": 2.5,
+      "status": "todo",
+      "voice": "bentley",
+      "note": "What line? I don't see a line",
+      "vo": "episodes/ep3/vo/B_whatline.mp3"
+    },
+    {
+      "id": "08_smellpath",
+      "type": "motion",
+      "dur": 6.0,
+      "status": "todo",
+      "voice": "marco",
+      "note": "Marco: you smell the path, not see it",
+      "vo": "episodes/ep3/vo/M_smellpath.mp3"
+    },
+    {
+      "id": "09_scent_road",
+      "type": "motion",
+      "dur": 11.0,
+      "status": "ready",
+      "voice": "narrator",
+      "note": "The scent road (fact 1) \u2014 ants nose-down following the trail",
+      "vo": "episodes/ep3/vo/N_trail.mp3",
+      "src": "assets/pilot_shots/ep2/motion/a6_34_ants.mp4"
+    },
+    {
+      "id": "10_zoom",
+      "type": "motion",
+      "dur": 4.0,
+      "status": "todo",
+      "voice": "bentley",
+      "note": "I'll zoom it to the front! Bentley scoops the crumb",
+      "vo": "episodes/ep3/vo/B_zoomit.mp3"
+    },
+    {
+      "id": "11_waitno",
+      "type": "motion",
+      "dur": 2.0,
+      "status": "todo",
+      "voice": "marco",
+      "note": "Marco: not over the PATH!",
+      "vo": "episodes/ep3/vo/M_waitno.mp3"
+    },
+    {
+      "id": "12_scuff",
+      "type": "motion",
+      "dur": 3.0,
+      "status": "todo",
+      "voice": "narrator",
+      "note": "Paws scuff the trail flat \u2014 THE causal connector (sfx)",
+      "vo": ""
+    },
+    {
+      "id": "13_oops",
+      "type": "motion",
+      "dur": 2.5,
+      "status": "todo",
+      "voice": "bentley",
+      "note": "Did I do a oops? (ears drop)",
+      "vo": "episodes/ep3/vo/B_oops.mp3"
+    },
+    {
+      "id": "14_lost",
+      "type": "motion",
+      "dur": 5.5,
+      "status": "todo",
+      "voice": "marco",
+      "note": "Ants mill in circles; Marco lost, alone on open sand",
+      "vo": "episodes/ep3/vo/M_lost.mp3"
+    },
+    {
+      "id": "15_shadow",
+      "type": "motion",
+      "dur": 6.0,
+      "status": "todo",
+      "voice": "narrator",
+      "note": "Shadow sweeps; scrub-jay silhouette (soft menace, silhouette only)",
+      "vo": "episodes/ep3/vo/N_shadow.mp3"
+    },
+    {
+      "id": "16_realize",
+      "type": "motion",
+      "dur": 5.0,
+      "status": "todo",
+      "voice": "bentley",
+      "note": "Bentley sees what she did \u2014 nose to sand, horrified",
+      "vo": "episodes/ep3/vo/B_realize.mp3"
+    },
+    {
+      "id": "17_stoplook",
+      "type": "motion",
+      "dur": 3.4,
+      "status": "todo",
+      "voice": "bentley",
+      "note": "Stop. Look. Listen. \u2014 Listening Tag GLOWS (the turn)",
+      "vo": "episodes/ep3/vo/B_stoplook.mp3"
+    },
+    {
+      "id": "18_youstopped",
+      "type": "motion",
+      "dur": 2.0,
+      "status": "todo",
+      "voice": "marco",
+      "note": "Marco creeps over, wary: you're not grabbing anymore",
+      "vo": "episodes/ep3/vo/M_youstopped.mp3"
+    },
+    {
+      "id": "19_smellit",
+      "type": "motion",
+      "dur": 8.5,
+      "status": "todo",
+      "voice": "bentley",
+      "note": "Bentley smells the surviving thread (fact 1 used for good)",
+      "vo": "episodes/ep3/vo/B_smellit.mp3"
+    },
+    {
+      "id": "20_checkyou",
+      "type": "motion",
+      "dur": 2.0,
+      "status": "todo",
+      "voice": "marco",
+      "note": "Hold still \u2014 let me read you",
+      "vo": "episodes/ep3/vo/M_checkyou.mp3"
+    },
+    {
+      "id": "21_antennae",
+      "type": "motion",
+      "dur": 9.5,
+      "status": "todo",
+      "voice": "narrator",
+      "note": "Antennae greeting (fact 4) \u2014 Marco taps Bentley's nose",
+      "vo": "episodes/ep3/vo/N_antennae.mp3"
+    },
+    {
+      "id": "22_crosseyed",
+      "type": "motion",
+      "dur": 3.0,
+      "status": "todo",
+      "voice": "bentley",
+      "note": "Cross-eyed Bentley, giggling (bonding beat \u2014 dog joy)",
+      "vo": "episodes/ep3/vo/B_crosseyed.mp3"
+    },
+    {
+      "id": "23_brave",
+      "type": "motion",
+      "dur": 4.0,
+      "status": "todo",
+      "voice": "marco",
+      "note": "Seaweed... and dog... and brave. You smell brave",
+      "vo": "episodes/ep3/vo/M_brave.mp3"
+    },
+    {
+      "id": "24_bridge",
+      "type": "motion",
+      "dur": 9.5,
+      "status": "todo",
+      "voice": "bentley",
+      "note": "Shadow returns; Bentley chooses NOT to scoop \u2014 lies flat as a bridge",
+      "vo": "episodes/ep3/vo/B_dontgrab.mp3"
+    },
+    {
+      "id": "25_rebuild",
+      "type": "motion",
+      "dur": 11.0,
+      "status": "ready",
+      "voice": "narrator",
+      "note": "Trail rebuilt antenna to antenna (facts 1+4)",
+      "vo": "episodes/ep3/vo/N_rebuild.mp3",
+      "src": "assets/pilot_shots/ep2/motion/a6_34_ants.mp4"
+    },
+    {
+      "id": "26_lift",
+      "type": "motion",
+      "dur": 5.0,
+      "status": "ready",
+      "voice": "marco",
+      "note": "Lift -- together -- HEAVE! (fact 2 payoff)",
+      "vo": "episodes/ep3/vo/M_together.mp3",
+      "src": "assets/pilot_shots/ep2/motion/a6_34_ants.mp4"
+    },
+    {
+      "id": "27_strong",
+      "type": "motion",
+      "dur": 4.5,
+      "status": "todo",
+      "voice": "bentley",
+      "note": "You were never the little one \u2014 a hundred strong",
+      "vo": "episodes/ep3/vo/B_strong.mp3"
+    },
+    {
+      "id": "28_city",
+      "type": "motion",
+      "dur": 15.0,
+      "status": "todo",
+      "voice": "narrator",
+      "note": "THE ANT CITY reveal (fact 3) \u2014 cutaway: tunnels, nursery, jobs",
+      "vo": "episodes/ep3/vo/N_city.mp3"
+    },
+    {
+      "id": "29_nobody",
+      "type": "motion",
+      "dur": 6.0,
+      "status": "todo",
+      "voice": "marco",
+      "note": "Marco, small: if nobody's in charge... am I nobody?",
+      "vo": "episodes/ep3/vo/M_nobody.mp3"
+    },
+    {
+      "id": "30_youarecity",
+      "type": "motion",
+      "dur": 9.0,
+      "status": "todo",
+      "voice": "bentley",
+      "note": "You ARE the city! (two-shot thesis, energetic)",
+      "vo": "episodes/ep3/vo/B_youarecity.mp3"
+    },
+    {
+      "id": "30b_lesson",
+      "type": "motion",
+      "dur": 11.4,
+      "status": "todo",
+      "voice": "bentley",
+      "note": "Bentley's EARNED lesson: listening (her nose) beat grabbing",
+      "vo": "episodes/ep3/vo/B_lesson.mp3"
+    },
+    {
+      "id": "30c_promise",
+      "type": "motion",
+      "dur": 2.0,
+      "status": "todo",
+      "voice": "bentley",
+      "note": "Stop. Look. Listen. \u2014 the earned catchphrase (button)",
+      "vo": "episodes/ep3/vo/B_promise.mp3"
+    },
+    {
+      "id": "31_button",
+      "type": "motion",
+      "dur": 6.5,
+      "status": "todo",
+      "voice": "narrator",
+      "note": "Cozy closing fact over the two of them",
+      "vo": "episodes/ep3/vo/N_button.mp3"
+    },
+    {
+      "id": "32_comesee",
+      "type": "motion",
+      "dur": 3.5,
+      "status": "todo",
+      "voice": "marco",
+      "note": "Marco leads to the deep chamber: come see, hurry",
+      "vo": "episodes/ep3/vo/M_comesee.mp3"
+    },
+    {
+      "id": "33_deepdrop",
+      "type": "motion",
+      "dur": 6.0,
+      "status": "todo",
+      "voice": "bentley",
+      "note": "Water drop in the deep; ants carry eggs UP (cliffhanger)",
+      "vo": "episodes/ep3/vo/B_deepdrop.mp3"
+    },
+    {
+      "id": "34_nexttime",
+      "type": "card",
+      "dur": 3.0,
+      "status": "todo",
+      "voice": "narrator",
+      "note": "NEXT TIME: THE FLOOD BENEATH THE SAND (card)",
+      "vo": ""
+    },
+    {
+      "id": "35_outro",
+      "type": "motion",
+      "dur": 6.0,
+      "status": "todo",
+      "voice": "narrator",
+      "note": "Outro / subscribe (cozy cliffhanger; catchphrase now earned in the button)",
+      "vo": "episodes/ep3/vo/N_outro.mp3"
+    }
+  ]
+}

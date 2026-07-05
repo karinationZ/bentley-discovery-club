@@ -1,0 +1,4 @@
+file '/project/episodes/ep3/_segs/_15_realize_p0.mp4'
+file '/project/episodes/ep3/_segs/_15_realize_p1.mp4'
+file '/project/episodes/ep3/_segs/_15_realize_p2.mp4'
+file '/project/episodes/ep3/_segs/_15_realize_p3.mp4'

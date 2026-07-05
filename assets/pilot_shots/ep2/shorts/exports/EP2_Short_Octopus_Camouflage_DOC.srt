@@ -1,0 +1,23 @@
+1
+00:00:00,200 --> 00:00:05,240
+Can you find the octopus?
+
+2
+00:00:05,640 --> 00:00:09,320
+...hiding in plain sight
+
+3
+00:00:09,720 --> 00:00:14,520
+Color + texture, in 1 second
+
+4
+00:00:14,920 --> 00:00:21,800
+chromatophores = "color sacs"
+
+5
+00:00:22,200 --> 00:00:27,000
+...and she's COLORBLIND
+
+6
+00:00:27,400 --> 00:00:33,960
+She was right there all along

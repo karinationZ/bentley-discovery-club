@@ -1,0 +1,2 @@
+file '/project/episodes/ep3/vo/N_antennae.mp3'
+file '/project/episodes/ep3/vo/B_crosseyed_tickle.mp3'

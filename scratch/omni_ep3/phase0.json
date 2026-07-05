@@ -1,0 +1,329 @@
+[
+ {
+  "section": "s1_open",
+  "line": "B_hook1",
+  "dur": 4.8,
+  "speaker": "bentley",
+  "plate": "scratch/ep3/bridges/coldopen/shot_stab.mp4",
+  "others": [],
+  "mid": 2.4,
+  "sec_start": 0.0,
+  "frame": "/project/scratch/omni_ep3/B_hook1.png",
+  "credits": 123
+ },
+ {
+  "section": "s1_open",
+  "line": "B_findline",
+  "dur": 8.88,
+  "speaker": "bentley",
+  "plate": "scratch/ep3/bridges/lean_help/shot_fix.mp4",
+  "others": [
+   "marco_intro"
+  ],
+  "mid": 20.52,
+  "sec_start": 16.08,
+  "frame": "/project/scratch/omni_ep3/B_findline.png",
+  "credits": 228
+ },
+ {
+  "section": "s2_meet",
+  "line": "B_tooheavy",
+  "dur": 6.88,
+  "speaker": "bentley",
+  "plate": "scratch/ep3/bridges/lean_help/shot_fix.mp4",
+  "others": [],
+  "mid": 3.44,
+  "sec_start": 0.0,
+  "frame": "/project/scratch/omni_ep3/B_tooheavy.png",
+  "credits": 177
+ },
+ {
+  "section": "s2_meet",
+  "line": "M_igotit",
+  "dur": 6.71,
+  "speaker": "marco",
+  "plate": "scratch/ep3/bridges/igotit_ots/shot_fix.mp4",
+  "others": [],
+  "mid": 10.24,
+  "sec_start": 6.88,
+  "frame": "/project/scratch/omni_ep3/M_igotit.png",
+  "credits": 172
+ },
+ {
+  "section": "s2_meet",
+  "line": "B_whatline",
+  "dur": 2.24,
+  "speaker": "bentley",
+  "plate": "scratch/ep3/bridges/smellpath_ts/shot.mp4",
+  "others": [
+   "igotit_ots"
+  ],
+  "mid": 14.71,
+  "sec_start": 13.59,
+  "frame": "/project/scratch/omni_ep3/B_whatline.png",
+  "credits": 58
+ },
+ {
+  "section": "s2_meet",
+  "line": "M_smellpath",
+  "dur": 11.93,
+  "speaker": "marco",
+  "plate": "scratch/ep3/bridges/scent_move/shot.mp4",
+  "others": [
+   "smellpath_ts"
+  ],
+  "mid": 21.8,
+  "sec_start": 15.83,
+  "frame": "/project/scratch/omni_ep3/M_smellpath.png",
+  "credits": 307
+ },
+ {
+  "section": "s4_pickup",
+  "line": "B_zoomit",
+  "dur": 11.2,
+  "speaker": "bentley",
+  "plate": "scratch/ep3/bridges/scoop_pickup/shot.mp4",
+  "others": [
+   "scoop"
+  ],
+  "mid": 5.6,
+  "sec_start": 0.0,
+  "frame": "/project/scratch/omni_ep3/B_zoomit.png",
+  "credits": 288
+ },
+ {
+  "section": "s5_oops",
+  "line": "M_waitno",
+  "dur": 2.23,
+  "speaker": "marco",
+  "plate": "scratch/ep3/bridges/waitno_al/shot.mp4",
+  "others": [],
+  "mid": 1.12,
+  "sec_start": 0.0,
+  "frame": "/project/scratch/omni_ep3/M_waitno.png",
+  "credits": 57
+ },
+ {
+  "section": "s5_oops",
+  "line": "B_oops",
+  "dur": 4.0,
+  "speaker": "bentley",
+  "plate": "scratch/ep3/bridges/waitno_al/shot.mp4",
+  "others": [
+   "pawscuff"
+  ],
+  "mid": 4.23,
+  "sec_start": 2.23,
+  "frame": "/project/scratch/omni_ep3/B_oops.png",
+  "credits": 103
+ },
+ {
+  "section": "s5_oops",
+  "line": "M_lost",
+  "dur": 8.37,
+  "speaker": "marco",
+  "plate": "scratch/ep3/bridges/marco_lost/shot.mp4",
+  "others": [
+   "pawscuff"
+  ],
+  "mid": 10.42,
+  "sec_start": 6.23,
+  "frame": "/project/scratch/omni_ep3/M_lost.png",
+  "credits": 215
+ },
+ {
+  "section": "s7_listen",
+  "line": "B_realize",
+  "dur": 13.68,
+  "speaker": "bentley",
+  "plate": "scratch/ep3/bridges/sniff/shot.mp4",
+  "others": [
+   "scentf_move"
+  ],
+  "mid": 6.84,
+  "sec_start": 0.0,
+  "frame": "/project/scratch/omni_ep3/B_realize.png",
+  "credits": 352
+ },
+ {
+  "section": "s7_listen",
+  "line": "M_youstopped",
+  "dur": 8.87,
+  "speaker": "marco",
+  "plate": "scratch/ep3/bridges/pawscuff/shot.mp4",
+  "others": [
+   "scent_move",
+   "scentf_move"
+  ],
+  "mid": 18.11,
+  "sec_start": 13.68,
+  "frame": "/project/scratch/omni_ep3/M_youstopped.png",
+  "credits": 228
+ },
+ {
+  "section": "s7_listen",
+  "line": "B_smellit",
+  "dur": 12.24,
+  "speaker": "bentley",
+  "plate": "scratch/ep3/bridges/sniff2/shot.mp4",
+  "others": [
+   "scent_move"
+  ],
+  "mid": 28.67,
+  "sec_start": 22.55,
+  "frame": "/project/scratch/omni_ep3/B_smellit.png",
+  "credits": 315
+ },
+ {
+  "section": "s8_antenna",
+  "line": "M_checkyou",
+  "dur": 1.9,
+  "speaker": "marco",
+  "plate": "scratch/ep3/bridges/antenna_ws/shot_fix.mp4",
+  "others": [],
+  "mid": 0.95,
+  "sec_start": 0.0,
+  "frame": "/project/scratch/omni_ep3/M_checkyou.png",
+  "credits": 49
+ },
+ {
+  "section": "s8_antenna",
+  "line": "B_crosseyed",
+  "dur": 3.2,
+  "speaker": "bentley",
+  "plate": "scratch/ep3/bridges/tickle/shot.mp4",
+  "others": [],
+  "mid": 15.66,
+  "sec_start": 14.06,
+  "frame": "/project/scratch/omni_ep3/B_crosseyed.png",
+  "credits": 82
+ },
+ {
+  "section": "s8_antenna",
+  "line": "M_brave",
+  "dur": 7.13,
+  "speaker": "marco",
+  "plate": "scratch/ep3/bridges/antenna_ws/shot_fix.mp4",
+  "others": [
+   "tickle"
+  ],
+  "mid": 20.83,
+  "sec_start": 17.26,
+  "frame": "/project/scratch/omni_ep3/M_brave.png",
+  "credits": 183
+ },
+ {
+  "section": "s9_bridge",
+  "line": "B_dontgrab",
+  "dur": 12.08,
+  "speaker": "bentley",
+  "plate": "scratch/ep3/bridges/bridge/shot.mp4",
+  "others": [
+   "birdshadow"
+  ],
+  "mid": 6.04,
+  "sec_start": 0.0,
+  "frame": "/project/scratch/omni_ep3/B_dontgrab.png",
+  "credits": 310
+ },
+ {
+  "section": "s10_rebuild",
+  "line": "M_together",
+  "dur": 8.2,
+  "speaker": "marco",
+  "plate": "scratch/ep3/bridges/marco_intro/shot_gold2.mp4",
+  "others": [
+   "motion"
+  ],
+  "mid": 14.42,
+  "sec_start": 10.32,
+  "frame": "/project/scratch/omni_ep3/M_together.png",
+  "credits": 211
+ },
+ {
+  "section": "s10_rebuild",
+  "line": "B_strong",
+  "dur": 5.28,
+  "speaker": "bentley",
+  "plate": "scratch/ep3/bridges/strong_ts/shot_fix.mp4",
+  "others": [
+   "marco_intro"
+  ],
+  "mid": 21.16,
+  "sec_start": 18.52,
+  "frame": "/project/scratch/omni_ep3/B_strong.png",
+  "credits": 136
+ },
+ {
+  "section": "s12_climax",
+  "line": "M_nobody",
+  "dur": 11.36,
+  "speaker": "marco",
+  "plate": "scratch/ep3/bridges/burrow_twoshot/shot_fix.mp4",
+  "others": [
+   "burrow2"
+  ],
+  "mid": 5.68,
+  "sec_start": 0.0,
+  "frame": "/project/scratch/omni_ep3/M_nobody.png",
+  "credits": 292
+ },
+ {
+  "section": "s12_climax",
+  "line": "B_youarecity",
+  "dur": 16.72,
+  "speaker": "bentley",
+  "plate": "scratch/ep3/bridges/city1_move/shot.mp4",
+  "others": [
+   "city3_move",
+   "burrow2"
+  ],
+  "mid": 19.72,
+  "sec_start": 11.36,
+  "frame": "/project/scratch/omni_ep3/B_youarecity.png",
+  "credits": 430
+ },
+ {
+  "section": "s12_climax",
+  "line": "B_lesson",
+  "dur": 14.72,
+  "speaker": "bentley",
+  "plate": "scratch/ep3/bridges/burrow2/shot_fix.mp4",
+  "others": [
+   "strong_ts",
+   "city3_move"
+  ],
+  "mid": 35.44,
+  "sec_start": 28.08,
+  "frame": "/project/scratch/omni_ep3/B_lesson.png",
+  "credits": 378
+ },
+ {
+  "section": "s13_button",
+  "line": "M_comesee",
+  "dur": 6.29,
+  "speaker": "marco",
+  "plate": "scratch/ep3/bridges/cliffhanger/shot.mp4",
+  "others": [
+   "marco_q"
+  ],
+  "mid": 12.9,
+  "sec_start": 9.76,
+  "frame": "/project/scratch/omni_ep3/M_comesee.png",
+  "credits": 162
+ },
+ {
+  "section": "s13_button",
+  "line": "B_deepdrop",
+  "dur": 7.12,
+  "speaker": "bentley",
+  "plate": "scratch/ep3/bridges/cliffhanger2/shot.mp4",
+  "others": [
+   "cliffhanger"
+  ],
+  "mid": 19.61,
+  "sec_start": 16.05,
+  "frame": "/project/scratch/omni_ep3/B_deepdrop.png",
+  "credits": 183
+ }
+]

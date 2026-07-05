@@ -1,0 +1,6 @@
+file '/project/assets/pilot_shots/ep2/shorts/vo/_pad0.wav'
+file '/project/assets/pilot_shots/ep2/shorts/vo/_pad1.wav'
+file '/project/assets/pilot_shots/ep2/shorts/vo/_pad2.wav'
+file '/project/assets/pilot_shots/ep2/shorts/vo/_pad3.wav'
+file '/project/assets/pilot_shots/ep2/shorts/vo/_pad4.wav'
+file '/project/assets/pilot_shots/ep2/shorts/vo/_pad5.wav'

@@ -1,0 +1,6 @@
+file '/project/episodes/ep3/_segs/_s12_climax_p0.mp4'
+file '/project/episodes/ep3/_segs/_s12_climax_p1.mp4'
+file '/project/episodes/ep3/_segs/_s12_climax_p2.mp4'
+file '/project/episodes/ep3/_segs/_s12_climax_p3.mp4'
+file '/project/episodes/ep3/_segs/_s12_climax_p4.mp4'
+file '/project/episodes/ep3/_segs/_s12_climax_p5.mp4'

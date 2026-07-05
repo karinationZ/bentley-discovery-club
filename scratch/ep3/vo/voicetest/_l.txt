@@ -1,0 +1,3 @@
+file '/project/scratch/ep3/vo/voicetest/marcoE_A.mp3'
+file '/project/scratch/ep3/vo/voicetest/marcoE_B.mp3'
+file '/project/scratch/ep3/vo/voicetest/marcoE_C.mp3'

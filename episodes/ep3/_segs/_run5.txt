@@ -1,0 +1,4 @@
+file '/project/episodes/ep3/_segs/33_comesee.mp4'
+file '/project/episodes/ep3/_segs/34_deepdrop.mp4'
+file '/project/episodes/ep3/_segs/35_nexttime.mp4'
+file '/project/episodes/ep3/_segs/36_outro.mp4'

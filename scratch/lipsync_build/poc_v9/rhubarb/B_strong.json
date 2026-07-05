@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "soundFile": "/project/scratch/lipsync_build/poc_v9/rhubarb/B_strong.wav",
+    "duration": 5.28
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.07, "value": "X" },
+    { "start": 0.07, "end": 0.17, "value": "F" },
+    { "start": 0.17, "end": 0.24, "value": "E" },
+    { "start": 0.24, "end": 0.59, "value": "C" },
+    { "start": 0.59, "end": 0.73, "value": "E" },
+    { "start": 0.73, "end": 0.80, "value": "B" },
+    { "start": 0.80, "end": 0.87, "value": "C" },
+    { "start": 0.87, "end": 1.01, "value": "B" },
+    { "start": 1.01, "end": 1.15, "value": "C" },
+    { "start": 1.15, "end": 1.22, "value": "F" },
+    { "start": 1.22, "end": 1.50, "value": "C" },
+    { "start": 1.50, "end": 1.75, "value": "B" },
+    { "start": 1.75, "end": 1.82, "value": "F" },
+    { "start": 1.82, "end": 1.89, "value": "B" },
+    { "start": 1.89, "end": 2.17, "value": "C" },
+    { "start": 2.17, "end": 2.59, "value": "B" },
+    { "start": 2.59, "end": 3.01, "value": "E" },
+    { "start": 3.01, "end": 3.38, "value": "B" },
+    { "start": 3.38, "end": 3.45, "value": "C" },
+    { "start": 3.45, "end": 3.58, "value": "B" },
+    { "start": 3.58, "end": 3.66, "value": "A" },
+    { "start": 3.66, "end": 3.83, "value": "F" },
+    { "start": 3.83, "end": 4.53, "value": "B" },
+    { "start": 4.53, "end": 4.67, "value": "C" },
+    { "start": 4.67, "end": 4.81, "value": "E" },
+    { "start": 4.81, "end": 5.09, "value": "B" },
+    { "start": 5.09, "end": 5.28, "value": "X" }
+  ]
+}

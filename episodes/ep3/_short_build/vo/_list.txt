@@ -1,0 +1,6 @@
+file '/project/episodes/ep3/_short_build/vo/_pad0.wav'
+file '/project/episodes/ep3/_short_build/vo/_pad1.wav'
+file '/project/episodes/ep3/_short_build/vo/_pad2.wav'
+file '/project/episodes/ep3/_short_build/vo/_pad3.wav'
+file '/project/episodes/ep3/_short_build/vo/_pad4.wav'
+file '/project/episodes/ep3/_short_build/vo/_sil.wav'

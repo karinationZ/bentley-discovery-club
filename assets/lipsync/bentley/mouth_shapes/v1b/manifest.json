@@ -1,0 +1,40 @@
+{
+  "character": "bentley",
+  "version": "v1b",
+  "coordinate_space": "normalized_mouth_patch",
+  "anchor": {
+    "x": 0.5,
+    "y": 0.45
+  },
+  "teeth_policy": "toothless v1 (owner-locked)",
+  "source_grid": "grid_cand1 (CAND 1) tighter crop",
+  "shapes": {
+    "REST_CLOSED": {
+      "file": "rest_closed.png"
+    },
+    "MBP": {
+      "file": "mbp.png"
+    },
+    "CONS": {
+      "file": "cons.png"
+    },
+    "AI": {
+      "file": "ai.png"
+    },
+    "E": {
+      "file": "e.png"
+    },
+    "O": {
+      "file": "o.png"
+    },
+    "U": {
+      "file": "u.png"
+    },
+    "FV": {
+      "file": "fv.png"
+    },
+    "L": {
+      "file": "l.png"
+    }
+  }
+}

@@ -1,0 +1,2 @@
+file '/project/episodes/ep3/_segs/_08_smellpath_a.mp4'
+file '/project/episodes/ep3/_segs/_08_smellpath_push.mp4'

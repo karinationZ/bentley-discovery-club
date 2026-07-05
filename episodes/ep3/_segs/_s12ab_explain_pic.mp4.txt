@@ -1,0 +1,3 @@
+file '/project/episodes/ep3/_segs/_s12ab_explain_p0.mp4'
+file '/project/episodes/ep3/_segs/_s12ab_explain_p1.mp4'
+file '/project/episodes/ep3/_segs/_s12ab_explain_p2.mp4'

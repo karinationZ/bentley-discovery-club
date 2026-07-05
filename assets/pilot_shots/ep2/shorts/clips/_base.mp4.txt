@@ -1,0 +1,6 @@
+file '/project/assets/pilot_shots/ep2/shorts/clips/seg0.mp4'
+file '/project/assets/pilot_shots/ep2/shorts/clips/seg1.mp4'
+file '/project/assets/pilot_shots/ep2/shorts/clips/seg2.mp4'
+file '/project/assets/pilot_shots/ep2/shorts/clips/seg3.mp4'
+file '/project/assets/pilot_shots/ep2/shorts/clips/seg4.mp4'
+file '/project/assets/pilot_shots/ep2/shorts/clips/seg5.mp4'

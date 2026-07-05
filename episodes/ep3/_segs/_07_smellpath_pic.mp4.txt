@@ -1,0 +1,4 @@
+file '/project/episodes/ep3/_segs/_07_smellpath_p0.mp4'
+file '/project/episodes/ep3/_segs/_07_smellpath_p1.mp4'
+file '/project/episodes/ep3/_segs/_07_smellpath_p2.mp4'
+file '/project/episodes/ep3/_segs/_07_smellpath_p3.mp4'

@@ -1,0 +1,13 @@
+{
+  "plate_id": "ep3_strong_ts",
+  "video": "scratch/lipsync_build/poc_v9/plate.mp4",
+  "character": "bentley",
+  "angle": "three_quarter",
+  "template_box": [565, 495, 715, 580],
+  "mouth_offset": [75, 42],
+  "mouth_width": 140,
+  "track_fps": 12,
+  "min_score": 0.60,
+  "search_radius_px": 60,
+  "visibility": [[0.0, 2.85]]
+}

@@ -1,0 +1,640 @@
+{
+ "animatic": "episodes/ep3/EP3_ANIMATIC.mp4",
+ "shotlist": "episodes/ep3/shotlists/ep3_assembly.json",
+ "runtime_s": 298.18,
+ "counts": {
+  "reuse": 32,
+  "ken_burns": 4,
+  "card": 1
+ },
+ "vo_reel": [
+  "episodes/ep3/vo/B_hook1.mp3",
+  "episodes/ep3/vo/N_intro.mp3",
+  "episodes/ep3/vo/B_findline.mp3",
+  "episodes/ep3/vo/B_tooheavy.mp3",
+  "episodes/ep3/vo/M_igotit.mp3",
+  "episodes/ep3/vo/B_whatline.mp3",
+  "episodes/ep3/vo/M_smellpath.mp3",
+  "episodes/ep3/vo/N_trail.mp3",
+  "episodes/ep3/vo/B_zoomit.mp3",
+  "episodes/ep3/vo/M_waitno.mp3",
+  "episodes/ep3/vo/B_oops.mp3",
+  "episodes/ep3/vo/M_lost.mp3",
+  "episodes/ep3/vo/N_shadow.mp3",
+  "episodes/ep3/vo/B_realize.mp3",
+  "episodes/ep3/vo/B_stoplook.mp3",
+  "episodes/ep3/vo/M_youstopped.mp3",
+  "episodes/ep3/vo/B_smellit.mp3",
+  "episodes/ep3/vo/M_checkyou.mp3",
+  "episodes/ep3/vo/N_antennae.mp3",
+  "episodes/ep3/vo/B_crosseyed.mp3",
+  "episodes/ep3/vo/M_brave.mp3",
+  "episodes/ep3/vo/B_dontgrab.mp3",
+  "episodes/ep3/vo/N_rebuild.mp3",
+  "episodes/ep3/vo/M_together.mp3",
+  "episodes/ep3/vo/B_strong.mp3",
+  "episodes/ep3/vo/N_city.mp3",
+  "episodes/ep3/vo/M_nobody.mp3",
+  "episodes/ep3/vo/B_youarecity.mp3",
+  "episodes/ep3/vo/B_lesson.mp3",
+  "episodes/ep3/vo/B_promise.mp3",
+  "episodes/ep3/vo/N_button.mp3",
+  "episodes/ep3/vo/M_comesee.mp3",
+  "episodes/ep3/vo/B_deepdrop.mp3",
+  "episodes/ep3/vo/N_outro.mp3"
+ ],
+ "vo_outlasts_beat": [
+  [
+   "02_boop",
+   4.5,
+   4.8
+  ],
+  [
+   "04_reveal_line",
+   5.0,
+   8.88
+  ],
+  [
+   "05_lean_help",
+   5.0,
+   6.88
+  ],
+  [
+   "06_igotit",
+   5.0,
+   6.71
+  ],
+  [
+   "08_smellpath",
+   6.0,
+   11.93
+  ],
+  [
+   "09_scent_road",
+   10.0,
+   12.64
+  ],
+  [
+   "10_zoom",
+   4.0,
+   6.64
+  ],
+  [
+   "11_waitno",
+   2.0,
+   2.23
+  ],
+  [
+   "13_oops",
+   2.5,
+   4.0
+  ],
+  [
+   "14_lost",
+   5.5,
+   8.37
+  ],
+  [
+   "15_shadow",
+   6.0,
+   9.76
+  ],
+  [
+   "16_realize",
+   5.0,
+   13.68
+  ],
+  [
+   "18_youstopped",
+   2.0,
+   8.87
+  ],
+  [
+   "19_smellit",
+   8.5,
+   12.24
+  ],
+  [
+   "21_antennae",
+   9.5,
+   12.16
+  ],
+  [
+   "22_crosseyed",
+   3.0,
+   3.2
+  ],
+  [
+   "23_brave",
+   4.0,
+   7.13
+  ],
+  [
+   "24_bridge",
+   9.5,
+   12.08
+  ],
+  [
+   "26_lift",
+   5.0,
+   8.2
+  ],
+  [
+   "27_strong",
+   4.5,
+   5.28
+  ],
+  [
+   "28_city",
+   14.0,
+   19.52
+  ],
+  [
+   "29_nobody",
+   6.0,
+   7.46
+  ],
+  [
+   "30_youarecity",
+   9.0,
+   14.24
+  ],
+  [
+   "30b_lesson",
+   11.0,
+   12.72
+  ],
+  [
+   "30c_promise",
+   2.0,
+   2.16
+  ],
+  [
+   "31_button",
+   6.5,
+   9.76
+  ],
+  [
+   "32_comesee",
+   3.5,
+   6.29
+  ],
+  [
+   "33_deepdrop",
+   6.0,
+   7.12
+  ],
+  [
+   "35_outro",
+   7.0,
+   12.32
+  ]
+ ],
+ "schema_warnings": [],
+ "shots": [
+  {
+   "id": "01_title",
+   "start": 0.0,
+   "dur": 4.0,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/coldopen/shot.mp4",
+   "audio": "silent",
+   "vo_outlasts_beat": false
+  },
+  {
+   "id": "02_boop",
+   "start": 4.0,
+   "dur": 4.8,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/coldopen/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "03_intro",
+   "start": 8.8,
+   "dur": 12.0,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/marco_intro/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": false
+  },
+  {
+   "id": "04_reveal_line",
+   "start": 20.8,
+   "dur": 8.88,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/marco_intro/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "05_lean_help",
+   "start": 29.68,
+   "dur": 6.88,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/lean_help/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "06_igotit",
+   "start": 36.56,
+   "dur": 6.713,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/marco_cu/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "07_whatline",
+   "start": 43.273,
+   "dur": 2.5,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/lean_help/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": false
+  },
+  {
+   "id": "08_smellpath",
+   "start": 45.773,
+   "dur": 11.934,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/marco_cu/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "09_scent_road",
+   "start": 57.708,
+   "dur": 12.64,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "ken_burns",
+   "src": "scratch/ep3/bridges/support/scent_1.png",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "10_zoom",
+   "start": 70.348,
+   "dur": 6.64,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/scoop/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "11_waitno",
+   "start": 76.988,
+   "dur": 2.233,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/marco_cu/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "12_scuff",
+   "start": 79.221,
+   "dur": 3.0,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/pawscuff/shot.mp4",
+   "audio": "silent",
+   "vo_outlasts_beat": false
+  },
+  {
+   "id": "13_oops",
+   "start": 82.221,
+   "dur": 4.0,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/realize/shot_oops.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "14_lost",
+   "start": 86.221,
+   "dur": 8.373,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/marco_lost/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "15_shadow",
+   "start": 94.593,
+   "dur": 9.76,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "ken_burns",
+   "src": "scratch/ep3/bridges/support/shadow_1.png",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "16_realize",
+   "start": 104.353,
+   "dur": 13.68,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/realize/shot_oops.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "17_stoplook",
+   "start": 118.033,
+   "dur": 3.4,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/turn/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": false
+  },
+  {
+   "id": "18_youstopped",
+   "start": 121.433,
+   "dur": 8.866,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/marco_lost/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "19_smellit",
+   "start": 130.299,
+   "dur": 12.24,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/turn/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "20_checkyou",
+   "start": 142.539,
+   "dur": 2.0,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/antenna/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": false
+  },
+  {
+   "id": "21_antennae",
+   "start": 144.539,
+   "dur": 12.16,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/antenna/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "22_crosseyed",
+   "start": 156.699,
+   "dur": 3.2,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/antenna/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "23_brave",
+   "start": 159.899,
+   "dur": 7.133,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/antenna/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "24_bridge",
+   "start": 167.032,
+   "dur": 12.08,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/bridge/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "25_rebuild",
+   "start": 179.112,
+   "dur": 11.0,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "assets/pilot_shots/ep2/motion/a6_34_ants.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": false
+  },
+  {
+   "id": "26_lift",
+   "start": 190.112,
+   "dur": 8.2,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "assets/pilot_shots/ep2/motion/a6_34_ants.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "27_strong",
+   "start": 198.312,
+   "dur": 5.28,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/realize/shot_strong.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "28_city",
+   "start": 203.592,
+   "dur": 19.52,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "ken_burns",
+   "src": "scratch/ep3/bridges/support/city_1.png",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "29_nobody",
+   "start": 223.112,
+   "dur": 7.459,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/marco_q/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "30_youarecity",
+   "start": 230.571,
+   "dur": 14.24,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/city_button/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "30b_lesson",
+   "start": 244.811,
+   "dur": 12.72,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/city_button/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "30c_promise",
+   "start": 257.531,
+   "dur": 2.16,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/turn/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "31_button",
+   "start": 259.691,
+   "dur": 9.76,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/city_button/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "32_comesee",
+   "start": 269.451,
+   "dur": 6.289,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/cliffhanger/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "33_deepdrop",
+   "start": 275.74,
+   "dur": 7.12,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "reuse",
+   "src": "scratch/ep3/bridges/cliffhanger/shot.mp4",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  },
+  {
+   "id": "34_nexttime",
+   "start": 282.86,
+   "dur": 3.0,
+   "kind": "motion",
+   "type": "card",
+   "status": "todo",
+   "picture": "card",
+   "src": null,
+   "audio": "silent",
+   "vo_outlasts_beat": false
+  },
+  {
+   "id": "35_outro",
+   "start": 285.86,
+   "dur": 12.32,
+   "kind": "motion",
+   "type": "motion",
+   "status": "ready",
+   "picture": "ken_burns",
+   "src": "scratch/ep3/bridges/support/city_1.png",
+   "audio": "files",
+   "vo_outlasts_beat": true
+  }
+ ]
+}

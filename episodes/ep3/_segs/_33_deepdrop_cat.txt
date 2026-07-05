@@ -1,0 +1,2 @@
+file '/project/episodes/ep3/_segs/_33_deepdrop_a.mp4'
+file '/project/episodes/ep3/_segs/_33_deepdrop_kb.mp4'

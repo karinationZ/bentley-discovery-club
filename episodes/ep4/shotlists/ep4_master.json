@@ -1,0 +1,628 @@
+{
+  "_meta": {
+    "episode": "ep4",
+    "title": "The Butterfly Highway",
+    "guest": "Mira the Monarch (she/her)",
+    "note": "Animatic-ready EDL twin of docs/series/season_1/04_The_Butterfly_Highway.md. vo = mp3 paths make_vo.py will write; still = keyframe to render (todo). One continuous scene per beat; long-VO sections split into 2-3 continuous sub-shots of the SAME scene. Gates before render: lock Bentley_TALKING_MASTER.png, lock Mira master + voice, establish meadow + grove plates. REV2 2026-07-04: balanced dialogue (Mira 12 lines), expressive B tags, goodnight+mystery ending.",
+    "playbook": ".claude/skills/episode-production/references/PRODUCTION_PLAYBOOK.md",
+    "animatic_lock": "APPROVED by owner 2026-07-04 (REV6). Story+cut FROZEN \u2014 no more script/VO changes."
+  },
+  "shots": [
+    {
+      "id": "s1a_sky_ignites",
+      "type": "motion",
+      "value": "hero",
+      "dur": 15.28,
+      "status": "todo",
+      "still": "assets/pilot_shots/ep4/keyframes/s1a_sky_ignites.png",
+      "keyframe": "Dawn coastal bluff above Crystal Cove; the sky fills edge to edge with a river of orange monarchs pouring overhead; Bentley spins, mouth open, tail-stub wiggling, then leaps up to catch one and tumbles in the grass. Warm sunrise. On-model Bentley (mask, teal collar, gold paw tag).",
+      "vo": "scratch/ep4/vo/B_hook1.mp3,scratch/ep4/vo/B_hook2.mp3",
+      "scale": "wide",
+      "seq": [
+        {
+          "plan": "kenburns",
+          "dur": 4.5,
+          "scale": "wide",
+          "sync": "vo-over-alive",
+          "desc": "sky-river of monarchs pours over the dawn bluff \u2014 slow upward drift (sky still)"
+        },
+        {
+          "plan": "kling",
+          "dur": 6.0,
+          "scale": "wide",
+          "sync": "vo-over-alive",
+          "desc": "Bentley spins & leaps up at the sky-river, tries to catch one, tumbles in the grass"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 4.78,
+          "scale": "wide",
+          "sync": "vo-over-alive",
+          "desc": "push across the river of butterflies over the sea (sky still)"
+        }
+      ]
+    },
+    {
+      "id": "s2_title",
+      "type": "card",
+      "value": "sup",
+      "dur": 3.5,
+      "status": "todo",
+      "still": "assets/pilot_shots/ep4/keyframes/s1a_sky_ignites.png",
+      "keyframe": "Title card 'THE BUTTERFLY HIGHWAY' over the orange sky-river (sub-range of s1a).",
+      "scale": "title",
+      "seq": [
+        {
+          "plan": "card",
+          "dur": 3.5,
+          "scale": "title",
+          "sync": "-",
+          "desc": "Title 'THE BUTTERFLY HIGHWAY' over the sky-river"
+        }
+      ]
+    },
+    {
+      "id": "s1b_nose_taste",
+      "type": "motion",
+      "value": "hero",
+      "dur": 16.532,
+      "status": "todo",
+      "still": "assets/pilot_shots/ep4/keyframes/s1b_nose_taste.png",
+      "keyframe": "CU: a single monarch (Mira) spirals down and lands on Bentley's nose, tapping/tasting it with her tiny feet; Bentley goes cross-eyed, delighted. Soft dawn light. Rhymes EP3 antenna-tap.",
+      "vo": "scratch/ep4/vo/B_hooknose.mp3,scratch/ep4/vo/M_hello.mp3,scratch/ep4/vo/B_iam.mp3",
+      "scale": "two_shot",
+      "seq": [
+        {
+          "plan": "kling",
+          "dur": 6.0,
+          "scale": "two_shot",
+          "sync": "vo-over-alive",
+          "desc": "RESTAGE \u2014 3/4 two-shot, Bentley's muzzle angled OFF-camera (not a straight nose-CU): Mira taste-taps her nose, Bentley cross-eyed & yelps"
+        },
+        {
+          "plan": "kling",
+          "dur": 6.0,
+          "scale": "two_shot",
+          "sync": "vo-over-alive",
+          "desc": "Mira flutters up & loops introducing herself; Bentley grins back (muzzle 3/4, mouth off-axis)"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 4.532,
+          "scale": "wide",
+          "sync": "vo-over-alive",
+          "desc": "push on the sky-river above the two new friends"
+        }
+      ]
+    },
+    {
+      "id": "s3a_meet_comeon",
+      "type": "motion",
+      "value": "hero",
+      "dur": 13.744,
+      "status": "todo",
+      "still": "assets/pilot_shots/ep4/keyframes/s3a_meet_comeon.png",
+      "keyframe": "Two-shot on the bluff edge: Mira loops and swirls playfully around Bentley and zips off down the coast; Bentley bounces up to follow. Wide, both in frame, meadow + sea behind.",
+      "vo": "scratch/ep4/vo/N_intro.mp3,scratch/ep4/vo/M_comeon.mp3",
+      "scale": "two_shot",
+      "seq": [
+        {
+          "plan": "kling",
+          "dur": 6.0,
+          "scale": "two_shot",
+          "sync": "vo-over-alive",
+          "desc": "Mira loops around Bentley & zips off down the bluff; Bentley bounces up to follow"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 7.744,
+          "scale": "medium",
+          "sync": "vo-over-alive",
+          "desc": "tracking-style push down the coastal bluff path Mira flew (scene still)"
+        }
+      ]
+    },
+    {
+      "id": "s3b_plan_gag",
+      "type": "motion",
+      "value": "hero",
+      "dur": 18.637,
+      "status": "todo",
+      "still": "assets/pilot_shots/ep4/keyframes/s3b_plan_gag.png",
+      "keyframe": "Bentley trotting after Mira, tilting her head, 'listing' on her paws (map? plan? snacks?) while overshooting the looping butterfly. Comedic chase motion, medium-wide, both in frame.",
+      "vo": "scratch/ep4/vo/B_plan.mp3,scratch/ep4/vo/M_nomap.mp3,scratch/ep4/vo/B_nomap2.mp3",
+      "scale": "two_shot",
+      "seq": [
+        {
+          "plan": "kling",
+          "dur": 6.0,
+          "scale": "two_shot",
+          "sync": "vo-over-alive",
+          "desc": "Bentley trots after the looping Mira, head-tilting on 'map? plan? snacks?', overshooting"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 6.0,
+          "scale": "insert",
+          "sync": "hide:off-screen",
+          "desc": "insert push: meadow path + skidding paw-prints (scene still)"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 6.637,
+          "scale": "wide",
+          "sync": "vo-over-alive",
+          "desc": "the sky-river / meadow ahead where Mira flits"
+        }
+      ]
+    },
+    {
+      "id": "s4a_taste_flower",
+      "type": "motion",
+      "value": "hero",
+      "dur": 12.131,
+      "status": "todo",
+      "still": "assets/pilot_shots/ep4/keyframes/s4a_taste_flower.png",
+      "keyframe": "Meadow two-shot: Mira lands on a bright wildflower and taste-tests it with her feet, wings fanning; Bentley leans in close, fascinated. Sunny flower field.",
+      "vo": "scratch/ep4/vo/N_feet.mp3,scratch/ep4/vo/M_trythis.mp3",
+      "scale": "two_shot",
+      "seq": [
+        {
+          "plan": "kling",
+          "dur": 6.0,
+          "scale": "two_shot",
+          "sync": "vo-over-alive",
+          "desc": "meadow two-shot: Mira lands on a wildflower & taste-tests it with her feet; Bentley leans in fascinated"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 6.131,
+          "scale": "insert",
+          "sync": "vo-over-alive",
+          "desc": "macro push on the bright wildflower Mira tasted (scene still)"
+        }
+      ]
+    },
+    {
+      "id": "s4b_copy_sneeze",
+      "type": "motion",
+      "value": "hero",
+      "dur": 20.433,
+      "status": "todo",
+      "still": "assets/pilot_shots/ep4/keyframes/s4b_copy_sneeze.png",
+      "keyframe": "Bentley tries to copy Mira - steps on / licks a flower, then a big pollen puff makes her sneeze, ears flapping; Mira giggles and loops. Comedy motion, both in frame.",
+      "vo": "scratch/ep4/vo/B_copyfeet.mp3,scratch/ep4/vo/M_giggle1.mp3,scratch/ep4/vo/B_questions.mp3",
+      "scale": "two_shot",
+      "seq": [
+        {
+          "plan": "kling",
+          "dur": 6.0,
+          "scale": "two_shot",
+          "sync": "vo-over-alive",
+          "desc": "Bentley copies Mira \u2014 licks a flower, pollen puffs, BIG sneeze, ears flapping; Mira giggles & loops"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 7.43,
+          "scale": "insert",
+          "sync": "hide:off-screen",
+          "desc": "insert: pollen cloud drifting off the flower (scene still)"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 7.003,
+          "scale": "medium",
+          "sync": "hide:off-screen",
+          "desc": "the flower bank + drifting monarchs (scene still)"
+        }
+      ]
+    },
+    {
+      "id": "s5a_lead_bound",
+      "type": "motion",
+      "value": "hero",
+      "dur": 13.36,
+      "status": "todo",
+      "still": "assets/pilot_shots/ep4/keyframes/s5a_lead_bound.png",
+      "keyframe": "Bentley bounds ahead down a meadow path, huffing, 'leading', trying to out-run the drifting butterflies. Tracking shot, monarchs calmly floating past her. No danger.",
+      "vo": "scratch/ep4/vo/B_lead.mp3,scratch/ep4/vo/N_race.mp3",
+      "scale": "medium",
+      "seq": [
+        {
+          "plan": "kling",
+          "dur": 6.0,
+          "scale": "medium",
+          "sync": "vo-over-alive",
+          "desc": "Bentley bounds ahead down the meadow path 'leading', huffing; monarchs drift calmly past"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 7.36,
+          "scale": "medium",
+          "sync": "vo-over-alive",
+          "desc": "tracking push down the meadow path, butterflies floating (scene still)"
+        }
+      ]
+    },
+    {
+      "id": "s5b_flower_flop",
+      "type": "motion",
+      "value": "hero",
+      "dur": 11.909,
+      "status": "todo",
+      "still": "assets/pilot_shots/ep4/keyframes/s5b_flower_flop.png",
+      "keyframe": "MATCH-CUT on the bound: Bentley face-plants into a soft bank of flowers, petals flying, dizzy and puffed out; butterflies drift serenely past. Funny, warm.",
+      "vo": "scratch/ep4/vo/M_floptease.mp3,scratch/ep4/vo/B_flop.mp3",
+      "scale": "medium",
+      "seq": [
+        {
+          "plan": "kling",
+          "dur": 6.0,
+          "scale": "medium",
+          "sync": "vo-over-alive",
+          "desc": "Bentley face-plants into the soft flower bank, petals flying, dizzy; Mira loops back amused"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 5.909,
+          "scale": "insert",
+          "sync": "hide:off-screen",
+          "desc": "insert: petals settling, monarchs drifting past (scene still)"
+        }
+      ]
+    },
+    {
+      "id": "s6_turn_river",
+      "type": "talk",
+      "value": "hero",
+      "dur": 19.52,
+      "status": "todo",
+      "voice": "bentley",
+      "line": "Stop. Look. Listen.",
+      "still": "assets/pilot_shots/ep4/keyframes/s6_turn_river.png",
+      "keyframe": "Bentley lies still in the flowers; the gold Listening Tag GLOWS; camera tilts up from her to reveal the whole gliding river of monarchs leaning sunward. Catchphrase = Bentley (locked Talking prop for the CU); then VO-over as camera reveals the sky.",
+      "vo": "scratch/ep4/vo/B_stoplook.mp3,scratch/ep4/vo/N_turn.mp3,scratch/ep4/vo/B_river.mp3",
+      "scale": "solo_cu",
+      "seq": [
+        {
+          "plan": "kling",
+          "dur": 3.0,
+          "scale": "solo_cu",
+          "sync": "avatar",
+          "desc": "catchphrase CU on the Talking prop: Bentley still, Tag GLOWS, 'Stop. Look. Listen.'"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 6.5,
+          "scale": "wide",
+          "sync": "hide:off-screen",
+          "desc": "camera tilts/pushes UP off Bentley to reveal the whole gliding river of monarchs leaning sunward (sky still)"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 6.5,
+          "scale": "wide",
+          "sync": "hide:off-screen",
+          "desc": "slow drift across the sunward river of butterflies (sky still)"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 3.52,
+          "scale": "wide",
+          "sync": "vo-over-alive",
+          "desc": "the river flowing toward the sun over the meadow"
+        }
+      ]
+    },
+    {
+      "id": "s7a_reframe_q",
+      "type": "motion",
+      "value": "hero",
+      "dur": 13.915,
+      "status": "todo",
+      "still": "assets/pilot_shots/ep4/keyframes/s7a_reframe_q.png",
+      "keyframe": "Meadow two-shot: Bentley (amazed) looking up at Mira who loops cheerfully; the sky river behind them. Bentley asks where it ends.",
+      "vo": "scratch/ep4/vo/B_wheredoesit.mp3,scratch/ep4/vo/M_dontknow.mp3,scratch/ep4/vo/M_generations.mp3",
+      "scale": "two_shot",
+      "seq": [
+        {
+          "plan": "kling",
+          "dur": 6.0,
+          "scale": "two_shot",
+          "sync": "vo-over-alive",
+          "desc": "meadow two-shot: Bentley (amazed) looks up at Mira looping cheerfully; the sky-river behind"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 7.915,
+          "scale": "wide",
+          "sync": "vo-over-alive",
+          "desc": "the sky-river of monarchs streaming toward the sun (scene still)"
+        }
+      ]
+    },
+    {
+      "id": "s7b_mindblown",
+      "type": "motion",
+      "value": "hero",
+      "dur": 18.72,
+      "status": "todo",
+      "still": "assets/pilot_shots/ep4/keyframes/s7b_mindblown.png",
+      "keyframe": "Bentley's joyful mind-blown reaction (tongue out, tail-stub wiggle, spinning) as Mira loops around her; monarchs streaming past toward the sun. Both in frame, warm.",
+      "vo": "scratch/ep4/vo/B_mindblown.mp3,scratch/ep4/vo/N_generations.mp3",
+      "scale": "two_shot",
+      "seq": [
+        {
+          "plan": "kling",
+          "dur": 6.0,
+          "scale": "two_shot",
+          "sync": "vo-over-alive",
+          "desc": "Bentley's joyful mind-blown reaction \u2014 spinning, tongue out, tail-stub wiggle \u2014 Mira looping around her"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 6.0,
+          "scale": "wide",
+          "sync": "vo-over-alive",
+          "desc": "monarchs streaming past toward the sun over the meadow (scene still)"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 6.72,
+          "scale": "medium",
+          "sync": "hide:off-screen",
+          "desc": "wide of the meadow + the river of butterflies (scene still)"
+        }
+      ]
+    },
+    {
+      "id": "s8_glide",
+      "type": "motion",
+      "value": "hero",
+      "dur": 18.407,
+      "status": "todo",
+      "still": "assets/pilot_shots/ep4/keyframes/s8_glide.png",
+      "keyframe": "THE hero shot: a warm updraft rises off the bluff; Bentley run-leaps off the edge and GLIDES (ears out, legs tucked - a glide, NOT flapping flight) down through the swirling river of monarchs, Mira looping around her, both joyful. Golden sky. The swarm carries the motion and hides seams.",
+      "vo": "scratch/ep4/vo/M_ridewithme.mp3,scratch/ep4/vo/M_glidecoach.mp3,scratch/ep4/vo/B_glide.mp3,scratch/ep4/vo/N_updraft.mp3",
+      "scale": "two_shot",
+      "seq": [
+        {
+          "plan": "kling",
+          "dur": 6.0,
+          "scale": "two_shot",
+          "sync": "vo-over-alive",
+          "desc": "updraft rises; Bentley run-leaps off the bluff & GLIDES into the monarch river, Mira looping at her nose"
+        },
+        {
+          "plan": "kling",
+          "dur": 6.0,
+          "scale": "wide",
+          "sync": "vo-over-alive",
+          "desc": "HERO/THUMBNAIL: Bentley soaring through the swirling river of monarchs over the sea, Mira beside her"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 6.407,
+          "scale": "wide",
+          "sync": "vo-over-alive",
+          "desc": "the golden sky full of monarchs, the gliding pair small in it (scene still)"
+        }
+      ]
+    },
+    {
+      "id": "s9a_grove_wide",
+      "type": "ffx",
+      "value": "sup",
+      "dur": 8.08,
+      "status": "todo",
+      "still": "assets/pilot_shots/ep4/keyframes/s9a_grove_wide.png",
+      "keyframe": "Wide: an old eucalyptus grove with thousands of monarchs clustered on the branches like living orange leaves; soft shafts of light. (Can be a still + slow Ken-Burns to save credit.)",
+      "vo": "scratch/ep4/vo/N_grove.mp3",
+      "scale": "wide",
+      "seq": [
+        {
+          "plan": "kenburns",
+          "dur": 8.08,
+          "scale": "wide",
+          "sync": "vo-over-alive",
+          "desc": "old eucalyptus grove, thousands of monarchs clustered on the branches \u2014 slow reveal drift (grove still)"
+        }
+      ]
+    },
+    {
+      "id": "s9b_grove_cluster",
+      "type": "motion",
+      "value": "hero",
+      "dur": 7.434,
+      "status": "todo",
+      "still": "assets/pilot_shots/ep4/keyframes/s9b_grove_cluster.png",
+      "keyframe": "Closer: living-orange clusters gently fanning their wings; Bentley and Mira small in the foreground, awed. Warm, cozy.",
+      "vo": "scratch/ep4/vo/B_grove.mp3,scratch/ep4/vo/M_home.mp3",
+      "scale": "two_shot",
+      "seq": [
+        {
+          "plan": "kling",
+          "dur": 6.0,
+          "scale": "two_shot",
+          "sync": "vo-over-alive",
+          "desc": "RESTAGE \u2014 foreground two-shot: Bentley & Mira PROMINENT in the foreground, gazing up in wonder at the grove full of clustered monarchs ('Look at them ALL\u2026 Home!'), clusters fanning behind them"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 1.434,
+          "scale": "wide",
+          "sync": "vo-over-alive",
+          "desc": "the living-orange clusters gently fanning on the branches (grove still)"
+        }
+      ]
+    },
+    {
+      "id": "s10a_worm",
+      "type": "motion",
+      "value": "hero",
+      "dur": 15.039,
+      "status": "todo",
+      "still": "assets/pilot_shots/ep4/keyframes/s10a_worm.png",
+      "keyframe": "Grove two-shot beside a green chrysalis: Bentley does a delighted double-take at Mira ('you were a WORM?'); Mira giggles. Cozy golden light.",
+      "vo": "scratch/ep4/vo/B_worm.mp3,scratch/ep4/vo/M_caterpillar.mp3",
+      "scale": "two_shot",
+      "seq": [
+        {
+          "plan": "kling",
+          "dur": 6.0,
+          "scale": "two_shot",
+          "sync": "vo-over-alive",
+          "desc": "grove two-shot by the green chrysalis: Bentley's delighted double-take at Mira \u2014 'you were a WORM?'"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 9.039,
+          "scale": "insert",
+          "sync": "vo-over-alive",
+          "desc": "macro push on the green chrysalis on its twig (scene still)"
+        }
+      ]
+    },
+    {
+      "id": "s10b_fancyworm",
+      "type": "motion",
+      "value": "hero",
+      "dur": 18.88,
+      "status": "todo",
+      "still": "assets/pilot_shots/ep4/keyframes/s10b_fancyworm.png",
+      "keyframe": "Warm two-shot: Bentley marvels at the chrysalis / at Mira's wings; Mira fans them; a caterpillar-to-wings wonder. Cozy, both in frame.",
+      "vo": "scratch/ep4/vo/B_fancyworm.mp3,scratch/ep4/vo/N_button.mp3",
+      "scale": "two_shot",
+      "seq": [
+        {
+          "plan": "kling",
+          "dur": 6.0,
+          "scale": "two_shot",
+          "sync": "vo-over-alive",
+          "desc": "warm grove two-shot: Bentley marvels as Mira fans her wings beside the chrysalis"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 6.0,
+          "scale": "insert",
+          "sync": "vo-over-alive",
+          "desc": "insert: the chrysalis + a fresh butterfly unfurling, slow push (scene still)"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 6.88,
+          "scale": "wide",
+          "sync": "vo-over-alive",
+          "desc": "the grove in warm light, monarchs settling (scene still)"
+        }
+      ]
+    },
+    {
+      "id": "s11a_dusk_reflect",
+      "type": "motion",
+      "value": "hero",
+      "dur": 22.982,
+      "status": "todo",
+      "still": "assets/pilot_shots/ep4/keyframes/s11a_dusk_reflect.png",
+      "keyframe": "Night in the eucalyptus grove, cozy and warm; monarchs glow softly on the branches. Two-shot: Bentley curls down into the soft leaf-litter with a big sleepy yawn, Mira perched on a low twig beside her. Peaceful, golden lantern light. No menace.",
+      "vo": "scratch/ep4/vo/N_dusk.mp3,scratch/ep4/vo/M_goodnight.mp3,scratch/ep4/vo/B_reflect.mp3",
+      "scale": "two_shot",
+      "seq": [
+        {
+          "plan": "kenburns",
+          "dur": 7.44,
+          "scale": "wide",
+          "sync": "vo-over-alive",
+          "desc": "night falls on the grove, monarchs glowing on the branches (scene still), slow drift"
+        },
+        {
+          "plan": "kling",
+          "dur": 6.0,
+          "scale": "two_shot",
+          "sync": "vo-over-alive",
+          "desc": "night two-shot: Bentley curls down with a big yawn, Mira on a twig beside her; sleepy reflection"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 9.542,
+          "scale": "wide",
+          "sync": "hide:off-screen",
+          "desc": "the cozy moonlit grove, glowing monarchs (scene still)"
+        }
+      ]
+    },
+    {
+      "id": "s11b_grove_sings",
+      "type": "motion",
+      "value": "hero",
+      "dur": 9.993,
+      "status": "todo",
+      "still": "assets/pilot_shots/ep4/keyframes/s11b_grove_sings.png",
+      "keyframe": "A gentle night breeze moves through the tall eucalyptus; leaves shiver and the grove seems to hum/sing softly (dreamy, magical -- the EP5 talking-trees seed, NOT scary). Bentley's ears flick drowsily as she snuggles down; Mira settles. Soft moonlit glow.",
+      "vo": "scratch/ep4/vo/M_grovesong.mp3,scratch/ep4/vo/B_dreamy.mp3",
+      "scale": "two_shot",
+      "seq": [
+        {
+          "plan": "kenburns",
+          "dur": 9.993,
+          "scale": "wide",
+          "sync": "vo-over-alive",
+          "desc": "night breeze through the tall eucalyptus; leaves shiver, the grove seems to hum/sing; Bentley snuggling, Mira settling (scene still), gentle drift"
+        }
+      ]
+    },
+    {
+      "id": "s11c_mantra_sleep",
+      "type": "motion",
+      "value": "hero",
+      "dur": 16.08,
+      "status": "todo",
+      "still": "assets/pilot_shots/ep4/keyframes/s11c_mantra_sleep.png",
+      "keyframe": "Tender CU: Bentley curled nose-to-paws, eyes drifting closed, lips barely moving as she whispers to herself; the gold paw-print Listening Tag glows soft and warm; Mira nestled on her paw. She breathes out and falls asleep. VO-over (whisper, mouth barely readable). Peaceful, emotionally warm.",
+      "vo": "scratch/ep4/vo/B_mantra.mp3,scratch/ep4/vo/N_close.mp3",
+      "scale": "solo_cu",
+      "seq": [
+        {
+          "plan": "kling",
+          "dur": 6.0,
+          "scale": "solo_cu",
+          "sync": "vo-over-alive (whisper: mouth barely moving, eyes closing)",
+          "desc": "tender CU: Bentley curled nose-to-paws, eyes drifting closed, whispering the mantra; Tag glows soft; Mira asleep on her paw"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 5.0,
+          "scale": "insert",
+          "sync": "hide:off-screen",
+          "desc": "insert: the gold Listening Tag glowing warm over the sleeping pair (scene still)"
+        },
+        {
+          "plan": "kenburns",
+          "dur": 5.08,
+          "scale": "wide",
+          "sync": "vo-over-alive",
+          "desc": "the moonlit grove, everyone asleep, monarchs glowing (scene still)"
+        }
+      ]
+    },
+    {
+      "id": "s11d_nexttime",
+      "type": "card",
+      "value": "sup",
+      "dur": 3.5,
+      "status": "todo",
+      "still": "assets/pilot_shots/ep4/keyframes/s9a_grove_wide.png",
+      "keyframe": "NEXT TIME card: 'The Mystery of the Talking Trees' over the moonlit grove; gentle fade-out.",
+      "scale": "card",
+      "seq": [
+        {
+          "plan": "card",
+          "dur": 3.5,
+          "scale": "card",
+          "sync": "-",
+          "desc": "NEXT TIME card: 'The Mystery of the Talking Trees' over the moonlit grove; gentle fade-out"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+file '/project/episodes/ep3/_segs/_20_antennae_p0.mp4'
+file '/project/episodes/ep3/_segs/_20_antennae_p1.mp4'

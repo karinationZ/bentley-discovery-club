@@ -1,0 +1,464 @@
+[
+  {
+    "id": "00_title",
+    "voice": "narrator",
+    "note": null,
+    "srcs": [
+      "TITLE"
+    ],
+    "vo": "(no VO \u2014 visual beat)",
+    "dur": 3.5,
+    "sheet": "/project/episodes/ep3/_qa/00_title.png"
+  },
+  {
+    "id": "01_open",
+    "voice": "bentley",
+    "note": null,
+    "srcs": [
+      "coldopen/shot_stab.mp4",
+      "talk/B_hook1.mp4 [LIPSYNC-CUTIN]",
+      "coldopen/shot_stab.mp4"
+    ],
+    "vo": "[B_hook] ?",
+    "dur": 5.1,
+    "sheet": "/project/episodes/ep3/_qa/01_open.png"
+  },
+  {
+    "id": "02_intro",
+    "voice": "narrator",
+    "note": null,
+    "srcs": [
+      "bentley_intro/shot.mp4",
+      "turn/shot.mp4"
+    ],
+    "vo": "[N_intro] That's Bentley -- and that glow is her Listening Tag, lit up when she truly listens.  Trouble is, she still thinks helping means carrying everything herself.",
+    "dur": 11.58,
+    "sheet": "/project/episodes/ep3/_qa/02_intro.png"
+  },
+  {
+    "id": "03_reveal",
+    "voice": "bentley",
+    "note": null,
+    "srcs": [
+      "marco_intro/shot_gold2.mp4",
+      "talk/B_findline.mp4 [LIPSYNC-CUTIN]",
+      "marco_intro/shot_gold2.mp4"
+    ],
+    "vo": "[B_findline] It's not walking by itself -- it's YOU! A whole little parade of you! Hellooo down there!",
+    "dur": 9.21,
+    "sheet": "/project/episodes/ep3/_qa/03_reveal.png"
+  },
+  {
+    "id": "04_lean",
+    "voice": "bentley",
+    "note": null,
+    "srcs": [
+      "lean_help/shot.mp4",
+      "talk/B_tooheavy.mp4 [LIPSYNC-CUTIN]",
+      "lean_help/shot.mp4"
+    ],
+    "vo": "[B_tooheavy] But you're so teeny and that crumb is so HUGE. Here -- let me carry it for you, little one!",
+    "dur": 7.18,
+    "sheet": "/project/episodes/ep3/_qa/04_lean.png"
+  },
+  {
+    "id": "05_igotit",
+    "voice": "marco",
+    "note": null,
+    "srcs": [
+      "igotit_ots/shot.mp4",
+      "talk/M_igotit.mp4 [LIPSYNC-CUTIN]",
+      "igotit_ots/shot.mp4"
+    ],
+    "vo": "[M_igotit] I've got it! Six legs, see? We do the big ones together. Just... don't break the line.",
+    "dur": 7.04,
+    "sheet": "/project/episodes/ep3/_qa/05_igotit.png"
+  },
+  {
+    "id": "06_whatline",
+    "voice": "bentley",
+    "note": null,
+    "srcs": [
+      "lean_help/shot.mp4",
+      "talk/B_whatline.mp4 [LIPSYNC-CUTIN]"
+    ],
+    "vo": "[B_whatline] What line? I don't see a line.",
+    "dur": 2.54,
+    "sheet": "/project/episodes/ep3/_qa/06_whatline.png"
+  },
+  {
+    "id": "07_smellpath",
+    "voice": "marco",
+    "note": null,
+    "srcs": [
+      "smellpath_ts/shot.mp4",
+      "support/scent_1.png",
+      "talk/M_smellpath.mp4 [LIPSYNC-CUTIN]",
+      "smellpath_ts/shot.mp4"
+    ],
+    "vo": "[M_smellpath] You can't SEE it -- you smell it. We don't follow our eyes, we follow the path. Stay on the path and you always find home.",
+    "dur": 12.25,
+    "sheet": "/project/episodes/ep3/_qa/07_smellpath.png"
+  },
+  {
+    "id": "08_trail",
+    "voice": "narrator",
+    "note": null,
+    "srcs": [
+      "motion/a6_34_ants.mp4",
+      "support/scent_faded_1.png"
+    ],
+    "vo": "[N_trail] Here's a secret: ants don't follow their eyes -- they follow a SMELL, each one leaving a trail for the next. Wipe it away... and the road is gone.",
+    "dur": 12.94,
+    "sheet": "/project/episodes/ep3/_qa/08_trail.png"
+  },
+  {
+    "id": "09_zoom",
+    "voice": "bentley",
+    "note": null,
+    "srcs": [
+      "scoop_pickup/shot.mp4",
+      "talk/B_zoomit.mp4 [LIPSYNC-CUTIN]",
+      "scoop/shot.mp4",
+      "scoop_pickup/shot.mp4"
+    ],
+    "vo": "[B_zoomit] Ooh -- I am SO good at fast. I'll just zoom it to the front for you! Watch this!",
+    "dur": 11.5,
+    "sheet": "/project/episodes/ep3/_qa/09_zoom.png"
+  },
+  {
+    "id": "10_waitno",
+    "voice": "marco",
+    "note": null,
+    "srcs": [
+      "waitno_al/shot.mp4",
+      "talk/M_waitno.mp4 [LIPSYNC-CUTIN]"
+    ],
+    "vo": "[M_waitno] Wait -- no -- not over the PATH--!",
+    "dur": 2.54,
+    "sheet": "/project/episodes/ep3/_qa/10_waitno.png"
+  },
+  {
+    "id": "11_scuff",
+    "voice": "narrator",
+    "note": null,
+    "srcs": [
+      "pawscuff/shot.mp4"
+    ],
+    "vo": "(no VO \u2014 visual beat)",
+    "dur": 3.0,
+    "sheet": "/project/episodes/ep3/_qa/11_scuff.png"
+  },
+  {
+    "id": "12_oops",
+    "voice": "bentley",
+    "note": null,
+    "srcs": [
+      "oops_ts/shot.mp4",
+      "talk/B_oops.mp4 [LIPSYNC-CUTIN]"
+    ],
+    "vo": "[B_oops] Oops. Did I... do a oops?",
+    "dur": 4.3,
+    "sheet": "/project/episodes/ep3/_qa/12_oops.png"
+  },
+  {
+    "id": "13_lost",
+    "voice": "marco",
+    "note": null,
+    "srcs": [
+      "marco_lost/shot.mp4",
+      "talk/M_lost.mp4 [LIPSYNC-CUTIN]",
+      "marco_lost/shot.mp4"
+    ],
+    "vo": "[M_lost] The smell -- it's gone! Where's the line? Which way is\u2014 I can't find home! I can't find ANYBODY!",
+    "dur": 8.67,
+    "sheet": "/project/episodes/ep3/_qa/13_lost.png"
+  },
+  {
+    "id": "14_shadow",
+    "voice": "narrator",
+    "note": null,
+    "srcs": [
+      "support/shadow_solo_1.png"
+    ],
+    "vo": "[N_shadow] A single ant, alone, off the path, out in the open... is a very small ant in a very big world.",
+    "dur": 10.06,
+    "sheet": "/project/episodes/ep3/_qa/14_shadow.png"
+  },
+  {
+    "id": "15_realize",
+    "voice": "bentley",
+    "note": null,
+    "srcs": [
+      "oops_ts/shot.mp4",
+      "pawscuff/shot.mp4",
+      "talk/B_realize.mp4 [LIPSYNC-CUTIN]",
+      "oops_ts/shot.mp4"
+    ],
+    "vo": "[B_realize] My big paws wiped the whole smell-road off the sand!  Big oops!  No more grabbing -- time to stop, and look, and listen!",
+    "dur": 14.0,
+    "sheet": "/project/episodes/ep3/_qa/15_realize.png"
+  },
+  {
+    "id": "17_youstopped",
+    "voice": "marco",
+    "note": null,
+    "srcs": [
+      "strong_ts/shot.mp4",
+      "talk/M_youstopped.mp4 [LIPSYNC-CUTIN]"
+    ],
+    "vo": "[M_youstopped] Wait-- you STOPPED! You're not grabbing-- you're listening with that big nose! Okay-- find my road!",
+    "dur": 9.17,
+    "sheet": "/project/episodes/ep3/_qa/17_youstopped.png"
+  },
+  {
+    "id": "18_smellit",
+    "voice": "bentley",
+    "note": null,
+    "srcs": [
+      "turn/shot.mp4",
+      "support/scent_faded_1.png",
+      "talk/B_smellit.mp4 [LIPSYNC-CUTIN]",
+      "turn/shot.mp4"
+    ],
+    "vo": "[B_smellit] No-- I'm SMELLING!  There's a thread of it left, right where my paws never touched. Faint... but it smells like HOME! Show me where it goes!",
+    "dur": 12.54,
+    "sheet": "/project/episodes/ep3/_qa/18_smellit.png"
+  },
+  {
+    "id": "19_checkyou",
+    "voice": "marco",
+    "note": null,
+    "srcs": [
+      "antenna_ws/shot.mp4",
+      "talk/M_checkyou.mp4 [LIPSYNC-CUTIN]"
+    ],
+    "vo": "[M_checkyou] Hold still. Let me read you first.",
+    "dur": 2.21,
+    "sheet": "/project/episodes/ep3/_qa/19_checkyou.png"
+  },
+  {
+    "id": "20_antennae",
+    "voice": "narrator",
+    "note": null,
+    "srcs": [
+      "antenna_ws/shot.mp4",
+      "antenna_ws/shot.mp4"
+    ],
+    "vo": "[N_antennae] Another secret: ants say hello by touching antennae -- one little tap tells them friend, family, where you've been. A whole hello in a touch.",
+    "dur": 12.5,
+    "sheet": "/project/episodes/ep3/_qa/20_antennae.png"
+  },
+  {
+    "id": "21_crosseyed",
+    "voice": "bentley",
+    "note": null,
+    "srcs": [
+      "antenna_ws/shot.mp4",
+      "talk/B_crosseyed.mp4 [LIPSYNC-CUTIN]"
+    ],
+    "vo": "[B_crosseyed] Hee-- that tickles! What do I smell like?",
+    "dur": 3.5,
+    "sheet": "/project/episodes/ep3/_qa/21_crosseyed.png"
+  },
+  {
+    "id": "22_brave",
+    "voice": "marco",
+    "note": null,
+    "srcs": [
+      "antenna_ws/shot.mp4",
+      "talk/M_brave.mp4 [LIPSYNC-CUTIN]"
+    ],
+    "vo": "[M_brave] Mm. Seaweed... and dog... and brave. You smell brave.",
+    "dur": 7.46,
+    "sheet": "/project/episodes/ep3/_qa/22_brave.png"
+  },
+  {
+    "id": "23_bridge",
+    "voice": "bentley",
+    "note": null,
+    "srcs": [
+      "birdshadow/shot.mp4",
+      "bridge/shot.mp4",
+      "talk/B_dontgrab.mp4 [LIPSYNC-CUTIN]",
+      "bridge/shot.mp4"
+    ],
+    "vo": "[B_dontgrab] That hungry bird-shadow's back!  Old me would grab and run -- new me is a BRIDGE!  Climb on, Marco -- lay your road up my nose!",
+    "dur": 12.38,
+    "sheet": "/project/episodes/ep3/_qa/23_bridge.png"
+  },
+  {
+    "id": "24_rebuild",
+    "voice": "narrator",
+    "note": null,
+    "srcs": [
+      "motion/a6_34_ants.mp4",
+      "marco_intro/shot_gold2.mp4"
+    ],
+    "vo": "[N_rebuild] One ant found the path. He touches the next, and the next -- feeler to feeler -- and the road comes back to life, one hello at a time.",
+    "dur": 10.62,
+    "sheet": "/project/episodes/ep3/_qa/24_rebuild.png"
+  },
+  {
+    "id": "25_lift",
+    "voice": "marco",
+    "note": null,
+    "srcs": [
+      "motion/a6_34_ants.mp4",
+      "talk/M_together.mp4 [LIPSYNC-CUTIN]",
+      "motion/a6_34_ants.mp4"
+    ],
+    "vo": "[M_together] Lift -- together -- HEAVE! See? Not one of us could move it. All of us can.",
+    "dur": 8.5,
+    "sheet": "/project/episodes/ep3/_qa/25_lift.png"
+  },
+  {
+    "id": "26_strong",
+    "voice": "bentley",
+    "note": null,
+    "srcs": [
+      "strong_ts/shot.mp4",
+      "talk/B_strong.mp4 [LIPSYNC-CUTIN]",
+      "strong_ts/shot.mp4"
+    ],
+    "vo": "[B_strong] You were never the little one. You're a hundred strong, all pulling the same way.",
+    "dur": 5.58,
+    "sheet": "/project/episodes/ep3/_qa/26_strong.png"
+  },
+  {
+    "id": "27_city",
+    "voice": "narrator",
+    "note": null,
+    "srcs": [
+      "support/city_1.png",
+      "support/city_3_1.png",
+      "support/city_2.png"
+    ],
+    "vo": "[N_city] And under the warm sand, a whole CITY -- tunnels, a nursery for the eggs, rooms of stored food, every ant with a job.  No boss at all -- just thousands of tiny minds, thinking together.",
+    "dur": 19.82,
+    "sheet": "/project/episodes/ep3/_qa/27_city.png"
+  },
+  {
+    "id": "28_noboss",
+    "voice": "marco",
+    "note": null,
+    "srcs": [
+      "burrow_twoshot/shot.mp4",
+      "talk/M_noboss.mp4 [LIPSYNC-CUTIN]",
+      "burrow_twoshot/shot.mp4"
+    ],
+    "vo": "[M_noboss] ?",
+    "dur": 7.68,
+    "sheet": "/project/episodes/ep3/_qa/28_noboss.png"
+  },
+  {
+    "id": "28b_nobody",
+    "voice": "marco",
+    "note": null,
+    "srcs": [
+      "burrow_twoshot/shot.mp4",
+      "talk/M_nobody.mp4 [LIPSYNC-CUTIN]",
+      "burrow_twoshot/shot.mp4"
+    ],
+    "vo": "[M_nobody] But if nobody's in charge... then I'm not special. I'm just one. I'm... nobody.",
+    "dur": 7.79,
+    "sheet": "/project/episodes/ep3/_qa/28b_nobody.png"
+  },
+  {
+    "id": "29_youarecity",
+    "voice": "bentley",
+    "note": null,
+    "srcs": [
+      "burrow_twoshot/shot.mp4",
+      "talk/B_youarecity.mp4 [LIPSYNC-CUTIN]",
+      "burrow_twoshot/shot.mp4"
+    ],
+    "vo": "[B_youarecity] Nobody?!  Take YOU away, and a whole job goes undone! The city only works because every single ant shows up.  You're not nobody, Marco -- you ARE the city!",
+    "dur": 14.54,
+    "sheet": "/project/episodes/ep3/_qa/29_youarecity.png"
+  },
+  {
+    "id": "30_lesson",
+    "voice": "bentley",
+    "note": null,
+    "srcs": [
+      "strong_ts/shot.mp4",
+      "talk/B_lesson.mp4 [LIPSYNC-CUTIN]",
+      "burrow_twoshot/shot.mp4"
+    ],
+    "vo": "[B_lesson] Here's what I figured out, Marco -- when I GRABBED, everything went sideways! But the second I got still and listened? BAM -- I actually helped! So from now on...",
+    "dur": 13.02,
+    "sheet": "/project/episodes/ep3/_qa/30_lesson.png"
+  },
+  {
+    "id": "31_promise",
+    "voice": "bentley",
+    "note": null,
+    "srcs": [
+      "burrow_twoshot/shot.mp4",
+      "talk/B_promise.mp4 [LIPSYNC-CUTIN]"
+    ],
+    "vo": "[B_promise] Stop. Look. Listen.",
+    "dur": 2.46,
+    "sheet": "/project/episodes/ep3/_qa/31_promise.png"
+  },
+  {
+    "id": "32_button",
+    "voice": "narrator",
+    "note": null,
+    "srcs": [
+      "motion/a6_34_ants.mp4",
+      "burrow_twoshot/shot.mp4"
+    ],
+    "vo": "[N_button] The smallest helper in the whole cove -- carrying a crumb the size of a car -- and he matters more than he will ever know.",
+    "dur": 10.06,
+    "sheet": "/project/episodes/ep3/_qa/32_button.png"
+  },
+  {
+    "id": "33_comesee",
+    "voice": "marco",
+    "note": null,
+    "srcs": [
+      "cliffhanger/shot.mp4",
+      "talk/M_comesee.mp4 [LIPSYNC-CUTIN]"
+    ],
+    "vo": "[M_comesee] Bentley -- come see. One more room. The deep one. Hurry.",
+    "dur": 6.59,
+    "sheet": "/project/episodes/ep3/_qa/33_comesee.png"
+  },
+  {
+    "id": "34_deepdrop",
+    "voice": "bentley",
+    "note": null,
+    "srcs": [
+      "cliffhanger2/shot.mp4",
+      "talk/B_deepdrop.mp4 [LIPSYNC-CUTIN]"
+    ],
+    "vo": "[B_deepdrop] Is that... water? Down HERE? Why is everyone carrying the eggs UP?",
+    "dur": 7.42,
+    "sheet": "/project/episodes/ep3/_qa/34_deepdrop.png"
+  },
+  {
+    "id": "35_nexttime",
+    "voice": "narrator",
+    "note": null,
+    "srcs": [
+      "CARD"
+    ],
+    "vo": "(no VO \u2014 visual beat)",
+    "dur": 3.0,
+    "sheet": "/project/episodes/ep3/_qa/35_nexttime.png"
+  },
+  {
+    "id": "36_outro",
+    "voice": "narrator",
+    "note": null,
+    "srcs": [
+      "support/city_2.png",
+      "support/city_1.png"
+    ],
+    "vo": "[N_outro] And deep under the sand, cool water is stirring in the dark -- the cove's biggest secret runs deeper than anyone ever dug.  Sleep snug, little friends.",
+    "dur": 12.62,
+    "sheet": "/project/episodes/ep3/_qa/36_outro.png"
+  }
+]

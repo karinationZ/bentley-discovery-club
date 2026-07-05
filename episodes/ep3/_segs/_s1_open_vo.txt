@@ -1,0 +1,3 @@
+file '/project/episodes/ep3/vo/B_hook1.mp3'
+file '/project/episodes/ep3/vo/N_intro.mp3'
+file '/project/episodes/ep3/vo/B_findline.mp3'
