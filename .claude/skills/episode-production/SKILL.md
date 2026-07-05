@@ -24,11 +24,11 @@ phase). Write the script there; produce it here.
 everywhere else.* Premium animation for character moments, cheap tools for supporting footage, reuse
 approved assets whenever possible — without sliding back into a disconnected montage.
 
-> **📕 THE PRODUCTION PLAYBOOK** — `references/PRODUCTION_PLAYBOOK.md` (in THIS skill; v1.1, from the EP3
+> **📕 THE PRODUCTION PLAYBOOK** — `references/PRODUCTION_PLAYBOOK.md` (in THIS skill; v1.2, from the EP3
 > post-mortem) is the full operating manual: story workflow with owner gates, animation stage order + QC
 > gates, composition/consistency/lip-sync/transition procedure, the QA scan suite, the EP3 hall-of-shame,
 > and the hard constraints (C1–C10). **Read it at the start of every episode and at every post-mortem.**
-> Hierarchy (one normative chain, no parallel sources): 10 Mandatory Rules (owner law, §0.0) → this
+> Hierarchy (one normative chain, no parallel sources): 11 Mandatory Rules (owner law, §0.0) → this
 > SKILL.md (enforcement) → the playbook (procedure & history). Update them together, from ONE session at
 > a time (two parallel sessions editing the chain is how contradictions are born), and bump the playbook
 > version line on every owner-law change. **✋ gate passes are RECORDED in `episodes/<ep>/GATES.md`** —
@@ -36,9 +36,9 @@ approved assets whenever possible — without sliding back into a disconnected m
 
 ---
 
-## 0.0 THE 10 MANDATORY PRODUCTION RULES  *(OWNER LAW — 2026-07-03; governs everything below)*
+## 0.0 THE 11 MANDATORY PRODUCTION RULES  *(OWNER LAW — 2026-07-03; Rule 11 added 2026-07-05; governs everything below)*
 
-**Requirements, not suggestions.** Every episode is reviewed against all ten before it is approved for
+**Requirements, not suggestions.** Every episode is reviewed against all eleven before it is approved for
 release — this is a HARD GATE in §9. They consolidate and elevate the laws already in this skill; where a
 rule points to a section, that section holds the mechanics.
 
@@ -72,6 +72,14 @@ rule points to a section, that section holds the mechanics.
 10. **Think like an animator, not an editor.** Ask "what is the best animated SCENE that tells this part of
    the story?" — not "which clip next?". Scenes must feel alive and cinematic, naturally supporting the
    narration (Bentley, Marco, or narrator). → §0, §8.
+11. **Incremental production — NEVER large batches.** *(owner law 2026-07-05 — the EP4 mis-styled 36-image
+   batch: one systematic error × the batch size = 720 cr wasted.)* Applies to BOTH initial shot/keyframe
+   generation AND animation renders. Work in SMALL LOGICAL GROUPS: generate a group → review carefully →
+   QA against the production standards → **✋ owner review & approval** → fix → obtain quality approval →
+   ONLY THEN the next group. Never generate dozens of shots or animate a whole episode in one batch; for
+   animation, animate a small section, verify lip-sync / character consistency / transitions / story flow,
+   then continue. **Every stage has a QUALITY GATE before additional tokens are spent.** Objective: catch
+   issues early, prevent regressions, reduce token waste. → §1 (wave mechanics), §10.
 
 **Final standard:** every episode feels like ONE continuous adventure; the viewer remembers the character
 bond, the environment, the discovery, and the feeling — and NEVER notices the editing, a character
@@ -207,6 +215,13 @@ challenge each shot against the gate above.
 - **Reroll escalation ladder** (drift that survives 2 rerolls is a DESIGN problem, not a dice problem):
   reroll (≤2) → **RESTAGE** the beat (different angle/distance/staging, mouth hidden) → **downgrade**
   to reuse/still/card → **flag to the owner**. Never keep rerolling the same shot.
+- **⚖️ INCREMENTAL WAVES (Rule 11 mechanics — owner law 2026-07-05):** batching has NO price discount
+  (KIE charges per render); a batch only multiplies a systematic error by its size. Keyframes AND
+  renders proceed in waves: **a small VALIDATION WAVE first** (~1–3 items spanning the risk classes —
+  highest-drift two-shot · solo hero · environment) → **✋ owner reviews** → then small logical groups
+  (~4–8), each ending in QC + **✋ owner approval recorded in GATES.md** before the next wave spends
+  anything. A whole-episode single batch is FORBIDDEN at every stage — generation, animation, and bulk
+  fix passes alike.
 - **Pre-flight credit estimate (part of the Animatic Lock sign-off):** compute
   `BRIDGE count × 70cr × 1.15 (reroll reserve)` and put the number in front of the owner WITH the
   animatic. **No approved estimate = no render spend.**
@@ -214,6 +229,36 @@ challenge each shot against the gate above.
   non-hero beats" assumption is calibrated on EP2's library and does NOT hold by default. Expect a
   higher BRIDGE count, compute the estimate honestly, and lean harder on stills/Ken-Burns/cards for
   the non-hero remainder.
+
+---
+
+## 1b. THE FIX-FIRST LAW  *(owner law 2026-07-05 — repair programmatically before regenerating)*
+
+**When ANY recurring defect is detected — at keyframe QC, render QC, or final QA — walk this ladder
+from the top. Regeneration is the LAST resort, never the default.** Full inventory + the
+proposed-tool roadmap: [FIX_FIRST_TOOLKIT_PLAN.md](../../../docs/guides/FIX_FIRST_TOOLKIT_PLAN.md).
+
+1. **Edit layer (0 cr):** timing/freeze/loop/coverage defects are EDL math, not renders —
+   `python -m bentley.qa.edl_lint <shotlist>` (the freeze-push math mechanized: VO-vs-picture,
+   ≤1.3× retime, same-clip back-to-back, missing media; exit-code gate — run at EDL time AND after
+   every clip swap) · `python -m bentley.fix.tail_trim scan|trim <clip>` (frozen Kling tails, C7)
+   · assembler/mix/grade for transitions, levels, the measured final-cut sharpen pass.
+2. **Local pixel layer (0 cr):** color-class defects on stills or video ROIs —
+   `python -m bentley.fix.magic_wand preview|fix|auto|fixvid` (white paws/socks recolored from an
+   in-shot coat sample). Discipline: PREVIEW the mask first; the fixed frame re-passes the SAME QC
+   gate it failed (paw-zoom etc.) — an unverified fix is not a fix.
+3. **Surgical AI edit (~2–4 cr):** anatomy-level drift on an otherwise-approved frame (too-long
+   tail, googly eyes, mangled prop) — `python -m bentley.fix.kontext_edit IMG --prompt "Fix ONLY …"`
+   (FLUX Kontext minimal change, the locked method for changing an approved shot; NEVER regenerate
+   from masters — that drifts the style) or the nano-banana-edit paw pass (playbook §3.2 4b).
+4. **Re-render (70 cr, LAST resort):** only for the regen-only classes below, or when tiers 1–3
+   verifiably can't own the defect; the §1 reroll cap (≤2) + escalation ladder apply unchanged.
+
+**Regen-only classes — do NOT patch these (straight to tier 4 / restage):** jitter (deshake
+measured worse), identity drift across shots, anatomy/pose/human-teeth in VIDEO, any mouth-region
+video compositing (the lip-sync method table is CLOSED), keyframe softness (owner law: reject +
+regenerate). A fixed asset ships like any other: fresh filename, absolute path, recorded gate.
+Bulk fix passes run in Rule 11 waves — never a whole-episode fix batch.
 
 ---
 
@@ -361,13 +406,14 @@ Full canon: `.claude/skills/cinematic-episode-writer/references/bentley-canon.md
 > same day. **Gate ledger:** before trusting any "already approved" claim, check
 > `episodes/<ep>/GATES.md` — every ✋ gate pass is recorded there; an unrecorded gate is an UNPASSED gate.
 
-**§0.0 TEN-RULE GATE (owner law — CHECK FIRST, ship-blocking).** Walk the finished cut against ALL TEN
-mandatory rules in §0.0 and confirm each passes: (1) action carries every beat, not talking heads · (2)
-Bentley talking shots from the approved master prop only · (3) every shot compared to the master, no
+**§0.0 ELEVEN-RULE GATE (owner law — CHECK FIRST, ship-blocking).** Walk the finished cut against ALL
+ELEVEN mandatory rules in §0.0 and confirm each passes: (1) action carries every beat, not talking heads ·
+(2) Bentley talking shots from the approved master prop only · (3) every shot compared to the master, no
 drift · (4) no CU parade — medium/wide default · (5) one continuous scene per beat · (6) invisible
 transitions · (7) Bentley identical throughout · (8) story + Animatic Lock done before any render · (9)
-only the speaker's mouth moves in a two-shot · (10) scenes feel animated, not clip-stitched. Any rule
-failing = **not approved for release.**
+only the speaker's mouth moves in a two-shot · (10) scenes feel animated, not clip-stitched · (11)
+production ran in incremental gated waves — validation wave + ✋ owner checkpoint per group, recorded in
+GATES.md, no un-gated batch. Any rule failing = **not approved for release.**
 
 **Continuity / sections (§0 — CHECK FIRST, ship-blocking)**
 - [ ] Cut sentence-by-sentence? **FAIL.** Each logical section is ONE continuous scene, not 3–5 stitched
@@ -401,13 +447,16 @@ failing = **not approved for release.**
 **Cost**
 - [ ] Every Kling shot passes the §1 gate; supporting footage used reuse/stills/cards; credit spend
       logged. Anything that didn't need Kling and used it → flag for next time.
+- [ ] Every repaired defect walked the §1b fix-first ladder (internal tool first, regen last);
+      every local fix re-passed the QC gate it had failed.
 
 **Animatic Lock** *(pre-render gate — run on the step-10.4 scratch BEFORE any Kling spend)*
 - [ ] Every recorded VO line present and **in script order**, none dropped (audio-only pass; full new + reused reel).
 - [ ] Every line over its **correct speaker** — reliable on real footage; **label-only/weak on gray cards** → flag for §10 step 5.
 - [ ] Watched **muted**: every cut answers the previous beat; no dip-to-black; no same-clip back-to-back.
 - [ ] The causal hinge is **shown** by a real bridge placeholder, not narrated over a gap.
-- [ ] Measured runtime on target; no VO outlasts its beat; no >1.3× stretch.
+- [ ] Measured runtime on target; no VO outlasts its beat; no >1.3× stretch — mechanical:
+      `python -m bentley.qa.edl_lint <shotlist>` passes (re-run it after every later clip swap).
 - [ ] Catchphrase is Bentley at the turn; no dark lines; bonding beat + cliffhanger **present and placed** (not whether they "land").
 - [ ] Reads as **one story, not a montage**.
 - [ ] **Shot-scale ratios measured** (§5a): every EDL piece carries a `scale` tag and

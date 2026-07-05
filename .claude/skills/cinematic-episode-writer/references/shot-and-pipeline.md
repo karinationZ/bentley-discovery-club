@@ -1,6 +1,6 @@
 # Cinematography + AI-Pipeline Rules + Output Formats
 
-> **Governed by the single normative chain** — the 10 Mandatory Rules (`episode-production` §0.0) →
+> **Governed by the single normative chain** — the 11 Mandatory Rules (`episode-production` §0.0) →
 > `episode-production/SKILL.md` → its `references/PRODUCTION_PLAYBOOK.md` (+ the `lipsync-pro` skill for
 > sync methods). This file is the WRITER's cinematography guide; where it and the chain differ, **the
 > chain wins** — update this file the same day the chain changes.

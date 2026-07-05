@@ -14,8 +14,9 @@ description: >-
 
 # Cinematic Episode Writer — Bentley's Big Adventures
 
-> **Write FOR the 10 mandatory production rules** (owner law, 2026-07-03; full text in
-> `episode-production` §0.0). Five are decided here, on the page, before any render:
+> **Write FOR the 11 mandatory production rules** (owner law, 2026-07-03; Rule 11 incremental-production
+> added 2026-07-05; full text in `episode-production` §0.0). Five are decided here, on the page, before
+> any render:
 > **#1 action over dialogue** — design beats where characters *do* things and the world moves under the
 > VO, never a talking head carrying a beat; **#4 few close-ups** — stage medium/wide two-shots, reserve a
 > CU for one real emotional beat; **#5 one cohesive scene per story beat** — group the script into
