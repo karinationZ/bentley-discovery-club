@@ -242,11 +242,22 @@ proposed-tool roadmap: [FIX_FIRST_TOOLKIT_PLAN.md](../../../docs/guides/FIX_FIRS
    `python -m bentley.qa.edl_lint <shotlist>` (the freeze-push math mechanized: VO-vs-picture,
    ≤1.3× retime, same-clip back-to-back, missing media; exit-code gate — run at EDL time AND after
    every clip swap) · `python -m bentley.fix.tail_trim scan|trim <clip>` (frozen Kling tails, C7)
-   · assembler/mix/grade for transitions, levels, the measured final-cut sharpen pass.
-2. **Local pixel layer (0 cr):** color-class defects on stills or video ROIs —
-   `python -m bentley.fix.magic_wand preview|fix|auto|fixvid` (white paws/socks recolored from an
-   in-shot coat sample). Discipline: PREVIEW the mask first; the fixed frame re-passes the SAME QC
-   gate it failed (paw-zoom etc.) — an unverified fix is not a fix.
+   · `python -m bentley.fix.shot_match scan|fix` (conform a drifted clip's color/luma to a scene
+   reference; `--luma-only` = the Kling-Avatar darkening lift — always `scan` first) ·
+   assembler/mix/grade for transitions, levels, the measured final-cut sharpen pass.
+   *(Detection side: `python -m bentley.qa.scan_suite <final.mp4>` = the whole Part 8.1 scan set —
+   freeze/black/sharpness/jitter/streams — in one exit-coded command.)*
+2. **Local pixel layer (0 cr):** deterministic pixel repair, nothing outside the selection —
+   `python -m bentley.fix.magic_wand preview|fix|auto|fixvid` (white paws/socks, in-shot coat
+   sample) · `python -m bentley.fix.recolor` (ANY other canon-color drift — collar→teal, tag→gold,
+   eyes→brown, guest palettes; target sampled from the LOCKED master via `--to-ref/--to-xy`) ·
+   `python -m bentley.fix.tail_dock` (too-long tail on a STILL against clean background — inpaint;
+   body-crossing/cluttered = tier 3) · `python -m bentley.fix.plate_match` (keyframe background
+   conformed to the scene-anchor plate, characters `--protect`-ed) · `python -m
+   bentley.fix.prop_paste` (missing/mangled Listening Tag/shells composited from the locked
+   cutout). Discipline: PREVIEW/scan the selection first; the fixed frame re-passes the SAME QC
+   gate it failed (paw-zoom etc.) — an unverified fix is not a fix; first use on a NEW defect
+   class gets an eyes-on zoomed side-by-side vs the master (wand_lab law).
 3. **Surgical AI edit (~2–4 cr):** anatomy-level drift on an otherwise-approved frame (too-long
    tail, googly eyes, mangled prop) — `python -m bentley.fix.kontext_edit IMG --prompt "Fix ONLY …"`
    (FLUX Kontext minimal change, the locked method for changing an approved shot; NEVER regenerate

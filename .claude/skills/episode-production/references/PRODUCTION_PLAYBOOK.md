@@ -2,8 +2,9 @@
 
 **Version 1.3 · 2026-07-05 · v1.3 = THE FIX-FIRST LAW (owner-directed 2026-07-05): every recurring
 defect is checked against an internal fix tool BEFORE any regeneration — regen is the LAST resort.
-Ladder + inventory: SKILL §1b + `docs/guides/FIX_FIRST_TOOLKIT_PLAN.md`; built zero-token tools
-`bentley/fix/magic_wand.py` · `bentley/fix/tail_trim.py` · `bentley/qa/edl_lint.py`, surgical-edit
+Ladder + inventory: SKILL §1b + `docs/guides/FIX_FIRST_TOOLKIT_PLAN.md`; FULL toolkit built &
+✋-approved 2026-07-05 — zero-token: `bentley/fix/{magic_wand,recolor,tail_dock,tail_trim,
+shot_match,plate_match,prop_paste}.py` + `bentley/qa/{edl_lint,scan_suite}.py`; surgical-edit
 tier `bentley/fix/kontext_edit.py` (FLUX Kontext, productionized from the s10a eye fix). ·
 v1.2 = RULE 11: incremental production, never large batches (owner law
 after the EP4 mis-styled 36-image keyframe batch — 720 cr lost to ONE systematic error × batch size);
@@ -352,6 +353,10 @@ against ANATOMY (is the mouth where the mouth IS in this pose?), not overlay pla
 and how-to. If they ever diverge, §9 wins and the divergence is a chain defect to fix the same day.)*
 
 ### 8.1 Automated scans (scripted, objective)
+> **ONE command since 2026-07-05:** `python -m bentley.qa.scan_suite <final.mp4>` runs the
+> freeze / black-frame / sharpness / jitter / stream scans below with pass-fail exit codes and
+> timestamps (leading black = FAIL per the no-opening-fade rule; trailing black = the one closing
+> fade, OK). Stop rewriting per-episode scratch scan scripts.
 - [ ] **Freeze scan** — 24fps frame-diff over the FULL runtime; any <0.35-diff run ≥0.2s = investigate/fix.
 - [ ] **Black-frame scan** — no interior black (only the closing fade).
 - [ ] **Sharpness sweep** — edge-var per scene; flag any scene ≪ its neighbors (soft render / over-stretch).
@@ -441,20 +446,24 @@ and how-to. If they ever diverge, §9 wins and the divergence is a chain defect 
   multiplies a systematic error by the batch size. Worst-case loss = one wave, never the episode.
 - **Fix at the cheapest layer that owns the defect — now OWNER LAW as the FIX-FIRST ladder (SKILL
   §1b, 2026-07-05; inventory + roadmap in `docs/guides/FIX_FIRST_TOOLKIT_PLAN.md`):**
-  tier 1 edit layer (free: `edl_lint` math, `tail_trim`, assembler/mix/grade) → tier 2 local pixel
-  (free: `magic_wand` recolor, preview-first) → tier 3 surgical AI edit (~2–4cr: `kontext_edit`
-  FLUX Kontext minimal change / nano-banana-edit paw pass) → tier 4 re-render (70cr, LAST resort,
-  reroll cap unchanged). Regen-only classes skip straight to tier 4: jitter, identity drift,
-  video anatomy/teeth, mouth compositing (closed table), keyframe softness. Every fix re-passes
-  the QC gate it failed; NEVER re-render to fix an edit problem.
+  tier 1 edit layer (free: `edl_lint` math, `tail_trim`, `shot_match` conform/Avatar-lift,
+  assembler/mix/grade) → tier 2 local pixel (free, preview-first: `magic_wand` paws, `recolor`
+  any canon color, `tail_dock` still-tail inpaint, `plate_match` background conform, `prop_paste`
+  locked-prop composite) → tier 3 surgical AI edit (~2–4cr: `kontext_edit` FLUX Kontext minimal
+  change / nano-banana-edit paw pass) → tier 4 re-render (70cr, LAST resort, reroll cap
+  unchanged). Detection: `bentley/qa/scan_suite.py` (Part 8.1 in one command). Regen-only classes
+  skip straight to tier 4: jitter, identity drift, video anatomy/teeth, mouth compositing (closed
+  table), keyframe softness. Every fix re-passes the QC gate it failed; first use on a NEW defect
+  class = eyes-on zoomed vs the master (wand_lab law); NEVER re-render to fix an edit problem.
 - **Batch your fixes:** collect a full defect list, fix in one rebuild cycle, one QA pass — not one
   rebuild per note.
 - **Token discipline:** don't re-research settled decisions (they're in the skills/memory/vault); don't
   rebuild dead ends (Part 6 banned list); reuse the proven scripts instead of writing new ones per
   episode. **Canonical paths** — productionized (episode-agnostic): `bentley/qa/mouthmotion.py`,
   `bentley/qa/qa_vo.py`, `bentley/qa/shot_ratios.py`, `bentley/qa/edl_lint.py`,
-  `bentley/voices/best_of.py`, `bentley/qa/verify_sync.py`, `bentley/episode_builder/animatic.py`,
-  `bentley/fix/magic_wand.py`, `bentley/fix/tail_trim.py`, `bentley/fix/kontext_edit.py`. Per-episode patterns to copy
+  `bentley/qa/scan_suite.py`, `bentley/voices/best_of.py`, `bentley/qa/verify_sync.py`,
+  `bentley/episode_builder/animatic.py`, and the fix package: `bentley/fix/{magic_wand,recolor,
+  tail_dock,tail_trim,shot_match,plate_match,prop_paste,kontext_edit,color_transfer}.py`. Per-episode patterns to copy
   and adapt: `episodes/ep3/build_sections.py`, `episodes/ep3/assemble_v2.py`, `episodes/ep3/mix_ep3.py`.
   ⚠️ The `assemble_v2.py` in `deprecated/episode1_scripts/` is STALE — never grab it by filename search.
 

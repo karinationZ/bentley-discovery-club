@@ -10,46 +10,40 @@ in `scratch/ep4/wand_lab/`).
 
 | Tier | Cost | Layer | Tools |
 |---|---|---|---|
-| 1 | 0 cr | **Edit layer** — EDL math, trims, retimes, transitions, sharpen/grade in ffmpeg | `bentley/qa/edl_lint.py` · `bentley/fix/tail_trim.py` · assembler/mix/grade |
-| 2 | 0 cr | **Local pixel layer** — deterministic recolor/patch, nothing outside the selection | `bentley/fix/magic_wand.py` (+ proposed tools below) |
+| 1 | 0 cr | **Edit layer** — EDL math, trims, conforms, transitions, sharpen/grade in ffmpeg | `bentley/qa/edl_lint.py` · `bentley/fix/tail_trim.py` · `bentley/fix/shot_match.py` (1.5) · assembler/mix/grade |
+| 2 | 0 cr | **Local pixel layer** — deterministic recolor/patch/fill, nothing outside the selection | `bentley/fix/magic_wand.py` · `recolor.py` · `tail_dock.py` · `plate_match.py` · `prop_paste.py` |
 | 3 | ~2–4 cr | **Surgical AI edit** — minimal-change edit of the otherwise-approved frame | `bentley/fix/kontext_edit.py` (FLUX Kontext) · nano-banana-edit paw pass (playbook §3.2 4b) |
 | 4 | 70 cr | **Re-render** — LAST resort; reroll cap ≤2 → restage → downgrade → owner | Kling 3.0 from the clean keyframe + locked elements |
+
+(QA companion: `bentley/qa/scan_suite.py` — the Part 8.1 scans in one command; it finds the
+defects the ladder then fixes.)
 
 Discipline at every tier: **preview/measure → fix → re-run the SAME QC gate the asset failed.**
 An unverified fix is not a fix. Bulk fix passes obey Rule 11 waves like any other stage.
 
-## BUILT — production tools (tested, `tests/test_*.py`)
+## BUILT — production tools (tested, `tests/test_*.py`; ✋ owner approved the full set 2026-07-05)
 
-| Tool | Defect it owns | Notes |
-|---|---|---|
-| `bentley/fix/magic_wand.py` | **White paws / white socks / color drift** on stills AND video ROIs | Edge-aware in-shot recolor; preview-first; coat sample validated. The template for all tier-2 tools. |
-| `bentley/fix/tail_trim.py` | **Frozen Kling tail** (C7) — every render holds its last frame | `scan` (QC gate, exit-code) / `trim` (cut at last moving frame, fresh filename). Refuses fully-static clips (that's a §5 defect). |
-| `bentley/qa/edl_lint.py` | **Freeze-stretch / VO-outlasts-picture / >1.3× retime / same-clip back-to-back / missing media** | The freeze-push math (`wants/clip/push=0.00`) mechanized; run at EDL time AND after every clip swap. Exit-code gate. |
-| `bentley/fix/kontext_edit.py` | **Anatomy-level drift on an approved frame** — too-long tail, googly eyes, mangled prop | Tier 3 (SPENDS ~2–4 cr). Productionizes the proven s10a eye-fix pattern; minimal-change prompt; never regenerate from masters. |
+| Tool | Tier | Defect it owns | Notes |
+|---|---|---|---|
+| `bentley/fix/magic_wand.py` | 2 | **White paws / socks** on stills AND video ROIs | Edge-aware in-shot recolor; preview-first; coat sample validated. Bake-off-proven (`scratch/ep4/wand_lab/`). |
+| `bentley/fix/recolor.py` | 2 | **Any other canon-color drift** — collar off teal, tag off gold, eyes off brown, guest palettes | magic_wand's engine generalized; target sampled from the LOCKED master (`--to-ref/--to-xy`) so fixes converge on canon. Smoke-verified on a real 2K EP4 keyframe. |
+| `bentley/fix/tail_dock.py` | 2 | **Too-long/hairy tail on a STILL vs clean background** | Edge-aware select + multiscale diffusion inpaint + matched grain; `--keep` protects the stub; WARNs on textured background (→ tier 3). Body-crossing tails are NEVER its job. |
+| `bentley/fix/tail_trim.py` | 1 | **Frozen Kling tail** (C7) | `scan` (exit-code QC gate) / `trim` (cut at last moving frame, fresh filename). Refuses fully-static clips (that's a §5 defect). |
+| `bentley/fix/shot_match.py` | 1.5 | **Grade inconsistent across shots · Kling-Avatar darkening** | Reinhard LAB stats conform of a clip to a scene ref (`--luma-only` = the Avatar lift). `scan` first: a huge delta means the shot is WRONG, not mis-graded. |
+| `bentley/fix/plate_match.py` | 2 | **Background drift between adjacent keyframes of one scene** | Conform keyframe bg stats to the LOCKED scene-anchor plate; `--protect` boxes keep characters byte-identical. |
+| `bentley/fix/prop_paste.py` | 2 | **Missing/mangled canon prop** (Listening Tag, shells) | Composite from the prop's locked RGBA cutout; `--match-light`; video only on locked-camera static ROIs. Perspective/occlusion = tier 3. |
+| `bentley/qa/edl_lint.py` | 1 | **Freeze-stretch / VO-outlasts-picture / >1.3× retime / same-clip back-to-back / missing media** | The freeze-push math (`wants/clip/push=0.00`) mechanized; run at EDL time AND after every clip swap. Exit-code gate. |
+| `bentley/qa/scan_suite.py` | QA | **Part 8.1 scans in one command** — freeze, black (leading=FAIL, trailing=OK), sharpness sweep, jitter, streams | Streaming, native fps; verified on the real EP4 animatic (every card correctly flagged as a freeze). Stops the per-episode rewrite of scratch scan scripts. |
+| `bentley/fix/kontext_edit.py` | 3 | **Anatomy-level drift on an approved frame** — too-long tail (cluttered bg), googly eyes, warped prop | SPENDS ~2–4 cr. Productionizes the proven s10a eye-fix pattern; minimal-change prompt; never regenerate from masters. |
 
-## PROPOSED — need ✋ owner approval + a wand_lab-style bake-off before build
+Shared core: `bentley/fix/color_transfer.py` (CIELAB Reinhard transfer, clipped gains — used by
+shot_match / plate_match / prop_paste's `--match-light`).
 
-Each of these must be scored on REAL drifted assets (the magic_wand precedent: 3 algorithms,
-scored collateral, winner promoted) — never trusted from a synthetic demo.
-
-1. **`magic_wand` recolor generalization** (tier 2, high value): arbitrary canon-color targets, not
-   just white→fawn — drifted collar→**teal**, tag→**gold**, eyes→**brown**, Marco's golden-amber,
-   Indi's purple. Target sampled from the LOCKED master (`--ref Master.png --ref-xy`) instead of
-   in-shot. Owns most "minor character consistency" color defects at 0 cr.
-2. **`tail_dock`** (tier 2): too-long/hairy tail on a STILL where the tail sits against clean
-   background — box + background inpaint + stub. Honest limit: body-crossing/cluttered tails stay
-   tier 3 (`kontext_edit`, today's sanctioned route) or regen.
-3. **`shot_match`** (tier 1½): conform a drifted clip's color/luma to a scene reference clip (LAB
-   transfer → ffmpeg LUT). Owns "grade inconsistent across shots" QA fails and the known
-   **Kling-Avatar darkening** (measure the luma delta vs the source keyframe, auto-lift).
-4. **`plate_match`** (tier 2): background consistency — conform a keyframe's background to the
-   episode's scene-anchor plate (masked histogram/LAB transfer), for adjacent keyframes of the same
-   scene that drifted in sky/light color.
-5. **`prop_paste`** (tier 2): composite a LOCKED prop master (Listening Tag, collar, shells) onto a
-   still where the prop is missing/mangled; video only on locked-camera static ROIs.
-6. **`bentley/qa/scan_suite.py`** (QA, big token saver): ONE command for the playbook Part 8.1
-   scans — freeze scan (full runtime), black-frame scan, sharpness sweep (edge-var per scene),
-   jitter check, stream checks — instead of re-writing scratch scan scripts every episode.
+**FIRST-USE VALIDATION (wand_lab law, still binding):** the pixel tools shipped with synthetic +
+real-asset smoke checks, not a full scored bake-off per defect class. The FIRST production use of
+each tool on a NEW defect class runs eyes-on: preview/scan → fix → zoomed side-by-side vs the
+master → only then does the fix enter the cut. Any visible seam/miss on a real asset = stop, file
+the case in `scratch/<ep>/wand_lab/`-style scoring, tune before second use.
 
 ## REGEN-ONLY — do NOT build fixers for these (owner law / proven dead ends)
 
