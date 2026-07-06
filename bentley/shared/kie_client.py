@@ -1,17 +1,26 @@
 #!/usr/bin/env python3
 """Minimal kie.ai jobs client — createTask + poll recordInfo. Returns result URLs + credits + secs.
-Auth: KIE_KEY env. Models: google/nano-banana, google/nano-banana-edit, kling-2.6/image-to-video.
-Video models are gated by bentley/shared/gates.py (Animatic Lock spend guard) — see its docstring."""
+Auth: KIE_KEY env. Models: google/nano-banana, google/nano-banana-edit, kling-3.0/video (legacy kling-2.6).
+Two mechanical guards fire before any spend: gates.py (Animatic-Lock spend guard — video needs a PASSED
+gate) and drift_guard.py (character video must last-frame-pin, drift lever #3). See their docstrings."""
 import os, json, time, urllib.request
 KEY = os.environ["KIE_KEY"]
 BASE = "https://api.kie.ai/api/v1/jobs"
 
-try:
-    from bentley.shared import gates as _gates
-except ImportError:  # loaded standalone (importlib spec pattern used by scratch scripts)
-    import importlib.util as _ilu
-    _s = _ilu.spec_from_file_location("_gates", os.path.join(os.path.dirname(__file__), "gates.py"))
-    _gates = _ilu.module_from_spec(_s); _s.loader.exec_module(_gates)
+
+def _load(name):
+    """Import a bentley.shared sibling, tolerating the standalone importlib pattern scratch scripts use."""
+    try:
+        import importlib
+        return importlib.import_module(f"bentley.shared.{name}")
+    except ImportError:
+        import importlib.util as _ilu
+        s = _ilu.spec_from_file_location(f"_{name}", os.path.join(os.path.dirname(__file__), f"{name}.py"))
+        m = _ilu.module_from_spec(s); s.loader.exec_module(m); return m
+
+
+_gates = _load("gates")
+_drift = _load("drift_guard")
 
 def _post(path, body):
     req = urllib.request.Request(f"{BASE}/{path}", data=json.dumps(body).encode(),
@@ -23,7 +32,8 @@ def _get(path):
     return json.load(urllib.request.urlopen(req))
 
 def run(model, inp, timeout=600, poll=5):
-    _gates.assert_spend_allowed(model)  # video renders require a PASSED Animatic Lock (gates.py)
+    _gates.assert_spend_allowed(model)   # video renders require a PASSED Animatic Lock (gates.py)
+    _drift.assert_pin_ok(model, inp)     # character video must last-frame-pin (drift_guard.py, lever #3)
     r = _post("createTask", {"model": model, "input": inp})
     if r.get("code") != 200 or not r.get("data"):
         raise RuntimeError(f"kie createTask rejected ({r.get('code')}): {r.get('msg')}")

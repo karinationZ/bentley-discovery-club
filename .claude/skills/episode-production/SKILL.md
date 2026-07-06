@@ -313,6 +313,35 @@ Full canon: `.claude/skills/cinematic-episode-writer/references/bentley-canon.md
   candidates are cheap; renders are not — see §1 budget discipline for the render-side cap.)
 - Two-characters-in-one-frame is the **highest drift risk**; prefer already-approved footage for those.
 
+### 3a. THE DRIFT-REDUCTION STACK  *(⚖️ the #1 problem — stack ALL of these; no single one is enough)*
+Drift is a STRUCTURAL limit of prompt-conditioned generation, not a prompt bug — these levers shrink and
+hide it (realistic ceiling ~85–95% on-model), they don't eliminate it. A true fix (trained LoRA / 3D rig)
+means leaving KIE's closed models — owner has chosen not to. So stack every lever below, cheapest-first:
+1. **Never generate a character keyframe blind.** Always EDIT from the locked master with reference
+   pixels — `nano-banana-edit` / `nano-banana-pro` (refs in `image_urls`/`image_input`), NEVER base
+   `google/nano-banana` (text-to-image, no reference = identity generated blind). "Minimal change" wording.
+2. **Best-of, because there is NO seed** (confirmed absent on Kling + nano-banana). Generate ≥3–4
+   keyframe candidates and rank them MEASURED, not by eye: `python -m bentley.qa.image_bestof --ref
+   <master> cand...` scores palette-match to the DNA + flags white-paws (validated: its top pick = the
+   owner's hand-pick on EP4 s8). Owner still approves; the tool kills off-model frames before they lock.
+3. **i2v only, on Kling 3.0 + the `@Bentley` element** (`kling_elements` = master + turnaround) — never
+   text-to-video for a character. This is the strongest identity lever KIE exposes. (Already standard.)
+4. **PIN THE LAST FRAME TOO** (drift lever #3) — pass a second on-model end keyframe so the clip can't
+   finish off-model. **MECHANICALLY ENFORCED (2026-07-06):** `bentley/shared/drift_guard.py` (wired into
+   `kie_client.run`, like the Animatic-Lock spend guard) REFUSES any character video render — a Kling
+   video call carrying a `kling_elements` Bentley element — that is not last-frame-pinned, unless you set
+   `BENTLEY_PIN_OVERRIDE="<reason>"` for a deliberate big-motion first-frame-only beat. **The sanctioned
+   render path is `bentley.shared.render.render_shot(prompt, candidates=[...], ref=MASTER, last_frame=…,
+   out=…)`** — it bakes in best-of (#4) + last-frame pin (#3) + the Bentley element so the levers can't be
+   forgotten. Hand-built payloads via `bentley.shared.kling.i2v_payload(…, last_url=…)` also satisfy the
+   guard. Single-shot only; keep start/end poses CLOSE.
+5. **Chain** the next shot's first frame from the previous shot's QC'd LAST frame (re-anchor to the true
+   master, never to a drifting frame — chaining propagates drift too).
+6. **Stage around the weak spots** (§5): tuck paws out of frame (kills white/red-paw drift outright),
+   short calm clips (drift grows with length + motion), tail-trim the end.
+7. **Patch residual color drift free** with the fix-first tools (§1b) — never re-render for a paw tint.
+8. **Reuse** approved footage (a shot you don't generate can't drift); character-free plates animate freely.
+
 ---
 
 ## 4. MASTER PROP RULES

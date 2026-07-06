@@ -229,7 +229,13 @@ ship-blocking**:
 - **Render defaults:** `kling-3.0/video` i2v · `multi_shots: False` · `kling_elements` with the locked
   master + turnaround (**2–4 images required** — 1 image is a 400 error) · prompt ≤ **300 chars** ·
   **"LOCKED STATIC TRIPOD CAMERA"** unless the beat truly needs a move (locked camera measured 3×
-  stabler and sharper than deshaked handheld) · 5s duration (plan sections around it).
+  stabler and sharper than deshaked handheld) · 5s duration (plan sections around it). **Build the payload
+  with `bentley.shared.render.render_shot(prompt, candidates=[...], ref=MASTER, last_frame=…, out=…)`** —
+  the sanctioned path that bakes in best-of (#4) + last-frame pin (#3) + the Bentley element. Last-frame
+  pinning is now **mechanically enforced** (`bentley/shared/drift_guard.py` in `kie_client.run`): a
+  character video render that isn't pinned is REFUSED unless `BENTLEY_PIN_OVERRIDE="<reason>"` is set for a
+  deliberate big-motion beat. Keyframe candidates are ranked measured, not by eye (`bentley.qa.image_bestof`
+  — no seed exists on this stack).
 - **Prompt language laws:** never name a paw color ("paws same color as her coat, no white socks");
   "SHORT DOCKED TAIL STUB"; "mouth closed" for every non-speaking character in frame; motion verbs for
   the speaker's *body* (not mouth) on VO-over shots.
@@ -461,9 +467,10 @@ and how-to. If they ever diverge, §9 wins and the divergence is a chain defect 
   rebuild dead ends (Part 6 banned list); reuse the proven scripts instead of writing new ones per
   episode. **Canonical paths** — productionized (episode-agnostic): `bentley/qa/mouthmotion.py`,
   `bentley/qa/qa_vo.py`, `bentley/qa/shot_ratios.py`, `bentley/qa/edl_lint.py`,
-  `bentley/qa/scan_suite.py`, `bentley/voices/best_of.py`, `bentley/qa/verify_sync.py`,
-  `bentley/episode_builder/animatic.py`, and the fix package: `bentley/fix/{magic_wand,recolor,
-  tail_dock,tail_trim,shot_match,plate_match,prop_paste,kontext_edit,color_transfer}.py`. Per-episode patterns to copy
+  `bentley/qa/scan_suite.py`, `bentley/qa/image_bestof.py` (drift lever #4 — measured keyframe pick),
+  `bentley/voices/best_of.py`, `bentley/qa/verify_sync.py`, `bentley/episode_builder/animatic.py`,
+  `bentley/shared/kling.py` (drift lever #3 — first+last frame i2v payload), and the fix package:
+  `bentley/fix/{magic_wand,recolor,tail_dock,tail_trim,shot_match,plate_match,prop_paste,kontext_edit,color_transfer}.py`. Per-episode patterns to copy
   and adapt: `episodes/ep3/build_sections.py`, `episodes/ep3/assemble_v2.py`, `episodes/ep3/mix_ep3.py`.
   ⚠️ The `assemble_v2.py` in `deprecated/episode1_scripts/` is STALE — never grab it by filename search.
 
