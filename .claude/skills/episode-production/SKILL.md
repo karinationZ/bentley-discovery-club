@@ -29,7 +29,10 @@ approved assets whenever possible — without sliding back into a disconnected m
 > gates, composition/consistency/lip-sync/transition procedure, the QA scan suite, the EP3 hall-of-shame,
 > and the hard constraints (C1–C10). **Read it at the start of every episode and at every post-mortem.**
 > Hierarchy (one normative chain, no parallel sources): 11 Mandatory Rules (owner law, §0.0) → this
-> SKILL.md (enforcement) → the playbook (procedure & history). Update them together, from ONE session at
+> SKILL.md (enforcement) → the playbook (procedure & history) — all EXECUTED through **the production board
+> (§0.0a: `episodes/<ep>/board.json`, human view `BOARD.md`), the single state / "you-are-here" layer the
+> agent reads FIRST (`python -m bentley.board status <ep>`) and updates after every step.** `GATES.md` is now
+> a *derived* view of the board, not a source of truth. Update them together, from ONE session at
 > a time (two parallel sessions editing the chain is how contradictions are born), and bump the playbook
 > version line on every owner-law change. **✋ gate passes are RECORDED in `episodes/<ep>/GATES.md`** —
 > an unrecorded gate is an unpassed gate.
@@ -84,6 +87,56 @@ rule points to a section, that section holds the mechanics.
 **Final standard:** every episode feels like ONE continuous adventure; the viewer remembers the character
 bond, the environment, the discovery, and the feeling — and NEVER notices the editing, a character
 inconsistency, an abrupt cut, reuse, or a lip-sync mistake.
+
+---
+
+## 0.0a THE PRODUCTION BOARD  *(EXECUTION LAYER — READ FIRST; owner requirement 2026-07-07)*
+
+The 11 Rules are the LAW; this board is how you actually FOLLOW them, shot by shot. It is the **execution
+& state layer** that sits *above* everything below — the rules, the playbook, and the mechanical spend
+fuses stay exactly as they are; the board orchestrates them so an agent can't lose the track, re-spend on
+an approval, or batch. **The board is the single source of truth for "where are we, what's approved, what's
+next." Not `GATES.md` (now a derived export), not the chat history — the board.** Full design:
+`docs/guides/PRODUCTION_BOARD_SYSTEM.md`.
+
+**Every episode has a board — two files, one truth:**
+- `episodes/<ep>/board.json` — the machine-readable state (source of truth; mutate ONLY via the CLI).
+- `episodes/<ep>/BOARD.md` — the human-readable "canvas," *rendered from* `board.json`, NEVER hand-edited.
+
+**BEFORE ANY EPISODE ACTION, run:**
+```
+python -m bentley.board status <ep>     # stage · next_action · credit balance · per-shot state counts
+python -m bentley.board next   <ep>     # the ONE next action + the target shot's full card (VO, purpose, action, cards, gate)
+```
+**Act only on `next`.** Do not reconstruct state from prose. If a task isn't the current stage's next action, stop.
+
+**The 7-rule agent protocol (enforced by reading/writing the board):**
+1. **Read `board.json` FIRST, every session.** Single source of truth; never re-derive state from prose.
+2. **Act only on `next_action`** — one shot / one wave at a time (Rule 11). Not the next action → stop.
+3. **Update the board after every step** — the state transition + a `decisions` row + the asset path.
+   *An action not on the board didn't happen.*
+4. **Never touch a `LOCKED` shot.** Owner approval = lock. QC is a **pre-approval gate ONLY.**
+5. **A shot advances state only by passing its gate;** record the gate result on the shot (`--gate …`).
+6. **Reroll ≤2 → RESTAGE → trim/downgrade → flag.** The counter lives on the shot; `board reject` bumps it
+   and **refuses reroll #3** at the cap, forcing a new staged ACTION (§1's ladder).
+7. **Cosmetic ≠ blocking.** Tag each defect `ship_blocking` or `cosmetic`; a cosmetic item gets one 0-cr
+   pass then defers to assembly — it can NEVER gate an owner approval (kills the s7b paw-pixel rabbit hole).
+
+**⚖️ THE LOCKED / QC BOUNDARY (owner law — the single highest-value guardrail):**
+Once a shot is owner-approved it is `LOCKED` = **terminal and immutable**. **No tool — including adversarial
+QC — may reopen, re-render, re-QC, or re-spend on a LOCKED shot** (`board.assert_qc_allowed` raises by
+construction; `lock`/`reject`/`advance` all refuse it). **QC is a PRE-APPROVAL gate only** — it runs on
+`rendered`/`qc` state, before `owner_review`. Any observation about a locked shot is surfaced as **ONE
+advisory line for the owner to decide**, never an autonomous reroll. *(This one rule would have saved the
+~210 cr the EP4 s7b override burned re-QC-ing an already-approved clip.)*
+
+**The per-shot state machine** (forward-only, one step; each transition needs its GATE recorded):
+```
+todo ─▶ keyframe ─▶ kf_approved ─▶ rendered ─▶ qc ─▶ owner_review ─▶ 🔒 LOCKED (terminal, immutable)
+        reject → keyframe (+reroll; cap → RESTAGE)               approve → `board lock` (owner-only)
+```
+The board sits ABOVE the mechanical fuses (`gates.assert_spend_allowed`, `drift_guard.assert_pin_ok` inside
+`kie_client.run`) — never around them; both still fire independently. Tests: `tests/test_board.py`.
 
 ---
 
@@ -512,6 +565,16 @@ GATES.md, no un-gated batch. Any rule failing = **not approved for release.**
 ---
 
 ## 10. THE PRODUCTION WORKFLOW (ordered; don't skip)
+
+> **▶ EVERY STEP RECORDS ITS STATE ON THE BOARD (§0.0a).** Start every session with `python -m bentley.board
+> status <ep>` and act only on `python -m bentley.board next <ep>`. Step 1 runs `board init <ep>`; each stage
+> below calls `board set-stage <ep> <stage>` and logs its owner gate (`board log`). The render loop (step 5)
+> is the state machine per shot: keyframe candidates → `advance <ep> <shot> keyframe`; owner keyframe pick →
+> `advance <ep> <shot> kf_approved --gate "…"`; the ONE render → `advance <ep> <shot> rendered --clip <mp4>`;
+> pre-approval QC → `advance <ep> <shot> qc --gate "…"`; present → `advance <ep> <shot> owner_review`; **✋ owner
+> approval → `lock <ep> <shot> --clip <mp4>`** (terminal, immutable). A drift surviving 2 rerolls →
+> `reject <ep> <shot> --reason "…"` (refuses reroll #3 → RESTAGE). Assembly/QA: `set-stage`, then `board check
+> <ep>` (exit 0) + `board render <ep>`. **An action not on the board didn't happen.**
 1. **Script → SECTIONS (§0)** — produce/approve the script with `cinematic-episode-writer`, then **group
    it into ~8–12 LOGICAL SECTIONS** (spine → sections → VO list → EDL/cue sheet → bridge-shot list). The
    EDL is **section-based, one continuous scene per section — NOT one clip per VO line** (§0). Tag each

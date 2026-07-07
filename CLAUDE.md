@@ -9,6 +9,10 @@ tools (KIE: Kling/nano-banana, ElevenLabs, ffmpeg). Credits are FINITE and real 
   mixing, grading, QA, thumbnails, or spending ANY KIE/ElevenLabs credit — requires the
   **`episode-production` skill loaded FIRST**. This includes tasks that look like trivial file edits:
   a JSON tweak under `episodes/` IS production work.
+- **THE PRODUCTION BOARD is the single source of truth for episode state.** Run
+  `python -m bentley.board status <ep>` FIRST and act only on `python -m bentley.board next <ep>`; update
+  it after every step. Owner-approved shots are LOCKED (immutable — QC never reopens them). Full rules:
+  SKILL.md §0.0a; design: `docs/guides/PRODUCTION_BOARD_SYSTEM.md`. `GATES.md` is now a derived view.
 - Scripts/story → `cinematic-episode-writer` skill. Any talking/lip-sync shot → `lipsync-pro` skill.
   Companion shorts → `companion-short` skill.
 - Owner gates are recorded in `episodes/<ep>/GATES.md` — **an unrecorded gate is an UNPASSED gate.**
@@ -27,8 +31,9 @@ tools (KIE: Kling/nano-banana, ElevenLabs, ffmpeg). Credits are FINITE and real 
 
 ## Layout & running things
 
-- `bentley/` — the package: `shared/` (KIE/ElevenLabs clients, gates), `qa/` (mouthmotion, qa_vo,
-  shot_ratios, verify_sync), `episode_builder/` (animatic, shorts), `voices/`, `character_framework/`
+- `bentley/` — the package: `board/` (the production board — state machine + CLI, read FIRST), `shared/`
+  (KIE/ElevenLabs clients, gates), `qa/` (mouthmotion, qa_vo, shot_ratios, verify_sync), `episode_builder/`
+  (animatic, shorts), `fix/` (fix-first tools), `voices/`, `character_framework/`
 - `episodes/ep<N>/` — per-episode EDLs, GATES.md ledger, VO, builds · `assets/` — locked masters +
   approved footage · `scratch/` — experiments (per-episode one-off scripts) · `docs/guides/` +
   `youtube_vault/` — reference docs
