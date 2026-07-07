@@ -101,7 +101,9 @@ next." Not `GATES.md` (now a derived export), not the chat history — the board
 
 **Every episode has a board — two files, one truth:**
 - `episodes/<ep>/board.json` — the machine-readable state (source of truth; mutate ONLY via the CLI).
-- `episodes/<ep>/BOARD.md` — the human-readable "canvas," *rendered from* `board.json`, NEVER hand-edited.
+- `episodes/<ep>/BOARD.md` + `episodes/<ep>/board.html` — the human-readable "canvas," *rendered from*
+  `board.json` (never hand-edited). **`board.html` is a beautiful browser view — open it to review the whole
+  episode at a glance** (`python -m bentley.board render <ep>` writes both; `board html <ep>` writes just the page).
 
 **BEFORE ANY EPISODE ACTION, run:**
 ```
@@ -135,6 +137,16 @@ advisory line for the owner to decide**, never an autonomous reroll. *(This one 
 todo ─▶ keyframe ─▶ kf_approved ─▶ rendered ─▶ qc ─▶ owner_review ─▶ 🔒 LOCKED (terminal, immutable)
         reject → keyframe (+reroll; cap → RESTAGE)               approve → `board lock` (owner-only)
 ```
+**⚖️ PRODUCE IN ORDER, ONE PORTION AT A TIME (owner law 2026-07-07 — "we should not jump"):** the episode is
+divided into SECTIONS (logical portions of ~3–4 shots). Work shots **in board order within the current
+portion** — `board next <ep>` always points to the earliest unfinished shot of the earliest un-reviewed
+section; **do NOT skip ahead to a later shot/section.** When a portion's hero renders are all locked,
+**ASSEMBLE that portion WITH its VO and get an owner review of the section cut** (see how it plays) BEFORE
+starting the next portion, then record it: `board section-review <ep> <n> --cut <cut.mp4>`. The board
+ENFORCES this — `advance … rendered` is REFUSED for any shot whose earlier sections aren't owner-reviewed.
+Inspect portions with `board section <ep>`; the browser board (`make board`) groups shots by section and
+badges each "in progress / renders done → assemble+VO-review / reviewed".
+
 The board sits ABOVE the mechanical fuses (`gates.assert_spend_allowed`, `drift_guard.assert_pin_ok` inside
 `kie_client.run`) — never around them; both still fire independently. Tests: `tests/test_board.py`.
 

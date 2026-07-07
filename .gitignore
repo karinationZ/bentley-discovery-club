@@ -56,3 +56,6 @@ venv/
 # Per-beat segment renders + concat list (regenerable). Deliverables are the
 # *_ANIMATIC.mp4 (on disk, like all media) + the tracked *_ANIMATIC_timeline.json.
 episodes/*/animatic_work/
+
+# ── Tool artifacts ────────────────────────────────────────
+.playwright-mcp/

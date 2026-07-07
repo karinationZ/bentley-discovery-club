@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ep4 — Production Board</title>
+<style>
+  :root{
+    --bg:#0a0e1a; --bg2:#0e1424; --card:rgba(255,255,255,.028); --card2:rgba(255,255,255,.05);
+    --line:rgba(255,255,255,.08); --line2:rgba(255,255,255,.14);
+    --tx:#e8ecf6; --tx2:#9aa6be; --tx3:#66708a;
+    --lock:#34d399; --pend:#fbbf24; --rest:#fb7185; --key:#38bdf8; --todo:#7c89a6; --rev:#a78bfa;
+    --accent:#22d3ee; --accent2:#a78bfa;
+    --mono:"SF Mono","JetBrains Mono",ui-monospace,"Cascadia Code",Menlo,Consolas,monospace;
+    --sans:-apple-system,"SF Pro Display",Inter,"Segoe UI",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--sans);color:var(--tx);
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(167,139,250,.10), transparent 60%),
+      radial-gradient(1000px 500px at -10% 10%, rgba(34,211,238,.08), transparent 55%),
+      var(--bg);
+    -webkit-font-smoothing:antialiased;line-height:1.5;min-height:100vh}
+  .wrap{max-width:1220px;margin:0 auto;padding:34px 26px 80px}
+  .mono{font-family:var(--mono)}
+  a{color:var(--accent)}
+  .h{color:var(--tx3);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin:0 0 12px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+  .grid{display:grid;gap:14px}
+
+  /* header */
+  header{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap;margin-bottom:8px}
+  .brand{font-size:13px;letter-spacing:.34em;text-transform:uppercase;color:var(--tx3);font-weight:600}
+  h1{margin:6px 0 0;font-size:30px;font-weight:650;letter-spacing:-.01em;
+    background:linear-gradient(92deg,#fff, #b8c6ff 60%, var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--tx2);font-size:14px;margin-top:5px}
+  .stagepill{display:inline-flex;align-items:center;gap:9px;padding:9px 16px;border-radius:100px;
+    background:linear-gradient(100deg,rgba(34,211,238,.16),rgba(167,139,250,.16));
+    border:1px solid rgba(167,139,250,.32);font-weight:600;font-size:14px;color:#e7ecff}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(34,211,238,.18);animation:pulse 2.4s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
+
+  /* next-action banner */
+  .next{margin:20px 0;display:flex;gap:16px;align-items:center;
+    background:linear-gradient(100deg,rgba(251,191,36,.10),rgba(251,191,36,.03));
+    border:1px solid rgba(251,191,36,.28);border-radius:16px;padding:16px 20px}
+  .next .k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--pend);font-weight:700}
+  .next .v{font-size:16px;color:#fde6bf;font-weight:550;margin-top:2px}
+
+  /* stats */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(96px,1fr));gap:12px;margin:18px 0 24px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;text-align:left}
+  .stat .n{font-size:26px;font-weight:650;line-height:1}
+  .stat .l{font-size:11px;color:var(--tx2);margin-top:6px;text-transform:capitalize;letter-spacing:.02em}
+
+  /* stage rail */
+  .rail{display:flex;gap:6px;margin:2px 0 26px;flex-wrap:wrap}
+  .step{flex:1;min-width:96px;padding:11px 10px 10px;border-radius:11px;border:1px solid var(--line);
+    background:var(--card);font-size:12.5px;color:var(--tx3);position:relative;text-transform:capitalize}
+  .step .idx{font-family:var(--mono);font-size:10px;color:var(--tx3);display:block;margin-bottom:3px}
+  .step.done{color:var(--tx2)} .step.done .idx{color:var(--lock)}
+  .step.now{border-color:rgba(34,211,238,.5);background:linear-gradient(120deg,rgba(34,211,238,.12),rgba(167,139,250,.10));color:#eaf6ff;font-weight:600}
+  .step.now .idx{color:var(--accent)}
+
+  /* manifest */
+  .man{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+  .chip{display:inline-block;font-family:var(--mono);font-size:11px;color:var(--tx2);
+    background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:7px;padding:2px 7px;margin:3px 4px 0 0}
+  .manrow b{font-weight:600;font-size:13.5px}
+
+  /* shot board */
+  .board{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:14px}
+  .shot{background:var(--card);border:1px solid var(--line);border-left-width:3px;border-radius:14px;
+    padding:15px 16px;transition:transform .12s,border-color .12s,background .12s}
+  .shot:hover{transform:translateY(-2px);background:var(--card2);border-color:var(--line2)}
+  .shot .top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .shot .id{font-family:var(--mono);font-size:16px;font-weight:600;letter-spacing:-.01em}
+  .shot .beat{color:var(--tx3);font-size:12px;margin:1px 0 12px;text-transform:capitalize}
+  .badge{font-size:11px;font-weight:700;letter-spacing:.03em;padding:4px 10px;border-radius:100px;white-space:nowrap}
+  .lockicon{margin-left:5px}
+  .row{display:flex;gap:8px;font-size:12.5px;margin:5px 0;align-items:baseline}
+  .row .rk{color:var(--tx3);min-width:52px;font-size:11px;text-transform:uppercase;letter-spacing:.04em}
+  .row .rv{color:var(--tx);flex:1}
+  .row .rv.q{color:#cdd6ea;font-style:italic}
+  .path{font-family:var(--mono);font-size:11px;color:var(--tx2);word-break:break-all}
+  .rr{display:inline-flex;gap:4px;align-items:center}
+  .rr i{width:7px;height:7px;border-radius:50%;background:var(--line2);display:inline-block}
+  .rr i.on{background:var(--pend)}
+  .flag{margin-top:9px;font-size:11.5px;font-weight:600;color:var(--rest);
+    background:rgba(251,113,133,.10);border:1px solid rgba(251,113,133,.3);border-radius:9px;padding:6px 9px}
+  .flag.cos{color:var(--tx2);background:rgba(255,255,255,.04);border-color:var(--line)}
+
+  /* two col */
+  .cols{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;margin-top:24px}
+  @media(max-width:820px){.cols{grid-template-columns:1fr}}
+  .dec{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+  .dec:last-child{border-bottom:0}
+  .dec .d{font-family:var(--mono);font-size:11px;color:var(--tx3);min-width:44px;padding-top:2px}
+  .dec .scope{font-family:var(--mono);font-size:10px;color:var(--accent2);background:rgba(167,139,250,.1);border-radius:5px;padding:1px 6px}
+  .dec .cost{font-family:var(--mono);font-size:11px;color:var(--pend);float:right}
+  .proto{counter-reset:p}
+  .proto li{list-style:none;font-size:13px;color:var(--tx);margin:9px 0;padding-left:30px;position:relative}
+  .proto li:before{counter-increment:p;content:counter(p);position:absolute;left:0;top:-1px;
+    width:20px;height:20px;border-radius:6px;background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.3);
+    color:var(--accent);font-family:var(--mono);font-size:11px;display:flex;align-items:center;justify-content:center}
+  .foot{margin-top:30px;color:var(--tx3);font-size:11.5px;text-align:center}
+  .glow{box-shadow:0 0 26px -8px var(--gc,transparent)}
+  .sechead{display:flex;align-items:center;gap:11px;margin:26px 2px 13px;font-size:15px;font-weight:600;color:var(--tx2)}
+  .sechead.cur{color:#eaf6ff;border-left:3px solid var(--accent);padding-left:11px}
+  .secn{font-family:var(--mono);font-size:11px;color:var(--accent);background:rgba(34,211,238,.1);border:1px solid rgba(34,211,238,.28);border-radius:6px;padding:2px 8px}
+  .secb{font-size:11px;font-weight:600;padding:3px 11px;border-radius:100px;margin-left:auto}
+  .secb.rev{color:var(--lock);background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.3)}
+  .secb.rdy{color:var(--pend);background:rgba(251,191,36,.12);border:1px solid rgba(251,191,36,.3)}
+  .secb.wip{color:var(--tx3);background:rgba(255,255,255,.04);border:1px solid var(--line)}
+  .curtag{font-size:11px;color:var(--accent);font-weight:600}
+  a.flink{color:var(--accent);text-decoration:none;cursor:pointer;border-bottom:1px dashed rgba(34,211,238,.35)}
+  a.flink:hover{color:#67e8f9;border-bottom-color:var(--accent)}
+  .chip a.flink{color:var(--tx2)}
+  .chip a.flink:hover{color:#67e8f9}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+<script>
+const INLINE = {"episode": "ep4", "title": "The Butterfly Highway", "guest": "Mira the Monarch (she/her)", "stage": "renders", "next_action": "", "credits": {"balance": 9800, "spent_ep": 2200}, "canon": {"style_anchor": "assets/character_design/Bentley_MASTER_pixar.png", "characters": {"bentley": {"master": "assets/character_design/Bentley_MASTER_pixar.png", "turnaround": "assets/character_design/Bentley_MODEL_SHEET_turnaround.png", "talking": "assets/character_design/Bentley_TALKING_MASTER.png", "voice": "LauraZ"}, "mira": {"master": "assets/character_design/Mira_LOCKED.png", "voice": "eleven.MIRA"}, "narrator": {"voice": "Bill (eleven.NARRATOR)"}}, "environments": {"meadow": "assets/character_design/Meadow_plate.png", "grove": "assets/character_design/Grove_plate.png"}, "props": {"collar": "teal + gold paw-print tag"}, "models_LOCKED": {"keyframe": "nano-banana-pro", "motion": "kling-3.0/video", "talk": "kling/ai-avatar-standard"}}, "spine": {"feeling": "the wonder of the journey / trust the family", "lesson": "you don't have to know the whole way — just fly to the next flower", "facts": ["monarchs migrate over generations", "they taste with their feet", "metamorphosis"]}, "decisions": [{"date": "2026-07-05", "scope": "style", "decision": "style anchor = the LITERAL master (Bentley_MASTER_pixar); painterly is VOID", "status": "active", "cost": 720}, {"date": "2026-07-06", "scope": "models", "decision": "models LOCKED: nano-banana-pro / kling-3.0/video / ai-avatar-standard; rig path DEAD", "status": "active"}, {"date": "2026-07-06", "scope": "s7b", "decision": "stage a beat's FEELING as a natural ACTION per its VO (JOY→run), never a reaction pose; run shots ¾-front to occlude the docked tail", "status": "active", "cost": 810}, {"date": "2026-07-07", "scope": "policy", "decision": "owner-APPROVED = LOCKED; adversarial QC is a PRE-approval gate only, never reopens an approval", "status": "active", "cost": 210}], "shots": [{"id": "s1a_sky_ignites", "sid": "s1a", "beat": "sky ignites", "purpose": "", "action": "", "vo": [{"label": "B_hook1"}, {"label": "B_hook2"}], "plan": "kling", "cards": [], "state": "todo", "rerolls": 0, "deliverable": null, "approved_by_owner": false, "locked": false, "notes": "legacy glossy keyframe — regenerate master-anchored first", "section": 1, "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s1a_sky_ignites.png"}, {"id": "s2_title", "sid": "s2", "beat": "title", "purpose": "", "action": "", "vo": [], "plan": "card", "cards": [], "state": "todo", "rerolls": 0, "deliverable": null, "approved_by_owner": false, "locked": false, "section": 1}, {"id": "s1b_nose_taste", "sid": "s1b", "beat": "nose taste", "purpose": "", "action": "", "vo": [{"label": "B_hooknose"}, {"label": "M_hello"}, {"label": "B_iam"}], "plan": "kling", "cards": [], "state": "locked", "rerolls": 0, "deliverable": "scratch/ep4/renders_w0/s1b_nose_taste.mp4", "approved_by_owner": true, "locked": true, "notes": "owner 'Go' 2026-07-05", "section": 1, "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s1b_nose_taste.png"}, {"id": "s3a_meet_comeon", "sid": "s3a", "beat": "meet comeon", "purpose": "invite / come-on", "action": "TBD — stage the FEELING as a natural ACTION per its VO (¾-front if a run)", "vo": [{"label": "N_intro"}, {"label": "M_comeon"}], "plan": "kling", "cards": [], "state": "keyframe", "rerolls": 2, "deliverable": null, "approved_by_owner": false, "locked": false, "must_restage": true, "section": 2, "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s3a_meet_comeon.png"}, {"id": "s3b_plan_gag", "sid": "s3b", "beat": "plan gag", "purpose": "planning gag", "action": "TBD — stage the FEELING as a natural ACTION per its VO (¾-front if a run)", "vo": [{"label": "B_plan"}, {"label": "M_nomap"}, {"label": "B_nomap2"}], "plan": "kling", "cards": [], "state": "keyframe", "rerolls": 2, "deliverable": null, "approved_by_owner": false, "locked": false, "must_restage": true, "section": 2, "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s3b_plan_gag.png"}, {"id": "s4a_taste_flower", "sid": "s4a", "beat": "taste flower", "purpose": "", "action": "", "vo": [{"label": "N_feet"}, {"label": "M_trythis"}], "plan": "kling", "cards": [], "state": "todo", "rerolls": 0, "deliverable": null, "approved_by_owner": false, "locked": false, "notes": "legacy glossy keyframe — regenerate master-anchored first", "section": 2, "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s4a_taste_flower.png"}, {"id": "s4b_copy_sneeze", "sid": "s4b", "beat": "copy sneeze", "purpose": "playful copy", "action": "", "vo": [{"label": "B_copyfeet"}, {"label": "M_giggle1"}, {"label": "B_questions"}], "plan": "kling", "cards": ["bentley", "mira", "meadow"], "state": "qc", "rerolls": 0, "deliverable": "scratch/ep4/renders_w1/s4b_copy_sneeze.mp4", "approved_by_owner": false, "locked": false, "section": 2, "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s4b_copy_sneeze.png"}, {"id": "s5a_lead_bound", "sid": "s5a", "beat": "lead bound", "purpose": "lead-the-way", "action": "calm bound", "vo": [{"label": "B_lead"}, {"label": "N_race"}], "plan": "kling", "cards": ["bentley", "meadow"], "state": "qc", "rerolls": 0, "deliverable": "scratch/ep4/renders_w1/s5a_lead_bound.mp4", "approved_by_owner": false, "locked": false, "cosmetic_defer": true, "notes": "owes a white-muzzle-stripe surgical fix (cosmetic → assembly)", "section": 3, "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s5a_lead_bound.png"}, {"id": "s5b_flower_flop", "sid": "s5b", "beat": "flower flop", "purpose": "flower flop", "action": "TBD — stage the FEELING as a natural ACTION per its VO (¾-front if a run)", "vo": [{"label": "M_floptease"}, {"label": "B_flop"}], "plan": "kling", "cards": [], "state": "keyframe", "rerolls": 2, "deliverable": null, "approved_by_owner": false, "locked": false, "must_restage": true, "section": 3, "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s5b_flower_flop.png"}, {"id": "s6_turn_river", "sid": "s6", "beat": "turn river", "purpose": "catchphrase", "action": "avatar CU: 'Stop. Look. Listen.'", "vo": [{"label": "B_stoplook"}, {"label": "N_turn"}, {"label": "B_river"}], "plan": "kling", "cards": ["bentley"], "state": "kf_approved", "rerolls": 0, "deliverable": null, "approved_by_owner": false, "locked": false, "section": 3, "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s6_turn_river.png"}, {"id": "s7a_reframe_q", "sid": "s7a", "beat": "reframe q", "purpose": "", "action": "", "vo": [{"label": "B_wheredoesit"}, {"label": "M_dontknow"}, {"label": "M_generations"}], "plan": "kling", "cards": [], "state": "locked", "rerolls": 0, "deliverable": "scratch/ep4/renders_w0/s7a_reframe_q_r1.mp4", "approved_by_owner": true, "locked": true, "notes": "owner 'good' 2026-07-05 (reroll #1)", "section": 4, "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s7a_reframe_q.png"}, {"id": "s7b_mindblown", "sid": "s7b", "beat": "mindblown", "purpose": "JOY", "action": "slow-mo run, ¾-front, ears flying", "vo": [{"label": "B_mindblown"}, {"label": "N_generations"}], "plan": "kling", "cards": ["bentley", "mira", "meadow"], "state": "locked", "rerolls": 0, "deliverable": "scratch/ep4/renders_w1/s7b_run.mp4", "approved_by_owner": true, "locked": true, "notes": "owner 'amazing, I like it!' 2026-07-06", "section": 4, "keyframe": "scratch/ep4/kf_s7b_run/s7b_run_c3.png"}, {"id": "s8_glide", "sid": "s8", "beat": "glide", "purpose": "hero/thumbnail", "action": "slow-mo run→glide", "vo": [{"label": "M_ridewithme"}, {"label": "M_glidecoach"}, {"label": "B_glide"}, {"label": "N_updraft"}], "plan": "kling", "cards": ["bentley", "mira", "meadow"], "state": "locked", "rerolls": 0, "deliverable": "scratch/ep4/renders_w0/s8_run.mp4", "approved_by_owner": true, "locked": true, "notes": "owner approved wave-0 close (slow-mo run)", "section": 4, "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s8_glide.png"}, {"id": "s9a_grove_wide", "sid": "s9a", "beat": "grove wide", "purpose": "", "action": "", "vo": [{"label": "N_grove"}], "plan": "kenburns", "cards": [], "state": "todo", "rerolls": 0, "deliverable": null, "approved_by_owner": false, "locked": false, "section": 5}, {"id": "s9b_grove_cluster", "sid": "s9b", "beat": "grove cluster", "purpose": "", "action": "", "vo": [{"label": "B_grove"}, {"label": "M_home"}], "plan": "kling", "cards": [], "state": "kf_approved", "rerolls": 0, "deliverable": null, "approved_by_owner": false, "locked": false, "section": 5, "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s9b_grove_cluster.png"}, {"id": "s10a_worm", "sid": "s10a", "beat": "worm", "purpose": "", "action": "", "vo": [{"label": "B_worm"}, {"label": "M_caterpillar"}], "plan": "kling", "cards": [], "state": "kf_approved", "rerolls": 0, "deliverable": null, "approved_by_owner": false, "locked": false, "section": 5, "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s10a_worm.png"}, {"id": "s10b_fancyworm", "sid": "s10b", "beat": "fancyworm", "purpose": "", "action": "", "vo": [{"label": "B_fancyworm"}, {"label": "N_button"}], "plan": "kling", "cards": [], "state": "kf_approved", "rerolls": 0, "deliverable": null, "approved_by_owner": false, "locked": false, "section": 5, "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s10b_fancyworm.png"}, {"id": "s11a_dusk_reflect", "sid": "s11a", "beat": "dusk reflect", "purpose": "", "action": "", "vo": [{"label": "N_dusk"}, {"label": "M_goodnight"}, {"label": "B_reflect"}], "plan": "kling", "cards": [], "state": "kf_approved", "rerolls": 0, "deliverable": null, "approved_by_owner": false, "locked": false, "section": 6, "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s11a_dusk_reflect.png"}, {"id": "s11b_grove_sings", "sid": "s11b", "beat": "grove sings", "purpose": "", "action": "", "vo": [{"label": "M_grovesong"}, {"label": "B_dreamy"}], "plan": "kenburns", "cards": [], "state": "todo", "rerolls": 0, "deliverable": null, "approved_by_owner": false, "locked": false, "section": 6}, {"id": "s11c_mantra_sleep", "sid": "s11c", "beat": "mantra sleep", "purpose": "", "action": "", "vo": [{"label": "B_mantra"}, {"label": "N_close"}], "plan": "kling", "cards": [], "state": "kf_approved", "rerolls": 0, "deliverable": null, "approved_by_owner": false, "locked": false, "notes": "legacy glossy keyframe — regenerate master-anchored before render", "section": 6, "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s11c_mantra_sleep.png"}, {"id": "s11d_nexttime", "sid": "s11d", "beat": "nexttime", "purpose": "", "action": "", "vo": [], "plan": "card", "cards": [], "state": "todo", "rerolls": 0, "deliverable": null, "approved_by_owner": false, "locked": false, "section": 6}], "sections": [{"id": 1, "title": "Cold open — spark & meet", "reviewed": false, "cut": null}, {"id": 2, "title": "New friend — copy & play", "reviewed": false, "cut": null}, {"id": 3, "title": "The race & the turn", "reviewed": false, "cut": null}, {"id": 4, "title": "The butterfly highway", "reviewed": false, "cut": null}, {"id": 5, "title": "The secret grove", "reviewed": false, "cut": null}, {"id": 6, "title": "Dusk & goodnight", "reviewed": false, "cut": null}]};
+let BOARD = INLINE, LIVE = false, __last = JSON.stringify(INLINE);
+const S = {
+  locked:      {l:'locked',      c:'var(--lock)', bg:'rgba(52,211,153,.14)'},
+  owner_review:{l:'owner review',c:'var(--rev)',  bg:'rgba(167,139,250,.14)'},
+  qc:          {l:'qc',          c:'var(--pend)', bg:'rgba(251,191,36,.14)'},
+  rendered:    {l:'rendered',    c:'var(--pend)', bg:'rgba(251,191,36,.14)'},
+  kf_approved: {l:'keyframe ✓',  c:'var(--key)',  bg:'rgba(56,189,248,.14)'},
+  keyframe:    {l:'keyframe',    c:'var(--key)',  bg:'rgba(56,189,248,.14)'},
+  todo:        {l:'todo',        c:'var(--todo)', bg:'rgba(124,137,166,.14)'},
+};
+const STAGES=['premise','vo','animatic','keyframes','renders','assemble','mix_grade','qa','release'];
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const el=(h)=>{const d=document.createElement('div');d.innerHTML=h.trim();return d.firstChild;};
+
+function voStr(s){return (s.vo||[]).map(v=>typeof v==='object'?v.label:v).join(' · ')||'—';}
+function voText(s){for(const v of (s.vo||[])){if(typeof v==='object'&&v.text)return v.text;}return '';}
+function currentSection(b){for(const s of (b.sections||[]))if(!s.reviewed)return s;return null;}
+function shotsInSec(b,id){return (b.shots||[]).filter(s=>s.section===id);}
+function nextShot(b){const c=currentSection(b);if(!c)return null;for(const s of (b.shots||[]))if(s.section===c.id&&!s.locked)return s;return null;}
+function shotHint(s){if(s.must_restage)return 'restage as a natural ACTION per its VO, then render';const st=s.state;if(st==='kf_approved')return 'render (keyframe locked)';if(['rendered','qc','owner_review'].includes(st))return 'QC → present → owner approve';return 'keyframe → owner pick → render';}
+function computeNext(b){if(!(b.sections||[]).length)return b.next_action||'';const c=currentSection(b);if(!c)return 'ALL portions reviewed → assemble the full episode (mix · grade · QA)';const ns=nextShot(b);if(ns)return (ns.sid||ns.id)+' — '+shotHint(ns)+'  ·  section '+c.id+': '+(c.title||'');return "section "+c.id+" ('"+(c.title||'')+"') renders COMPLETE → assemble it with VO + owner review before the next portion";}
+// a repo-relative path -> a clickable link that reveals the file in Finder (served) or opens it (file://).
+function fileLink(p, text){ if(!p) return esc(text||'—'); return `<a href="../../${esc(p)}" class="flink" data-p="${esc(p)}" title="click to reveal in Finder">${esc(text!=null?text:p)}</a>`; }
+
+function render(){
+  const b=BOARD, app=document.getElementById('app');
+  const counts={}; (b.shots||[]).forEach(s=>counts[s.state]=(counts[s.state]||0)+1);
+  const locked=(b.shots||[]).filter(s=>s.locked).length, total=(b.shots||[]).length;
+
+  // header
+  let h=`<header>
+    <div><div class="brand">Bentley&nbsp;·&nbsp;Discovery&nbsp;Club</div>
+      <h1>${esc(b.episode)} · ${esc(b.title||'')}</h1>
+      <div class="sub">guest: ${esc(b.guest||'—')} &nbsp;·&nbsp; ${total} shots &nbsp;·&nbsp; production board</div></div>
+    <div class="stagepill"><span class="dot"></span> stage: ${esc(b.stage||'—')}</div>
+  </header>`;
+
+  const nextTxt=computeNext(b);
+  if(nextTxt) h+=`<div class="next"><div><div class="k">next action · in order</div>
+     <div class="v">${esc(nextTxt)}</div></div></div>`;
+
+  // stats
+  const order=['locked','owner_review','qc','rendered','kf_approved','keyframe','todo'];
+  h+=`<div class="stats">
+    <div class="stat"><div class="n" style="color:var(--lock)">${locked}</div><div class="l">locked</div></div>`;
+  order.filter(k=>k!=='locked'&&counts[k]).forEach(k=>{const st=S[k];
+    h+=`<div class="stat"><div class="n" style="color:${st.c}">${counts[k]}</div><div class="l">${st.l}</div></div>`;});
+  const cr=b.credits||{}; if(cr.balance!=null)
+    h+=`<div class="stat"><div class="n" style="color:var(--accent)">${Number(cr.balance).toLocaleString()}</div><div class="l">credits</div></div>`;
+  h+=`</div>`;
+
+  // stage rail
+  const curi=STAGES.indexOf(b.stage);
+  h+=`<div class="rail">`+STAGES.map((s,i)=>{
+    const cl=i<curi?'done':(i===curi?'now':'');
+    return `<div class="step ${cl}"><span class="idx">${String(i+1).padStart(2,'0')}</span>${s.replace('_',' · ')}</div>`;
+  }).join('')+`</div>`;
+
+  // manifest
+  const cn=b.canon||{};
+  h+=`<div class="card" style="margin-bottom:16px"><div class="h">locked asset manifest · the canon</div><div class="man">`;
+  if(cn.style_anchor) h+=`<div class="manrow"><b>style</b><br><span class="chip">${fileLink(cn.style_anchor, cn.style_anchor.split('/').pop())}</span><span class="chip">painterly VOID</span></div>`;
+  for(const [nm,c] of Object.entries(cn.characters||{})){
+    h+=`<div class="manrow"><b>${esc(nm)}</b><br>`+Object.entries(c).map(([k,v])=>{
+      const val=String(v); const inner = val.includes('/') ? fileLink(val, val.split('/').pop()) : esc(val);
+      return `<span class="chip">${esc(k)}: ${inner}</span>`;}).join('')+`</div>`;}
+  if(cn.environments&&Object.keys(cn.environments).length)
+    h+=`<div class="manrow"><b>plates</b><br>`+Object.entries(cn.environments).map(([k,v])=>`<span class="chip">${fileLink(String(v), k)}</span>`).join('')+`</div>`;
+  if(cn.models_LOCKED)
+    h+=`<div class="manrow"><b>models · locked</b><br>`+Object.values(cn.models_LOCKED).map(v=>`<span class="chip">${esc(v)}</span>`).join('')+`</div>`;
+  h+=`</div></div>`;
+
+  // shot board — grouped by section (in-order portions)
+  const shotCard=(s)=>{
+    const st=S[s.state]||S.todo;
+    const rr=[0,1].map(i=>`<i class="${i<(s.rerolls||0)?'on':''}"></i>`).join('');
+    const vt=voText(s);
+    return `<div class="shot glow" style="border-left-color:${st.c};--gc:${st.bg}">
+      <div class="top"><span class="id">${esc(s.sid||s.id)}</span>
+        <span class="badge" style="color:${st.c};background:${st.bg}">${st.l}${s.locked?'<span class="lockicon">🔒</span>':''}</span></div>
+      <div class="beat">${esc(s.beat||'')}</div>
+      ${s.purpose?`<div class="row"><span class="rk">feel</span><span class="rv">${esc(s.purpose)}</span></div>`:''}
+      <div class="row"><span class="rk">vo</span><span class="rv">${esc(voStr(s))}</span></div>
+      ${vt?`<div class="row"><span class="rk"></span><span class="rv q">"${esc(vt)}"</span></div>`:''}
+      ${s.action?`<div class="row"><span class="rk">action</span><span class="rv">${esc(s.action)}</span></div>`:''}
+      <div class="row"><span class="rk">reroll</span><span class="rv"><span class="rr">${rr}</span> <span style="color:var(--tx3);font-size:11px">${s.rerolls||0}/2</span></span></div>
+      ${s.keyframe?`<div class="row"><span class="rk">keyframe</span><span class="rv path">${fileLink(s.keyframe)}</span></div>`:''}
+      ${s.deliverable?`<div class="row"><span class="rk">clip ▸</span><span class="rv path">${fileLink(s.deliverable)}</span></div>`:''}
+      ${s.must_restage?`<div class="flag">⚠ reroll cap hit → RESTAGE (new staged action, no reroll #3)</div>`:''}
+      ${s.cosmetic_defer?`<div class="flag cos">cosmetic defect → deferred to assembly (never gates approval)</div>`:''}
+    </div>`;
+  };
+  h+=`<div class="h" style="margin-top:26px">shot board · ${total} shots · ${(b.sections||[]).length||1} portions · produced IN ORDER</div>`;
+  const curSec=currentSection(b);
+  const secs=(b.sections||[]).length?b.sections:[{id:null,title:''}];
+  secs.forEach(sec=>{
+    const list=sec.id==null?(b.shots||[]):shotsInSec(b,sec.id);
+    if(!list.length)return;
+    const heroes=list.filter(s=>s.plan==='kling');
+    const done=heroes.length>0&&heroes.every(s=>s.locked);
+    const badge=sec.reviewed?`<span class="secb rev">reviewed ✓</span>`
+      :(done?`<span class="secb rdy">renders done · assemble + VO-review</span>`:`<span class="secb wip">in progress</span>`);
+    const isCur=curSec&&curSec.id===sec.id;
+    if(sec.id!=null) h+=`<div class="sechead${isCur?' cur':''}"><span class="secn">section ${sec.id}</span> <span>${esc(sec.title||'')}</span> ${badge}${sec.cut?` <span class="chip">${fileLink(sec.cut,'▸ section cut')}</span>`:''}${isCur?`<span class="curtag">◀ current portion</span>`:''}</div>`;
+    h+=`<div class="board">`+list.map(shotCard).join('')+`</div>`;
+  });
+
+  // decisions + protocol
+  const proto=[
+    'Read the board FIRST, every session — the single source of truth.',
+    'Act only on next_action — one shot / one wave at a time.',
+    'Update the board after every step; an action not on the board didn\'t happen.',
+    'Never touch a LOCKED shot — QC is a pre-approval gate only.',
+    'A shot advances state only by passing its gate.',
+    'Reroll ≤2 → RESTAGE → trim → flag; the board refuses reroll #3.',
+    'Cosmetic ≠ blocking — it never gates an owner approval.'];
+  h+=`<div class="cols">
+    <div class="card"><div class="h">decisions log · structured</div>`+
+    (b.decisions||[]).map(d=>`<div class="dec"><div class="d">${esc(d.date||'')}</div>
+       <div style="flex:1"><span class="scope">${esc(d.scope||'')}</span>
+       ${d.cost!=null?`<span class="cost">${esc(d.cost)}cr</span>`:''}
+       <div style="margin-top:4px;color:var(--tx);font-size:13px">${esc(d.decision||'')}</div></div></div>`).join('')
+    +`</div>
+    <div class="card"><div class="h">agent protocol · the rails</div><ol class="proto">`+
+    proto.map(p=>`<li>${esc(p)}</li>`).join('')+`</ol></div>
+  </div>`;
+
+  const liveTxt = LIVE
+    ? '<span style="color:var(--lock)">● live</span> · updates automatically'
+    : '<span style="color:var(--tx3)">○ static snapshot</span> · refresh (⌘R) after changes, or run <span class="mono">make board-serve</span> for live';
+  h+=`<div class="foot">${liveTxt} · from <span class="mono">episodes/${esc(b.episode)}/board.json</span></div>`;
+
+  app.innerHTML=h;
+}
+render();
+
+// CLICKABLE PATHS: reveal the file in Finder when served (/__open); else open it in the browser (file://).
+document.addEventListener('click', function(e){
+  const a = e.target.closest('a.flink'); if(!a) return;
+  e.preventDefault();
+  const p = a.getAttribute('data-p');
+  fetch('/__open?path=' + encodeURIComponent(p)).then(function(r){
+    if(r.ok){ const o=a.style.color; a.style.color='var(--lock)'; setTimeout(function(){a.style.color=o;}, 700); }
+    else { window.open(a.getAttribute('href')); }
+  }).catch(function(){ window.open(a.getAttribute('href')); });
+});
+
+// LIVE MODE: when served over http, poll board.json and auto-re-render on change (no refresh needed).
+// Over file:// the fetch fails silently and the page stays a static snapshot.
+async function poll(){
+  try{
+    const r = await fetch('board.json', {cache:'no-store'});
+    if(!r.ok) return;
+    const t = await r.text();
+    let changed = false;
+    if(t !== __last){ __last = t; BOARD = JSON.parse(t); changed = true; }
+    if(!LIVE){ LIVE = true; changed = true; }
+    if(changed) render();
+  }catch(e){ /* file:// or no server — remain static */ }
+}
+poll();
+setInterval(poll, 2000);
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "board",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "bentley.board", "serve", "ep4", "--no-open", "--port", "8713"],
+      "port": 8713
+    }
+  ]
+}

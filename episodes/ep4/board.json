@@ -1,0 +1,655 @@
+{
+  "episode": "ep4",
+  "title": "The Butterfly Highway",
+  "guest": "Mira the Monarch (she/her)",
+  "stage": "renders",
+  "next_action": "",
+  "credits": {
+    "balance": 9800,
+    "spent_ep": 2200
+  },
+  "canon": {
+    "style_anchor": "assets/character_design/Bentley_MASTER_pixar.png",
+    "characters": {
+      "bentley": {
+        "master": "assets/character_design/Bentley_MASTER_pixar.png",
+        "turnaround": "assets/character_design/Bentley_MODEL_SHEET_turnaround.png",
+        "talking": "assets/character_design/Bentley_TALKING_MASTER.png",
+        "voice": "LauraZ"
+      },
+      "mira": {
+        "master": "assets/character_design/Mira_LOCKED.png",
+        "voice": "eleven.MIRA"
+      },
+      "narrator": {
+        "voice": "Bill (eleven.NARRATOR)"
+      }
+    },
+    "environments": {
+      "meadow": "assets/character_design/Meadow_plate.png",
+      "grove": "assets/character_design/Grove_plate.png"
+    },
+    "props": {
+      "collar": "teal + gold paw-print tag"
+    },
+    "models_LOCKED": {
+      "keyframe": "nano-banana-pro",
+      "motion": "kling-3.0/video",
+      "talk": "kling/ai-avatar-standard"
+    }
+  },
+  "spine": {
+    "feeling": "the wonder of the journey / trust the family",
+    "lesson": "you don't have to know the whole way — just fly to the next flower",
+    "facts": [
+      "monarchs migrate over generations",
+      "they taste with their feet",
+      "metamorphosis"
+    ]
+  },
+  "decisions": [
+    {
+      "date": "2026-07-05",
+      "scope": "style",
+      "decision": "style anchor = the LITERAL master (Bentley_MASTER_pixar); painterly is VOID",
+      "status": "active",
+      "cost": 720
+    },
+    {
+      "date": "2026-07-06",
+      "scope": "models",
+      "decision": "models LOCKED: nano-banana-pro / kling-3.0/video / ai-avatar-standard; rig path DEAD",
+      "status": "active"
+    },
+    {
+      "date": "2026-07-06",
+      "scope": "s7b",
+      "decision": "stage a beat's FEELING as a natural ACTION per its VO (JOY→run), never a reaction pose; run shots ¾-front to occlude the docked tail",
+      "status": "active",
+      "cost": 810
+    },
+    {
+      "date": "2026-07-07",
+      "scope": "policy",
+      "decision": "owner-APPROVED = LOCKED; adversarial QC is a PRE-approval gate only, never reopens an approval",
+      "status": "active",
+      "cost": 210
+    }
+  ],
+  "shots": [
+    {
+      "id": "s1a_sky_ignites",
+      "sid": "s1a",
+      "beat": "sky ignites",
+      "purpose": "",
+      "action": "",
+      "vo": [
+        {
+          "label": "B_hook1"
+        },
+        {
+          "label": "B_hook2"
+        }
+      ],
+      "plan": "kling",
+      "cards": [],
+      "state": "todo",
+      "rerolls": 0,
+      "deliverable": null,
+      "approved_by_owner": false,
+      "locked": false,
+      "notes": "legacy glossy keyframe — regenerate master-anchored first",
+      "section": 1,
+      "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s1a_sky_ignites.png"
+    },
+    {
+      "id": "s2_title",
+      "sid": "s2",
+      "beat": "title",
+      "purpose": "",
+      "action": "",
+      "vo": [],
+      "plan": "card",
+      "cards": [],
+      "state": "todo",
+      "rerolls": 0,
+      "deliverable": null,
+      "approved_by_owner": false,
+      "locked": false,
+      "section": 1
+    },
+    {
+      "id": "s1b_nose_taste",
+      "sid": "s1b",
+      "beat": "nose taste",
+      "purpose": "",
+      "action": "",
+      "vo": [
+        {
+          "label": "B_hooknose"
+        },
+        {
+          "label": "M_hello"
+        },
+        {
+          "label": "B_iam"
+        }
+      ],
+      "plan": "kling",
+      "cards": [],
+      "state": "locked",
+      "rerolls": 0,
+      "deliverable": "scratch/ep4/renders_w0/s1b_nose_taste.mp4",
+      "approved_by_owner": true,
+      "locked": true,
+      "notes": "owner 'Go' 2026-07-05",
+      "section": 1,
+      "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s1b_nose_taste.png"
+    },
+    {
+      "id": "s3a_meet_comeon",
+      "sid": "s3a",
+      "beat": "meet comeon",
+      "purpose": "invite / come-on",
+      "action": "TBD — stage the FEELING as a natural ACTION per its VO (¾-front if a run)",
+      "vo": [
+        {
+          "label": "N_intro"
+        },
+        {
+          "label": "M_comeon"
+        }
+      ],
+      "plan": "kling",
+      "cards": [],
+      "state": "keyframe",
+      "rerolls": 2,
+      "deliverable": null,
+      "approved_by_owner": false,
+      "locked": false,
+      "must_restage": true,
+      "section": 2,
+      "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s3a_meet_comeon.png"
+    },
+    {
+      "id": "s3b_plan_gag",
+      "sid": "s3b",
+      "beat": "plan gag",
+      "purpose": "planning gag",
+      "action": "TBD — stage the FEELING as a natural ACTION per its VO (¾-front if a run)",
+      "vo": [
+        {
+          "label": "B_plan"
+        },
+        {
+          "label": "M_nomap"
+        },
+        {
+          "label": "B_nomap2"
+        }
+      ],
+      "plan": "kling",
+      "cards": [],
+      "state": "keyframe",
+      "rerolls": 2,
+      "deliverable": null,
+      "approved_by_owner": false,
+      "locked": false,
+      "must_restage": true,
+      "section": 2,
+      "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s3b_plan_gag.png"
+    },
+    {
+      "id": "s4a_taste_flower",
+      "sid": "s4a",
+      "beat": "taste flower",
+      "purpose": "",
+      "action": "",
+      "vo": [
+        {
+          "label": "N_feet"
+        },
+        {
+          "label": "M_trythis"
+        }
+      ],
+      "plan": "kling",
+      "cards": [],
+      "state": "todo",
+      "rerolls": 0,
+      "deliverable": null,
+      "approved_by_owner": false,
+      "locked": false,
+      "notes": "legacy glossy keyframe — regenerate master-anchored first",
+      "section": 2,
+      "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s4a_taste_flower.png"
+    },
+    {
+      "id": "s4b_copy_sneeze",
+      "sid": "s4b",
+      "beat": "copy sneeze",
+      "purpose": "playful copy",
+      "action": "",
+      "vo": [
+        {
+          "label": "B_copyfeet"
+        },
+        {
+          "label": "M_giggle1"
+        },
+        {
+          "label": "B_questions"
+        }
+      ],
+      "plan": "kling",
+      "cards": [
+        "bentley",
+        "mira",
+        "meadow"
+      ],
+      "state": "qc",
+      "rerolls": 0,
+      "deliverable": "scratch/ep4/renders_w1/s4b_copy_sneeze.mp4",
+      "approved_by_owner": false,
+      "locked": false,
+      "section": 2,
+      "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s4b_copy_sneeze.png"
+    },
+    {
+      "id": "s5a_lead_bound",
+      "sid": "s5a",
+      "beat": "lead bound",
+      "purpose": "lead-the-way",
+      "action": "calm bound",
+      "vo": [
+        {
+          "label": "B_lead"
+        },
+        {
+          "label": "N_race"
+        }
+      ],
+      "plan": "kling",
+      "cards": [
+        "bentley",
+        "meadow"
+      ],
+      "state": "qc",
+      "rerolls": 0,
+      "deliverable": "scratch/ep4/renders_w1/s5a_lead_bound.mp4",
+      "approved_by_owner": false,
+      "locked": false,
+      "cosmetic_defer": true,
+      "notes": "owes a white-muzzle-stripe surgical fix (cosmetic → assembly)",
+      "section": 3,
+      "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s5a_lead_bound.png"
+    },
+    {
+      "id": "s5b_flower_flop",
+      "sid": "s5b",
+      "beat": "flower flop",
+      "purpose": "flower flop",
+      "action": "TBD — stage the FEELING as a natural ACTION per its VO (¾-front if a run)",
+      "vo": [
+        {
+          "label": "M_floptease"
+        },
+        {
+          "label": "B_flop"
+        }
+      ],
+      "plan": "kling",
+      "cards": [],
+      "state": "keyframe",
+      "rerolls": 2,
+      "deliverable": null,
+      "approved_by_owner": false,
+      "locked": false,
+      "must_restage": true,
+      "section": 3,
+      "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s5b_flower_flop.png"
+    },
+    {
+      "id": "s6_turn_river",
+      "sid": "s6",
+      "beat": "turn river",
+      "purpose": "catchphrase",
+      "action": "avatar CU: 'Stop. Look. Listen.'",
+      "vo": [
+        {
+          "label": "B_stoplook"
+        },
+        {
+          "label": "N_turn"
+        },
+        {
+          "label": "B_river"
+        }
+      ],
+      "plan": "kling",
+      "cards": [
+        "bentley"
+      ],
+      "state": "kf_approved",
+      "rerolls": 0,
+      "deliverable": null,
+      "approved_by_owner": false,
+      "locked": false,
+      "section": 3,
+      "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s6_turn_river.png"
+    },
+    {
+      "id": "s7a_reframe_q",
+      "sid": "s7a",
+      "beat": "reframe q",
+      "purpose": "",
+      "action": "",
+      "vo": [
+        {
+          "label": "B_wheredoesit"
+        },
+        {
+          "label": "M_dontknow"
+        },
+        {
+          "label": "M_generations"
+        }
+      ],
+      "plan": "kling",
+      "cards": [],
+      "state": "locked",
+      "rerolls": 0,
+      "deliverable": "scratch/ep4/renders_w0/s7a_reframe_q_r1.mp4",
+      "approved_by_owner": true,
+      "locked": true,
+      "notes": "owner 'good' 2026-07-05 (reroll #1)",
+      "section": 4,
+      "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s7a_reframe_q.png"
+    },
+    {
+      "id": "s7b_mindblown",
+      "sid": "s7b",
+      "beat": "mindblown",
+      "purpose": "JOY",
+      "action": "slow-mo run, ¾-front, ears flying",
+      "vo": [
+        {
+          "label": "B_mindblown"
+        },
+        {
+          "label": "N_generations"
+        }
+      ],
+      "plan": "kling",
+      "cards": [
+        "bentley",
+        "mira",
+        "meadow"
+      ],
+      "state": "locked",
+      "rerolls": 0,
+      "deliverable": "scratch/ep4/renders_w1/s7b_run.mp4",
+      "approved_by_owner": true,
+      "locked": true,
+      "notes": "owner 'amazing, I like it!' 2026-07-06",
+      "section": 4,
+      "keyframe": "scratch/ep4/kf_s7b_run/s7b_run_c3.png"
+    },
+    {
+      "id": "s8_glide",
+      "sid": "s8",
+      "beat": "glide",
+      "purpose": "hero/thumbnail",
+      "action": "slow-mo run→glide",
+      "vo": [
+        {
+          "label": "M_ridewithme"
+        },
+        {
+          "label": "M_glidecoach"
+        },
+        {
+          "label": "B_glide"
+        },
+        {
+          "label": "N_updraft"
+        }
+      ],
+      "plan": "kling",
+      "cards": [
+        "bentley",
+        "mira",
+        "meadow"
+      ],
+      "state": "locked",
+      "rerolls": 0,
+      "deliverable": "scratch/ep4/renders_w0/s8_run.mp4",
+      "approved_by_owner": true,
+      "locked": true,
+      "notes": "owner approved wave-0 close (slow-mo run)",
+      "section": 4,
+      "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s8_glide.png"
+    },
+    {
+      "id": "s9a_grove_wide",
+      "sid": "s9a",
+      "beat": "grove wide",
+      "purpose": "",
+      "action": "",
+      "vo": [
+        {
+          "label": "N_grove"
+        }
+      ],
+      "plan": "kenburns",
+      "cards": [],
+      "state": "todo",
+      "rerolls": 0,
+      "deliverable": null,
+      "approved_by_owner": false,
+      "locked": false,
+      "section": 5
+    },
+    {
+      "id": "s9b_grove_cluster",
+      "sid": "s9b",
+      "beat": "grove cluster",
+      "purpose": "",
+      "action": "",
+      "vo": [
+        {
+          "label": "B_grove"
+        },
+        {
+          "label": "M_home"
+        }
+      ],
+      "plan": "kling",
+      "cards": [],
+      "state": "kf_approved",
+      "rerolls": 0,
+      "deliverable": null,
+      "approved_by_owner": false,
+      "locked": false,
+      "section": 5,
+      "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s9b_grove_cluster.png"
+    },
+    {
+      "id": "s10a_worm",
+      "sid": "s10a",
+      "beat": "worm",
+      "purpose": "",
+      "action": "",
+      "vo": [
+        {
+          "label": "B_worm"
+        },
+        {
+          "label": "M_caterpillar"
+        }
+      ],
+      "plan": "kling",
+      "cards": [],
+      "state": "kf_approved",
+      "rerolls": 0,
+      "deliverable": null,
+      "approved_by_owner": false,
+      "locked": false,
+      "section": 5,
+      "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s10a_worm.png"
+    },
+    {
+      "id": "s10b_fancyworm",
+      "sid": "s10b",
+      "beat": "fancyworm",
+      "purpose": "",
+      "action": "",
+      "vo": [
+        {
+          "label": "B_fancyworm"
+        },
+        {
+          "label": "N_button"
+        }
+      ],
+      "plan": "kling",
+      "cards": [],
+      "state": "kf_approved",
+      "rerolls": 0,
+      "deliverable": null,
+      "approved_by_owner": false,
+      "locked": false,
+      "section": 5,
+      "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s10b_fancyworm.png"
+    },
+    {
+      "id": "s11a_dusk_reflect",
+      "sid": "s11a",
+      "beat": "dusk reflect",
+      "purpose": "",
+      "action": "",
+      "vo": [
+        {
+          "label": "N_dusk"
+        },
+        {
+          "label": "M_goodnight"
+        },
+        {
+          "label": "B_reflect"
+        }
+      ],
+      "plan": "kling",
+      "cards": [],
+      "state": "kf_approved",
+      "rerolls": 0,
+      "deliverable": null,
+      "approved_by_owner": false,
+      "locked": false,
+      "section": 6,
+      "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s11a_dusk_reflect.png"
+    },
+    {
+      "id": "s11b_grove_sings",
+      "sid": "s11b",
+      "beat": "grove sings",
+      "purpose": "",
+      "action": "",
+      "vo": [
+        {
+          "label": "M_grovesong"
+        },
+        {
+          "label": "B_dreamy"
+        }
+      ],
+      "plan": "kenburns",
+      "cards": [],
+      "state": "todo",
+      "rerolls": 0,
+      "deliverable": null,
+      "approved_by_owner": false,
+      "locked": false,
+      "section": 6
+    },
+    {
+      "id": "s11c_mantra_sleep",
+      "sid": "s11c",
+      "beat": "mantra sleep",
+      "purpose": "",
+      "action": "",
+      "vo": [
+        {
+          "label": "B_mantra"
+        },
+        {
+          "label": "N_close"
+        }
+      ],
+      "plan": "kling",
+      "cards": [],
+      "state": "kf_approved",
+      "rerolls": 0,
+      "deliverable": null,
+      "approved_by_owner": false,
+      "locked": false,
+      "notes": "legacy glossy keyframe — regenerate master-anchored before render",
+      "section": 6,
+      "keyframe": "assets/pilot_shots/ep4/keyframes_prod/s11c_mantra_sleep.png"
+    },
+    {
+      "id": "s11d_nexttime",
+      "sid": "s11d",
+      "beat": "nexttime",
+      "purpose": "",
+      "action": "",
+      "vo": [],
+      "plan": "card",
+      "cards": [],
+      "state": "todo",
+      "rerolls": 0,
+      "deliverable": null,
+      "approved_by_owner": false,
+      "locked": false,
+      "section": 6
+    }
+  ],
+  "sections": [
+    {
+      "id": 1,
+      "title": "Cold open — spark & meet",
+      "reviewed": false,
+      "cut": null
+    },
+    {
+      "id": 2,
+      "title": "New friend — copy & play",
+      "reviewed": false,
+      "cut": null
+    },
+    {
+      "id": 3,
+      "title": "The race & the turn",
+      "reviewed": false,
+      "cut": null
+    },
+    {
+      "id": 4,
+      "title": "The butterfly highway",
+      "reviewed": false,
+      "cut": null
+    },
+    {
+      "id": 5,
+      "title": "The secret grove",
+      "reviewed": false,
+      "cut": null
+    },
+    {
+      "id": 6,
+      "title": "Dusk & goodnight",
+      "reviewed": false,
+      "cut": null
+    }
+  ]
+}
